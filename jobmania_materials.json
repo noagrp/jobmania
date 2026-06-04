@@ -1,0 +1,326 @@
+[
+  {
+    "Name": "Sword",
+    "Rarity": "Common",
+    "Combine List": "Jobless-Warrior|Rogue-Dual Wielder|Mage-Magic Swordsman|Craftsman-Blacksmith",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Fighting Gloves",
+    "Rarity": "Common",
+    "Combine List": "Jobless-Brawler|Martial Artist-Boxer",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Rod",
+    "Rarity": "Common",
+    "Combine List": "Jobless-Mage",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Dagger",
+    "Rarity": "Common",
+    "Combine List": "Jobless-Rogue|Thief-Marauder|Ranger-Hunter|Craftsman-Whitesmith",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Throwing Weapons",
+    "Rarity": "Common",
+    "Combine List": "Jobless-Ranger|Rogue-Ninja Genin",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Staff",
+    "Rarity": "Common",
+    "Combine List": "Jobless-Healer",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Shield",
+    "Rarity": "Common",
+    "Combine List": "Warrior-Knight|Barbarian-Gladiator|Cleric-Cleric Knight|Craftsman-Brownsmith|Vigilante-Cursed Shield Hero",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Martial Arts Training",
+    "Rarity": "Common",
+    "Combine List": "Brawler-Martial Artist|Street Fighter-MMA Fighter",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Bow",
+    "Rarity": "Common",
+    "Combine List": "Ranger-Bowman",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Coins",
+    "Rarity": "Common",
+    "Combine List": "Rogue-Thief|Watcher-Detective|Jobless-Piker|Piker-Gamester|Artist-Performer|Joker-Party Clown",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Compass",
+    "Rarity": "Common",
+    "Combine List": "Thief-Pirate|Barbarian-Viking|Rogue-Watcher|Healer-Scholar|Otaku-Gamer|Craftsman-Inventor|Skilled Painter-Established Artist",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Medicine",
+    "Rarity": "Common",
+    "Combine List": "Healer-Medic|Medic-Nurse|Rogue-Maniac",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Axe",
+    "Rarity": "Common",
+    "Combine List": "Warrior-Barbarian|Priest-Cleric",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Gun",
+    "Rarity": "Common",
+    "Combine List": "Warrior-Soldier|Ranger-Gunner|Criminal-Mafia|Dual Wielder-Dual Gunner|Space Soldier-Space Marine",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Spear",
+    "Rarity": "Common",
+    "Combine List": "Warrior-Lancer|Thief-Sky Bandit|Wild Hunter-Amazon Hunter",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Magic Ring",
+    "Rarity": "Rare",
+    "Combine List": "Mage-Wizard|Wizard-Sorcerer|Blasphemer-Witch|Dragoon-Arcane Lancer",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Noble Mission",
+    "Rarity": "Rare",
+    "Combine List": "Knight-Paladin|Lancer-Royal Knight|Soldier-Lieutenant|Magic Swordsman-Magic Knight|Healer-Priest|Priest-High Priest|Marksman-Musketeer|Thief-Villain|Warrior-Samurai",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Fallen",
+    "Rarity": "Rare",
+    "Combine List": "Knight-Dark Knight|Soldier-Mercenary|Brawler-Street Fighter|Maniac-Psychopath|Rogue-Criminal|Gladiator-Berserker|Madao-Creepy Madao|Guardian-The Tower|Samurai Master-Afro Samurai",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Aged Scrolls",
+    "Rarity": "Rare",
+    "Combine List": "Martial Artist-Monk|Dual Blades-Trinity Blades|Blasphemer-Cultist|Wild Hunter-Myth Hunter|Performer-Musician|Scholar-Historian||Monk-Path Seeker",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Elemental Runestones",
+    "Rarity": "Rare",
+    "Combine List": "Wizard-Elementalist|Dual Blades-Spell Fencer|Guardian-Elemental Guardian|Magic Knight-Runes Knight|MMA Fighter-Mystic Fighter",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Beast Taming Skills",
+    "Rarity": "Rare",
+    "Combine List": "Dragon Tamer-Dragon Rider|Wild Hunter-Beast Tamer|Scholar-Summoner|Ninja Jonin-Puppeteer",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Stealth Sense",
+    "Rarity": "Rare",
+    "Combine List": "Marksman-Job Sniper|Bowman-Archer|Mafia-Hitman|Watcher-Spy|Ninja Genin-Ninja|Serial Killer-Mafia Player|Joker-Trickster",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Explosive Tools",
+    "Rarity": "Rare",
+    "Combine List": "Marksman-Cannoneer|Terrorist-Suicide Bomber|Psychopath-Bomberman|Secret Agent-Trap Master|Berserker-Branded Swordsman|Licensed Engineer-Nuclear Engineer|Inventor-Mad Scientist|Grand Sorcerer-Explosive Enchanter",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Fire Spirit",
+    "Rarity": "Epic",
+    "Combine List": "Archer-Flame Archer|Arcane Lancer-Inferno Lancer|Elementalist-Pyromancer|Pyromancer-Flaremancer|Ninja Jonin-Hokage|Flame Archer-Exploding Ranger|Abyss Knight-Ghost Rider|Licensed Engineer-Petroleum Engineer|Mystic Fighter-Volcanofist|Racket Player-Tennis Player",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Water Spirit",
+    "Rarity": "Epic",
+    "Combine List": "Archer-Ice Archer|Royal Knight-Atlantian|Colonel-Marine General|Elementalist-Hydromancer|Hydromancer-Cryomancer|Pirate-Pirate Quartermaster|Ninja Jonin-Mizukage|Ice Archer-Hail Ranger|Licensed Engineer-Marine Engineer|Wild Hunter-Great Sea Angler|Mystic Fighter-Aquafist|Witch-Sea Witch",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Thunder Spirit",
+    "Rarity": "Epic",
+    "Combine List": "Archer-Lightning Archer|Elementalist-Electromancer|Electromancer-Fulgurmancer|Famous Detective-Lightning Detective|Ninja Jonin-Raikage|Lightning Archer-Volt Ranger|Licensed Engineer-Electrical Engineer|Inventor-Cyborg|Mystic Fighter-Thunderfist|Club Baller-NBA Shooting Guard|Racket Player-Ping Pong Player",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Earth Spirit",
+    "Rarity": "Epic",
+    "Combine List": "Archer-Forest Archer|Elementalist-Geomancer|Geomancer-Terramancer|Medic-Herbalist|Marauder-Ground Ravager|Colonel-Army General|Ninja Jonin-Tsuchikage|Forest Archer-Mountain Ranger|Beast Tamer-Druid|Licensed Engineer-Civil Engineer|Mystic Fighter-Quakefist|Pyromancer-Volcanomancer|Dark Knight-Shadewood Knight|Club Baller-NBA Small Forward",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Wind Spirit",
+    "Rarity": "Epic",
+    "Combine List": "Archer-Gale Archer|Royal Knight-Valkyrie|Colonel-Air Force General|Elementalist-Aeromancer|Aeromancer-Stormancer|Sky Bandit-Storm Raider|Ninja Jonin-Kazekage|Gale Archer-Sonic Ranger|Licensed Engineer-Aerospace Engineer|Mystic Fighter-Tornadofist|Underground Fighter-Air Force Pilot|Racket Player-Badminton Player",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Light Spirit",
+    "Rarity": "Epic",
+    "Combine List": "Paladin-High Paladin|Elementalist-Luxmancer|Luxmancer-Solimancer|High Priest-Prophet|Whitesmith-Silversmith",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Dark Spirit",
+    "Rarity": "Epic",
+    "Combine List": "Dark Knight-Grand Dark Knight|Elementalist-Umbramancer|Umbramancer-Lunamancer|Maniac-Blasphemer|Criminal-Terrorist|Summoner-Warlock|Doctor-Plague Doctor|Creepy Madao-Dark Matter Parasite",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Vast Experience",
+    "Rarity": "Epic",
+    "Combine List": "Elementalist-Elemancer|Magus-Star Magus|MMA Fighter-Underground Fighter|Mercenary-Mercenary Leader|Gladiator-Thracian|Detective-Famous Detective|Mafia-Mafia Elite|Villain-Super Villain|Psychopath-Serial Killer|Berserker-War Berserker|Spy-Secret Agent|Jobless-Otaku|Otaku-Madao|Cultist-Voodoo Lord|Suicide Bomber-The Survivor|Pro Gamer-Solo King|Painter-Skilled Painter|Brownsmith-Goldsmith|Badminton Player-Speed Striker",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Hero Medallion",
+    "Rarity": "Epic",
+    "Combine List": "Dark Knight-Abyss Knight|Warrior-Hero|Hero-Super Hero|Viking-Viking Hero|Bulleyes-Hawkeyes|Myth Hunter-Monster Hunter|Villain-Vigilante|Summoner-Grand Summoner|Valkyrie-Grand Valkyrie|Atlantian-Ancient Atlantian|Amazon Hunter-Amazon Wonder|Pure Madao-Reincarnated Hero|Musician-Bard|Music Conductor-The Grand Maestro|Blacksmith-Warsmith|Witch-Karen|Storm Raider-Storm Herald|Historian-Storyteller|Ping Pong Player-Hexagon Warrior|Speed Striker-Datuk LCW",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "The Book Of Wisdom",
+    "Rarity": "Epic",
+    "Combine List": "Mage-Magus|Summoner-Zomancer|Nurse-Doctor|Sorcerer-Grand Sorcerer|High Priest-Bishop|Established Artist-The Polymath Artist|Party Clown-Happy Meals Clown|Spin Master-Mozart Of Table Tennis",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Secret Training",
+    "Rarity": "Epic",
+    "Combine List": "Ninja-Anbu|Dual Wielder-Dual Blades|Lancer-Dragoon||Boxer-Pro Boxer|Monk-Warrior Monk|Cleric-Exorcist|Archer-Archer Elite|Gunner-Marksman|Hunter-Wild Hunter|Spy-Assassin|Madao-Pure Madao|Witch-Sultry Temptress|Myth Hunter-Witcher|Dual Gunner-Guns Akimbo|Space Soldier-High Templar|Street Baller-Club Baller|Tennis Player-All Court Player|Badminton Player-Power Smasher|Ping Pong Player-Spin Master",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Dragon Heart",
+    "Rarity": "Legendary",
+    "Combine List": "Knight-Dragon Knight|Dragoon-Dragon Lancer|Viking-Dragon Tamer|Warrior Monk-Dragon Descendant|Zomancer-Dracomancer|Myth Hunter-Dragon Hunter|Underground Fighter-Badguy Bounty Hunter|Warsmith-Doomsmith",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Demon Contract",
+    "Rarity": "Legendary",
+    "Combine List": "Warlock-Necromancer|Cultist-Demon Possessor|Grand Dark Knight-Demon Knight|Sky Walker-Dark Vader|Exorcist-Crazed Exorcist|Creepy Madao-Reincarnated Demon King|Serial Killer-Gore Lover|Mercenary Leader-Devil Hunter|Great Sea Angler-Abyssal Hunter|Prophet-Doomsayer|Psionic Agent-Queen Of Blades",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "The Holy Grail",
+    "Rarity": "Legendary",
+    "Combine List": "High Paladin-Sacred Knight|Prophet-Seer|Bishop-Pope|Cleric Knight-Cleric Saint|Chief Nurse-Pacifist|Guardian-Titan|Runes Knight-Sacred Order Captain|Bard-Maven Of The Strings",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Legendary Crest",
+    "Rarity": "Legendary",
+    "Combine List": "Hitman-One Shot|Vigilante-Dark Hero|Dragon Knight-Dragon Slayer|Samurai Master-Zantetsuken|Mercenary Leader-One Man Army|Grand Summoner-Legendary Summoner|Archer Elite-Sagittarius|Bowman-Bulleyes|Viking Hero-Viking Legend|Warrior Monk-Great Sage|Guardian-Onion Knight|Great Sea Angler-Legendary Fisherman|Hexagon Warrior-The Dragon Of China",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "The Ring Of Lord",
+    "Rarity": "Legendary",
+    "Combine List": "Dragon Lancer-Dragon Lord|Runes Knight-Runes Emperor|Archer Elite-Archerlord|Storm Raider-Sky Ruler|Beast Tamer-Beast Lord|Terrorist-Tyrant|Professional Gambler-Lord Of Gamblers|Goldsmith-Kingsmith|Geomancer-Seismic Lord|Trickster-The Mad Jester|NBA Small Forward-King James",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Guardian Necklace",
+    "Rarity": "Legendary",
+    "Combine List": "Paladin-Guardian|Space Soldier-Guardian Of The Galaxy|Grand Sorcerer-Barrier Master|Musketeer-King's Musketeer|Amazon Hunter-Amazon Prime|Cyborg-Big Daddy|Silversmith-Soulsmith|Shadewood Knight-Knight Of Ni",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Champion Belt",
+    "Rarity": "Legendary",
+    "Combine List": "Thracian-Arena Champion|Pro Boxer-Boxing Champion|Underground Fighter-The King Of Fighters|Bomberman-Super Bomberman|Berserker-Megalomaniac|Musketeer-Grand Duelist|NBA Shooting Guard-Air Jordan|Power Smasher-Super Dan",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Philosopher's Stone",
+    "Rarity": "Legendary",
+    "Combine List": "Witch-Grand High Witch|Super Hero-The Chosen One|Elemancer-Omnimancer|Prophet-Oracle|Exorcist-Witch Hunter|Warrior Monk-Tai Chi Master|Mercenary-Ex Soldier 1st Class|Cyborg-Ultimate Gear Justice|Spy-Psionic Agent|Pyromancer-Flame Colonel",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Chief Necklace",
+    "Rarity": "Legendary",
+    "Combine List": "Super Villain-The Big Boss|Anbu-Anbu Leader|Mafia Elite-Mafia Boss|Terrorist-Terrorist Leader|Samurai Master-Shogun|Nurse-Chief Nurse|Pirate Quartermaster-Pirate Captain|Lieutenant-Colonel|Musician-Music Conductor|Psionic Agent-Professor X",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Master Proof",
+    "Rarity": "Legendary",
+    "Combine List": "Samurai-Samurai Master|Grand Sorcerer-Sorcerer Master|Herbalist-Herb Sage|Cannoneer-Mega Cannoneer|Ninja-Ninja Jonin|Ground Ravager-Bandit Prime|Warrior Monk-Shaolin Master|Doctor-Surgeon|Gamester-Professional Gambler|Engineering Intern-Licensed Engineer|Gamer-Pro Gamer|All Court Player-Swiss Maestro",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Phantom Crystal",
+    "Rarity": "Legendary",
+    "Combine List": "Vigilante-Phantom Thief|Serial Killer-Reaper|Assassin-Phantom|Trinity Blades-Infinity Blades|Spell Fencer-Omni Fencer|Abyss Knight-Oblivion Knight|Arcane Lancer-Phantom Lancer|Job Sniper-Deadshot|Secret Agent-Double Agent|Myth Hunter-Demon Slayer|Samurai Master-Shinigami|Creepy Madao-Stand User",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Space Stone",
+    "Rarity": "Legendary",
+    "Combine List": "Cannoneer-Planet Destroyer|Star Magus-Celestial Magus|Soldier-Space Soldier|Detective-Space Detective|Dual Wielder-Sky Walker|Assassin-Starkiller|Suicide Bomber-World Ender|Grand Sorcerer-Chronomancer|Cultist-Eldritch Child|Mad Scientist-The Rickest Scientist|Music Composer-Musical Prodigy|Storyteller-Interdimensional Narrator|Guns Akimbo-Galactic Arms Dealer|Pure Madao-Cosmic Hobo",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Jobmania Crystal",
+    "Rarity": "Legendary",
+    "Combine List": "",
+    "Acquire Method": "Special"
+  },
+  {
+    "Name": "Spanner",
+    "Rarity": "Rare",
+    "Combine List": "Scholar-Engineering Intern|Pro Gamer-Beater|Jobless-Craftsman",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Jack O Lantern",
+    "Rarity": "Epic",
+    "Combine List": "Berserker-Chainsaw Man|Exorcist-Ghostbuster|Assassin-Shadow Weapon Meister|Detective-Creepypasta Detective|Guns Akimbo-Gun Type Meister|Warlock-Dream Eater|Cleric Knight-Hollowed Protector|Bard-Haunting Melodist|Performer-Joker|Chief Nurse-Plague Mistress|Storyteller-Pied Piper|Trickster-Vampire Queen|Vigilante-Social Justice Warrior|Party Clown-Spring Heeled Jester",
+    "Acquire Method": "Event"
+  },
+  {
+    "Name": "Xmas Hat",
+    "Rarity": "Epic",
+    "Combine List": "Mad Scientist-Santa|Bulleyes-Cupid|Prophet-The Forerunner|Star Magus-Magus From The East|Hydromancer-Snowmancer|High Paladin-Frost Paladin|Colonel-Nutcracker Soldier|Geomancer-Gingerbread Enchanter|Cyborg-Toy Robot Z|Bomberman-Carnival Demolisher|Music Conductor-Carol Virtuoso|Licensed Engineer-Gnome Engineer|Witch-The Snow Queen|Trickster-Father Frost",
+    "Acquire Method": "Event"
+  },
+  {
+    "Name": "Paint Brush",
+    "Rarity": "Rare",
+    "Combine List": "Jobless-Artist|Artist-Painter|Musician-Music Composer",
+    "Acquire Method": "Normal"
+  },
+  {
+    "Name": "Easter Basket",
+    "Rarity": "Epic",
+    "Combine List": "Mad Scientist-Egg Alchemist|Ninja Jonin-Easter Shinobi|Valkyrie-Springs Harbinger|Warrior Monk-Chestnut Monk|Grand Sorcerer-Special Grade Sorcerer|Dragon Knight-Lazarus Blade|Ground Ravager-Eggblade Scavenger|Anbu-The Copy Ninja|Pro Gamer-Completionist|Berserker-Titan Shifter|All Court Player-The Serbinator|Path Seeker-Sage Of Six Paths|Pure Madao-Zero Returner|Assassin-Shadow Lone Wolf",
+    "Acquire Method": "Event"
+  },
+  {
+    "Name": "Tropical Sunglasses",
+    "Rarity": "Epic",
+    "Combine List": "High Paladin-Chromatic Knight|Guardian-Coastal Lifeguard|Licensed Engineer-Beach Sand Sculptor|Super Villain-Flamingo Villain|Professional Gambler-Card Shark|Pro Boxer-Coconut Brawler|Colonel-NERV Commander|Mystic Fighter-Sharkfist|Vigilante-The Last Spiral|Music Composer-Tidal Rockstar",
+    "Acquire Method": "Event"
+  },
+  {
+    "Name": "Sport Jersey",
+    "Rarity": "Rare",
+    "Combine List": "Brawler-Street Baller|Ranger-Racket Player|",
+    "Acquire Method": "Normal"
+  }
+]

@@ -1,0 +1,2576 @@
+[
+  {
+    "source_class": "Base_Weapon",
+    "material_required": "Paint Brush",
+    "target_class": "Artist",
+    "target_star_level": "1"
+  },
+  {
+    "source_class": "Base_Weapon",
+    "material_required": "Fighting Gloves",
+    "target_class": "Brawler",
+    "target_star_level": "1"
+  },
+  {
+    "source_class": "Base_Weapon",
+    "material_required": "Staff",
+    "target_class": "Healer",
+    "target_star_level": "1"
+  },
+  {
+    "source_class": "Base_Weapon",
+    "material_required": "Rod",
+    "target_class": "Mage",
+    "target_star_level": "1"
+  },
+  {
+    "source_class": "Base_Weapon",
+    "material_required": "Throwing Weapons",
+    "target_class": "Ranger",
+    "target_star_level": "1"
+  },
+  {
+    "source_class": "Base_Weapon",
+    "material_required": "Dagger",
+    "target_class": "Rogue",
+    "target_star_level": "1"
+  },
+  {
+    "source_class": "Base_Weapon",
+    "material_required": "Sword",
+    "target_class": "Warrior",
+    "target_star_level": "1"
+  },
+  {
+    "source_class": "Artist",
+    "material_required": "Paint Brush",
+    "target_class": "Painter",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Artist",
+    "material_required": "Coins",
+    "target_class": "Performer",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Brawler",
+    "material_required": "Martial Arts Training",
+    "target_class": "Martial Artist",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Brawler",
+    "material_required": "Sport Jersey",
+    "target_class": "Street Baller",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Brawler",
+    "material_required": "Fallen",
+    "target_class": "Street Fighter",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Healer",
+    "material_required": "Medicine",
+    "target_class": "Medic",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Healer",
+    "material_required": "Light Spirit",
+    "target_class": "Nun",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Healer",
+    "material_required": "Noble Mission",
+    "target_class": "Priest",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Healer",
+    "material_required": "Compass",
+    "target_class": "Scholar",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Mage",
+    "material_required": "Sword",
+    "target_class": "Magic Swordsman",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Mage",
+    "material_required": "Magic Ring",
+    "target_class": "Wizard",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Ranger",
+    "material_required": "Bow",
+    "target_class": "Bowman",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Ranger",
+    "material_required": "Gun",
+    "target_class": "Gunner",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Ranger",
+    "material_required": "Dagger",
+    "target_class": "Hunter",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Ranger",
+    "material_required": "Sport Jersey",
+    "target_class": "Racket Player",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Rogue",
+    "material_required": "Fallen",
+    "target_class": "Criminal",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Rogue",
+    "material_required": "Sword",
+    "target_class": "Dual Wielder",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Rogue",
+    "material_required": "Sport Jersey",
+    "target_class": "Footballer",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Rogue",
+    "material_required": "Medicine",
+    "target_class": "Maniac",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Rogue",
+    "material_required": "Throwing Weapons",
+    "target_class": "Ninja Genin",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Rogue",
+    "material_required": "Coins",
+    "target_class": "Thief",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Rogue",
+    "material_required": "Compass",
+    "target_class": "Watcher",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Warrior",
+    "material_required": "Axe",
+    "target_class": "Barbarian",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Warrior",
+    "material_required": "Shield",
+    "target_class": "Knight",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Warrior",
+    "material_required": "Spear",
+    "target_class": "Lancer",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Warrior",
+    "material_required": "Sport Jersey",
+    "target_class": "Linebacker",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Warrior",
+    "material_required": "Gun",
+    "target_class": "Soldier",
+    "target_star_level": "2"
+  },
+  {
+    "source_class": "Barbarian",
+    "material_required": "Shield",
+    "target_class": "Gladiator",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Barbarian",
+    "material_required": "Compass",
+    "target_class": "Viking",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Bowman",
+    "material_required": "Stealth Sense",
+    "target_class": "Archer",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Craftsman",
+    "material_required": "Sword",
+    "target_class": "Blacksmith",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Craftsman",
+    "material_required": "Shield",
+    "target_class": "Brownsmith",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Craftsman",
+    "material_required": "Compass",
+    "target_class": "Inventor",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Craftsman",
+    "material_required": "Aged Scrolls",
+    "target_class": "Mason",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Craftsman",
+    "material_required": "Dagger",
+    "target_class": "Whitesmith",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Criminal",
+    "material_required": "Gun",
+    "target_class": "Mafia",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Criminal",
+    "material_required": "Dark Spirit",
+    "target_class": "Terrorist",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Dual Wielder",
+    "material_required": "Secret Training",
+    "target_class": "Dual Blades",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Dual Wielder",
+    "material_required": "Gun",
+    "target_class": "Dual Gunner",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Gunner",
+    "material_required": "Secret Training",
+    "target_class": "Marksman",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Hunter",
+    "material_required": "Secret Training",
+    "target_class": "Wild Hunter",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Knight",
+    "material_required": "Fallen",
+    "target_class": "Dark Knight",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Knight",
+    "material_required": "Noble Mission",
+    "target_class": "Paladin",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Knight",
+    "material_required": "Noble Mission",
+    "target_class": "Samurai",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Lancer",
+    "material_required": "Secret Training",
+    "target_class": "Dragoon",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Lancer",
+    "material_required": "Hero Medallion",
+    "target_class": "Hero",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Lancer",
+    "material_required": "Noble Mission",
+    "target_class": "Royal Knight",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Lancer",
+    "material_required": "Sport Jersey",
+    "target_class": "Volleyball Player",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Linebacker",
+    "material_required": "Fallen",
+    "target_class": "Mercenary",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Magic Swordsman",
+    "material_required": "Noble Mission",
+    "target_class": "Magic Knight",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Maniac",
+    "material_required": "Dark Spirit",
+    "target_class": "Blasphemer",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Maniac",
+    "material_required": "Fallen",
+    "target_class": "Psychopath",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Martial Artist",
+    "material_required": "Fighting Gloves",
+    "target_class": "Boxer",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Martial Artist",
+    "material_required": "Aged Scrolls",
+    "target_class": "Monk",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Medic",
+    "material_required": "Earth Spirit",
+    "target_class": "Herbalist",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Medic",
+    "material_required": "Medicine",
+    "target_class": "Nurse",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Ninja Genin",
+    "material_required": "Stealth Sense",
+    "target_class": "Ninja",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Otaku",
+    "material_required": "Compass",
+    "target_class": "Gamer",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Otaku",
+    "material_required": "Vast Experience",
+    "target_class": "Madao",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Painter",
+    "material_required": "Vast Experience",
+    "target_class": "Skilled Painter",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Painter",
+    "material_required": "Dagger",
+    "target_class": "Street Artist",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Performer",
+    "material_required": "Jack O Lantern",
+    "target_class": "Joker",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Performer",
+    "material_required": "Aged Scrolls",
+    "target_class": "Musician",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Performer",
+    "material_required": "Staff",
+    "target_class": "Stage Magician",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Piker",
+    "material_required": "Coins",
+    "target_class": "Gamester",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Priest",
+    "material_required": "Axe",
+    "target_class": "Cleric",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Priest",
+    "material_required": "Noble Mission",
+    "target_class": "High Priest",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Racket Player",
+    "material_required": "Wind Spirit",
+    "target_class": "Badminton Player",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Racket Player",
+    "material_required": "Earth Spirit",
+    "target_class": "Pickleball Player",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Racket Player",
+    "material_required": "Thunder Spirit",
+    "target_class": "Ping Pong Player",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Racket Player",
+    "material_required": "Fire Spirit",
+    "target_class": "Tennis Player",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Scholar",
+    "material_required": "Spanner",
+    "target_class": "Engineering Intern",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Scholar",
+    "material_required": "Aged Scrolls",
+    "target_class": "Historian",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Scholar",
+    "material_required": "Beast Taming Skills",
+    "target_class": "Summoner",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Soldier",
+    "material_required": "Noble Mission",
+    "target_class": "Lieutenant",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Soldier",
+    "material_required": "Fallen",
+    "target_class": "Mercenary",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Street Baller",
+    "material_required": "Secret Training",
+    "target_class": "Club Baller",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Street Fighter",
+    "material_required": "Martial Arts Training",
+    "target_class": "MMA Fighter",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Thief",
+    "material_required": "Dagger",
+    "target_class": "Marauder",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Thief",
+    "material_required": "Compass",
+    "target_class": "Pirate",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Thief",
+    "material_required": "Spear",
+    "target_class": "Sky Bandit",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Thief",
+    "material_required": "Noble Mission",
+    "target_class": "Villain",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Watcher",
+    "material_required": "Coins",
+    "target_class": "Detective",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Watcher",
+    "material_required": "Stealth Sense",
+    "target_class": "Spy",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Wizard",
+    "material_required": "Elemental Runestones",
+    "target_class": "Elementalist",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Wizard",
+    "material_required": "Magic Ring",
+    "target_class": "Sorcerer",
+    "target_star_level": "3"
+  },
+  {
+    "source_class": "Archer",
+    "material_required": "Secret Training",
+    "target_class": "Archer Elite",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Archer",
+    "material_required": "Fire Spirit",
+    "target_class": "Flame Archer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Archer",
+    "material_required": "Earth Spirit",
+    "target_class": "Forest Archer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Archer",
+    "material_required": "Water Spirit",
+    "target_class": "Ice Archer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Archer",
+    "material_required": "Thunder Spirit",
+    "target_class": "Lighting Archer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Archer",
+    "material_required": "Wind Spirit",
+    "target_class": "Wind Archer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Badminton Player",
+    "material_required": "Secret Training",
+    "target_class": "Power Smasher",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Badminton Player",
+    "material_required": "Vast Experience",
+    "target_class": "Speed Striker",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Blacksmith",
+    "material_required": "Hero Medallion",
+    "target_class": "Warsmith",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Blasphemer",
+    "material_required": "Aged Scrolls",
+    "target_class": "Cultist",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Blasphemer",
+    "material_required": "Magic Ring",
+    "target_class": "Witch",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Boxer",
+    "material_required": "Secret Training",
+    "target_class": "Pro Boxer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Brownsmith",
+    "material_required": "Vast Experience",
+    "target_class": "Goldsmith",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Cleric",
+    "material_required": "Shield",
+    "target_class": "Cleric Knight",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Cleric",
+    "material_required": "Secret Training",
+    "target_class": "Exorcist",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Club Baller",
+    "material_required": "Thunder Spirit",
+    "target_class": "NBA Shooting Guard",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Club Baller",
+    "material_required": "Earth Spirit",
+    "target_class": "NBA Small Forward",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Dark Knight",
+    "material_required": "Hero Medallion",
+    "target_class": "Abyss Knight",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Dark Knight",
+    "material_required": "Dark Spirit",
+    "target_class": "Grand Dark Knight",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Dark Knight",
+    "material_required": "Earth Spirit",
+    "target_class": "Shadewood Knight",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Detective",
+    "material_required": "Vast Experience",
+    "target_class": "Famous Detective",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Dragoon",
+    "material_required": "Magic Ring",
+    "target_class": "Arcane Lancer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Dragoon",
+    "material_required": "Dragon Heart",
+    "target_class": "Dragon Lancer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Dual Blades",
+    "material_required": "Elemental Runestones",
+    "target_class": "Spell Fencer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Dual Blades",
+    "material_required": "Aged Scrolls",
+    "target_class": "Trinity Blades",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Dual Gunner",
+    "material_required": "Secret Training",
+    "target_class": "Guns Akimbo",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Elementalist",
+    "material_required": "Wind Spirit",
+    "target_class": "Aeromancer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Elementalist",
+    "material_required": "Thunder Spirit",
+    "target_class": "Electromancer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Elementalist",
+    "material_required": "Vast Experience",
+    "target_class": "Elemancer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Elementalist",
+    "material_required": "Earth Spirit",
+    "target_class": "Geomancer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Elementalist",
+    "material_required": "Water Spirit",
+    "target_class": "Hydromancer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Elementalist",
+    "material_required": "Light Spirit",
+    "target_class": "Luxmancer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Elementalist",
+    "material_required": "Fire Spirit",
+    "target_class": "Pyromancer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Elementalist",
+    "material_required": "Dark Spirit",
+    "target_class": "Umbramancer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Engineering Intern",
+    "material_required": "Master Proof",
+    "target_class": "Licensed Engineer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Gamer",
+    "material_required": "Master Proof",
+    "target_class": "Pro Gamer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Gamester",
+    "material_required": "Master Proof",
+    "target_class": "Professional Gambler",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Gladiator",
+    "material_required": "Fallen",
+    "target_class": "Berserker",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Gladiator",
+    "material_required": "Vast Experience",
+    "target_class": "Thracian",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Hero",
+    "material_required": "Hero Medallion",
+    "target_class": "Super Hero",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "High Priest",
+    "material_required": "The Book Of Wisdom",
+    "target_class": "Bishop",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "High Priest",
+    "material_required": "Light Spirit",
+    "target_class": "Prophet",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Historian",
+    "material_required": "Hero Medallion",
+    "target_class": "Storyteller",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Inventor",
+    "material_required": "Thunder Spirit",
+    "target_class": "Cyborg",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Inventor",
+    "material_required": "Explosive Tools",
+    "target_class": "Mad Scientist",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Joker",
+    "material_required": "Coins",
+    "target_class": "Party Clown",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Joker",
+    "material_required": "Stealth Sense",
+    "target_class": "Trickster",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Lieutenant",
+    "material_required": "Chief Necklace",
+    "target_class": "Colonel",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "MMA Fighter",
+    "material_required": "Elemental Runestones",
+    "target_class": "Mystic Fighter",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "MMA Fighter",
+    "material_required": "Vast Experience",
+    "target_class": "Underground Fighter",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Madao",
+    "material_required": "Fallen",
+    "target_class": "Creepy Madao",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Madao",
+    "material_required": "Secret Training",
+    "target_class": "Pure Madao",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Mafia",
+    "material_required": "Stealth Sense",
+    "target_class": "Hitman",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Mafia",
+    "material_required": "Vast Experience",
+    "target_class": "Mafia Elite",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Magic Knight",
+    "material_required": "Elemental Runestones",
+    "target_class": "Runes Knight",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Magus",
+    "material_required": "Vast Experience",
+    "target_class": "Star Magus",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Marauder",
+    "material_required": "Earth Spirit",
+    "target_class": "Ground Ravager",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Marksman",
+    "material_required": "Explosive Tools",
+    "target_class": "Cannoneer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Marksman",
+    "material_required": "Noble Mission",
+    "target_class": "Musketeer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Marksman",
+    "material_required": "Stealth Sense",
+    "target_class": "Sniper",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Mason",
+    "material_required": "Noble Mission",
+    "target_class": "Freemason",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Mercenary",
+    "material_required": "Vast Experience",
+    "target_class": "Mercenary Leader",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Mercenary",
+    "material_required": "Space Stone",
+    "target_class": "Space Soldier",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Monk",
+    "material_required": "Aged Scrolls",
+    "target_class": "Path Seeker",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Monk",
+    "material_required": "Secret Training",
+    "target_class": "Warrior Monk",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Musician",
+    "material_required": "Hero Medallion",
+    "target_class": "Bard",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Musician",
+    "material_required": "Paint Brush",
+    "target_class": "Music Composer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Musician",
+    "material_required": "Chief Necklace",
+    "target_class": "Music Conductor",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Ninja",
+    "material_required": "Secret Training",
+    "target_class": "Anbu",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Ninja",
+    "material_required": "Master Proof",
+    "target_class": "Ninja Jonin",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Nurse",
+    "material_required": "Chief Necklace",
+    "target_class": "Chief Nurse",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Nurse",
+    "material_required": "The Book Of Wisdom",
+    "target_class": "Doctor",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Paladin",
+    "material_required": "Dragon Heart",
+    "target_class": "Dragon Knight",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Paladin",
+    "material_required": "Guardian Necklace",
+    "target_class": "Guardian",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Paladin",
+    "material_required": "Light Spirit",
+    "target_class": "High Paladin",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Ping Pong Player",
+    "material_required": "Hero Medallion",
+    "target_class": "Hexagon Warrior",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Ping Pong Player",
+    "material_required": "Secret Training",
+    "target_class": "Spin Master",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Pirate",
+    "material_required": "Water Spirit",
+    "target_class": "Pirate Quartermaster",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Psychopath",
+    "material_required": "Explosive Tools",
+    "target_class": "Bomberman",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Psychopath",
+    "material_required": "Vast Experience",
+    "target_class": "Serial Killer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Royal Knight",
+    "material_required": "Water Spirit",
+    "target_class": "Atlantian",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Royal Knight",
+    "material_required": "Wind Spirit",
+    "target_class": "Valkyrie",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Samurai",
+    "material_required": "Master Proof",
+    "target_class": "Samurai Master",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Skilled Painter",
+    "material_required": "Compass",
+    "target_class": "Established Artist",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Sky Bandit",
+    "material_required": "Wind Spirit",
+    "target_class": "Storm Raider",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Sorcerer",
+    "material_required": "The Book Of Wisdom",
+    "target_class": "Grand Sorcerer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Spy",
+    "material_required": "Secret Training",
+    "target_class": "Assassin",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Spy",
+    "material_required": "Philosopher's Stone",
+    "target_class": "Psionic Agent",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Spy",
+    "material_required": "Vast Experience",
+    "target_class": "Secret Agent",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Stage Magician",
+    "material_required": "Secret Training",
+    "target_class": "Illusionist",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Summoner",
+    "material_required": "Hero Medallion",
+    "target_class": "Grand Summoner",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Summoner",
+    "material_required": "Dark Spirit",
+    "target_class": "Warlock",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Summoner",
+    "material_required": "The Book Of Wisdom",
+    "target_class": "Zomancer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Tennis Player",
+    "material_required": "Secret Training",
+    "target_class": "All Court Player",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Terrorist",
+    "material_required": "Explosive Tools",
+    "target_class": "Suicide Bomber",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Viking",
+    "material_required": "Dragon Heart",
+    "target_class": "Dragon Tamer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Viking",
+    "material_required": "Hero Medallion",
+    "target_class": "Viking Hero",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Villain",
+    "material_required": "Vast Experience",
+    "target_class": "Super Villain",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Villain",
+    "material_required": "Hero Medallion",
+    "target_class": "Vigilante",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Whitesmith",
+    "material_required": "Light Spirit",
+    "target_class": "Silversmith",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Wild Hunter",
+    "material_required": "Spear",
+    "target_class": "Amazon Hunter",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Wild Hunter",
+    "material_required": "Beast Taming Skills",
+    "target_class": "Beast Tamer",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Wild Hunter",
+    "material_required": "Water Spirit",
+    "target_class": "Great Sea Angler",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Wild Hunter",
+    "material_required": "Aged Scrolls",
+    "target_class": "Myth Hunter",
+    "target_star_level": "4"
+  },
+  {
+    "source_class": "Abbess",
+    "material_required": "Philosopher's Stone",
+    "target_class": "Saintess",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Abyss Knight",
+    "material_required": "Fire Spirit",
+    "target_class": "Ghost Rider",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Abyss Knight",
+    "material_required": "Phantom Crystal",
+    "target_class": "Oblivion Knight",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Aeromancer",
+    "material_required": "Wind Spirit",
+    "target_class": "Stormancer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "All Court Player",
+    "material_required": "Master Proof",
+    "target_class": "Swiss Maestro",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "All Court Player",
+    "material_required": "Easter Basket",
+    "target_class": "The Serbinator",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Amazon Hunter",
+    "material_required": "Guardian Necklace",
+    "target_class": "Amazon Prime",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Amazon Hunter",
+    "material_required": "Hero Medallion",
+    "target_class": "Amazon Wonder",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Anbu",
+    "material_required": "Chief Necklace",
+    "target_class": "Anbu Leader",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Anbu",
+    "material_required": "Easter Basket",
+    "target_class": "The Copy Ninja",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Arcane Lancer",
+    "material_required": "Fire Spirit",
+    "target_class": "Inferno Lancer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Arcane Lancer",
+    "material_required": "Phantom Crystal",
+    "target_class": "Phantom Lancer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Archer Elite",
+    "material_required": "The Ring Of Lord",
+    "target_class": "Archerlord",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Archer Elite",
+    "material_required": "Legendary Crest",
+    "target_class": "Sagittarius",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Assassin",
+    "material_required": "Phantom Crystal",
+    "target_class": "Phantom",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Assassin",
+    "material_required": "Jack O Lantern",
+    "target_class": "Shadow Weapon Meister",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Assassin",
+    "material_required": "Space Stone",
+    "target_class": "Starkiller",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Assassin",
+    "material_required": "Easter Basket",
+    "target_class": "The Second Shadow",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Atlantian",
+    "material_required": "Hero Medallion",
+    "target_class": "Ancient Atlantian",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Atlantian",
+    "material_required": "Fighting Gloves",
+    "target_class": "Atlantian Monk",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Bard",
+    "material_required": "Jack O Lantern",
+    "target_class": "Haunting Melodist",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Bard",
+    "material_required": "The Holy Grail",
+    "target_class": "Maven Of The Strings",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Beast Tamer",
+    "material_required": "The Ring Of Lord",
+    "target_class": "Beast Lord",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Beast Tamer",
+    "material_required": "Earth Spirit",
+    "target_class": "Druid",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Berserker",
+    "material_required": "Explosive Tools",
+    "target_class": "Branded Swordsman",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Berserker",
+    "material_required": "Jack O Lantern",
+    "target_class": "Chainsaw Man",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Berserker",
+    "material_required": "Champion Belt",
+    "target_class": "Megalomaniac",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Berserker",
+    "material_required": "Easter Basket",
+    "target_class": "Titan Shifter",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Berserker",
+    "material_required": "Vast Experience",
+    "target_class": "War Berserker",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Bishop",
+    "material_required": "The Holy Grail",
+    "target_class": "Pope",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Bomberman",
+    "material_required": "Xmas Hat",
+    "target_class": "Carnival Demolisher",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Bomberman",
+    "material_required": "Champion Belt",
+    "target_class": "Super Bomberman",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Bulleyes",
+    "material_required": "Xmas Hat",
+    "target_class": "Cupid",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Bulleyes",
+    "material_required": "Hero Medallion",
+    "target_class": "Hawkeyes",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Cannoneer",
+    "material_required": "Master Proof",
+    "target_class": "Mega Cannoneer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Cannoneer",
+    "material_required": "Space Stone",
+    "target_class": "Planet Destroyer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Chief Nurse",
+    "material_required": "The Holy Grail",
+    "target_class": "Pacifist",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Chief Nurse",
+    "material_required": "Jack O Lantern",
+    "target_class": "Plague Mistress",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Cleric Knight",
+    "material_required": "The Holy Grail",
+    "target_class": "Cleric Saint",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Cleric Knight",
+    "material_required": "Jack O Lantern",
+    "target_class": "Hollowed Protector",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Colonel",
+    "material_required": "Wind Spirit",
+    "target_class": "Air Force General",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Colonel",
+    "material_required": "Earth Spirit",
+    "target_class": "Army General",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Colonel",
+    "material_required": "Water Spirit",
+    "target_class": "Marine General",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Colonel",
+    "material_required": "Tropical Sunglasses",
+    "target_class": "NERV Commander",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Colonel",
+    "material_required": "Xmas Hat",
+    "target_class": "Nutcracker Soldier",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Creepy Madao",
+    "material_required": "Dark Spirit",
+    "target_class": "Dark Matter Parasite",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Creepy Madao",
+    "material_required": "Demon Contract",
+    "target_class": "Reincarnated Demon King",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Creepy Madao",
+    "material_required": "Phantom Crystal",
+    "target_class": "Stand User",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Cultist",
+    "material_required": "Demon Contract",
+    "target_class": "Demon Possessor",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Cultist",
+    "material_required": "Space Stone",
+    "target_class": "Eldritch Child",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Cultist",
+    "material_required": "Secret Training",
+    "target_class": "Voodoo Lord",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Cyborg",
+    "material_required": "Guardian Necklace",
+    "target_class": "Big Daddy",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Cyborg",
+    "material_required": "Xmas Hat",
+    "target_class": "Toy Robot Z",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Cyborg",
+    "material_required": "Philosopher's Stone",
+    "target_class": "Ultimate Gear Justice",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Doctor",
+    "material_required": "Dark Spirit",
+    "target_class": "Plague Doctor",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Doctor",
+    "material_required": "Master Proof",
+    "target_class": "Surgeon",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Dragon Knight",
+    "material_required": "Legendary Crest",
+    "target_class": "Dragon Slayer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Dragon Knight",
+    "material_required": "Easter Basket",
+    "target_class": "Lazarus Blade",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Dragon Lancer",
+    "material_required": "The Ring Of Lord",
+    "target_class": "Dragon Lord",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Dragon Lancer",
+    "material_required": "The Holy Grail",
+    "target_class": "Rogue Lancer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Dragon Tamer",
+    "material_required": "Beast Taming Skills",
+    "target_class": "Dragon Rider",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Electromancer",
+    "material_required": "Thunder Spirit",
+    "target_class": "Fulgurmancer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Elemancer",
+    "material_required": "Philosopher's Stone",
+    "target_class": "Omnimancer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Established Artist",
+    "material_required": "The Book Of Wisdom",
+    "target_class": "The Polymath Artist",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Exorcist",
+    "material_required": "Demon Contract",
+    "target_class": "Crazed Exorcist",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Exorcist",
+    "material_required": "Jack O Lantern",
+    "target_class": "Ghostbuster",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Exorcist",
+    "material_required": "Philosopher's Stone",
+    "target_class": "Witch Hunter",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Famous Detective",
+    "material_required": "Thunder Spirit",
+    "target_class": "Lightning Detective",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Famous Detective",
+    "material_required": "Space Stone",
+    "target_class": "Space Detective",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Flame Archer",
+    "material_required": "Fire Spirit",
+    "target_class": "Exploding Ranger",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Forest Archer",
+    "material_required": "Earth Spirit",
+    "target_class": "Mountain Ranger",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Freemason",
+    "material_required": "Demon Contract",
+    "target_class": "Illuminati",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Geomancer",
+    "material_required": "Xmas Hat",
+    "target_class": "Gingerbread Enchanter",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Geomancer",
+    "material_required": "The Ring Of Lord",
+    "target_class": "Seismic Lord",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Geomancer",
+    "material_required": "Earth Spirit",
+    "target_class": "Terramancer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Goldsmith",
+    "material_required": "The Ring Of Lord",
+    "target_class": "Kingsmith",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Grand Dark Knight",
+    "material_required": "Demon Contract",
+    "target_class": "Demon Knight",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Grand Sorcerer",
+    "material_required": "Guardian Necklace",
+    "target_class": "Barrier Master",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Grand Sorcerer",
+    "material_required": "Space Stone",
+    "target_class": "Chronomancer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Grand Sorcerer",
+    "material_required": "Explosive Tools",
+    "target_class": "Explosive Enchanter",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Grand Sorcerer",
+    "material_required": "Master Proof",
+    "target_class": "Sorcerer Master",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Grand Sorcerer",
+    "material_required": "Easter Basket",
+    "target_class": "Special Grade Sorcerer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Grand Summoner",
+    "material_required": "Legendary Crest",
+    "target_class": "Legendary Summoner",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Great Sea Angler",
+    "material_required": "Demon Contract",
+    "target_class": "Abyssal Hunter",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Great Sea Angler",
+    "material_required": "Legendary Crest",
+    "target_class": "Legendary Fisherman",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Ground Ravager",
+    "material_required": "Master Proof",
+    "target_class": "Bandit Prime",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Ground Ravager",
+    "material_required": "Easter Basket",
+    "target_class": "Eggblade Scavenger",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Guardian",
+    "material_required": "Tropical Sunglasses",
+    "target_class": "Coastal Lifeguard",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Guardian",
+    "material_required": "Elemental Runestones",
+    "target_class": "Elemental Guardian",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Guardian",
+    "material_required": "Legendary Crest",
+    "target_class": "Onion Knight",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Guardian",
+    "material_required": "Fallen",
+    "target_class": "The Tower",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Guardian",
+    "material_required": "The Holy Grail",
+    "target_class": "Titan",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Guns Akimbo",
+    "material_required": "Space Stone",
+    "target_class": "Galactic Arms Dealer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Guns Akimbo",
+    "material_required": "Jack O Lantern",
+    "target_class": "Gun-Type Meister",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Hexagon Warrior",
+    "material_required": "Legendary Crest",
+    "target_class": "The Dragon Of China",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "High Paladin",
+    "material_required": "Tropical Sunglasses",
+    "target_class": "Chromatic Knight",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "High Paladin",
+    "material_required": "Xmas Hat",
+    "target_class": "Frost Paladin",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "High Paladin",
+    "material_required": "The Holy Grail",
+    "target_class": "Sacred Knight",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Hitman",
+    "material_required": "Legendary Crest",
+    "target_class": "One Shot",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Hydromancer",
+    "material_required": "Water Spirit",
+    "target_class": "Cryomancer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Hydromancer",
+    "material_required": "Xmas Hat",
+    "target_class": "Snowmancer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Ice Archer",
+    "material_required": "Water Spirit",
+    "target_class": "Hail Ranger",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Illusionist",
+    "material_required": "Master Proof",
+    "target_class": "The Grand Illusionist",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Licensed Engineer",
+    "material_required": "Wind Spirit",
+    "target_class": "Aerospace Engineer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Licensed Engineer",
+    "material_required": "Tropical Sunglasses",
+    "target_class": "Beach Sand Sculptor",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Licensed Engineer",
+    "material_required": "Earth Spirit",
+    "target_class": "Civil Engineer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Licensed Engineer",
+    "material_required": "Thunder Spirit",
+    "target_class": "Electrical Engineer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Licensed Engineer",
+    "material_required": "Xmas Hat",
+    "target_class": "Gnome Engineer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Licensed Engineer",
+    "material_required": "Water Spirit",
+    "target_class": "Marine Engineer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Licensed Engineer",
+    "material_required": "Explosive Tools",
+    "target_class": "Nuclear Engineer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Licensed Engineer",
+    "material_required": "Fire Spirit",
+    "target_class": "Petroleum Engineering",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Lighting Archer",
+    "material_required": "Thunder Spirit",
+    "target_class": "Volt Ranger",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Luxmancer",
+    "material_required": "Light Spirit",
+    "target_class": "Solimancer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Mad Scientist",
+    "material_required": "Easter Basket",
+    "target_class": "Egg Alchemist",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Mad Scientist",
+    "material_required": "Xmas Hat",
+    "target_class": "Santa",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Mad Scientist",
+    "material_required": "Space Stone",
+    "target_class": "The Rickest Scientist",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Mafia Elite",
+    "material_required": "Chief Necklace",
+    "target_class": "Mafia Boss",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Mercenary Leader",
+    "material_required": "Demon Contract",
+    "target_class": "Devil Hunter",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Mercenary Leader",
+    "material_required": "Legendary Crest",
+    "target_class": "One Man Army",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Music Composer",
+    "material_required": "Space Stone",
+    "target_class": "Musical Prodigy",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Music Composer",
+    "material_required": "Tropical Sunglasses",
+    "target_class": "Tidal Rockstar",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Music Conductor",
+    "material_required": "Xmas Hat",
+    "target_class": "Carol Virtuoso",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Music Conductor",
+    "material_required": "Hero Medallion",
+    "target_class": "The Grand Maestro",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Musketeer",
+    "material_required": "Champion Belt",
+    "target_class": "Grand Duelist",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Musketeer",
+    "material_required": "Guardian Necklace",
+    "target_class": "King's Musketeer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Mystic Fighter",
+    "material_required": "Water Spirit",
+    "target_class": "Aquafist",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Mystic Fighter",
+    "material_required": "Earth Spirit",
+    "target_class": "Quakefist",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Mystic Fighter",
+    "material_required": "Tropical Sunglasses",
+    "target_class": "Sharkfist",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Mystic Fighter",
+    "material_required": "Thunder Spirit",
+    "target_class": "Thunderfist",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Mystic Fighter",
+    "material_required": "Wind Spirit",
+    "target_class": "Tornadofist",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Mystic Fighter",
+    "material_required": "Fire Spirit",
+    "target_class": "Volcanofist",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Myth Hunter",
+    "material_required": "Phantom Crystal",
+    "target_class": "Demon Slayer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Myth Hunter",
+    "material_required": "Dragon Heart",
+    "target_class": "Dragon Hunter",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Myth Hunter",
+    "material_required": "Hero Medallion",
+    "target_class": "Monster Hunter",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Myth Hunter",
+    "material_required": "Secret Training",
+    "target_class": "Witcher",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "NBA Shooting Guard",
+    "material_required": "Champion Belt",
+    "target_class": "Air Jordan",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "NBA Small Forward",
+    "material_required": "The Ring Of Lord",
+    "target_class": "King James",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Ninja Jonin",
+    "material_required": "Easter Basket",
+    "target_class": "Easter Shinobi",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Ninja Jonin",
+    "material_required": "Fire Spirit",
+    "target_class": "Hokage",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Ninja Jonin",
+    "material_required": "Wind Spirit",
+    "target_class": "Kazekage",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Ninja Jonin",
+    "material_required": "Water Spirit",
+    "target_class": "Mizukage",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Ninja Jonin",
+    "material_required": "Beast Taming Skills",
+    "target_class": "Puppeteer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Ninja Jonin",
+    "material_required": "Thunder Spirit",
+    "target_class": "Raikage",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Ninja Jonin",
+    "material_required": "Earth Spirit",
+    "target_class": "Tsuchikage",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Party Clown",
+    "material_required": "The Book Of Wisdom",
+    "target_class": "Happy Meals Clown",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Party Clown",
+    "material_required": "Jack O Lantern",
+    "target_class": "Spring Heeled Jester",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Path Seeker",
+    "material_required": "Easter Basket",
+    "target_class": "Sage Of Six Paths",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Pirate Quartermaster",
+    "material_required": "Chief Necklace",
+    "target_class": "Pirate Captain",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Power Smasher",
+    "material_required": "Champion Belt",
+    "target_class": "Super Dan",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Pro Boxer",
+    "material_required": "Champion Belt",
+    "target_class": "Boxing Champion",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Pro Boxer",
+    "material_required": "Tropical Sunglasses",
+    "target_class": "Coconut Brawler",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Pro Gamer",
+    "material_required": "Spanner",
+    "target_class": "Beater",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Pro Gamer",
+    "material_required": "Easter Basket",
+    "target_class": "Completionist",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Pro Gamer",
+    "material_required": "Vast Experience",
+    "target_class": "Solo King",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Professional Gambler",
+    "material_required": "Tropical Sunglasses",
+    "target_class": "Card Shark",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Professional Gambler",
+    "material_required": "The Ring Of Lord",
+    "target_class": "Lord Of Gamblers",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Prophet",
+    "material_required": "Demon Contract",
+    "target_class": "Doomsayer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Prophet",
+    "material_required": "Philosopher's Stone",
+    "target_class": "Oracle",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Prophet",
+    "material_required": "The Holy Grail",
+    "target_class": "Seer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Prophet",
+    "material_required": "Xmas Hat",
+    "target_class": "The Forerunner",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Psionic Agent",
+    "material_required": "Chief Necklace",
+    "target_class": "Professor X",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Psionic Agent",
+    "material_required": "Demon Contract",
+    "target_class": "Queen Of Blades",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Pure Madao",
+    "material_required": "Space Stone",
+    "target_class": "Cosmic Hobo",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Pure Madao",
+    "material_required": "Hero Medallion",
+    "target_class": "Reincarnated Hero",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Pure Madao",
+    "material_required": "Easter Basket",
+    "target_class": "Zero Returner",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Pyromancer",
+    "material_required": "Philosopher's Stone",
+    "target_class": "Flame Colonel",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Pyromancer",
+    "material_required": "Fire Spirit",
+    "target_class": "Flaremancer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Pyromancer",
+    "material_required": "Earth Spirit",
+    "target_class": "Volcanomancer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Runes Knight",
+    "material_required": "The Ring Of Lord",
+    "target_class": "Runes Emperor",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Runes Knight",
+    "material_required": "The Holy Grail",
+    "target_class": "Sacred Order Captain",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Samurai Master",
+    "material_required": "Fallen",
+    "target_class": "Afro Samurai",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Samurai Master",
+    "material_required": "Phantom Crystal",
+    "target_class": "Shinigami",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Samurai Master",
+    "material_required": "Chief Necklace",
+    "target_class": "Shogun",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Samurai Master",
+    "material_required": "Legendary Crest",
+    "target_class": "Zantetsuken",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Secret Agent",
+    "material_required": "Phantom Crystal",
+    "target_class": "Double Agent",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Secret Agent",
+    "material_required": "Explosive Tools",
+    "target_class": "Trap Master",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Serial Killer",
+    "material_required": "Demon Contract",
+    "target_class": "Gore Lover",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Serial Killer",
+    "material_required": "Stealth Sense",
+    "target_class": "Mafia Player",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Serial Killer",
+    "material_required": "Phantom Crystal",
+    "target_class": "Reaper",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Shadewood Knight",
+    "material_required": "Guardian Necklace",
+    "target_class": "Knight Of Ni",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Silversmith",
+    "material_required": "Guardian Necklace",
+    "target_class": "Soulsmith",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Sky Walker",
+    "material_required": "Demon Contract",
+    "target_class": "Dark Vader",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Sniper",
+    "material_required": "Phantom Crystal",
+    "target_class": "Deadshot",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Space Soldier",
+    "material_required": "Guardian Necklace",
+    "target_class": "Guardian Of The Galaxy",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Space Soldier",
+    "material_required": "Secret Training",
+    "target_class": "High Templar",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Space Soldier",
+    "material_required": "Gun",
+    "target_class": "Space Marine",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Speed Striker",
+    "material_required": "Hero Medallion",
+    "target_class": "Datuk LCW",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Spell Fencer",
+    "material_required": "Phantom Crystal",
+    "target_class": "Omni Fencer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Spin Master",
+    "material_required": "The Book Of Wisdom",
+    "target_class": "Mozart Of Table Tennis",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Star Magus",
+    "material_required": "Space Stone",
+    "target_class": "Celestial Magus",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Star Magus",
+    "material_required": "Xmas Hat",
+    "target_class": "Magus From The East",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Storm Raider",
+    "material_required": "The Ring Of Lord",
+    "target_class": "Sky Ruler",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Storm Raider",
+    "material_required": "Hero Medallion",
+    "target_class": "Storm Herald",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Storyteller",
+    "material_required": "Space Stone",
+    "target_class": "Interdimensional Narrator",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Storyteller",
+    "material_required": "Jack O Lantern",
+    "target_class": "Pied Piper",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Suicide Bomber",
+    "material_required": "Vast Experience",
+    "target_class": "The Survivor",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Suicide Bomber",
+    "material_required": "Space Stone",
+    "target_class": "World Ender",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Super Hero",
+    "material_required": "Philosopher's Stone",
+    "target_class": "The Chosen One",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Super Villain",
+    "material_required": "Tropical Sunglasses",
+    "target_class": "Flamingo Villain",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Super Villain",
+    "material_required": "Chief Necklace",
+    "target_class": "The Big Boss",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Thracian",
+    "material_required": "Champion Belt",
+    "target_class": "Arena Champion",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Trickster",
+    "material_required": "Xmas Hat",
+    "target_class": "Father Frost",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Trickster",
+    "material_required": "The Ring Of Lord",
+    "target_class": "The Mad Jester",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Trickster",
+    "material_required": "Jack O Lantern",
+    "target_class": "Vampire Queen",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Trinity Blades",
+    "material_required": "Phantom Crystal",
+    "target_class": "Infinity Blades",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Umbramancer",
+    "material_required": "Dark Spirit",
+    "target_class": "Lunamancer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Underground Fighter",
+    "material_required": "Wind Spirit",
+    "target_class": "Air Force Pilot",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Underground Fighter",
+    "material_required": "Dragon Heart",
+    "target_class": "Badguy Bounty Hunter",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Underground Fighter",
+    "material_required": "Champion Belt",
+    "target_class": "The King of Fighters",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Valkyrie",
+    "material_required": "Hero Medallion",
+    "target_class": "Grand Valkyrie",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Valkyrie",
+    "material_required": "Easter Basket",
+    "target_class": "Springs Harbinger",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Vigilante",
+    "material_required": "Shield",
+    "target_class": "Cursed Shield Hero",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Vigilante",
+    "material_required": "Legendary Crest",
+    "target_class": "Dark Hero",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Vigilante",
+    "material_required": "Phantom Crystal",
+    "target_class": "Phantom Thief",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Vigilante",
+    "material_required": "Jack O Lantern",
+    "target_class": "Social Justice Warrior",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Vigilante",
+    "material_required": "Tropical Sunglasses",
+    "target_class": "The Last Spiral",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Viking Hero",
+    "material_required": "Legendary Crest",
+    "target_class": "Viking Legend",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Warlock",
+    "material_required": "Jack O Lantern",
+    "target_class": "Dream Eater",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Warlock",
+    "material_required": "Demon Contract",
+    "target_class": "Necromancer",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Warrior Monk",
+    "material_required": "Easter Basket",
+    "target_class": "Chestnut Monk",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Warrior Monk",
+    "material_required": "Dragon Heart",
+    "target_class": "Dragon Descendant",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Warrior Monk",
+    "material_required": "Legendary Crest",
+    "target_class": "Great Sage",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Warrior Monk",
+    "material_required": "Master Proof",
+    "target_class": "Shaolin Master",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Warrior Monk",
+    "material_required": "Philosopher's Stone",
+    "target_class": "Taichi Master",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Warsmith",
+    "material_required": "Dragon Heart",
+    "target_class": "Doomsmith",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Wind Archer",
+    "material_required": "Wind Spirit",
+    "target_class": "Sonic Ranger",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Witch",
+    "material_required": "Philosopher's Stone",
+    "target_class": "Grand High Witch",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Witch",
+    "material_required": "Hero Medallion",
+    "target_class": "Karen",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Witch",
+    "material_required": "Water Spirit",
+    "target_class": "Sea Witch",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Witch",
+    "material_required": "Secret Training",
+    "target_class": "Sultry Temptress",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Witch",
+    "material_required": "Xmas Hat",
+    "target_class": "The Snow Queen",
+    "target_star_level": "5"
+  },
+  {
+    "source_class": "Zomancer",
+    "material_required": "Dragon Heart",
+    "target_class": "Dracomancer",
+    "target_star_level": "5"
+  }
+]

@@ -1,0 +1,2603 @@
+[
+  {
+    "Passive": "Strength Turn Attack",
+    "Skill": "TurnDamage",
+    "Effect": "Strength",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Deal X% Str damage to enemy in the end of turn"
+  },
+  {
+    "Passive": "Agility Turn Attack",
+    "Skill": "TurnDamage",
+    "Effect": "Intelligence",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Deal X% Agi damage to enemy in the end of turn"
+  },
+  {
+    "Passive": "Intelligence Turn Attack",
+    "Skill": "TurnDamage",
+    "Effect": "Agility",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Deal X% Int damage to enemy in the end of turn"
+  },
+  {
+    "Passive": "HP Turn Attack",
+    "Skill": "TurnDamage",
+    "Effect": "MaxHP",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Deal X% MaxHP damage to enemy in the end of turn"
+  },
+  {
+    "Passive": "Protect Turn Attack",
+    "Skill": "TurnDamage",
+    "Effect": "Protect",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Deal X% Protect damage to enemy in the end of turn"
+  },
+  {
+    "Passive": "Strength Action Attack",
+    "Skill": "ActionDamage",
+    "Effect": "Strength",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Deal X% Str damage to enemy after every actions"
+  },
+  {
+    "Passive": "Agility Action Attack",
+    "Skill": "ActionDamage",
+    "Effect": "Agility",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Deal X% Agi damage to enemy after every actions"
+  },
+  {
+    "Passive": "Intelligence Action Attack",
+    "Skill": "ActionDamage",
+    "Effect": "Intelligence",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Deal X% Int damage to enemy after every actions"
+  },
+  {
+    "Passive": "HP Action Attack",
+    "Skill": "ActionDamage",
+    "Effect": "MaxHP",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Deal X% MaxHP damage to enemy after every actions"
+  },
+  {
+    "Passive": "Protect Action Attack",
+    "Skill": "ActionDamage",
+    "Effect": "Protect",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Deal X% Protect damage to enemy after every actions"
+  },
+  {
+    "Passive": "Strength Turn Heal",
+    "Skill": "TurnHeal",
+    "Effect": "Strength",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Recover X% Str health to self in the end of turn"
+  },
+  {
+    "Passive": "Intelligence Turn Heal",
+    "Skill": "TurnHeal",
+    "Effect": "Intelligence",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Recover X% Agi health to self in the end of turn"
+  },
+  {
+    "Passive": "Agility Turn Heal",
+    "Skill": "TurnHeal",
+    "Effect": "Agility",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Recover X% Int health to self in the end of turn"
+  },
+  {
+    "Passive": "HP Turn Heal",
+    "Skill": "TurnHeal",
+    "Effect": "MaxHP",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Recover X% MaxHP health to self in the end of turn"
+  },
+  {
+    "Passive": "Protect Turn Heal",
+    "Skill": "TurnHeal",
+    "Effect": "Protect",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Recover X% Protect health to self in the end of turn"
+  },
+  {
+    "Passive": "Strength Action Heal",
+    "Skill": "ActionHeal",
+    "Effect": "Strength",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Recover X% Str health to self after every actions"
+  },
+  {
+    "Passive": "Intelligence Action Heal",
+    "Skill": "ActionHeal",
+    "Effect": "Intelligence",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Recover X% Agi health to self after every actions"
+  },
+  {
+    "Passive": "Agility Action Heal",
+    "Skill": "ActionHeal",
+    "Effect": "Agility",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Recover X% Int health to self after every actions"
+  },
+  {
+    "Passive": "HP Action Heal",
+    "Skill": "ActionHeal",
+    "Effect": "MaxHP",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Recover X% MaxHP health to self after every actions"
+  },
+  {
+    "Passive": "Protect Action Heal",
+    "Skill": "ActionHeal",
+    "Effect": "Protect",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Recover X% Protect health to self after every actions"
+  },
+  {
+    "Passive": "Strength Start Buff",
+    "Skill": "InstantBoost",
+    "Effect": "Strength",
+    "Max Stacks": "3/5",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Gain X Str buff at the start of combat"
+  },
+  {
+    "Passive": "Agility Start Buff",
+    "Skill": "InstantBoost",
+    "Effect": "Agility",
+    "Max Stacks": "3/5",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Gain X Agi buff at the start of combat"
+  },
+  {
+    "Passive": "Intelligence Start Buff",
+    "Skill": "InstantBoost",
+    "Effect": "Intelligence",
+    "Max Stacks": "3/5",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Gain X Int buff at the start of combat"
+  },
+  {
+    "Passive": "Max HP Start Buff",
+    "Skill": "InstantBoost",
+    "Effect": "MaxHP",
+    "Max Stacks": "3/5",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Gain X MaxHP buff at the start of combat"
+  },
+  {
+    "Passive": "Fire Element",
+    "Skill": "InstantBoost",
+    "Effect": "Fire",
+    "Max Stacks": "5/10",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Start the combat with X Fire  element"
+  },
+  {
+    "Passive": "Water Element",
+    "Skill": "InstantBoost",
+    "Effect": "Water",
+    "Max Stacks": "5/10",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Start the combat with X Water element"
+  },
+  {
+    "Passive": "Thunder Element",
+    "Skill": "InstantBoost",
+    "Effect": "Thunder",
+    "Max Stacks": "5/10",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Start the combat with X Thunder element"
+  },
+  {
+    "Passive": "Earth Element",
+    "Skill": "InstantBoost",
+    "Effect": "Earth",
+    "Max Stacks": "5/10",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Start the combat with X Earth element"
+  },
+  {
+    "Passive": "Wind Element",
+    "Skill": "InstantBoost",
+    "Effect": "Wind",
+    "Max Stacks": "5/10",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Start the combat with X Wind element"
+  },
+  {
+    "Passive": "Light Element",
+    "Skill": "InstantBoost",
+    "Effect": "Light",
+    "Max Stacks": "5/10",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Start the combat with X Light element"
+  },
+  {
+    "Passive": "Dark Element",
+    "Skill": "InstantBoost",
+    "Effect": "Dark",
+    "Max Stacks": "5/10",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Start the combat with X Dark element"
+  },
+  {
+    "Passive": "Pure Element",
+    "Skill": "InstantBoost",
+    "Effect": "Element",
+    "Max Stacks": "N/A",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Start the combat with X Pure element"
+  },
+  {
+    "Passive": "Damage Mitigate",
+    "Skill": "Buff",
+    "Effect": "Protect",
+    "Max Stacks": "N/A",
+    "ActiveType": "GotAttacked",
+    "PassiveType": "JobOn",
+    "Description": "Reduce damage received by 10X% while job on"
+  },
+  {
+    "Passive": "Strength Boost",
+    "Skill": "Buff",
+    "Effect": "Strength",
+    "Max Stacks": "5",
+    "ActiveType": "StatusBoost",
+    "PassiveType": "StatusBoost",
+    "Description": "Boost Str by 10X%"
+  },
+  {
+    "Passive": "Agility Boost",
+    "Skill": "Buff",
+    "Effect": "Agility",
+    "Max Stacks": "5",
+    "ActiveType": "StatusBoost",
+    "PassiveType": "StatusBoost",
+    "Description": "Boost Agi by 10X%"
+  },
+  {
+    "Passive": "Intelligence Boost",
+    "Skill": "Buff",
+    "Effect": "Intelligence",
+    "Max Stacks": "5",
+    "ActiveType": "StatusBoost",
+    "PassiveType": "StatusBoost",
+    "Description": "Boost Int by 10X%"
+  },
+  {
+    "Passive": "Max HP Boost",
+    "Skill": "Buff",
+    "Effect": "MaxHP",
+    "Max Stacks": "5",
+    "ActiveType": "StatusBoost",
+    "PassiveType": "StatusBoost",
+    "Description": "Boost MaxHP by 10X%"
+  },
+  {
+    "Passive": "Add Action",
+    "Skill": "Buff",
+    "Effect": "Action",
+    "Max Stacks": "N/A",
+    "ActiveType": "StatusBoost",
+    "PassiveType": "StatusBoost",
+    "Description": "Add self X to default action"
+  },
+  {
+    "Passive": "Add Draw",
+    "Skill": "Buff",
+    "Effect": "Draw",
+    "Max Stacks": "N/A",
+    "ActiveType": "StatusBoost",
+    "PassiveType": "StatusBoost",
+    "Description": "Add self X to default draw"
+  },
+  {
+    "Passive": "Strength Nerf",
+    "Skill": "Debuff",
+    "Effect": "Strength",
+    "Max Stacks": "5",
+    "ActiveType": "StatusBoost",
+    "PassiveType": "StatusBoost",
+    "Description": "Reduce Str by 10X%"
+  },
+  {
+    "Passive": "Agility Nerf",
+    "Skill": "Debuff",
+    "Effect": "Agility",
+    "Max Stacks": "5",
+    "ActiveType": "StatusBoost",
+    "PassiveType": "StatusBoost",
+    "Description": "Reduce Agi by 10X%"
+  },
+  {
+    "Passive": "Intelligence Nerf",
+    "Skill": "Debuff",
+    "Effect": "Intelligence",
+    "Max Stacks": "5",
+    "ActiveType": "StatusBoost",
+    "PassiveType": "StatusBoost",
+    "Description": "Reduce Int by 10X%"
+  },
+  {
+    "Passive": "Max HP Nerf",
+    "Skill": "Debuff",
+    "Effect": "MaxHP",
+    "Max Stacks": "5",
+    "ActiveType": "StatusBoost",
+    "PassiveType": "StatusBoost",
+    "Description": "Reduce MaxHP by 10X%"
+  },
+  {
+    "Passive": "Reduce Action",
+    "Skill": "Debuff",
+    "Effect": "Action",
+    "Max Stacks": "N/A",
+    "ActiveType": "StatusBoost",
+    "PassiveType": "StatusBoost",
+    "Description": "Reduce self X action"
+  },
+  {
+    "Passive": "Reduce Draw",
+    "Skill": "Debuff",
+    "Effect": "Draw",
+    "Max Stacks": "N/A",
+    "ActiveType": "StatusBoost",
+    "PassiveType": "StatusBoost",
+    "Description": "Reduce self X draw"
+  },
+  {
+    "Passive": "Strength Protect",
+    "Skill": "Protect",
+    "Effect": "Strength",
+    "Max Stacks": "N/A",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Start combat with a X% Str Protect"
+  },
+  {
+    "Passive": "Agility Protect",
+    "Skill": "Protect",
+    "Effect": "Agility",
+    "Max Stacks": "N/A",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Start combat with a X% Agi Protect"
+  },
+  {
+    "Passive": "Intelligence Protect",
+    "Skill": "Protect",
+    "Effect": "Intelligence",
+    "Max Stacks": "N/A",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Start combat with a X% Int Protect"
+  },
+  {
+    "Passive": "HP Protect",
+    "Skill": "Protect",
+    "Effect": "MaxHP",
+    "Max Stacks": "N/A",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Start combat with a X% MaxHP Protect"
+  },
+  {
+    "Passive": "Second Chance",
+    "Skill": "Protect",
+    "Effect": "Guard",
+    "Max Stacks": "2",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Gain X Second Chance at the start of combat"
+  },
+  {
+    "Passive": "Burn Immune",
+    "Skill": "Protect",
+    "Effect": "Fire",
+    "Max Stacks": "1",
+    "ActiveType": "GotBuff",
+    "PassiveType": "JobOn",
+    "Description": "Immune to Burn"
+  },
+  {
+    "Passive": "Chill Immune",
+    "Skill": "Protect",
+    "Effect": "Water",
+    "Max Stacks": "1",
+    "ActiveType": "GotBuff",
+    "PassiveType": "JobOn",
+    "Description": "Immune to Chill"
+  },
+  {
+    "Passive": "Paralysis immune",
+    "Skill": "Protect",
+    "Effect": "Thunder",
+    "Max Stacks": "1",
+    "ActiveType": "GotBuff",
+    "PassiveType": "JobOn",
+    "Description": "Immune to Paralysis"
+  },
+  {
+    "Passive": "Seed Immune",
+    "Skill": "Protect",
+    "Effect": "Earth",
+    "Max Stacks": "1",
+    "ActiveType": "GotBuff",
+    "PassiveType": "JobOn",
+    "Description": "Immune to Seed"
+  },
+  {
+    "Passive": "Dizzy Immune",
+    "Skill": "Protect",
+    "Effect": "Wind",
+    "Max Stacks": "1",
+    "ActiveType": "GotBuff",
+    "PassiveType": "JobOn",
+    "Description": "Immune to Dizzy"
+  },
+  {
+    "Passive": "Blind Immune",
+    "Skill": "Protect",
+    "Effect": "Light",
+    "Max Stacks": "1",
+    "ActiveType": "GotBuff",
+    "PassiveType": "JobOn",
+    "Description": "Immune to Blind"
+  },
+  {
+    "Passive": "Depress Immune",
+    "Skill": "Protect",
+    "Effect": "Dark",
+    "Max Stacks": "1",
+    "ActiveType": "GotBuff",
+    "PassiveType": "JobOn",
+    "Description": "Immune to Depress"
+  },
+  {
+    "Passive": "Bleed Immune",
+    "Skill": "Protect",
+    "Effect": "Bleed",
+    "Max Stacks": "1",
+    "ActiveType": "GotBuff",
+    "PassiveType": "JobOn",
+    "Description": "Immune to Bleed"
+  },
+  {
+    "Passive": "Injury Immune",
+    "Skill": "Protect",
+    "Effect": "Injury",
+    "Max Stacks": "1",
+    "ActiveType": "GotBuff",
+    "PassiveType": "JobOn",
+    "Description": "Immune to Injury"
+  },
+  {
+    "Passive": "Venomed Immune",
+    "Skill": "Protect",
+    "Effect": "Venom",
+    "Max Stacks": "1",
+    "ActiveType": "GotBuff",
+    "PassiveType": "JobOn",
+    "Description": "Immune to Venom"
+  },
+  {
+    "Passive": "Restrained Immune",
+    "Skill": "Protect",
+    "Effect": "Restrain",
+    "Max Stacks": "1",
+    "ActiveType": "GotBuff",
+    "PassiveType": "JobOn",
+    "Description": "Immune to Restrain"
+  },
+  {
+    "Passive": "Insane Immune",
+    "Skill": "Protect",
+    "Effect": "Insane",
+    "Max Stacks": "1",
+    "ActiveType": "GotBuff",
+    "PassiveType": "JobOn",
+    "Description": "Immune to Insane"
+  },
+  {
+    "Passive": "Element Status Immnue",
+    "Skill": "Protect",
+    "Effect": "Element",
+    "Max Stacks": "1",
+    "ActiveType": "GotBuff",
+    "PassiveType": "JobOn",
+    "Description": "Immune to elemental status effects: 0 = Common Elements, 1 = Special Elements, 2 = all"
+  },
+  {
+    "Passive": "Debuff Immnue",
+    "Skill": "Protect",
+    "Effect": "Debuff",
+    "Max Stacks": "N/A",
+    "ActiveType": "GotBuff",
+    "PassiveType": "JobOn",
+    "Description": "Immune to stat debuff"
+  },
+  {
+    "Passive": "Strength Counter",
+    "Skill": "Reflect",
+    "Effect": "Strength",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterGotAttack",
+    "PassiveType": "JobOn",
+    "Description": "When attacked, reflect X% Str damage to enemy"
+  },
+  {
+    "Passive": "Agility Counter",
+    "Skill": "Reflect",
+    "Effect": "Agility",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterGotAttack",
+    "PassiveType": "JobOn",
+    "Description": "When attacked, reflect X% Agi damage to enemy"
+  },
+  {
+    "Passive": "Intelligence Counter",
+    "Skill": "Reflect",
+    "Effect": "Intelligence",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterGotAttack",
+    "PassiveType": "JobOn",
+    "Description": "When attacked, reflect X% Int damage to enemy"
+  },
+  {
+    "Passive": "HP Counter",
+    "Skill": "Reflect",
+    "Effect": "MaxHP",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterGotAttack",
+    "PassiveType": "JobOn",
+    "Description": "When attacked, reflect X% MaxHP damage to enemy"
+  },
+  {
+    "Passive": "Protect Counter",
+    "Skill": "Reflect",
+    "Effect": "Protect",
+    "Max Stacks": "N/A",
+    "ActiveType": "GotAttacked",
+    "PassiveType": "JobOn",
+    "Description": "When attacked, take the protect removed as reflect damage back to the enemies"
+  },
+  {
+    "Passive": "Burn Reflect",
+    "Skill": "Reflect",
+    "Effect": "Fire",
+    "Max Stacks": "N/A",
+    "ActiveType": "GotBuff",
+    "PassiveType": "JobOn",
+    "Description": "Enemy gain the same Burn effect stacks as you if they cast it on you"
+  },
+  {
+    "Passive": "Chill Reflect",
+    "Skill": "Reflect",
+    "Effect": "Water",
+    "Max Stacks": "N/A",
+    "ActiveType": "GotBuff",
+    "PassiveType": "JobOn",
+    "Description": "Enemy gain the same Chill effect stacks as you if they cast it on you"
+  },
+  {
+    "Passive": "Paralysis Reflect",
+    "Skill": "Reflect",
+    "Effect": "Thunder",
+    "Max Stacks": "N/A",
+    "ActiveType": "GotBuff",
+    "PassiveType": "JobOn",
+    "Description": "Enemy gain the same Paralysis stacks as you if they cast it on you"
+  },
+  {
+    "Passive": "Seed Reflect",
+    "Skill": "Reflect",
+    "Effect": "Earth",
+    "Max Stacks": "N/A",
+    "ActiveType": "GotBuff",
+    "PassiveType": "JobOn",
+    "Description": "Enemy gain the same Seed effect stacks as you if they cast it on you"
+  },
+  {
+    "Passive": "Dizzy Reflect",
+    "Skill": "Reflect",
+    "Effect": "Wind",
+    "Max Stacks": "N/A",
+    "ActiveType": "GotBuff",
+    "PassiveType": "JobOn",
+    "Description": "Enemy gain the same Dizzy effect stacks as you if they cast it on you"
+  },
+  {
+    "Passive": "Blind Reflect",
+    "Skill": "Reflect",
+    "Effect": "Light",
+    "Max Stacks": "N/A",
+    "ActiveType": "GotBuff",
+    "PassiveType": "JobOn",
+    "Description": "Enemy gain the same Blind effect stacks as you if they cast it on you"
+  },
+  {
+    "Passive": "Depress Reflect",
+    "Skill": "Reflect",
+    "Effect": "Dark",
+    "Max Stacks": "N/A",
+    "ActiveType": "GotBuff",
+    "PassiveType": "JobOn",
+    "Description": "Enemy gain the same Depress effect stacks as you if they cast it on you"
+  },
+  {
+    "Passive": "Status Effects Reflect",
+    "Skill": "Reflect",
+    "Effect": "Element",
+    "Max Stacks": "N/A",
+    "ActiveType": "GotBuff",
+    "PassiveType": "JobOn",
+    "Description": "Enemy gain the same Elemental status effect stacks as you if they cast it on you"
+  },
+  {
+    "Passive": "Bleeding Counter",
+    "Skill": "Reflect",
+    "Effect": "Bleed",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterGotAttack",
+    "PassiveType": "JobOn",
+    "Description": "Enemy gain X Bleed for damaging you"
+  },
+  {
+    "Passive": "Injured Counter",
+    "Skill": "Reflect",
+    "Effect": "Injury",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterGotAttack",
+    "PassiveType": "JobOn",
+    "Description": "Enemy gain X Injury for damaging you"
+  },
+  {
+    "Passive": "Venom Counter",
+    "Skill": "Reflect",
+    "Effect": "Venom",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterGotAttack",
+    "PassiveType": "JobOn",
+    "Description": "Enemy gain X Venom for damaging you"
+  },
+  {
+    "Passive": "Restrain Counter",
+    "Skill": "Reflect",
+    "Effect": "Restrain",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterGotAttack",
+    "PassiveType": "JobOn",
+    "Description": "Enemy gain X Restrain for damaging you"
+  },
+  {
+    "Passive": "Insane Counter",
+    "Skill": "Reflect",
+    "Effect": "Insane",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterGotAttack",
+    "PassiveType": "JobOn",
+    "Description": "Enemy gain X Insane for damaging you"
+  },
+  {
+    "Passive": "Rage",
+    "Skill": "Sacrifice",
+    "Effect": "Charge",
+    "Max Stacks": "Infi",
+    "ActiveType": "AttackEffect",
+    "PassiveType": "AlwaysActive",
+    "Description": "For every damage you deal to the enemy,  gain or stack buff: Boost damage dealt by 0.5X% . (Remove at turn end. Damage boost cap at 15%/30% if has 10 or more Rage stacks)"
+  },
+  {
+    "Passive": "Instinct",
+    "Skill": "Sacrifice",
+    "Effect": "Guard",
+    "Max Stacks": "Infi",
+    "ActiveType": "GotAttacked",
+    "PassiveType": "AlwaysActive",
+    "Description": "For every direct damage you take, gain or stack buff: Reduce direct damage received by 1X% . (Remove at turn start. Damage reduction cap at 15%/30% if has 10 or more Instinct stacks)"
+  },
+  {
+    "Passive": "Protective Heal",
+    "Skill": "Heal",
+    "Effect": "Guard",
+    "Max Stacks": "4",
+    "ActiveType": "AfterHeal",
+    "PassiveType": "AlwaysActive",
+    "Description": "25% of excess Heal become protect on self per stack"
+  },
+  {
+    "Passive": "Aggressive Heal",
+    "Skill": "Heal",
+    "Effect": "Charge",
+    "Max Stacks": "4",
+    "ActiveType": "AfterHeal",
+    "PassiveType": "AlwaysActive",
+    "Description": "25% of excess Heal become damage to enemy per stack"
+  },
+  {
+    "Passive": "Burned",
+    "Skill": "InstantNerf",
+    "Effect": "Fire",
+    "Max Stacks": "N/A",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Gain X Burn at the start of combat"
+  },
+  {
+    "Passive": "Chill",
+    "Skill": "InstantNerf",
+    "Effect": "Water",
+    "Max Stacks": "N/A",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Gain X Chill at the start of combat"
+  },
+  {
+    "Passive": "Paralyed",
+    "Skill": "InstantNerf",
+    "Effect": "Thunder",
+    "Max Stacks": "N/A",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Gain X Paralysis at the start of combat"
+  },
+  {
+    "Passive": "Seeded",
+    "Skill": "InstantNerf",
+    "Effect": "Earth",
+    "Max Stacks": "N/A",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Gain X Seed at the start of combat"
+  },
+  {
+    "Passive": "Dizzy",
+    "Skill": "InstantNerf",
+    "Effect": "Wind",
+    "Max Stacks": "N/A",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Gain X Dizzy at the start of combat"
+  },
+  {
+    "Passive": "Blinded",
+    "Skill": "InstantNerf",
+    "Effect": "Light",
+    "Max Stacks": "N/A",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Gain X Blind at the start of combat"
+  },
+  {
+    "Passive": "Depress",
+    "Skill": "InstantNerf",
+    "Effect": "Dark",
+    "Max Stacks": "N/A",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Gain X Depress at the start of combat"
+  },
+  {
+    "Passive": "Bleeding",
+    "Skill": "InstantNerf",
+    "Effect": "Bleed",
+    "Max Stacks": "N/A",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Gain X Bleed at the start of combat"
+  },
+  {
+    "Passive": "Injured",
+    "Skill": "InstantNerf",
+    "Effect": "Injury",
+    "Max Stacks": "N/A",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Gain X Injury at the start of combat"
+  },
+  {
+    "Passive": "Venomed",
+    "Skill": "InstantNerf",
+    "Effect": "Venom",
+    "Max Stacks": "N/A",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Gain X Venom at the start of combat"
+  },
+  {
+    "Passive": "Restrained",
+    "Skill": "InstantNerf",
+    "Effect": "Restrain",
+    "Max Stacks": "N/A",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Gain X Restrain at the start of combat"
+  },
+  {
+    "Passive": "Insane",
+    "Skill": "InstantNerf",
+    "Effect": "Insane",
+    "Max Stacks": "N/A",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Gain X Insane at the start of combat"
+  },
+  {
+    "Passive": "Cursed",
+    "Skill": "InstantNerf",
+    "Effect": "Element",
+    "Max Stacks": "N/A",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Gain X random elemental status effect at the start of combat"
+  },
+  {
+    "Passive": "Weak Strength",
+    "Skill": "InstantNerf",
+    "Effect": "Strength",
+    "Max Stacks": "N/A",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Start combat with X Str debuff"
+  },
+  {
+    "Passive": "Weak Agility",
+    "Skill": "InstantNerf",
+    "Effect": "Agility",
+    "Max Stacks": "N/A",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Start combat with X Agi debuff"
+  },
+  {
+    "Passive": "Weak Intelligence",
+    "Skill": "InstantNerf",
+    "Effect": "Intelligence",
+    "Max Stacks": "N/A",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Start combat with X Int debuff"
+  },
+  {
+    "Passive": "Weak MaxHP",
+    "Skill": "InstantNerf",
+    "Effect": "MaxHP",
+    "Max Stacks": "N/A",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Start combat with X MaxHP debuff"
+  },
+  {
+    "Passive": "Strength Master",
+    "Skill": "Upgrade",
+    "Effect": "Strength",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "1 Stack: Increase Str buff max stack,  required combo -1\n2 Stacks: Increase Str Act buff max stack. Whenever your ability deck is shuffled, all drawn abilities will be of the Str type.\n3 Stacks: Ability that doesn't give any stat combo will now give 1 Str combo."
+  },
+  {
+    "Passive": "Agility Master",
+    "Skill": "Upgrade",
+    "Effect": "Agility",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "1 Stack: Increase Agi buff max stack,  required combo -1\n2 Stacks: Increase Agi Act buff max stack. Whenever your ability deck is shuffled, all drawn abilities will be of the Agi type.\n3 Stacks: Ability that doesn't give any stat combo will now give 1 Agi combo."
+  },
+  {
+    "Passive": "Intelligence Master",
+    "Skill": "Upgrade",
+    "Effect": "Intelligence",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "1 Stack: Increase Int buff max stack,  required combo -1\n2 Stacks: Increase Int Act buff max stack. Whenever your ability deck is shuffled, all drawn abilities will be of the Int type.\n3 Stacks: Ability that doesn't give any stat combo will now give 1 Int combo."
+  },
+  {
+    "Passive": "MaxHP Master",
+    "Skill": "Upgrade",
+    "Effect": "MaxHP",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "1 Stack: Increase MaxHP buff max stack,  required combo -1\n2 Stacks: Increase MaxHP Act buff max stack. Whenever your ability deck is shuffled, all drawn abilities will be of the MaxHP type.\n3 Stacks: Ability that doesn't give any stat combo will now give 1 MaxHP combo."
+  },
+  {
+    "Passive": "Protect Master",
+    "Skill": "Upgrade",
+    "Effect": "Protect",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Increase Max Protect amount and Protect Enhance max stacks"
+  },
+  {
+    "Passive": "Debuff Master",
+    "Skill": "Upgrade",
+    "Effect": "Debuff",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Max stack increase for stat debuff, act debuff, Venom, Restrain and Insane. At the start of each turn, apply 1 stack of Injury to the opponent."
+  },
+  {
+    "Passive": "Combo Master",
+    "Skill": "Upgrade",
+    "Effect": "Combo",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "All Stat combo required decrease. Combo blend effect increased by 1 (Excluding after each action passives' combo)"
+  },
+  {
+    "Passive": "Skill Stack Master",
+    "Skill": "Upgrade",
+    "Effect": "Multiply",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Max stack increase for turn Charge, Practice Perfect, Focus Energy and Desperate Power"
+  },
+  {
+    "Passive": "Charge Master",
+    "Skill": "Upgrade",
+    "Effect": "Charge",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Upgrade Charge and Stack Charge"
+  },
+  {
+    "Passive": "Guard Master",
+    "Skill": "Upgrade",
+    "Effect": "Guard",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Upgrad Guard and Stack Guard"
+  },
+  {
+    "Passive": "Life Steal Master",
+    "Skill": "Upgrade",
+    "Effect": "LifeSteal",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Normal attack gain 25% LifeSteal, life steal skills effect x2"
+  },
+  {
+    "Passive": "Humanoid Expert",
+    "Skill": "Upgrade",
+    "Effect": "Humanoid",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Apply humanoid expert to every attack and heal, increase existing humanoind ability's effect to 40%"
+  },
+  {
+    "Passive": "Spirit Expert",
+    "Skill": "Upgrade",
+    "Effect": "Spirit",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Apply spirit expert to every attack and heal, increase existing spirit ability's effect to 40%"
+  },
+  {
+    "Passive": "Beast Expert",
+    "Skill": "Upgrade",
+    "Effect": "Creature",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Apply beast expert to every attack and heal, increase existing beast ability's effect to 40%"
+  },
+  {
+    "Passive": "Inorganic Expert",
+    "Skill": "Upgrade",
+    "Effect": "Matter",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Apply inorganic expert to every attack and heal, increase existing inorganic ability's effect to 40%"
+  },
+  {
+    "Passive": "Element Master",
+    "Skill": "Upgrade",
+    "Effect": "Element",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Max stack increase for all elemental buff, gain a pure element in the end of turn"
+  },
+  {
+    "Passive": "Fire Master",
+    "Skill": "Upgrade",
+    "Effect": "Fire",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Increase max stack for Fire, Burn and element boost"
+  },
+  {
+    "Passive": "Water Master",
+    "Skill": "Upgrade",
+    "Effect": "Water",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Increase max stack for Water, Chill and element boost"
+  },
+  {
+    "Passive": "Thunder Master",
+    "Skill": "Upgrade",
+    "Effect": "Thunder",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Increase max stack for Thunder and Paralysis and element boost"
+  },
+  {
+    "Passive": "Earth Master",
+    "Skill": "Upgrade",
+    "Effect": "Earth",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Increase max stack for Earth, Seed and element boost"
+  },
+  {
+    "Passive": "Wind Master",
+    "Skill": "Upgrade",
+    "Effect": "Wind",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Increase max stack for Wind, Dizzy and element boost"
+  },
+  {
+    "Passive": "Light Master",
+    "Skill": "Upgrade",
+    "Effect": "Light",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Increase max stack for Light, Blind and element boost"
+  },
+  {
+    "Passive": "Dark Master",
+    "Skill": "Upgrade",
+    "Effect": "Dark",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Increase max stack for Dark, Depress and element boost"
+  },
+  {
+    "Passive": "Bleed Master",
+    "Skill": "Upgrade",
+    "Effect": "Bleed",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Increase Bleed max stacks, trigger bleed damage on inflict."
+  },
+  {
+    "Passive": "Injury Master",
+    "Skill": "Upgrade",
+    "Effect": "Injury",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Increase Injury max stacks. Whenever an attacking ability is used and deals damage, there is a 50% chance to apply 1 stack of Injury to the opponent."
+  },
+  {
+    "Passive": "Curse Master",
+    "Skill": "Upgrade",
+    "Effect": "Curse",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Cursed skills can be discarded for action, remove all negative effect on self from curse abilities. Reduce loose 20% MaxHP by using any none exhaust or curse abilities. Able to skip optional curses."
+  },
+  {
+    "Passive": "Invulnerable",
+    "Skill": "Protect",
+    "Effect": "Direct",
+    "Max Stacks": "0/1/2/3",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AlwaysActive",
+    "Description": "Gain Invulnerable buff when HP reached 49% =1, 29% =2, 0 = Start the combat with Invulnerable buff if HP is full, 3 = Start the combat with Invuln buff if HP is less than 50%"
+  },
+  {
+    "Passive": "Start Charge",
+    "Skill": "InstantBoost",
+    "Effect": "Charge",
+    "Max Stacks": "3",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Start the combat with Charge, Stack Charge or Both (Multiplier 1, 2 or 3)"
+  },
+  {
+    "Passive": "Start Guard",
+    "Skill": "InstantBoost",
+    "Effect": "Guard",
+    "Max Stacks": "3",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Start the combat with both Guard,  Stack Guard or Both (Multiplier 1, 2 or 3)"
+  },
+  {
+    "Passive": "After Action Venom",
+    "Skill": "ActionDebuff",
+    "Effect": "Venom",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Apply X Venom to enemy after every actions"
+  },
+  {
+    "Passive": "After Action Restrain",
+    "Skill": "ActionDebuff",
+    "Effect": "Restrain",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Apply X Restrain to enemy after every actions"
+  },
+  {
+    "Passive": "After Action Insane",
+    "Skill": "ActionDebuff",
+    "Effect": "Insane",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Apply X Insane to enemy after every actions"
+  },
+  {
+    "Passive": "Venom Absorption",
+    "Skill": "Drain",
+    "Effect": "Venom",
+    "Max Stacks": "N/A",
+    "ActiveType": "GotBuff",
+    "PassiveType": "JobOn",
+    "Description": "On receiving Venom, heal for 10% self Str and Str Instant boost per stack"
+  },
+  {
+    "Passive": "Restrain Absorption",
+    "Skill": "Drain",
+    "Effect": "Restrain",
+    "Max Stacks": "N/A",
+    "ActiveType": "GotBuff",
+    "PassiveType": "JobOn",
+    "Description": "On receiving Restrain, heal for 10% self Agi and Agi Instant boost per stack"
+  },
+  {
+    "Passive": "Insane Absorption",
+    "Skill": "Drain",
+    "Effect": "Insane",
+    "Max Stacks": "N/A",
+    "ActiveType": "GotBuff",
+    "PassiveType": "JobOn",
+    "Description": "On receiving Insane, heal for 10% self Int and Int Instant boost per stack"
+  },
+  {
+    "Passive": "Jack-of-all-Trades",
+    "Skill": "Upgrade",
+    "Effect": "Null",
+    "Max Stacks": "N/A",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "For player, increase [Raw] damage, heal and Protect values (without stat multipliers) by 15% based on the hero's level / For enemy monsters, the value increased by 3% instead based on their levels."
+  },
+  {
+    "Passive": "Auto Protect",
+    "Skill": "Protect",
+    "Effect": "LifeSteal",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterGotAttack",
+    "PassiveType": "JobOn",
+    "Description": "When attacked, gain protect equal to 10X% of damage received"
+  },
+  {
+    "Passive": "Gold Digger",
+    "Skill": "Buff",
+    "Effect": "Gold",
+    "Max Stacks": "N/A",
+    "ActiveType": "Grind",
+    "PassiveType": "Grind",
+    "Description": "Increase gold gain by 10% (Stack with secondary character)"
+  },
+  {
+    "Passive": "Crystal Digger",
+    "Skill": "Buff",
+    "Effect": "Crystal",
+    "Max Stacks": "N/A",
+    "ActiveType": "Grind",
+    "PassiveType": "Grind",
+    "Description": "Increase crystal gain by 10% (Stack with secondary character)"
+  },
+  {
+    "Passive": "Reflect Master",
+    "Skill": "Upgrade",
+    "Effect": "Reflect",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Can reflect with protect on, Protect Reflect deal double damage"
+  },
+  {
+    "Passive": "Stack Str",
+    "Skill": "ActionBuff",
+    "Effect": "Strength",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Gain X Str Action Buff in the end of every action."
+  },
+  {
+    "Passive": "Stack Agi",
+    "Skill": "ActionBuff",
+    "Effect": "Intelligence",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Gain X Agi Action Buff in the end of every action."
+  },
+  {
+    "Passive": "Stack Int",
+    "Skill": "ActionBuff",
+    "Effect": "Agility",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Gain X Int Action Buff in the end of every action."
+  },
+  {
+    "Passive": "Stack MaxHP",
+    "Skill": "ActionBuff",
+    "Effect": "MaxHP",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Gain X MaxHP Action Buff in the end of every action."
+  },
+  {
+    "Passive": "Str Drain",
+    "Skill": "Drain",
+    "Effect": "Strength",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterGotAttack",
+    "PassiveType": "JobOn",
+    "Description": "When hit by Str attack, gain X Str Action Buff and inflict X Str Action Debuff to the opponent in the end of opponent's action"
+  },
+  {
+    "Passive": "Agi Drain",
+    "Skill": "Drain",
+    "Effect": "Agility",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterGotAttack",
+    "PassiveType": "JobOn",
+    "Description": "When hit by Agi attack, gain X Agi Action Buff and inflict X Agi Action Debuff to the opponent in the end of opponent's action"
+  },
+  {
+    "Passive": "Int Drain",
+    "Skill": "Drain",
+    "Effect": "Intelligence",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterGotAttack",
+    "PassiveType": "JobOn",
+    "Description": "When hit by Int attack, gain X Int Action Buff and inflict X Int Action Debuff to the opponent in the end of opponent's action"
+  },
+  {
+    "Passive": "MaxHP Drain",
+    "Skill": "Drain",
+    "Effect": "MaxHP",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterGotAttack",
+    "PassiveType": "JobOn",
+    "Description": "When hit by MaxHP attack, gain X MaxHP Action Buff and inflict X MaxHP Action Debuff to the opponent in the end of opponent's action"
+  },
+  {
+    "Passive": "Tenacity",
+    "Skill": "Protect",
+    "Effect": "Delay",
+    "Max Stacks": "N/A",
+    "ActiveType": "GotBuff",
+    "PassiveType": "AlwaysActive",
+    "Description": "Half any damage over time effects received. (Burn, Venom, Restrain, Insane, Bleed)"
+  },
+  {
+    "Passive": "Turn End Inflict Bleed",
+    "Skill": "TurnDebuff",
+    "Effect": "Bleed",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Inflict X Bleed to the opponent in the end of turn"
+  },
+  {
+    "Passive": "Turn End Inflict Injury",
+    "Skill": "TurnDebuff",
+    "Effect": "Injury",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Inflict X Injury to the opponent in the end of turn"
+  },
+  {
+    "Passive": "Confused",
+    "Skill": "InstantNerf",
+    "Effect": "Confuse",
+    "Max Stacks": "3",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Gain X Confuse at the start of combat"
+  },
+  {
+    "Passive": "Slacking",
+    "Skill": "InstantNerf",
+    "Effect": "Slack",
+    "Max Stacks": "2",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Gain X Slack at the start of combat"
+  },
+  {
+    "Passive": "Swindler Odds",
+    "Skill": "Buff",
+    "Effect": "Dice",
+    "Max Stacks": "1",
+    "ActiveType": "BeforeAction",
+    "PassiveType": "AlwaysActive",
+    "Description": "During battle, dice side+1 if you roll anything from 2 to 4"
+  },
+  {
+    "Passive": "Ruler Of Luck",
+    "Skill": "Upgrade",
+    "Effect": "Dice",
+    "Max Stacks": "1",
+    "ActiveType": "BeforeAction",
+    "PassiveType": "AlwaysActive",
+    "Description": "Reroll the dice once if you get a side of 1 or 2. Paralysi, Dizzy and Blind is 1 less stack effective."
+  },
+  {
+    "Passive": "Before Dawn",
+    "Skill": "Sacrifice",
+    "Effect": "Exhaust",
+    "Max Stacks": "1",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "AlwaysActive",
+    "Description": "While this passive is active, trigger Sudden Death on turn 5 for player, and turn 1 for enemy instead of turn 20."
+  },
+  {
+    "Passive": "Empathic Masochism",
+    "Skill": "Sacrifice",
+    "Effect": "Curse",
+    "Max Stacks": "1",
+    "ActiveType": "OnAction",
+    "PassiveType": "AlwaysActive",
+    "Description": "When using abilities that lose HP, half of the damage will goes to the opponent. (Except instant kill damage)"
+  },
+  {
+    "Passive": "Element Talent",
+    "Skill": "Buff",
+    "Effect": "Element",
+    "Max Stacks": "5/10",
+    "ActiveType": "Multtiple",
+    "PassiveType": "AlwaysActive",
+    "Description": "Buff all element damage and heal by 5X%"
+  },
+  {
+    "Passive": "Fire Talent",
+    "Skill": "Buff",
+    "Effect": "Fire",
+    "Max Stacks": "5/10",
+    "ActiveType": "Multtiple",
+    "PassiveType": "AlwaysActive",
+    "Description": "Buff Fire damage and heal by 5X%"
+  },
+  {
+    "Passive": "Water Talent",
+    "Skill": "Buff",
+    "Effect": "Water",
+    "Max Stacks": "5/10",
+    "ActiveType": "Multtiple",
+    "PassiveType": "AlwaysActive",
+    "Description": "Buff Water damage and heal by 5X%"
+  },
+  {
+    "Passive": "Thunder Talent",
+    "Skill": "Buff",
+    "Effect": "Thunder",
+    "Max Stacks": "5/10",
+    "ActiveType": "Multtiple",
+    "PassiveType": "AlwaysActive",
+    "Description": "Buff Thunder damage and heal by 5X%"
+  },
+  {
+    "Passive": "Earth Talent",
+    "Skill": "Buff",
+    "Effect": "Earth",
+    "Max Stacks": "5/10",
+    "ActiveType": "Multtiple",
+    "PassiveType": "AlwaysActive",
+    "Description": "Buff Earth damage and heal by 5X%"
+  },
+  {
+    "Passive": "Wind Talent",
+    "Skill": "Buff",
+    "Effect": "Wind",
+    "Max Stacks": "5/10",
+    "ActiveType": "Multtiple",
+    "PassiveType": "AlwaysActive",
+    "Description": "Buff Wind damage and heal by 5X%"
+  },
+  {
+    "Passive": "Light Talent",
+    "Skill": "Buff",
+    "Effect": "Light",
+    "Max Stacks": "5/10",
+    "ActiveType": "Multtiple",
+    "PassiveType": "AlwaysActive",
+    "Description": "Buff Light damage and heal by 5X%"
+  },
+  {
+    "Passive": "Dark Talent",
+    "Skill": "Buff",
+    "Effect": "Dark",
+    "Max Stacks": "5/10",
+    "ActiveType": "Multtiple",
+    "PassiveType": "AlwaysActive",
+    "Description": "Buff Dark damage and heal by 5X%"
+  },
+  {
+    "Passive": "After Act Fire Combo",
+    "Skill": "ActionBuff",
+    "Effect": "Fire",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Give X Fire combo stacks after every action"
+  },
+  {
+    "Passive": "After Act Water Combo",
+    "Skill": "ActionBuff",
+    "Effect": "Water",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Give X Water combo stacks after every action"
+  },
+  {
+    "Passive": "After Act Thunder Combo",
+    "Skill": "ActionBuff",
+    "Effect": "Thunder",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Give X Thunder combo stacks after every action"
+  },
+  {
+    "Passive": "After Act Earth Combo",
+    "Skill": "ActionBuff",
+    "Effect": "Earth",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Give X Earth combo stacks after every action"
+  },
+  {
+    "Passive": "After Act Wind Combo",
+    "Skill": "ActionBuff",
+    "Effect": "Wind",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Give X Wind combo stacks after every action"
+  },
+  {
+    "Passive": "After Act Light Combo",
+    "Skill": "ActionBuff",
+    "Effect": "Light",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Give X Light combo stacks after every action"
+  },
+  {
+    "Passive": "After Act Dark Combo",
+    "Skill": "ActionBuff",
+    "Effect": "Dark",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Give X Dark combo stacks after every action"
+  },
+  {
+    "Passive": "Combo Fire Act Buff",
+    "Skill": "Combo",
+    "Effect": "Fire",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "AlwaysActive",
+    "Description": "Give X Fire action buff on every Fire combo trigger"
+  },
+  {
+    "Passive": "Combo Water Act Buff",
+    "Skill": "Combo",
+    "Effect": "Water",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "AlwaysActive",
+    "Description": "Give X Water action buff on every Water combo trigger"
+  },
+  {
+    "Passive": "Combo Thunder Act Buff",
+    "Skill": "Combo",
+    "Effect": "Thunder",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "AlwaysActive",
+    "Description": "Give X Thunder action buff on every Thunder combo trigger"
+  },
+  {
+    "Passive": "Combo Earth Act Buff",
+    "Skill": "Combo",
+    "Effect": "Earth",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "AlwaysActive",
+    "Description": "Give X Earth action buff on every Earth combo trigger"
+  },
+  {
+    "Passive": "Combo Wind Act Buff",
+    "Skill": "Combo",
+    "Effect": "Wind",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "AlwaysActive",
+    "Description": "Give X Wind action buff on every Wind combo trigger"
+  },
+  {
+    "Passive": "Combo Light Act Buff",
+    "Skill": "Combo",
+    "Effect": "Light",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "AlwaysActive",
+    "Description": "Give X Light action buff on every Light combo trigger"
+  },
+  {
+    "Passive": "Combo Dark Act Buff",
+    "Skill": "Combo",
+    "Effect": "Dark",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "AlwaysActive",
+    "Description": "Give X Dark action buff on every Dark combo trigger"
+  },
+  {
+    "Passive": "Babel",
+    "Skill": "Sacrifice",
+    "Effect": "Protect",
+    "Max Stacks": "N/A",
+    "ActiveType": "OnAction",
+    "PassiveType": "AlwaysActive",
+    "Description": "Allow Protect gain up to 3 times of the original limit. Inflict a Confuse debuff on self whenever user gain Protect above the original limit. The Protect gained above the original limit will be removed at the start of turn. Protect attack and heal will now consume all of the {0} used."
+  },
+  {
+    "Passive": "Turn End Inflict Burn",
+    "Skill": "TurnDebuff",
+    "Effect": "Fire",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Inflict X Burn to the opponent in the end of turn"
+  },
+  {
+    "Passive": "Turn End Inflict Chill",
+    "Skill": "TurnDebuff",
+    "Effect": "Water",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Inflict X Chill to the opponent in the end of turn"
+  },
+  {
+    "Passive": "Turn End Inflict Paralysis",
+    "Skill": "TurnDebuff",
+    "Effect": "Thunder",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Inflict X Paralysis to the opponent in the end of turn"
+  },
+  {
+    "Passive": "Turn End Inflict Dizzy",
+    "Skill": "TurnDebuff",
+    "Effect": "Wind",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Inflict X Dizzy to the opponent in the end of turn"
+  },
+  {
+    "Passive": "Turn End Inflict Seed",
+    "Skill": "TurnDebuff",
+    "Effect": "Earth",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Inflict X Seed to the opponent in the end of turn"
+  },
+  {
+    "Passive": "Turn End Inflict Blind",
+    "Skill": "TurnDebuff",
+    "Effect": "Light",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Inflict X Blind to the opponent in the end of turn"
+  },
+  {
+    "Passive": "Turn End Inflict Depress",
+    "Skill": "TurnDebuff",
+    "Effect": "Dark",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Inflict X Depress to the opponent in the end of turn"
+  },
+  {
+    "Passive": "Turn End Strength Debuff",
+    "Skill": "TurnDebuff",
+    "Effect": "Strength",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Inflict X Strength Debuff to the opponent in the end of turn"
+  },
+  {
+    "Passive": "Turn End Agility Debuff",
+    "Skill": "TurnDebuff",
+    "Effect": "Agility",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Inflict X Agility Debuff to the opponent in the end of turn"
+  },
+  {
+    "Passive": "Turn End Intelligence Debuff",
+    "Skill": "TurnDebuff",
+    "Effect": "Intelligence",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Inflict X Intellgience Debuff to the opponent in the end of turn"
+  },
+  {
+    "Passive": "Turn End MaxHP Debuff",
+    "Skill": "TurnDebuff",
+    "Effect": "MaxHP",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Inflict X MaxHP Debuff to the opponent in the end of turn"
+  },
+  {
+    "Passive": "X Nemesis",
+    "Skill": "Mark",
+    "Effect": "Reverse",
+    "Max Stacks": "N/A",
+    "ActiveType": "N/A",
+    "PassiveType": "AlwaysActive",
+    "Description": "If battle opponent is X, double damage dealt and half damage received"
+  },
+  {
+    "Passive": "Sleight Of Hands",
+    "Skill": "Upgrade",
+    "Effect": "Exhaust",
+    "Max Stacks": "N/A",
+    "ActiveType": "N/A",
+    "PassiveType": "AlwaysActive",
+    "Description": "Whenever player exhaust abilities or discard abilities through a skill effect (+1ap excluded), randomly gain 5 stacks of the following buff: Str, Agi, Int, MaxHp Act Buff, Gamble Token"
+  },
+  {
+    "Passive": "Combo Element Act Buff",
+    "Skill": "Combo",
+    "Effect": "Element",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "AlwaysActive",
+    "Description": "Give X element action buff on every element combo trigger"
+  },
+  {
+    "Passive": "Malicious Blood",
+    "Skill": "Sacrifice",
+    "Effect": "Bleed",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "AlwaysActive",
+    "Description": "Double the bleed damage you suffer, but enemy also suffer half of the bleed damage you suffer."
+  },
+  {
+    "Passive": "Vampiric Nature",
+    "Skill": "Drain",
+    "Effect": "Bleed",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "AlwaysActive",
+    "Description": "When enemy suffer from bleed damage, heal for half of the amount it suffer."
+  },
+  {
+    "Passive": "Random Passive",
+    "Skill": "Null",
+    "Effect": "Reverse",
+    "Max Stacks": "N/A",
+    "ActiveType": "N/A",
+    "PassiveType": "AlwaysActive",
+    "Description": "Become a random passive"
+  },
+  {
+    "Passive": "Solo King",
+    "Skill": "Upgrade",
+    "Effect": "Direct",
+    "Max Stacks": "N/A",
+    "ActiveType": "N/A",
+    "PassiveType": "AlwaysActive",
+    "Description": "(Player Only) If user only has 1 Job, max stat x1.5 and execute your main job ability in the end of every action if you have atleast 1 ap. If the job has 5 Jobmania Crystal, the ability will be executed regardless user's ap."
+  },
+  {
+    "Passive": "Turn End Confuse",
+    "Skill": "TurnDebuff",
+    "Effect": "Confuse",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Inflict X Confuse to the opponent in the end of turn"
+  },
+  {
+    "Passive": "Turn End Slack",
+    "Skill": "TurnDebuff",
+    "Effect": "Slack",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Inflict X Slack to the opponent in the end of turn"
+  },
+  {
+    "Passive": "Start Certain",
+    "Skill": "InstantBoost",
+    "Effect": "Certain",
+    "Max Stacks": "2",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Gain X Certain at the start of combat"
+  },
+  {
+    "Passive": "X Bond",
+    "Skill": "Mark",
+    "Effect": "Direct",
+    "Max Stacks": "N/A",
+    "ActiveType": "N/A",
+    "PassiveType": "AlwaysActive",
+    "Description": "When player hero swap the current hero with X , boost X next ability's attack, heal and protect gain by 50%"
+  },
+  {
+    "Passive": "Turn End Strength Buff",
+    "Skill": "TurnBuff",
+    "Effect": "Strength",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Gain X Strength Action Buff in the end of turn"
+  },
+  {
+    "Passive": "Turn End Agility Buff",
+    "Skill": "TurnBuff",
+    "Effect": "Agility",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Gain X Agility Action Buff in the end of turn"
+  },
+  {
+    "Passive": "Turn End Intelligence Buff",
+    "Skill": "TurnBuff",
+    "Effect": "Intelligence",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Gain X intelligence Action Buff in the end of turn"
+  },
+  {
+    "Passive": "Turn End MaxHP Buff",
+    "Skill": "TurnBuff",
+    "Effect": "MaxHP",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Gain X MaxHP Action Buff in the end of turn"
+  },
+  {
+    "Passive": "MaxHP Sigil Counter",
+    "Skill": "Reflect",
+    "Effect": "MaxHPM",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterGotAttack",
+    "PassiveType": "JobOn",
+    "Description": "Enemy gain X MaxHP Sigil for damaging you"
+  },
+  {
+    "Passive": "Str Sigil Counter",
+    "Skill": "Reflect",
+    "Effect": "StrengthM",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterGotAttack",
+    "PassiveType": "JobOn",
+    "Description": "Enemy gain X Str Sigil for damaging you"
+  },
+  {
+    "Passive": "Agi Sigil Counter",
+    "Skill": "Reflect",
+    "Effect": "AgilityM",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterGotAttack",
+    "PassiveType": "JobOn",
+    "Description": "Enemy gain X Agi Sigil for damaging you"
+  },
+  {
+    "Passive": "Int Sigil Counter",
+    "Skill": "Reflect",
+    "Effect": "IntelligenceM",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterGotAttack",
+    "PassiveType": "JobOn",
+    "Description": "Enemy gain X Int Sigil for damaging you"
+  },
+  {
+    "Passive": "Summoner's Gift",
+    "Skill": "Upgrade",
+    "Effect": "Summon",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Trigger special effects on using abilities with [Summon] tag."
+  },
+  {
+    "Passive": "After Act Protect Pierce",
+    "Skill": "ActionDebuff",
+    "Effect": "Protect",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Inflict X Protect Pierce after every action"
+  },
+  {
+    "Passive": "After Act Protect Enhance",
+    "Skill": "ActionBuff",
+    "Effect": "Protect",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Give X Protect Enhance after every action"
+  },
+  {
+    "Passive": "Turn End Gamble Token",
+    "Skill": "TurnBuff",
+    "Effect": "Dice",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Gain X Gamble Token in the end of turn"
+  },
+  {
+    "Passive": "Resurrection",
+    "Skill": "Heal",
+    "Effect": "Direct",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "AlwaysActive",
+    "Description": "Once per battle, upon receiving fatal damage, the user can resurrect and restore health to full. The user will gain Sudden Death and 5 stacks of Immunocompromised after being resurrected."
+  },
+  {
+    "Passive": "Turn End Afterimage",
+    "Skill": "TurnBuff",
+    "Effect": "Multiply",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Gain X Afterimage in the end of turn"
+  },
+  {
+    "Passive": "Hex Of Misfortune",
+    "Skill": "Upgrade",
+    "Effect": "Misfortune",
+    "Max Stacks": "N/A",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Whenever you roll a dice and get a side of 2,3,4 and 5, the outcome becomes 1. Additionally, you gain 2 Gamble Token when it happens. (Player only) You cannot die from trap damage."
+  },
+  {
+    "Passive": "Fire Drain",
+    "Skill": "Drain",
+    "Effect": "Fire",
+    "Max Stacks": "N/A",
+    "ActiveType": "GotAttacked",
+    "PassiveType": "JobOn",
+    "Description": "Heals 40% of the damage dealt by a Fire attack and snatch one Fire element from the attacker, if they have one."
+  },
+  {
+    "Passive": "Water Drain",
+    "Skill": "Drain",
+    "Effect": "Water",
+    "Max Stacks": "N/A",
+    "ActiveType": "GotAttacked",
+    "PassiveType": "JobOn",
+    "Description": "Heals 40% of the damage dealt by a Water attack and snatchs one Water element from the attacker, if they have one."
+  },
+  {
+    "Passive": "Thunder Drain",
+    "Skill": "Drain",
+    "Effect": "Thunder",
+    "Max Stacks": "N/A",
+    "ActiveType": "GotAttacked",
+    "PassiveType": "JobOn",
+    "Description": "Heals 40% of the damage dealt by a Thunder attack and snatchs one Thunder element from the attacker, if they have one."
+  },
+  {
+    "Passive": "Earth Drain",
+    "Skill": "Drain",
+    "Effect": "Earth",
+    "Max Stacks": "N/A",
+    "ActiveType": "GotAttacked",
+    "PassiveType": "JobOn",
+    "Description": "Heals 40% of the damage dealt by a Earth attack and snatchs one Earth element from the attacker, if they have one."
+  },
+  {
+    "Passive": "Wind Drain",
+    "Skill": "Drain",
+    "Effect": "Wind",
+    "Max Stacks": "N/A",
+    "ActiveType": "GotAttacked",
+    "PassiveType": "JobOn",
+    "Description": "Heals 40% of the damage dealt by a Wind attack and snatchs one Wind element from the attacker, if they have one."
+  },
+  {
+    "Passive": "Light Drain",
+    "Skill": "Drain",
+    "Effect": "Light",
+    "Max Stacks": "N/A",
+    "ActiveType": "GotAttacked",
+    "PassiveType": "JobOn",
+    "Description": "Heals 40% of the damage dealt by a Light attack and snatchs one Light element from the attacker, if they have one."
+  },
+  {
+    "Passive": "Dark Drain",
+    "Skill": "Drain",
+    "Effect": "Dark",
+    "Max Stacks": "N/A",
+    "ActiveType": "GotAttacked",
+    "PassiveType": "JobOn",
+    "Description": "Heals 40% of the damage dealt by a Dark attack and snatchs one Dark element from the attacker, if they have one."
+  },
+  {
+    "Passive": "Melodic Gift",
+    "Skill": "Upgrade",
+    "Effect": "Music",
+    "Max Stacks": "N/A",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "(Player Only) Gain a random buff from Do, Re, or Mi if you start a combat without any of these buffs. Additionally, on triggering any Do, Re Mi three stacks effect, for each stack, there is a 20% chance that a random Do, Re, Mi ability in your discard pile will be recovered to your hand."
+  },
+  {
+    "Passive": "Trap Expert",
+    "Skill": "Upgrade",
+    "Effect": "Trap",
+    "Max Stacks": "N/A",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "(Player Only) Traps will appear more often during a dungeon run. Halve the damage, status effects applied and money gain from traps."
+  },
+  {
+    "Passive": "Winning Son",
+    "Skill": "Buff",
+    "Effect": "Multiply",
+    "Max Stacks": "N/A",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AsBuff",
+    "Description": "(Player) When facing the enemies you defeated at least 3 times before. (Enemy Monster) If the player had encountered this monster at least 3 times before. (Effect) Start the combat with AP +1 and a Certain buff."
+  },
+  {
+    "Passive": "Gender Breaker",
+    "Skill": "Upgrade",
+    "Effect": "Reverse",
+    "Max Stacks": "N/A",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "(Enemy Only) When facing enemies of the opposite gender who are not gender ambiguous, double the damage dealt to them."
+  },
+  {
+    "Passive": "Innate Bad Mood",
+    "Skill": "InstantNerf",
+    "Effect": "Misfortune",
+    "Max Stacks": "N/A",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Start combat with X Bad Mood debuff"
+  },
+  {
+    "Passive": "Innate Taunt",
+    "Skill": "InstantNerf",
+    "Effect": "Aggro",
+    "Max Stacks": "N/A",
+    "ActiveType": "CombatStart",
+    "PassiveType": "AsBuff",
+    "Description": "Start combat with X Taunt debuff"
+  },
+  {
+    "Passive": "Art Of Stealing",
+    "Skill": "Upgrade",
+    "Effect": "Steal",
+    "Max Stacks": "N/A",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Increase the steal amount of [Steal] abilities. Additionally, when using [Steal] abilities, there is a 50% chance to snatch a random buff from your opponent. (Except Invunlerable, Second Chance and Elements)"
+  },
+  {
+    "Passive": "Frustrated Might",
+    "Skill": "Upgrade",
+    "Effect": "Aggro",
+    "Max Stacks": "N/A",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "When the following debuffs (Paralysis, Blind, Dizzy and Reflux) are triggered on you, or upon receiving a Taunt debuff, gain 3 stack of Rage buff and 1 stack of Pent-Up Power."
+  },
+  {
+    "Passive": "Form Stealer",
+    "Skill": "Unique",
+    "Effect": "LifeSteal",
+    "Max Stacks": "N/A",
+    "ActiveType": "AttackEffect",
+    "PassiveType": "AlwaysActive",
+    "Description": "When hitting your opponent with a [Lifesteal] skill, if the opponent is of the same race as you, gain 2 stack of Instinct Buff. If not, gain a X Form buff. (X is the race of your opponent)."
+  },
+  {
+    "Passive": "Turn End Fire Action Buff",
+    "Skill": "TurnBuff",
+    "Effect": "Fire",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Gain X Fire Action Buff in the end of turn"
+  },
+  {
+    "Passive": "Turn End Water Action Buff",
+    "Skill": "TurnBuff",
+    "Effect": "Water",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Gain X Water Action Buff in the end of turn"
+  },
+  {
+    "Passive": "Turn End Thunder Action Buff",
+    "Skill": "TurnBuff",
+    "Effect": "Thunder",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Gain X Thunder Action Buff in the end of turn"
+  },
+  {
+    "Passive": "Turn End Earth Action Buff",
+    "Skill": "TurnBuff",
+    "Effect": "Wind",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Gain X Earth Action Buff in the end of turn"
+  },
+  {
+    "Passive": "Turn End Wind Action Buff",
+    "Skill": "TurnBuff",
+    "Effect": "Earth",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Gain X Wind Action Buff in the end of turn"
+  },
+  {
+    "Passive": "Turn End Light Action Buff",
+    "Skill": "TurnBuff",
+    "Effect": "Light",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Gain X Light Action Buff in the end of turn"
+  },
+  {
+    "Passive": "Turn End Dark Action Buff",
+    "Skill": "TurnBuff",
+    "Effect": "Dark",
+    "Max Stacks": "N/A",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "JobOn",
+    "Description": "Gain X Dark Action Buff in the end of turn"
+  },
+  {
+    "Passive": "Echoing Cells",
+    "Skill": "Buff",
+    "Effect": "Guard",
+    "Max Stacks": "N/A",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Second Chance heals 15% more health upon activation. Additionally, when Second Chance is triggered by the opponent's direct attack, the same damage is reflected back to your opponent."
+  },
+  {
+    "Passive": "Indulgence Ambassador",
+    "Skill": "Upgrade",
+    "Effect": "Slack",
+    "Max Stacks": "N/A",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "Increase Slack healing by 15%. When Slack  is triggered, recover a random ability from your discard pile. Using Food ability will remove all your Bad Mood debuffs."
+  },
+  {
+    "Passive": "After Action VRI",
+    "Skill": "ActionDebuff",
+    "Effect": "VRI",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Apply X random VRI to enemy after every actions"
+  },
+  {
+    "Passive": "Food Expert",
+    "Skill": "Upgrade",
+    "Effect": "Food",
+    "Max Stacks": "1",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "You can no longer discard [Food] ability from your hand. Whenever you draw a [Food] ability, heal 5% of your MaxHP. When [Food] ability is used, there is a 80% chance the buff and debuff effects of the ability will be doubled."
+  },
+  {
+    "Passive": "Combo Stat Action Buff",
+    "Skill": "Combo",
+    "Effect": "InstantBoost",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "AlwaysActive",
+    "Description": "Give X related action stat buff on every stat combo trigger"
+  },
+  {
+    "Passive": "Harmoniser",
+    "Skill": "Combo",
+    "Effect": "Music",
+    "Max Stacks": "N/A",
+    "ActiveType": "N/A",
+    "PassiveType": "AlwaysActive",
+    "Description": "On triggering any Do, Re Mi three stacks effect, there is a 30% chance that randomly draw an Do, Re, Mi ability from your draw pile."
+  },
+  {
+    "Passive": "After Action MaxHP Sigil",
+    "Skill": "ActionDebuff",
+    "Effect": "MaxHPM",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Apply X MaxHP Sigil on the opponent in the end of action"
+  },
+  {
+    "Passive": "After Action Str Sigil",
+    "Skill": "ActionDebuff",
+    "Effect": "StrengthM",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Apply X Str Sigil on the opponent in the end of action"
+  },
+  {
+    "Passive": "After Action Agi Sigil",
+    "Skill": "ActionDebuff",
+    "Effect": "AgilityM",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Apply X Agi Sigil on the opponent in the end of action"
+  },
+  {
+    "Passive": "After Action Int Sigil",
+    "Skill": "ActionDebuff",
+    "Effect": "IntelligenceM",
+    "Max Stacks": "N/A",
+    "ActiveType": "AfterAction",
+    "PassiveType": "JobOn",
+    "Description": "Apply X Int Sigil on the opponent in the end of action"
+  },
+  {
+    "Passive": "Element Insulator",
+    "Skill": "Sacrifice",
+    "Effect": "Element",
+    "Max Stacks": "N/A",
+    "ActiveType": "Upgrade",
+    "PassiveType": "AlwaysActive",
+    "Description": "The user cannot gain elemental stacks or elemental buffs, and elemental effects are removed from their abilities. Increases the damage, healing, and Protect gain of non-elemental abilities by 20%, and reduces elemental damage taken by 20%."
+  },
+  {
+    "Passive": "Silver Digger",
+    "Skill": "Buff",
+    "Effect": "Silver",
+    "Max Stacks": "N/A",
+    "ActiveType": "Grind",
+    "PassiveType": "Grind",
+    "Description": "Increase dungeon coin gain by 10% (Stack with secondary character)"
+  },
+  {
+    "Passive": "Predestination",
+    "Skill": "Upgrade",
+    "Effect": "Delay",
+    "Max Stacks": "1",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "AlwaysActive",
+    "Description": "Scheduled and automatic abilities will be excuted in full power when auto used"
+  },
+  {
+    "Passive": "Curse Exhaust",
+    "Skill": "Curse",
+    "Effect": "Exhaust",
+    "Max Stacks": "1",
+    "ActiveType": "OnAction",
+    "PassiveType": "AlwaysActive",
+    "Description": "Exhaust any curse on use"
+  },
+  {
+    "Passive": "Curse Discard",
+    "Skill": "Discard",
+    "Effect": "Curse",
+    "Max Stacks": "1",
+    "ActiveType": "TurnEnd",
+    "PassiveType": "AlwaysActive",
+    "Description": "Loose 5% HP and auto discard curse on hand on end turn"
+  },
+  {
+    "Passive": "Curse Recover",
+    "Skill": "Heal",
+    "Effect": "Curse",
+    "Max Stacks": "1",
+    "ActiveType": "OnAction",
+    "PassiveType": "AlwaysActive",
+    "Description": "Heal 10% of MaxHP on using a Curse"
+  },
+  {
+    "Passive": "Buff Recycle",
+    "Skill": "Buff",
+    "Effect": "Delay",
+    "Max Stacks": "1",
+    "ActiveType": "N/A",
+    "PassiveType": "AlwaysActive",
+    "Description": "If your buff or the opponent's debuff is removed by a skill effect (rather than the usual removal condition), there is a 25% chance that it will be sustained"
+  },
+  {
+    "Passive": "Ex Adaptability",
+    "Skill": "Buff",
+    "Effect": "Null",
+    "Max Stacks": "1",
+    "ActiveType": "N/A",
+    "PassiveType": "AlwaysActive",
+    "Description": "[Raw] damage, healing, and Protect values will now utilize and be affected by action buff and vulnerabilities from any other stat."
+  },
+  {
+    "Passive": "Debt Of Time",
+    "Skill": "Unique",
+    "Effect": "Reverse",
+    "Max Stacks": "1",
+    "ActiveType": "Multtiple",
+    "PassiveType": "AlwaysActive",
+    "Description": "(Player Only)  At the start of combat, reduce the cooldown of your monster’s active skills by 1. Whenever a monster active skill is used, you gains 1 stack of Reflux and 3 stacks of Gamble Token."
+  },
+  {
+    "Passive": "The Curse Of Kaiji",
+    "Skill": "Curse",
+    "Effect": "Dice",
+    "Max Stacks": "1",
+    "ActiveType": "OnAction",
+    "PassiveType": "AlwaysActive",
+    "Description": "Gain 2 Gamble Token whenever you use a Curse ability."
+  },
+  {
+    "Passive": "Quit Gambling",
+    "Skill": "Sacrifice",
+    "Effect": "Dice",
+    "Max Stacks": "1",
+    "ActiveType": "Multtiple",
+    "PassiveType": "AlwaysActive",
+    "Description": "Gamble skills will always roll a 3. For every 2 gamble token you gain, convert it into a random buff."
+  },
+  {
+    "Passive": "Gambling Chain",
+    "Skill": "Combo",
+    "Effect": "Dice",
+    "Max Stacks": "1",
+    "ActiveType": "Multtiple",
+    "PassiveType": "AlwaysActive",
+    "Description": "Each time you roll a 1 or 2, you get a random debuff. Each time you roll a 5 or 6, you get a random buff."
+  },
+  {
+    "Passive": "Gamble Actions",
+    "Skill": "Unique",
+    "Effect": "Dice",
+    "Max Stacks": "1",
+    "ActiveType": "TurnStart",
+    "PassiveType": "AlwaysActive",
+    "Description": "Roll a die at the beginning of each round and adjust AP based on the number rolled:\n1: -3 AP, 2: -2 AP, 3: -1 AP, 4: +1 AP, 5: +2 AP, 6: +3 AP"
+  },
+  {
+    "Passive": "Fatebound Ally - Humanoid",
+    "Skill": "Mark",
+    "Effect": "Humanoid",
+    "Max Stacks": "1",
+    "ActiveType": "N/A",
+    "PassiveType": "AlwaysActive",
+    "Description": "Reduce damage dealt to and received from Humanoid enemies by 20%. (Player Only) If the other equipped monster is race Humanoid, upon its fatal damage automatically swap to this monster, recover 50% HP, gain 20 Rage and 7 Pent Up Power. The fallen monster can no longer be swapped back this battle."
+  },
+  {
+    "Passive": "Fatebound Ally - Beast",
+    "Skill": "Mark",
+    "Effect": "Creature",
+    "Max Stacks": "1",
+    "ActiveType": "N/A",
+    "PassiveType": "AlwaysActive",
+    "Description": "Reduce damage dealt to and received from Beast enemies by 20%. (Player Only) If the other equipped monster is race Beast, upon its fatal damage automatically swap to this monster, recover 50% HP, gain 20 Rage and 7 Pent Up Power. The fallen monster can no longer be swapped back this battle."
+  },
+  {
+    "Passive": "Fatebound Ally - Spririt",
+    "Skill": "Mark",
+    "Effect": "Spirit",
+    "Max Stacks": "1",
+    "ActiveType": "N/A",
+    "PassiveType": "AlwaysActive",
+    "Description": "Reduce damage dealt to and received from Spirit enemies by 20%. (Player Only) If the other equipped monster is race Spirit, upon its fatal damage automatically swap to this monster, recover 50% HP, gain 20 Rage and 7 Pent Up Power. The fallen monster can no longer be swapped back this battle."
+  },
+  {
+    "Passive": "Fatebound Ally - Inorganic",
+    "Skill": "Mark",
+    "Effect": "Matter",
+    "Max Stacks": "1",
+    "ActiveType": "N/A",
+    "PassiveType": "AlwaysActive",
+    "Description": "Reduce damage dealt to and received from Inorganic enemies by 20%. (Player Only) If the other equipped monster is race Inorganic, upon its fatal damage automatically swap to this monster, recover 50% HP, gain 20 Rage and 7 Pent Up Power. The fallen monster can no longer be swapped back this battle."
+  },
+  {
+    "Passive": "Providence Trigger",
+    "Skill": "InstantBoost",
+    "Effect": "Unstable",
+    "Max Stacks": "1",
+    "ActiveType": "N/A",
+    "PassiveType": "AlwaysActive",
+    "Description": "(Player Only) At the start of combat,\nIf HP is 100%, gain 2 Pure Element.\nIf HP is below 50%, instead gain a Second Chance.\nIf HP is below 30%, instead gain a Second Chance and 7 random buffs."
+  },
+  {
+    "Passive": "Relics Only",
+    "Skill": "",
+    "Effect": "",
+    "Max Stacks": "",
+    "ActiveType": "",
+    "PassiveType": "",
+    "Description": ""
+  },
+  {
+    "Passive": "Fire Imbue",
+    "Skill": "ApplyOn",
+    "Effect": "Fire",
+    "Max Stacks": "1",
+    "ActiveType": "N/A",
+    "PassiveType": "JobOn",
+    "Description": "Imbue Fire element to current job's ability"
+  },
+  {
+    "Passive": "Water Imbue",
+    "Skill": "ApplyOn",
+    "Effect": "Water",
+    "Max Stacks": "1",
+    "ActiveType": "N/A",
+    "PassiveType": "JobOn",
+    "Description": "Imbue Water element to current job's ability"
+  },
+  {
+    "Passive": "Thunder Imbue",
+    "Skill": "ApplyOn",
+    "Effect": "Thunder",
+    "Max Stacks": "1",
+    "ActiveType": "N/A",
+    "PassiveType": "JobOn",
+    "Description": "Imbue Thunder element to current job's ability"
+  },
+  {
+    "Passive": "Earth Imbue",
+    "Skill": "ApplyOn",
+    "Effect": "Earth",
+    "Max Stacks": "1",
+    "ActiveType": "N/A",
+    "PassiveType": "JobOn",
+    "Description": "Imbue Earth element to current job's ability"
+  },
+  {
+    "Passive": "Wind Imbue",
+    "Skill": "ApplyOn",
+    "Effect": "Wind",
+    "Max Stacks": "1",
+    "ActiveType": "N/A",
+    "PassiveType": "JobOn",
+    "Description": "Imbue Wind element to current job's ability"
+  },
+  {
+    "Passive": "Light Imbue",
+    "Skill": "ApplyOn",
+    "Effect": "Light",
+    "Max Stacks": "1",
+    "ActiveType": "N/A",
+    "PassiveType": "JobOn",
+    "Description": "Imbue Light element to current job's ability"
+  },
+  {
+    "Passive": "Dark Imbue",
+    "Skill": "ApplyOn",
+    "Effect": "Dark",
+    "Max Stacks": "1",
+    "ActiveType": "N/A",
+    "PassiveType": "JobOn",
+    "Description": "Imbue Dark element to current job's ability"
+  },
+  {
+    "Passive": "Humanoid Killer Imbue",
+    "Skill": "ApplyOn",
+    "Effect": "Humanoid",
+    "Max Stacks": "1",
+    "ActiveType": "N/A",
+    "PassiveType": "JobOn",
+    "Description": "Imbue Humanoid Killer to current job's ability"
+  },
+  {
+    "Passive": "Creature Killer Imbue",
+    "Skill": "ApplyOn",
+    "Effect": "Creature",
+    "Max Stacks": "1",
+    "ActiveType": "N/A",
+    "PassiveType": "JobOn",
+    "Description": "Imbue Beast Killer to current job's ability"
+  },
+  {
+    "Passive": "Spirit Killer Imbue",
+    "Skill": "ApplyOn",
+    "Effect": "Spirit",
+    "Max Stacks": "1",
+    "ActiveType": "N/A",
+    "PassiveType": "JobOn",
+    "Description": "Imbue Spirit Killer to current job's ability"
+  },
+  {
+    "Passive": "Matter Killer Imbue",
+    "Skill": "ApplyOn",
+    "Effect": "Matter",
+    "Max Stacks": "1",
+    "ActiveType": "N/A",
+    "PassiveType": "JobOn",
+    "Description": "Imbue Inorganic Killer to current job's ability"
+  },
+  {
+    "Passive": "Grudge Imbue",
+    "Skill": "ApplyOn",
+    "Effect": "Sacrifice",
+    "Max Stacks": "1",
+    "ActiveType": "N/A",
+    "PassiveType": "JobOn",
+    "Description": "Imbue Grudge to current job's ability"
+  },
+  {
+    "Passive": "Favor Imbue",
+    "Skill": "ApplyOn",
+    "Effect": "Full",
+    "Max Stacks": "1",
+    "ActiveType": "N/A",
+    "PassiveType": "JobOn",
+    "Description": "Imbue Favor to current job's ability"
+  },
+  {
+    "Passive": "Combo Blend Imbue",
+    "Skill": "ApplyOn",
+    "Effect": "Combo",
+    "Max Stacks": "1",
+    "ActiveType": "N/A",
+    "PassiveType": "JobOn",
+    "Description": "Imbue Combo Blend to current job's ability. The AP cost of this job's abilitiy starts at 1."
+  },
+  {
+    "Passive": "Curse Imbue",
+    "Skill": "ApplyOn",
+    "Effect": "Curse",
+    "Max Stacks": "1",
+    "ActiveType": "N/A",
+    "PassiveType": "JobOn",
+    "Description": "Imbue Curse to current job's ability. The AP cost of this job's abilitiy starts at 1."
+  },
+  {
+    "Passive": "Food Imbue",
+    "Skill": "ApplyOn",
+    "Effect": "Food",
+    "Max Stacks": "1",
+    "ActiveType": "N/A",
+    "PassiveType": "JobOn",
+    "Description": "Imbue Food to current job's ability. The AP cost of this job's abilitiy starts at 1."
+  },
+  {
+    "Passive": "Injury Combo",
+    "Skill": "Combo",
+    "Effect": "Injury",
+    "Max Stacks": "1",
+    "ActiveType": "OnAction",
+    "PassiveType": "AlwaysActive",
+    "Description": "For any 5 Combo, apply one injury on enemy"
+  }
+]

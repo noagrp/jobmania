@@ -1,0 +1,3194 @@
+[
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Strength",
+    "Multiplier": "1",
+    "Type": "Strength",
+    "Rarity": "Common",
+    "Concatenate": "TurnBuffStrength1"
+  },
+  {
+    "Skill Unit 1": "TurnDamage",
+    "Column_1": "Strength",
+    "Multiplier": "3",
+    "Type": "Strength",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "TurnDamageStrength3"
+  },
+  {
+    "Skill Unit 1": "TurnDamage",
+    "Column_1": "Strength",
+    "Multiplier": "4",
+    "Type": "Strength",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "TurnDamageStrength4"
+  },
+  {
+    "Skill Unit 1": "TurnDamage",
+    "Column_1": "Strength",
+    "Multiplier": "5",
+    "Type": "Strength",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnDamageStrength5"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Agility",
+    "Multiplier": "1",
+    "Type": "Agility",
+    "Rarity": "Common",
+    "Concatenate": "TurnBuffAgility1"
+  },
+  {
+    "Skill Unit 1": "TurnDamage",
+    "Column_1": "Agility",
+    "Multiplier": "3",
+    "Type": "Agility",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "TurnDamageAgility3"
+  },
+  {
+    "Skill Unit 1": "TurnDamage",
+    "Column_1": "Agility",
+    "Multiplier": "4",
+    "Type": "Agility",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "TurnDamageAgility4"
+  },
+  {
+    "Skill Unit 1": "TurnDamage",
+    "Column_1": "Agility",
+    "Multiplier": "5",
+    "Type": "Agility",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnDamageAgility5"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Intelligence",
+    "Multiplier": "1",
+    "Type": "Intelligence",
+    "Rarity": "Common",
+    "Concatenate": "TurnBuffIntelligence1"
+  },
+  {
+    "Skill Unit 1": "TurnDamage",
+    "Column_1": "Intelligence",
+    "Multiplier": "3",
+    "Type": "Intelligence",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "TurnDamageIntelligence3"
+  },
+  {
+    "Skill Unit 1": "TurnDamage",
+    "Column_1": "Intelligence",
+    "Multiplier": "4",
+    "Type": "Intelligence",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "TurnDamageIntelligence4"
+  },
+  {
+    "Skill Unit 1": "TurnDamage",
+    "Column_1": "Intelligence",
+    "Multiplier": "5",
+    "Type": "Intelligence",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnDamageIntelligence5"
+  },
+  {
+    "Skill Unit 1": "TurnDamage",
+    "Column_1": "MaxHP",
+    "Multiplier": "1",
+    "Type": "MaxHP",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "TurnDamageMaxHP1"
+  },
+  {
+    "Skill Unit 1": "TurnDamage",
+    "Column_1": "MaxHP",
+    "Multiplier": "2",
+    "Type": "MaxHP",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnDamageMaxHP2"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "MaxHPM",
+    "Multiplier": "1",
+    "Type": "MaxHP",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ReflectMaxHPM1"
+  },
+  {
+    "Skill Unit 1": "TurnDamage",
+    "Column_1": "Protect",
+    "Multiplier": "4",
+    "Type": "",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "TurnDamageProtect4"
+  },
+  {
+    "Skill Unit 1": "TurnDamage",
+    "Column_1": "Protect",
+    "Multiplier": "5",
+    "Type": "",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnDamageProtect5"
+  },
+  {
+    "Skill Unit 1": "TurnDamage",
+    "Column_1": "Protect",
+    "Multiplier": "6",
+    "Type": "",
+    "Rarity": "Legendary",
+    "Concatenate": "TurnDamageProtect6"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Strength",
+    "Multiplier": "2",
+    "Type": "Strength",
+    "Rarity": "Common-Rare",
+    "Concatenate": "TurnBuffStrength2"
+  },
+  {
+    "Skill Unit 1": "TurnHeal",
+    "Column_1": "Strength",
+    "Multiplier": "3",
+    "Type": "Strength",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "TurnHealStrength3"
+  },
+  {
+    "Skill Unit 1": "TurnHeal",
+    "Column_1": "Strength",
+    "Multiplier": "4",
+    "Type": "Strength",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "TurnHealStrength4"
+  },
+  {
+    "Skill Unit 1": "TurnHeal",
+    "Column_1": "Strength",
+    "Multiplier": "5",
+    "Type": "Strength",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnHealStrength5"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Agility",
+    "Multiplier": "2",
+    "Type": "Agility",
+    "Rarity": "Common-Rare",
+    "Concatenate": "TurnBuffAgility2"
+  },
+  {
+    "Skill Unit 1": "TurnHeal",
+    "Column_1": "Agility",
+    "Multiplier": "3",
+    "Type": "Agility",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "TurnHealAgility3"
+  },
+  {
+    "Skill Unit 1": "TurnHeal",
+    "Column_1": "Agility",
+    "Multiplier": "4",
+    "Type": "Agility",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "TurnHealAgility4"
+  },
+  {
+    "Skill Unit 1": "TurnHeal",
+    "Column_1": "Agility",
+    "Multiplier": "5",
+    "Type": "Agility",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnHealAgility5"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Intelligence",
+    "Multiplier": "2",
+    "Type": "Intelligence",
+    "Rarity": "Common-Rare",
+    "Concatenate": "TurnBuffIntelligence2"
+  },
+  {
+    "Skill Unit 1": "TurnHeal",
+    "Column_1": "Intelligence",
+    "Multiplier": "3",
+    "Type": "Intelligence",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "TurnHealIntelligence3"
+  },
+  {
+    "Skill Unit 1": "TurnHeal",
+    "Column_1": "Intelligence",
+    "Multiplier": "4",
+    "Type": "Intelligence",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "TurnHealIntelligence4"
+  },
+  {
+    "Skill Unit 1": "TurnHeal",
+    "Column_1": "Intelligence",
+    "Multiplier": "5",
+    "Type": "Intelligence",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnHealIntelligence5"
+  },
+  {
+    "Skill Unit 1": "TurnHeal",
+    "Column_1": "MaxHP",
+    "Multiplier": "1",
+    "Type": "MaxHP",
+    "Rarity": "Rare-Epic",
+    "Concatenate": "TurnHealMaxHP1"
+  },
+  {
+    "Skill Unit 1": "TurnHeal",
+    "Column_1": "MaxHP",
+    "Multiplier": "2",
+    "Type": "MaxHP",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnHealMaxHP2"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "MaxHPM",
+    "Multiplier": "2",
+    "Type": "MaxHP",
+    "Rarity": "Legendary",
+    "Concatenate": "ReflectMaxHPM2"
+  },
+  {
+    "Skill Unit 1": "TurnHeal",
+    "Column_1": "Protect",
+    "Multiplier": "4",
+    "Type": "",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "TurnHealProtect4"
+  },
+  {
+    "Skill Unit 1": "TurnHeal",
+    "Column_1": "Protect",
+    "Multiplier": "5",
+    "Type": "",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnHealProtect5"
+  },
+  {
+    "Skill Unit 1": "TurnHeal",
+    "Column_1": "Protect",
+    "Multiplier": "6",
+    "Type": "",
+    "Rarity": "Legendary",
+    "Concatenate": "TurnHealProtect6"
+  },
+  {
+    "Skill Unit 1": "ActionDamage",
+    "Column_1": "Protect",
+    "Multiplier": "1",
+    "Type": "",
+    "Rarity": "Rare-Epic",
+    "Concatenate": "ActionDamageProtect1"
+  },
+  {
+    "Skill Unit 1": "ActionDamage",
+    "Column_1": "Protect",
+    "Multiplier": "2",
+    "Type": "",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ActionDamageProtect2"
+  },
+  {
+    "Skill Unit 1": "ActionDamage",
+    "Column_1": "Protect",
+    "Multiplier": "3",
+    "Type": "",
+    "Rarity": "Legendary",
+    "Concatenate": "ActionDamageProtect3"
+  },
+  {
+    "Skill Unit 1": "ActionHeal",
+    "Column_1": "Protect",
+    "Multiplier": "1",
+    "Type": "",
+    "Rarity": "Rare-Epic",
+    "Concatenate": "ActionHealProtect1"
+  },
+  {
+    "Skill Unit 1": "ActionHeal",
+    "Column_1": "Protect",
+    "Multiplier": "2",
+    "Type": "",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ActionHealProtect2"
+  },
+  {
+    "Skill Unit 1": "ActionHeal",
+    "Column_1": "Protect",
+    "Multiplier": "3",
+    "Type": "",
+    "Rarity": "Legendary",
+    "Concatenate": "ActionHealProtect3"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Strength",
+    "Multiplier": "1",
+    "Type": "Strength",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "InstantBoostStrength1"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Strength",
+    "Multiplier": "2",
+    "Type": "Strength",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "InstantBoostStrength2"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Strength",
+    "Multiplier": "3",
+    "Type": "Strength",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "InstantBoostStrength3"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Agility",
+    "Multiplier": "1",
+    "Type": "Agility",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "InstantBoostAgility1"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Agility",
+    "Multiplier": "2",
+    "Type": "Agility",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "InstantBoostAgility2"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Agility",
+    "Multiplier": "3",
+    "Type": "Agility",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "InstantBoostAgility3"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Intelligence",
+    "Multiplier": "1",
+    "Type": "Intelligence",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "InstantBoostIntelligence1"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Intelligence",
+    "Multiplier": "2",
+    "Type": "Intelligence",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "InstantBoostIntelligence2"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Intelligence",
+    "Multiplier": "3",
+    "Type": "Intelligence",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "InstantBoostIntelligence3"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "MaxHP",
+    "Multiplier": "1",
+    "Type": "MaxHP",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "InstantBoostMaxHP1"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "MaxHP",
+    "Multiplier": "2",
+    "Type": "MaxHP",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "InstantBoostMaxHP2"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "MaxHP",
+    "Multiplier": "3",
+    "Type": "MaxHP",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "InstantBoostMaxHP3"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Fire",
+    "Multiplier": "1",
+    "Type": "Fire",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "InstantBoostFire1"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Fire",
+    "Multiplier": "2",
+    "Type": "Fire",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "InstantBoostFire2"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Fire",
+    "Multiplier": "3",
+    "Type": "Fire",
+    "Rarity": "Legendary",
+    "Concatenate": "InstantBoostFire3"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Water",
+    "Multiplier": "1",
+    "Type": "Water",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "InstantBoostWater1"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Water",
+    "Multiplier": "2",
+    "Type": "Water",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "InstantBoostWater2"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Water",
+    "Multiplier": "3",
+    "Type": "Water",
+    "Rarity": "Legendary",
+    "Concatenate": "InstantBoostWater3"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Thunder",
+    "Multiplier": "1",
+    "Type": "Thunder",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "InstantBoostThunder1"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Thunder",
+    "Multiplier": "2",
+    "Type": "Thunder",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "InstantBoostThunder2"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Thunder",
+    "Multiplier": "3",
+    "Type": "Thunder",
+    "Rarity": "Legendary",
+    "Concatenate": "InstantBoostThunder3"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Earth",
+    "Multiplier": "1",
+    "Type": "Earth",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "InstantBoostEarth1"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Earth",
+    "Multiplier": "2",
+    "Type": "Earth",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "InstantBoostEarth2"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Earth",
+    "Multiplier": "3",
+    "Type": "Earth",
+    "Rarity": "Legendary",
+    "Concatenate": "InstantBoostEarth3"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Wind",
+    "Multiplier": "1",
+    "Type": "Wind",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "InstantBoostWind1"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Wind",
+    "Multiplier": "2",
+    "Type": "Wind",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "InstantBoostWind2"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Wind",
+    "Multiplier": "3",
+    "Type": "Wind",
+    "Rarity": "Legendary",
+    "Concatenate": "InstantBoostWind3"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Light",
+    "Multiplier": "1",
+    "Type": "Light",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "InstantBoostLight1"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Light",
+    "Multiplier": "2",
+    "Type": "Light",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "InstantBoostLight2"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Light",
+    "Multiplier": "3",
+    "Type": "Light",
+    "Rarity": "Legendary",
+    "Concatenate": "InstantBoostLight3"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Dark",
+    "Multiplier": "1",
+    "Type": "Dark",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "InstantBoostDark1"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Dark",
+    "Multiplier": "2",
+    "Type": "Dark",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "InstantBoostDark2"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Dark",
+    "Multiplier": "3",
+    "Type": "Dark",
+    "Rarity": "Legendary",
+    "Concatenate": "InstantBoostDark3"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Charge",
+    "Multiplier": "1",
+    "Type": "",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "InstantBoostCharge1"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Charge",
+    "Multiplier": "2",
+    "Type": "",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "InstantBoostCharge2"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Charge",
+    "Multiplier": "3",
+    "Type": "",
+    "Rarity": "Legendary",
+    "Concatenate": "InstantBoostCharge3"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Guard",
+    "Multiplier": "1",
+    "Type": "",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "InstantBoostGuard1"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Guard",
+    "Multiplier": "2",
+    "Type": "",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "InstantBoostGuard2"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Guard",
+    "Multiplier": "3",
+    "Type": "",
+    "Rarity": "Legendary",
+    "Concatenate": "InstantBoostGuard3"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Strength",
+    "Multiplier": "1",
+    "Type": "Strength",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "BuffStrength1"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Strength",
+    "Multiplier": "2",
+    "Type": "Strength",
+    "Rarity": "Legendary",
+    "Concatenate": "BuffStrength2"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Agility",
+    "Multiplier": "1",
+    "Type": "Agility",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "BuffAgility1"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Agility",
+    "Multiplier": "2",
+    "Type": "Agility",
+    "Rarity": "Legendary",
+    "Concatenate": "BuffAgility2"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Intelligence",
+    "Multiplier": "1",
+    "Type": "Intelligence",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "BuffIntelligence1"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Intelligence",
+    "Multiplier": "2",
+    "Type": "Intelligence",
+    "Rarity": "Legendary",
+    "Concatenate": "BuffIntelligence2"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "MaxHP",
+    "Multiplier": "2",
+    "Type": "MaxHP",
+    "Rarity": "Legendary",
+    "Concatenate": "BuffMaxHP2"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Action",
+    "Multiplier": "1",
+    "Type": "",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "BuffAction1"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Draw",
+    "Multiplier": "1",
+    "Type": "",
+    "Rarity": "Legendary",
+    "Concatenate": "BuffDraw1"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "Guard",
+    "Multiplier": "1",
+    "Type": "",
+    "Rarity": "Legendary",
+    "Concatenate": "ProtectGuard1"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "Strength",
+    "Multiplier": "2",
+    "Type": "Strength",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "ProtectStrength2"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "Strength",
+    "Multiplier": "3",
+    "Type": "Strength",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "ProtectStrength3"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "Strength",
+    "Multiplier": "4",
+    "Type": "Strength",
+    "Rarity": "Legendary",
+    "Concatenate": "ProtectStrength4"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "Agility",
+    "Multiplier": "2",
+    "Type": "Agility",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "ProtectAgility2"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "Agility",
+    "Multiplier": "3",
+    "Type": "Agility",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "ProtectAgility3"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "Agility",
+    "Multiplier": "4",
+    "Type": "Agility",
+    "Rarity": "Legendary",
+    "Concatenate": "ProtectAgility4"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "Intelligence",
+    "Multiplier": "2",
+    "Type": "Intelligence",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "ProtectIntelligence2"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "Intelligence",
+    "Multiplier": "3",
+    "Type": "Intelligence",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "ProtectIntelligence3"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "Intelligence",
+    "Multiplier": "4",
+    "Type": "Intelligence",
+    "Rarity": "Legendary",
+    "Concatenate": "ProtectIntelligence4"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "MaxHP",
+    "Multiplier": "1",
+    "Type": "MaxHP",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "ProtectMaxHP1"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "MaxHP",
+    "Multiplier": "2",
+    "Type": "MaxHP",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "ProtectMaxHP2"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "MaxHP",
+    "Multiplier": "3",
+    "Type": "MaxHP",
+    "Rarity": "Legendary",
+    "Concatenate": "ProtectMaxHP3"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "Fire",
+    "Multiplier": "0",
+    "Type": "Fire",
+    "Rarity": "Common-Rare-Epic-Legendary",
+    "Concatenate": "ProtectFire0"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "Water",
+    "Multiplier": "0",
+    "Type": "Water",
+    "Rarity": "Common-Rare-Epic-Legendary",
+    "Concatenate": "ProtectWater0"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "Thunder",
+    "Multiplier": "0",
+    "Type": "Thunder",
+    "Rarity": "Common-Rare-Epic-Legendary",
+    "Concatenate": "ProtectThunder0"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "Earth",
+    "Multiplier": "0",
+    "Type": "Earth",
+    "Rarity": "Common-Rare-Epic-Legendary",
+    "Concatenate": "ProtectEarth0"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "Wind",
+    "Multiplier": "0",
+    "Type": "Wind",
+    "Rarity": "Common-Rare-Epic-Legendary",
+    "Concatenate": "ProtectWind0"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "Light",
+    "Multiplier": "0",
+    "Type": "Light",
+    "Rarity": "Common-Rare-Epic-Legendary",
+    "Concatenate": "ProtectLight0"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "Dark",
+    "Multiplier": "0",
+    "Type": "Dark",
+    "Rarity": "Common-Rare-Epic-Legendary",
+    "Concatenate": "ProtectDark0"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "Bleed",
+    "Multiplier": "0",
+    "Type": "",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "ProtectBleed0"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "Injury",
+    "Multiplier": "0",
+    "Type": "",
+    "Rarity": "Common-Rare-Epic",
+    "Concatenate": "ProtectInjury0"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "Venom",
+    "Multiplier": "0",
+    "Type": "Venom",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "ProtectVenom0"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "Restrain",
+    "Multiplier": "0",
+    "Type": "Restrain",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "ProtectRestrain0"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "Insane",
+    "Multiplier": "0",
+    "Type": "Insane",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "ProtectInsane0"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "LifeSteal",
+    "Multiplier": "1",
+    "Type": "",
+    "Rarity": "Rare-Epic",
+    "Concatenate": "ProtectLifeSteal1"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "Strength",
+    "Multiplier": "1",
+    "Type": "Strength",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ReflectStrength1"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "Strength",
+    "Multiplier": "2",
+    "Type": "Strength",
+    "Rarity": "Legendary",
+    "Concatenate": "ReflectStrength2"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "Agility",
+    "Multiplier": "1",
+    "Type": "Agility",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ReflectAgility1"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "Agility",
+    "Multiplier": "2",
+    "Type": "Agility",
+    "Rarity": "Legendary",
+    "Concatenate": "ReflectAgility2"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "Intelligence",
+    "Multiplier": "1",
+    "Type": "Intelligence",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ReflectIntelligence1"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "Intelligence",
+    "Multiplier": "2",
+    "Type": "Intelligence",
+    "Rarity": "Legendary",
+    "Concatenate": "ReflectIntelligence2"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "MaxHP",
+    "Multiplier": "1",
+    "Type": "MaxHP",
+    "Rarity": "Legendary",
+    "Concatenate": "ReflectMaxHP1"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "Protect",
+    "Multiplier": "0",
+    "Type": "",
+    "Rarity": "Legendary",
+    "Concatenate": "ReflectProtect0"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "Bleed",
+    "Multiplier": "1",
+    "Type": "Bleed",
+    "Rarity": "Legendary",
+    "Concatenate": "ReflectBleed1"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "Injury",
+    "Multiplier": "1",
+    "Type": "",
+    "Rarity": "Legendary",
+    "Concatenate": "ReflectInjury1"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "Venom",
+    "Multiplier": "1",
+    "Type": "Venom",
+    "Rarity": "Legendary",
+    "Concatenate": "ReflectVenom1"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "Restrain",
+    "Multiplier": "1",
+    "Type": "Restrain",
+    "Rarity": "Legendary",
+    "Concatenate": "ReflectRestrain1"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "Insane",
+    "Multiplier": "1",
+    "Type": "Insane",
+    "Rarity": "Legendary",
+    "Concatenate": "ReflectInsane1"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "Fire",
+    "Multiplier": "1",
+    "Type": "Fire",
+    "Rarity": "Common-Rare-Epic-Legendary",
+    "Concatenate": "ReflectFire1"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "Water",
+    "Multiplier": "1",
+    "Type": "Water",
+    "Rarity": "Common-Rare-Epic-Legendary",
+    "Concatenate": "ReflectWater1"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "Thunder",
+    "Multiplier": "1",
+    "Type": "Thunder",
+    "Rarity": "Common-Rare-Epic-Legendary",
+    "Concatenate": "ReflectThunder1"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "Earth",
+    "Multiplier": "1",
+    "Type": "Earth",
+    "Rarity": "Common-Rare-Epic-Legendary",
+    "Concatenate": "ReflectEarth1"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "Wind",
+    "Multiplier": "1",
+    "Type": "Wind",
+    "Rarity": "Common-Rare-Epic-Legendary",
+    "Concatenate": "ReflectWind1"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "Light",
+    "Multiplier": "1",
+    "Type": "Light",
+    "Rarity": "Common-Rare-Epic-Legendary",
+    "Concatenate": "ReflectLight1"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "Dark",
+    "Multiplier": "1",
+    "Type": "Dark",
+    "Rarity": "Common-Rare-Epic-Legendary",
+    "Concatenate": "ReflectDark1"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "Element",
+    "Multiplier": "1",
+    "Type": "Element",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ReflectElement1"
+  },
+  {
+    "Skill Unit 1": "Sacrifice",
+    "Column_1": "Charge",
+    "Multiplier": "1",
+    "Type": "",
+    "Rarity": "Common-Rare",
+    "Concatenate": "SacrificeCharge1"
+  },
+  {
+    "Skill Unit 1": "Sacrifice",
+    "Column_1": "Charge",
+    "Multiplier": "2",
+    "Type": "",
+    "Rarity": "Rare-Epic",
+    "Concatenate": "SacrificeCharge2"
+  },
+  {
+    "Skill Unit 1": "Sacrifice",
+    "Column_1": "Guard",
+    "Multiplier": "1",
+    "Type": "",
+    "Rarity": "Common-Rare",
+    "Concatenate": "SacrificeGuard1"
+  },
+  {
+    "Skill Unit 1": "Sacrifice",
+    "Column_1": "Guard",
+    "Multiplier": "2",
+    "Type": "",
+    "Rarity": "Rare-Epic",
+    "Concatenate": "SacrificeGuard2"
+  },
+  {
+    "Skill Unit 1": "Heal",
+    "Column_1": "Guard",
+    "Multiplier": "1",
+    "Type": "",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "HealGuard1"
+  },
+  {
+    "Skill Unit 1": "Heal",
+    "Column_1": "Charge",
+    "Multiplier": "1",
+    "Type": "",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "HealCharge1"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Strength",
+    "Multiplier": "1",
+    "Type": "Strength",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "UpgradeStrength1"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Agility",
+    "Multiplier": "1",
+    "Type": "Agility",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "UpgradeAgility1"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Intelligence",
+    "Multiplier": "1",
+    "Type": "Intelligence",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "UpgradeIntelligence1"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "MaxHP",
+    "Multiplier": "1",
+    "Type": "MaxHP",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "UpgradeMaxHP1"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Protect",
+    "Multiplier": "0",
+    "Type": "",
+    "Rarity": "Legendary",
+    "Concatenate": "UpgradeProtect0"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Multiply",
+    "Multiplier": "0",
+    "Type": "",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "UpgradeMultiply0"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Humanoid",
+    "Multiplier": "0",
+    "Type": "",
+    "Rarity": "Legendary",
+    "Concatenate": "UpgradeHumanoid0"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Spirit",
+    "Multiplier": "0",
+    "Type": "",
+    "Rarity": "Legendary",
+    "Concatenate": "UpgradeSpirit0"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Creature",
+    "Multiplier": "0",
+    "Type": "",
+    "Rarity": "Legendary",
+    "Concatenate": "UpgradeCreature0"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Matter",
+    "Multiplier": "0",
+    "Type": "",
+    "Rarity": "Legendary",
+    "Concatenate": "UpgradeMatter0"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Fire",
+    "Multiplier": "0",
+    "Type": "Fire",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "UpgradeFire0"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Water",
+    "Multiplier": "0",
+    "Type": "Water",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "UpgradeWater0"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Earth",
+    "Multiplier": "0",
+    "Type": "Earth",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "UpgradeEarth0"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Thunder",
+    "Multiplier": "0",
+    "Type": "Thunder",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "UpgradeThunder0"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Wind",
+    "Multiplier": "0",
+    "Type": "Wind",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "UpgradeWind0"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Light",
+    "Multiplier": "0",
+    "Type": "Light",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "UpgradeLight0"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Dark",
+    "Multiplier": "0",
+    "Type": "Dark",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "UpgradeDark0"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Element",
+    "Multiplier": "0",
+    "Type": "Element",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "UpgradeElement0"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Bleed",
+    "Multiplier": "0",
+    "Type": "Bleed",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "UpgradeBleed0"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Injury",
+    "Multiplier": "0",
+    "Type": "",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "UpgradeInjury0"
+  },
+  {
+    "Skill Unit 1": "Drain",
+    "Column_1": "Strength",
+    "Multiplier": "1",
+    "Type": "Strength",
+    "Rarity": "Rare-Epic",
+    "Concatenate": "DrainStrength1"
+  },
+  {
+    "Skill Unit 1": "Drain",
+    "Column_1": "Agility",
+    "Multiplier": "1",
+    "Type": "Agility",
+    "Rarity": "Rare-Epic",
+    "Concatenate": "DrainAgility1"
+  },
+  {
+    "Skill Unit 1": "Drain",
+    "Column_1": "Intelligence",
+    "Multiplier": "1",
+    "Type": "Intelligence",
+    "Rarity": "Rare-Epic",
+    "Concatenate": "DrainIntelligence1"
+  },
+  {
+    "Skill Unit 1": "Drain",
+    "Column_1": "MaxHP",
+    "Multiplier": "1",
+    "Type": "MaxHP",
+    "Rarity": "Rare-Epic",
+    "Concatenate": "DrainMaxHP1"
+  },
+  {
+    "Skill Unit 1": "Drain",
+    "Column_1": "Venom",
+    "Multiplier": "1",
+    "Type": "Venom",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "DrainVenom1"
+  },
+  {
+    "Skill Unit 1": "Drain",
+    "Column_1": "Restrain",
+    "Multiplier": "1",
+    "Type": "Restrain",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "DrainRestrain1"
+  },
+  {
+    "Skill Unit 1": "Drain",
+    "Column_1": "Insane",
+    "Multiplier": "1",
+    "Type": "Insane",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "DrainInsane1"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Gold",
+    "Multiplier": "1",
+    "Type": "",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "BuffGold1"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Crystal",
+    "Multiplier": "1",
+    "Type": "",
+    "Rarity": "Legendary",
+    "Concatenate": "BuffCrystal1"
+  },
+  {
+    "Skill Unit 1": "Curse",
+    "Column_1": "Exhaust",
+    "Multiplier": "0",
+    "Type": "Curse",
+    "Rarity": "Common-Rare",
+    "Concatenate": "CurseExhaust0"
+  },
+  {
+    "Skill Unit 1": "Discard",
+    "Column_1": "Curse",
+    "Multiplier": "0",
+    "Type": "Curse",
+    "Rarity": "Rare-Epic",
+    "Concatenate": "DiscardCurse0"
+  },
+  {
+    "Skill Unit 1": "Heal",
+    "Column_1": "Curse",
+    "Multiplier": "0",
+    "Type": "Curse",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "HealCurse0"
+  },
+  {
+    "Skill Unit 1": "ApplyOn",
+    "Column_1": "Fire",
+    "Multiplier": "0",
+    "Type": "Fire",
+    "Rarity": "Common-Rare-Epic-Legendary",
+    "Concatenate": "ApplyOnFire0"
+  },
+  {
+    "Skill Unit 1": "ApplyOn",
+    "Column_1": "Water",
+    "Multiplier": "0",
+    "Type": "Water",
+    "Rarity": "Common-Rare-Epic-Legendary",
+    "Concatenate": "ApplyOnWater0"
+  },
+  {
+    "Skill Unit 1": "ApplyOn",
+    "Column_1": "Thunder",
+    "Multiplier": "0",
+    "Type": "Thunder",
+    "Rarity": "Common-Rare-Epic-Legendary",
+    "Concatenate": "ApplyOnThunder0"
+  },
+  {
+    "Skill Unit 1": "ApplyOn",
+    "Column_1": "Earth",
+    "Multiplier": "0",
+    "Type": "Earth",
+    "Rarity": "Common-Rare-Epic-Legendary",
+    "Concatenate": "ApplyOnEarth0"
+  },
+  {
+    "Skill Unit 1": "ApplyOn",
+    "Column_1": "Wind",
+    "Multiplier": "0",
+    "Type": "Wind",
+    "Rarity": "Common-Rare-Epic-Legendary",
+    "Concatenate": "ApplyOnWind0"
+  },
+  {
+    "Skill Unit 1": "ApplyOn",
+    "Column_1": "Light",
+    "Multiplier": "0",
+    "Type": "Light",
+    "Rarity": "Common-Rare-Epic-Legendary",
+    "Concatenate": "ApplyOnLight0"
+  },
+  {
+    "Skill Unit 1": "ApplyOn",
+    "Column_1": "Dark",
+    "Multiplier": "0",
+    "Type": "Dark",
+    "Rarity": "Common-Rare-Epic-Legendary",
+    "Concatenate": "ApplyOnDark0"
+  },
+  {
+    "Skill Unit 1": "ApplyOn",
+    "Column_1": "Humanoid",
+    "Multiplier": "0",
+    "Type": "",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "ApplyOnHumanoid0"
+  },
+  {
+    "Skill Unit 1": "ApplyOn",
+    "Column_1": "Creature",
+    "Multiplier": "0",
+    "Type": "",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "ApplyOnCreature0"
+  },
+  {
+    "Skill Unit 1": "ApplyOn",
+    "Column_1": "Spirit",
+    "Multiplier": "0",
+    "Type": "",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "ApplyOnSpirit0"
+  },
+  {
+    "Skill Unit 1": "ApplyOn",
+    "Column_1": "Matter",
+    "Multiplier": "0",
+    "Type": "",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "ApplyOnMatter0"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Fire",
+    "Multiplier": "1",
+    "Type": "Fire",
+    "Rarity": "Common-Rare",
+    "Concatenate": "BuffFire1"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Fire",
+    "Multiplier": "2",
+    "Type": "Fire",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "BuffFire2"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Fire",
+    "Multiplier": "3",
+    "Type": "Fire",
+    "Rarity": "Legendary",
+    "Concatenate": "BuffFire3"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Water",
+    "Multiplier": "1",
+    "Type": "Water",
+    "Rarity": "Common-Rare",
+    "Concatenate": "BuffWater1"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Water",
+    "Multiplier": "2",
+    "Type": "Water",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "BuffWater2"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Water",
+    "Multiplier": "3",
+    "Type": "Water",
+    "Rarity": "Legendary",
+    "Concatenate": "BuffWater3"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Thunder",
+    "Multiplier": "1",
+    "Type": "Thunder",
+    "Rarity": "Common-Rare",
+    "Concatenate": "BuffThunder1"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Thunder",
+    "Multiplier": "2",
+    "Type": "Thunder",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "BuffThunder2"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Thunder",
+    "Multiplier": "3",
+    "Type": "Thunder",
+    "Rarity": "Legendary",
+    "Concatenate": "BuffThunder3"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Earth",
+    "Multiplier": "1",
+    "Type": "Earth",
+    "Rarity": "Common-Rare",
+    "Concatenate": "BuffEarth1"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Earth",
+    "Multiplier": "2",
+    "Type": "Earth",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "BuffEarth2"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Earth",
+    "Multiplier": "3",
+    "Type": "Earth",
+    "Rarity": "Legendary",
+    "Concatenate": "BuffEarth3"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Wind",
+    "Multiplier": "1",
+    "Type": "Wind",
+    "Rarity": "Common-Rare",
+    "Concatenate": "BuffWind1"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Wind",
+    "Multiplier": "2",
+    "Type": "Wind",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "BuffWind2"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Wind",
+    "Multiplier": "3",
+    "Type": "Wind",
+    "Rarity": "Legendary",
+    "Concatenate": "BuffWind3"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Light",
+    "Multiplier": "1",
+    "Type": "Light",
+    "Rarity": "Common-Rare",
+    "Concatenate": "BuffLight1"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Light",
+    "Multiplier": "2",
+    "Type": "Light",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "BuffLight2"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Light",
+    "Multiplier": "3",
+    "Type": "Light",
+    "Rarity": "Legendary",
+    "Concatenate": "BuffLight3"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Dark",
+    "Multiplier": "1",
+    "Type": "Dark",
+    "Rarity": "Common-Rare",
+    "Concatenate": "BuffDark1"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Dark",
+    "Multiplier": "2",
+    "Type": "Dark",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "BuffDark2"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Dark",
+    "Multiplier": "3",
+    "Type": "Dark",
+    "Rarity": "Legendary",
+    "Concatenate": "BuffDark3"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Element",
+    "Multiplier": "1",
+    "Type": "Element",
+    "Rarity": "Rare-Epic",
+    "Concatenate": "BuffElement1"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Element",
+    "Multiplier": "2",
+    "Type": "Element",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "BuffElement2"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "Element",
+    "Multiplier": "0",
+    "Type": "Element",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ProtectElement0"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "Element",
+    "Multiplier": "1",
+    "Type": "Element",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "ProtectElement1"
+  },
+  {
+    "Skill Unit 1": "Protect",
+    "Column_1": "Element",
+    "Multiplier": "2",
+    "Type": "Element",
+    "Rarity": "Legendary",
+    "Concatenate": "ProtectElement2"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "MaxHP",
+    "Multiplier": "1",
+    "Type": "MaxHP",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "BuffMaxHP1"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Gold",
+    "Multiplier": "2",
+    "Type": "",
+    "Rarity": "Legendary",
+    "Concatenate": "BuffGold2"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Delay",
+    "Multiplier": "0",
+    "Type": "Exhaust",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "UpgradeDelay0"
+  },
+  {
+    "Skill Unit 1": "ActionBuff",
+    "Column_1": "Fire",
+    "Multiplier": "1",
+    "Type": "Fire",
+    "Rarity": "Common-Rare",
+    "Concatenate": "ActionBuffFire1"
+  },
+  {
+    "Skill Unit 1": "ActionBuff",
+    "Column_1": "Fire",
+    "Multiplier": "2",
+    "Type": "Fire",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ActionBuffFire2"
+  },
+  {
+    "Skill Unit 1": "ActionBuff",
+    "Column_1": "Fire",
+    "Multiplier": "3",
+    "Type": "Fire",
+    "Rarity": "Legendary",
+    "Concatenate": "ActionBuffFire3"
+  },
+  {
+    "Skill Unit 1": "ActionBuff",
+    "Column_1": "Water",
+    "Multiplier": "1",
+    "Type": "Water",
+    "Rarity": "Common-Rare",
+    "Concatenate": "ActionBuffWater1"
+  },
+  {
+    "Skill Unit 1": "ActionBuff",
+    "Column_1": "Water",
+    "Multiplier": "2",
+    "Type": "Water",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ActionBuffWater2"
+  },
+  {
+    "Skill Unit 1": "ActionBuff",
+    "Column_1": "Water",
+    "Multiplier": "3",
+    "Type": "Water",
+    "Rarity": "Legendary",
+    "Concatenate": "ActionBuffWater3"
+  },
+  {
+    "Skill Unit 1": "ActionBuff",
+    "Column_1": "Thunder",
+    "Multiplier": "1",
+    "Type": "Thunder",
+    "Rarity": "Common-Rare",
+    "Concatenate": "ActionBuffThunder1"
+  },
+  {
+    "Skill Unit 1": "ActionBuff",
+    "Column_1": "Thunder",
+    "Multiplier": "2",
+    "Type": "Thunder",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ActionBuffThunder2"
+  },
+  {
+    "Skill Unit 1": "ActionBuff",
+    "Column_1": "Thunder",
+    "Multiplier": "3",
+    "Type": "Thunder",
+    "Rarity": "Legendary",
+    "Concatenate": "ActionBuffThunder3"
+  },
+  {
+    "Skill Unit 1": "ActionBuff",
+    "Column_1": "Earth",
+    "Multiplier": "1",
+    "Type": "Earth",
+    "Rarity": "Common-Rare",
+    "Concatenate": "ActionBuffEarth1"
+  },
+  {
+    "Skill Unit 1": "ActionBuff",
+    "Column_1": "Earth",
+    "Multiplier": "2",
+    "Type": "Earth",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ActionBuffEarth2"
+  },
+  {
+    "Skill Unit 1": "ActionBuff",
+    "Column_1": "Earth",
+    "Multiplier": "3",
+    "Type": "Earth",
+    "Rarity": "Legendary",
+    "Concatenate": "ActionBuffEarth3"
+  },
+  {
+    "Skill Unit 1": "ActionBuff",
+    "Column_1": "Wind",
+    "Multiplier": "1",
+    "Type": "Wind",
+    "Rarity": "Common-Rare",
+    "Concatenate": "ActionBuffWind1"
+  },
+  {
+    "Skill Unit 1": "ActionBuff",
+    "Column_1": "Wind",
+    "Multiplier": "2",
+    "Type": "Wind",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ActionBuffWind2"
+  },
+  {
+    "Skill Unit 1": "ActionBuff",
+    "Column_1": "Wind",
+    "Multiplier": "3",
+    "Type": "Wind",
+    "Rarity": "Legendary",
+    "Concatenate": "ActionBuffWind3"
+  },
+  {
+    "Skill Unit 1": "ActionBuff",
+    "Column_1": "Light",
+    "Multiplier": "1",
+    "Type": "Light",
+    "Rarity": "Common-Rare",
+    "Concatenate": "ActionBuffLight1"
+  },
+  {
+    "Skill Unit 1": "ActionBuff",
+    "Column_1": "Light",
+    "Multiplier": "2",
+    "Type": "Light",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ActionBuffLight2"
+  },
+  {
+    "Skill Unit 1": "ActionBuff",
+    "Column_1": "Light",
+    "Multiplier": "3",
+    "Type": "Light",
+    "Rarity": "Legendary",
+    "Concatenate": "ActionBuffLight3"
+  },
+  {
+    "Skill Unit 1": "ActionBuff",
+    "Column_1": "Dark",
+    "Multiplier": "1",
+    "Type": "Dark",
+    "Rarity": "Common-Rare",
+    "Concatenate": "ActionBuffDark1"
+  },
+  {
+    "Skill Unit 1": "ActionBuff",
+    "Column_1": "Dark",
+    "Multiplier": "2",
+    "Type": "Dark",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ActionBuffDark2"
+  },
+  {
+    "Skill Unit 1": "ActionBuff",
+    "Column_1": "Dark",
+    "Multiplier": "3",
+    "Type": "Dark",
+    "Rarity": "Legendary",
+    "Concatenate": "ActionBuffDark3"
+  },
+  {
+    "Skill Unit 1": "Sacrifice",
+    "Column_1": "Curse",
+    "Multiplier": "0",
+    "Type": "Curse",
+    "Rarity": "Legendary",
+    "Concatenate": "SacrificeCurse0"
+  },
+  {
+    "Skill Unit 1": "ActionDebuff",
+    "Column_1": "Venom",
+    "Multiplier": "1",
+    "Type": "Venom",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ActionDebuffVenom1"
+  },
+  {
+    "Skill Unit 1": "ActionDebuff",
+    "Column_1": "Restrain",
+    "Multiplier": "1",
+    "Type": "Restrain",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ActionDebuffRestrain1"
+  },
+  {
+    "Skill Unit 1": "ActionDebuff",
+    "Column_1": "Insane",
+    "Multiplier": "1",
+    "Type": "Insane",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ActionDebuffInsane1"
+  },
+  {
+    "Skill Unit 1": "ApplyOn",
+    "Column_1": "Sacrifice",
+    "Multiplier": "0",
+    "Type": "Exhaust",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ApplyOnSacrifice0"
+  },
+  {
+    "Skill Unit 1": "ApplyOn",
+    "Column_1": "Full",
+    "Multiplier": "0",
+    "Type": "Exhaust",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ApplyOnFull0"
+  },
+  {
+    "Skill Unit 1": "Combo",
+    "Column_1": "Fire",
+    "Multiplier": "1",
+    "Type": "Fire",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ComboFire1"
+  },
+  {
+    "Skill Unit 1": "Combo",
+    "Column_1": "Fire",
+    "Multiplier": "2",
+    "Type": "Fire",
+    "Rarity": "Legendary",
+    "Concatenate": "ComboFire2"
+  },
+  {
+    "Skill Unit 1": "Combo",
+    "Column_1": "Water",
+    "Multiplier": "1",
+    "Type": "Water",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ComboWater1"
+  },
+  {
+    "Skill Unit 1": "Combo",
+    "Column_1": "Water",
+    "Multiplier": "2",
+    "Type": "Water",
+    "Rarity": "Legendary",
+    "Concatenate": "ComboWater2"
+  },
+  {
+    "Skill Unit 1": "Combo",
+    "Column_1": "Thunder",
+    "Multiplier": "1",
+    "Type": "Thunder",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ComboThunder1"
+  },
+  {
+    "Skill Unit 1": "Combo",
+    "Column_1": "Thunder",
+    "Multiplier": "2",
+    "Type": "Thunder",
+    "Rarity": "Legendary",
+    "Concatenate": "ComboThunder2"
+  },
+  {
+    "Skill Unit 1": "Combo",
+    "Column_1": "Earth",
+    "Multiplier": "1",
+    "Type": "Earth",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ComboEarth1"
+  },
+  {
+    "Skill Unit 1": "Combo",
+    "Column_1": "Earth",
+    "Multiplier": "2",
+    "Type": "Earth",
+    "Rarity": "Legendary",
+    "Concatenate": "ComboEarth2"
+  },
+  {
+    "Skill Unit 1": "Combo",
+    "Column_1": "Wind",
+    "Multiplier": "1",
+    "Type": "Wind",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ComboWind1"
+  },
+  {
+    "Skill Unit 1": "Combo",
+    "Column_1": "Wind",
+    "Multiplier": "2",
+    "Type": "Wind",
+    "Rarity": "Legendary",
+    "Concatenate": "ComboWind2"
+  },
+  {
+    "Skill Unit 1": "Combo",
+    "Column_1": "Light",
+    "Multiplier": "1",
+    "Type": "Light",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ComboLight1"
+  },
+  {
+    "Skill Unit 1": "Combo",
+    "Column_1": "Light",
+    "Multiplier": "2",
+    "Type": "Light",
+    "Rarity": "Legendary",
+    "Concatenate": "ComboLight2"
+  },
+  {
+    "Skill Unit 1": "Combo",
+    "Column_1": "Dark",
+    "Multiplier": "1",
+    "Type": "Dark",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ComboDark1"
+  },
+  {
+    "Skill Unit 1": "Combo",
+    "Column_1": "Dark",
+    "Multiplier": "2",
+    "Type": "Dark",
+    "Rarity": "Legendary",
+    "Concatenate": "ComboDark2"
+  },
+  {
+    "Skill Unit 1": "TurnDebuff",
+    "Column_1": "Strength",
+    "Multiplier": "1",
+    "Type": "Strength",
+    "Rarity": "Rare-Epic",
+    "Concatenate": "TurnDebuffStrength1"
+  },
+  {
+    "Skill Unit 1": "TurnDebuff",
+    "Column_1": "Strength",
+    "Multiplier": "2",
+    "Type": "Strength",
+    "Rarity": "Legendary",
+    "Concatenate": "TurnDebuffStrength2"
+  },
+  {
+    "Skill Unit 1": "TurnDebuff",
+    "Column_1": "Agility",
+    "Multiplier": "1",
+    "Type": "Agility",
+    "Rarity": "Rare-Epic",
+    "Concatenate": "TurnDebuffAgility1"
+  },
+  {
+    "Skill Unit 1": "TurnDebuff",
+    "Column_1": "Agility",
+    "Multiplier": "2",
+    "Type": "Agility",
+    "Rarity": "Legendary",
+    "Concatenate": "TurnDebuffAgility2"
+  },
+  {
+    "Skill Unit 1": "TurnDebuff",
+    "Column_1": "Intelligence",
+    "Multiplier": "1",
+    "Type": "Intelligence",
+    "Rarity": "Rare-Epic",
+    "Concatenate": "TurnDebuffIntelligence1"
+  },
+  {
+    "Skill Unit 1": "TurnDebuff",
+    "Column_1": "Intelligence",
+    "Multiplier": "2",
+    "Type": "Intelligence",
+    "Rarity": "Legendary",
+    "Concatenate": "TurnDebuffIntelligence2"
+  },
+  {
+    "Skill Unit 1": "TurnDebuff",
+    "Column_1": "Fire",
+    "Multiplier": "1",
+    "Type": "Fire",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnDebuffFire1"
+  },
+  {
+    "Skill Unit 1": "TurnDebuff",
+    "Column_1": "Water",
+    "Multiplier": "1",
+    "Type": "Water",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnDebuffWater1"
+  },
+  {
+    "Skill Unit 1": "TurnDebuff",
+    "Column_1": "Thunder",
+    "Multiplier": "1",
+    "Type": "Thunder",
+    "Rarity": "Rare-Epic",
+    "Concatenate": "TurnDebuffThunder1"
+  },
+  {
+    "Skill Unit 1": "TurnDebuff",
+    "Column_1": "Thunder",
+    "Multiplier": "2",
+    "Type": "Thunder",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnDebuffThunder2"
+  },
+  {
+    "Skill Unit 1": "TurnDebuff",
+    "Column_1": "Earth",
+    "Multiplier": "1",
+    "Type": "Earth",
+    "Rarity": "Common-Rare",
+    "Concatenate": "TurnDebuffEarth1"
+  },
+  {
+    "Skill Unit 1": "TurnDebuff",
+    "Column_1": "Earth",
+    "Multiplier": "2",
+    "Type": "Earth",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnDebuffEarth2"
+  },
+  {
+    "Skill Unit 1": "TurnDebuff",
+    "Column_1": "Wind",
+    "Multiplier": "1",
+    "Type": "Wind",
+    "Rarity": "Common-Rare",
+    "Concatenate": "TurnDebuffWind1"
+  },
+  {
+    "Skill Unit 1": "TurnDebuff",
+    "Column_1": "Wind",
+    "Multiplier": "2",
+    "Type": "Wind",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnDebuffWind2"
+  },
+  {
+    "Skill Unit 1": "TurnDebuff",
+    "Column_1": "Light",
+    "Multiplier": "1",
+    "Type": "Light",
+    "Rarity": "Rare-Epic",
+    "Concatenate": "TurnDebuffLight1"
+  },
+  {
+    "Skill Unit 1": "TurnDebuff",
+    "Column_1": "Light",
+    "Multiplier": "2",
+    "Type": "Light",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnDebuffLight2"
+  },
+  {
+    "Skill Unit 1": "TurnDebuff",
+    "Column_1": "Dark",
+    "Multiplier": "1",
+    "Type": "Dark",
+    "Rarity": "Common-Rare",
+    "Concatenate": "TurnDebuffDark1"
+  },
+  {
+    "Skill Unit 1": "TurnDebuff",
+    "Column_1": "Dark",
+    "Multiplier": "2",
+    "Type": "Dark",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnDebuffDark2"
+  },
+  {
+    "Skill Unit 1": "TurnDebuff",
+    "Column_1": "Injury",
+    "Multiplier": "1",
+    "Type": "Injury",
+    "Rarity": "Rare",
+    "Concatenate": "TurnDebuffInjury1"
+  },
+  {
+    "Skill Unit 1": "TurnDebuff",
+    "Column_1": "Injury",
+    "Multiplier": "2",
+    "Type": "Injury",
+    "Rarity": "Epic",
+    "Concatenate": "TurnDebuffInjury2"
+  },
+  {
+    "Skill Unit 1": "TurnDebuff",
+    "Column_1": "Injury",
+    "Multiplier": "3",
+    "Type": "Injury",
+    "Rarity": "Legendary",
+    "Concatenate": "TurnDebuffInjury3"
+  },
+  {
+    "Skill Unit 1": "TurnDebuff",
+    "Column_1": "Bleed",
+    "Multiplier": "1",
+    "Type": "Bleed",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnDebuffBleed1"
+  },
+  {
+    "Skill Unit 1": "TurnDebuff",
+    "Column_1": "Bleed",
+    "Multiplier": "2",
+    "Type": "Bleed",
+    "Rarity": "Legendary",
+    "Concatenate": "TurnDebuffBleed2"
+  },
+  {
+    "Skill Unit 1": "Combo",
+    "Column_1": "Element",
+    "Multiplier": "1",
+    "Type": "Element",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ComboElement1"
+  },
+  {
+    "Skill Unit 1": "Combo",
+    "Column_1": "Element",
+    "Multiplier": "2",
+    "Type": "Element",
+    "Rarity": "Legendary",
+    "Concatenate": "ComboElement2"
+  },
+  {
+    "Skill Unit 1": "InstantNerf",
+    "Column_1": "Fire",
+    "Multiplier": "1",
+    "Type": "Curse",
+    "Rarity": "Common-Rare",
+    "Concatenate": "InstantNerfFire1"
+  },
+  {
+    "Skill Unit 1": "InstantNerf",
+    "Column_1": "Water",
+    "Multiplier": "1",
+    "Type": "Curse",
+    "Rarity": "Common-Rare",
+    "Concatenate": "InstantNerfWater1"
+  },
+  {
+    "Skill Unit 1": "InstantNerf",
+    "Column_1": "Thunder",
+    "Multiplier": "1",
+    "Type": "Curse",
+    "Rarity": "Common-Rare",
+    "Concatenate": "InstantNerfThunder1"
+  },
+  {
+    "Skill Unit 1": "InstantNerf",
+    "Column_1": "Earth",
+    "Multiplier": "1",
+    "Type": "Curse",
+    "Rarity": "Common-Rare",
+    "Concatenate": "InstantNerfEarth1"
+  },
+  {
+    "Skill Unit 1": "InstantNerf",
+    "Column_1": "Wind",
+    "Multiplier": "1",
+    "Type": "Curse",
+    "Rarity": "Common-Rare",
+    "Concatenate": "InstantNerfWind1"
+  },
+  {
+    "Skill Unit 1": "InstantNerf",
+    "Column_1": "Light",
+    "Multiplier": "1",
+    "Type": "Curse",
+    "Rarity": "Common-Rare",
+    "Concatenate": "InstantNerfLight1"
+  },
+  {
+    "Skill Unit 1": "InstantNerf",
+    "Column_1": "Dark",
+    "Multiplier": "1",
+    "Type": "Curse",
+    "Rarity": "Common-Rare",
+    "Concatenate": "InstantNerfDark1"
+  },
+  {
+    "Skill Unit 1": "InstantNerf",
+    "Column_1": "Bleed",
+    "Multiplier": "1",
+    "Type": "Curse",
+    "Rarity": "Common",
+    "Concatenate": "InstantNerfBleed1"
+  },
+  {
+    "Skill Unit 1": "InstantNerf",
+    "Column_1": "Bleed",
+    "Multiplier": "2",
+    "Type": "Curse",
+    "Rarity": "Rare",
+    "Concatenate": "InstantNerfBleed2"
+  },
+  {
+    "Skill Unit 1": "InstantNerf",
+    "Column_1": "Bleed",
+    "Multiplier": "3",
+    "Type": "Curse",
+    "Rarity": "Epic",
+    "Concatenate": "InstantNerfBleed3"
+  },
+  {
+    "Skill Unit 1": "InstantNerf",
+    "Column_1": "Venom",
+    "Multiplier": "2",
+    "Type": "Curse",
+    "Rarity": "Common",
+    "Concatenate": "InstantNerfVenom2"
+  },
+  {
+    "Skill Unit 1": "InstantNerf",
+    "Column_1": "Venom",
+    "Multiplier": "5",
+    "Type": "Curse",
+    "Rarity": "Rare",
+    "Concatenate": "InstantNerfVenom5"
+  },
+  {
+    "Skill Unit 1": "InstantNerf",
+    "Column_1": "Venom",
+    "Multiplier": "7",
+    "Type": "Curse",
+    "Rarity": "Epic",
+    "Concatenate": "InstantNerfVenom7"
+  },
+  {
+    "Skill Unit 1": "InstantNerf",
+    "Column_1": "Restrain",
+    "Multiplier": "2",
+    "Type": "Curse",
+    "Rarity": "Common",
+    "Concatenate": "InstantNerfRestrain2"
+  },
+  {
+    "Skill Unit 1": "InstantNerf",
+    "Column_1": "Restrain",
+    "Multiplier": "5",
+    "Type": "Curse",
+    "Rarity": "Rare",
+    "Concatenate": "InstantNerfRestrain5"
+  },
+  {
+    "Skill Unit 1": "InstantNerf",
+    "Column_1": "Restrain",
+    "Multiplier": "7",
+    "Type": "Curse",
+    "Rarity": "Epic",
+    "Concatenate": "InstantNerfRestrain7"
+  },
+  {
+    "Skill Unit 1": "InstantNerf",
+    "Column_1": "Insane",
+    "Multiplier": "2",
+    "Type": "Curse",
+    "Rarity": "Common",
+    "Concatenate": "InstantNerfInsane2"
+  },
+  {
+    "Skill Unit 1": "InstantNerf",
+    "Column_1": "Insane",
+    "Multiplier": "5",
+    "Type": "Curse",
+    "Rarity": "Rare",
+    "Concatenate": "InstantNerfInsane5"
+  },
+  {
+    "Skill Unit 1": "InstantNerf",
+    "Column_1": "Insane",
+    "Multiplier": "7",
+    "Type": "Curse",
+    "Rarity": "Epic",
+    "Concatenate": "InstantNerfInsane7"
+  },
+  {
+    "Skill Unit 1": "Sacrifice",
+    "Column_1": "Bleed",
+    "Multiplier": "0",
+    "Type": "Bleed",
+    "Rarity": "Legendary",
+    "Concatenate": "SacrificeBleed0"
+  },
+  {
+    "Skill Unit 1": "Drain",
+    "Column_1": "Bleed",
+    "Multiplier": "0",
+    "Type": "Bleed",
+    "Rarity": "Rare-Epic",
+    "Concatenate": "DrainBleed0"
+  },
+  {
+    "Skill Unit 1": "ApplyOn",
+    "Column_1": "Certain",
+    "Multiplier": "0",
+    "Type": "Certain",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ApplyOnCertain0"
+  },
+  {
+    "Skill Unit 1": "ApplyOn",
+    "Column_1": "Buff",
+    "Multiplier": "0",
+    "Type": "",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ApplyOnBuff0"
+  },
+  {
+    "Skill Unit 1": "ApplyOn",
+    "Column_1": "Debuff",
+    "Multiplier": "0",
+    "Type": "",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ApplyOnDebuff0"
+  },
+  {
+    "Skill Unit 1": "InstantBoost",
+    "Column_1": "Certain",
+    "Multiplier": "1",
+    "Type": "Certain",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "InstantBoostCertain1"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "MaxHP",
+    "Multiplier": "1",
+    "Type": "MaxHP",
+    "Rarity": "Common",
+    "Concatenate": "TurnBuffMaxHP1"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "MaxHP",
+    "Multiplier": "2",
+    "Type": "MaxHP",
+    "Rarity": "Common-Rare",
+    "Concatenate": "TurnBuffMaxHP2"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Strength",
+    "Multiplier": "3",
+    "Type": "Strength",
+    "Rarity": "Rare-Epic",
+    "Concatenate": "TurnBuffStrength3"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Agility",
+    "Multiplier": "3",
+    "Type": "Agility",
+    "Rarity": "Rare-Epic",
+    "Concatenate": "TurnBuffAgility3"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Intelligence",
+    "Multiplier": "3",
+    "Type": "Intelligence",
+    "Rarity": "Rare-Epic",
+    "Concatenate": "TurnBuffIntelligence3"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "MaxHP",
+    "Multiplier": "3",
+    "Type": "MaxHP",
+    "Rarity": "Rare-Epic",
+    "Concatenate": "TurnBuffMaxHP3"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Strength",
+    "Multiplier": "4",
+    "Type": "Strength",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnBuffStrength4"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Agility",
+    "Multiplier": "4",
+    "Type": "Agility",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnBuffAgility4"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Intelligence",
+    "Multiplier": "4",
+    "Type": "Intelligence",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnBuffIntelligence4"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Strength",
+    "Multiplier": "5",
+    "Type": "Strength",
+    "Rarity": "Legendary",
+    "Concatenate": "TurnBuffStrength5"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Agility",
+    "Multiplier": "5",
+    "Type": "Agility",
+    "Rarity": "Legendary",
+    "Concatenate": "TurnBuffAgility5"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Intelligence",
+    "Multiplier": "5",
+    "Type": "Intelligence",
+    "Rarity": "Legendary",
+    "Concatenate": "TurnBuffIntelligence5"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "MaxHP",
+    "Multiplier": "4",
+    "Type": "MaxHP",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnBuffMaxHP4"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "MaxHP",
+    "Multiplier": "5",
+    "Type": "MaxHP",
+    "Rarity": "Legendary",
+    "Concatenate": "TurnBuffMaxHP5"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "StrengthM",
+    "Multiplier": "1",
+    "Type": "Strength",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ReflectStrengthM1"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "StrengthM",
+    "Multiplier": "2",
+    "Type": "Strength",
+    "Rarity": "Legendary",
+    "Concatenate": "ReflectStrengthM2"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "AgilityM",
+    "Multiplier": "1",
+    "Type": "Agility",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ReflectAgilityM1"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "AgilityM",
+    "Multiplier": "2",
+    "Type": "Agility",
+    "Rarity": "Legendary",
+    "Concatenate": "ReflectAgilityM2"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "IntelligenceM",
+    "Multiplier": "1",
+    "Type": "Intelligence",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ReflectIntelligenceM1"
+  },
+  {
+    "Skill Unit 1": "Reflect",
+    "Column_1": "IntelligenceM",
+    "Multiplier": "2",
+    "Type": "Intelligence",
+    "Rarity": "Legendary",
+    "Concatenate": "ReflectIntelligenceM2"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Charge",
+    "Multiplier": "0",
+    "Type": "",
+    "Rarity": "Legendary",
+    "Concatenate": "UpgradeCharge0"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Guard",
+    "Multiplier": "0",
+    "Type": "",
+    "Rarity": "Legendary",
+    "Concatenate": "UpgradeGuard0"
+  },
+  {
+    "Skill Unit 1": "ApplyOn",
+    "Column_1": "LifeSteal",
+    "Multiplier": "0",
+    "Type": "Bleed",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ApplyOnLifeSteal0"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Exhaust",
+    "Multiplier": "0",
+    "Type": "Exhaust",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "UpgradeExhaust0"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Delay",
+    "Multiplier": "0",
+    "Type": "Exhaust",
+    "Rarity": "Legendary",
+    "Concatenate": "BuffDelay0"
+  },
+  {
+    "Skill Unit 1": "Buff",
+    "Column_1": "Null",
+    "Multiplier": "0",
+    "Type": "Exhaust",
+    "Rarity": "Legendary",
+    "Concatenate": "BuffNull0"
+  },
+  {
+    "Skill Unit 1": "TurnDebuff",
+    "Column_1": "Confuse",
+    "Multiplier": "1",
+    "Type": "Exhaust",
+    "Rarity": "Legendary",
+    "Concatenate": "TurnDebuffConfuse1"
+  },
+  {
+    "Skill Unit 1": "TurnDebuff",
+    "Column_1": "Slack",
+    "Multiplier": "1",
+    "Type": "Exhaust",
+    "Rarity": "Legendary",
+    "Concatenate": "TurnDebuffSlack1"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Null",
+    "Multiplier": "0",
+    "Type": "Exhaust",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "UpgradeNull0"
+  },
+  {
+    "Skill Unit 1": "Drain",
+    "Column_1": "Strength",
+    "Multiplier": "2",
+    "Type": "Strength",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "DrainStrength2"
+  },
+  {
+    "Skill Unit 1": "Drain",
+    "Column_1": "Agility",
+    "Multiplier": "2",
+    "Type": "Agility",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "DrainAgility2"
+  },
+  {
+    "Skill Unit 1": "Drain",
+    "Column_1": "Intelligence",
+    "Multiplier": "2",
+    "Type": "Intelligence",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "DrainIntelligence2"
+  },
+  {
+    "Skill Unit 1": "Drain",
+    "Column_1": "MaxHP",
+    "Multiplier": "2",
+    "Type": "MaxHP",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "DrainMaxHP2"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Aggro",
+    "Multiplier": "0",
+    "Type": "Exhaust",
+    "Rarity": "Legendary",
+    "Concatenate": "UpgradeAggro0"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Dice",
+    "Multiplier": "1",
+    "Type": "Dice",
+    "Rarity": "Common",
+    "Concatenate": "TurnBuffDice1"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Dice",
+    "Multiplier": "2",
+    "Type": "Dice",
+    "Rarity": "Rare-Epic",
+    "Concatenate": "TurnBuffDice2"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Dice",
+    "Multiplier": "3",
+    "Type": "Dice",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnBuffDice3"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Dice",
+    "Multiplier": "4",
+    "Type": "Dice",
+    "Rarity": "Legendary",
+    "Concatenate": "TurnBuffDice4"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Fire",
+    "Multiplier": "1",
+    "Type": "Fire",
+    "Rarity": "Common",
+    "Concatenate": "TurnBuffFire1"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Fire",
+    "Multiplier": "2",
+    "Type": "Fire",
+    "Rarity": "Rare",
+    "Concatenate": "TurnBuffFire2"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Fire",
+    "Multiplier": "3",
+    "Type": "Fire",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnBuffFire3"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Fire",
+    "Multiplier": "4",
+    "Type": "Fire",
+    "Rarity": "Legendary",
+    "Concatenate": "TurnBuffFire4"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Water",
+    "Multiplier": "1",
+    "Type": "Water",
+    "Rarity": "Common",
+    "Concatenate": "TurnBuffWater1"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Water",
+    "Multiplier": "2",
+    "Type": "Water",
+    "Rarity": "Rare",
+    "Concatenate": "TurnBuffWater2"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Water",
+    "Multiplier": "3",
+    "Type": "Water",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnBuffWater3"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Water",
+    "Multiplier": "4",
+    "Type": "Water",
+    "Rarity": "Legendary",
+    "Concatenate": "TurnBuffWater4"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Thunder",
+    "Multiplier": "1",
+    "Type": "Thunder",
+    "Rarity": "Common",
+    "Concatenate": "TurnBuffThunder1"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Thunder",
+    "Multiplier": "2",
+    "Type": "Thunder",
+    "Rarity": "Rare",
+    "Concatenate": "TurnBuffThunder2"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Thunder",
+    "Multiplier": "3",
+    "Type": "Thunder",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnBuffThunder3"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Thunder",
+    "Multiplier": "4",
+    "Type": "Thunder",
+    "Rarity": "Legendary",
+    "Concatenate": "TurnBuffThunder4"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Earth",
+    "Multiplier": "1",
+    "Type": "Earth",
+    "Rarity": "Common",
+    "Concatenate": "TurnBuffEarth1"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Earth",
+    "Multiplier": "2",
+    "Type": "Earth",
+    "Rarity": "Rare",
+    "Concatenate": "TurnBuffEarth2"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Earth",
+    "Multiplier": "3",
+    "Type": "Earth",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnBuffEarth3"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Earth",
+    "Multiplier": "4",
+    "Type": "Earth",
+    "Rarity": "Legendary",
+    "Concatenate": "TurnBuffEarth4"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Wind",
+    "Multiplier": "1",
+    "Type": "Wind",
+    "Rarity": "Common",
+    "Concatenate": "TurnBuffWind1"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Wind",
+    "Multiplier": "2",
+    "Type": "Wind",
+    "Rarity": "Rare",
+    "Concatenate": "TurnBuffWind2"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Wind",
+    "Multiplier": "3",
+    "Type": "Wind",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnBuffWind3"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Wind",
+    "Multiplier": "4",
+    "Type": "Wind",
+    "Rarity": "Legendary",
+    "Concatenate": "TurnBuffWind4"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Light",
+    "Multiplier": "1",
+    "Type": "Light",
+    "Rarity": "Common",
+    "Concatenate": "TurnBuffLight1"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Light",
+    "Multiplier": "2",
+    "Type": "Light",
+    "Rarity": "Rare",
+    "Concatenate": "TurnBuffLight2"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Light",
+    "Multiplier": "3",
+    "Type": "Light",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnBuffLight3"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Light",
+    "Multiplier": "4",
+    "Type": "Light",
+    "Rarity": "Legendary",
+    "Concatenate": "TurnBuffLight4"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Dark",
+    "Multiplier": "1",
+    "Type": "Dark",
+    "Rarity": "Common",
+    "Concatenate": "TurnBuffDark1"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Dark",
+    "Multiplier": "2",
+    "Type": "Dark",
+    "Rarity": "Rare",
+    "Concatenate": "TurnBuffDark2"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Dark",
+    "Multiplier": "3",
+    "Type": "Dark",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "TurnBuffDark3"
+  },
+  {
+    "Skill Unit 1": "TurnBuff",
+    "Column_1": "Dark",
+    "Multiplier": "4",
+    "Type": "Dark",
+    "Rarity": "Legendary",
+    "Concatenate": "TurnBuffDark4"
+  },
+  {
+    "Skill Unit 1": "Drain",
+    "Column_1": "Fire",
+    "Multiplier": "0",
+    "Type": "Fire",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "DrainFire0"
+  },
+  {
+    "Skill Unit 1": "Drain",
+    "Column_1": "Water",
+    "Multiplier": "0",
+    "Type": "Water",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "DrainWater0"
+  },
+  {
+    "Skill Unit 1": "Drain",
+    "Column_1": "Thunder",
+    "Multiplier": "0",
+    "Type": "Thunder",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "DrainThunder0"
+  },
+  {
+    "Skill Unit 1": "Drain",
+    "Column_1": "Earth",
+    "Multiplier": "0",
+    "Type": "Earth",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "DrainEarth0"
+  },
+  {
+    "Skill Unit 1": "Drain",
+    "Column_1": "Wind",
+    "Multiplier": "0",
+    "Type": "Wind",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "DrainWind0"
+  },
+  {
+    "Skill Unit 1": "Drain",
+    "Column_1": "Light",
+    "Multiplier": "0",
+    "Type": "Light",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "DrainLight0"
+  },
+  {
+    "Skill Unit 1": "Drain",
+    "Column_1": "Dark",
+    "Multiplier": "0",
+    "Type": "Dark",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "DrainDark0"
+  },
+  {
+    "Skill Unit 1": "ApplyOn",
+    "Column_1": "Element",
+    "Multiplier": "0",
+    "Type": "Element",
+    "Rarity": "Rare-Epic",
+    "Concatenate": "ApplyOnElement0"
+  },
+  {
+    "Skill Unit 1": "ApplyOn",
+    "Column_1": "Curse",
+    "Multiplier": "0",
+    "Type": "Curse",
+    "Rarity": "Legendary",
+    "Concatenate": "ApplyOnCurse0"
+  },
+  {
+    "Skill Unit 1": "ApplyOn",
+    "Column_1": "Food",
+    "Multiplier": "0",
+    "Type": "Exhaust",
+    "Rarity": "Legendary",
+    "Concatenate": "ApplyOnFood0"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Dice",
+    "Multiplier": "0",
+    "Type": "Dice",
+    "Rarity": "Legendary",
+    "Concatenate": "UpgradeDice0"
+  },
+  {
+    "Skill Unit 1": "Sacrifice",
+    "Column_1": "Dice",
+    "Multiplier": "0",
+    "Type": "Dice",
+    "Rarity": "Rare-Epic",
+    "Concatenate": "SacrificeDice0"
+  },
+  {
+    "Skill Unit 1": "Combo",
+    "Column_1": "Dice",
+    "Multiplier": "0",
+    "Type": "Dice",
+    "Rarity": "Rare-Epic-Legendary",
+    "Concatenate": "ComboDice0"
+  },
+  {
+    "Skill Unit 1": "Curse",
+    "Column_1": "Dice",
+    "Multiplier": "0",
+    "Type": "Dice",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "CurseDice0"
+  },
+  {
+    "Skill Unit 1": "ApplyOn",
+    "Column_1": "Combo",
+    "Multiplier": "0",
+    "Type": "",
+    "Rarity": "Legendary",
+    "Concatenate": "ApplyOnCombo0"
+  },
+  {
+    "Skill Unit 1": "Unique",
+    "Column_1": "Dice",
+    "Multiplier": "0",
+    "Type": "Dice",
+    "Rarity": "Legendary",
+    "Concatenate": "UniqueDice0"
+  },
+  {
+    "Skill Unit 1": "Unique",
+    "Column_1": "Reverse",
+    "Multiplier": "0",
+    "Type": "Exhaust",
+    "Rarity": "Legendary",
+    "Concatenate": "UniqueReverse0"
+  },
+  {
+    "Skill Unit 1": "Upgrade",
+    "Column_1": "Debuff",
+    "Multiplier": "0",
+    "Type": "Exhaust",
+    "Rarity": "Legendary",
+    "Concatenate": "UpgradeDebuff0"
+  },
+  {
+    "Skill Unit 1": "Combo",
+    "Column_1": "Strength",
+    "Multiplier": "0",
+    "Type": "Strength",
+    "Rarity": "Legendary",
+    "Concatenate": "ComboStrength0"
+  },
+  {
+    "Skill Unit 1": "Combo",
+    "Column_1": "Agility",
+    "Multiplier": "0",
+    "Type": "Agility",
+    "Rarity": "Legendary",
+    "Concatenate": "ComboAgility0"
+  },
+  {
+    "Skill Unit 1": "Combo",
+    "Column_1": "Intelligence",
+    "Multiplier": "0",
+    "Type": "Intelligence",
+    "Rarity": "Legendary",
+    "Concatenate": "ComboIntelligence0"
+  },
+  {
+    "Skill Unit 1": "Combo",
+    "Column_1": "MaxHP",
+    "Multiplier": "0",
+    "Type": "MaxHP",
+    "Rarity": "Legendary",
+    "Concatenate": "ComboMaxHP0"
+  },
+  {
+    "Skill Unit 1": "Combo",
+    "Column_1": "Direct",
+    "Multiplier": "0",
+    "Type": "Direct",
+    "Rarity": "Legendary",
+    "Concatenate": "ComboDirect0"
+  },
+  {
+    "Skill Unit 1": "Combo",
+    "Column_1": "Venom",
+    "Multiplier": "0",
+    "Type": "Venom",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ComboVenom0"
+  },
+  {
+    "Skill Unit 1": "Combo",
+    "Column_1": "Restrain",
+    "Multiplier": "0",
+    "Type": "Restrain",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ComboRestrain0"
+  },
+  {
+    "Skill Unit 1": "Combo",
+    "Column_1": "Insane",
+    "Multiplier": "0",
+    "Type": "Insane",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ComboInsane0"
+  },
+  {
+    "Skill Unit 1": "Combo",
+    "Column_1": "Injury",
+    "Multiplier": "0",
+    "Type": "",
+    "Rarity": "Epic-Legendary",
+    "Concatenate": "ComboInjury0"
+  }
+]

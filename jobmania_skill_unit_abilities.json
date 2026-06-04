@@ -1,0 +1,1610 @@
+[
+  {
+    "Ability/Switch Skill": "Raw Attack",
+    "Skill": "Damage",
+    "Effect": "Null",
+    "Description": "Deal X damage to the enemy"
+  },
+  {
+    "Ability/Switch Skill": "Strength Attack",
+    "Skill": "Damage",
+    "Effect": "Strength",
+    "Description": "Deal X% damage based on Str to the enemy"
+  },
+  {
+    "Ability/Switch Skill": "Agility Attack",
+    "Skill": "Damage",
+    "Effect": "Agility",
+    "Description": "Deal X% damage based on Agi to the enemy"
+  },
+  {
+    "Ability/Switch Skill": "Intelligence Attack",
+    "Skill": "Damage",
+    "Effect": "Intelligence",
+    "Description": "Deal X% damage based on Int to the enemy"
+  },
+  {
+    "Ability/Switch Skill": "HP Attack",
+    "Skill": "Damage",
+    "Effect": "MaxHP",
+    "Description": "Deal X% damage based on MaxHp to the enemy"
+  },
+  {
+    "Ability/Switch Skill": "Protect attack",
+    "Skill": "Damage",
+    "Effect": "Protect",
+    "Description": "Deal X% damage based on Protect Value to the enemy"
+  },
+  {
+    "Ability/Switch Skill": "Fire Attack",
+    "Skill": "Damage",
+    "Effect": "Fire",
+    "Description": "Consume all Fire element, deal X% elemental damage based on the strongest attributes to the opponent for each stack (Trigger Finale on max stacks)"
+  },
+  {
+    "Ability/Switch Skill": "Water Attack",
+    "Skill": "Damage",
+    "Effect": "Water",
+    "Description": "Consume all Water element, deal X% elemental damage based on the strongest attributes to the opponent for each stack (Trigger Finale on max stacks)"
+  },
+  {
+    "Ability/Switch Skill": "Thunder Attack",
+    "Skill": "Damage",
+    "Effect": "Thunder",
+    "Description": "Consume all Thunder element, deal X% elemental damage based on the strongest attributes to the opponent for each stack (Trigger Finale on max stacks)"
+  },
+  {
+    "Ability/Switch Skill": "Earth Attack",
+    "Skill": "Damage",
+    "Effect": "Earth",
+    "Description": "Consume all Earth element, deal X% elemental damage based on the strongest attributes to the opponent for each stack (Trigger Finale on max stacks)"
+  },
+  {
+    "Ability/Switch Skill": "Wind Attack",
+    "Skill": "Damage",
+    "Effect": "Wind",
+    "Description": "Consume all Wind element, deal X% elemental damage based on the strongest attributes to the opponent for each stack (Trigger Finale on max stacks)"
+  },
+  {
+    "Ability/Switch Skill": "Light Attack",
+    "Skill": "Damage",
+    "Effect": "Light",
+    "Description": "Consume all Light element, deal X% elemental damage based on the strongest attributes to the opponent for each stack (Trigger Finale on max stacks)"
+  },
+  {
+    "Ability/Switch Skill": "Dark Attack",
+    "Skill": "Damage",
+    "Effect": "Dark",
+    "Description": "Consume all Dark element, deal X% elemental damage based on the strongest attributes to the opponent for each stack (Trigger Finale on max stacks)"
+  },
+  {
+    "Ability/Switch Skill": "Element Attack",
+    "Skill": "Damage",
+    "Effect": "Element",
+    "Description": "Consume all element buffs, deal X% elemental damage based on the strongest attributes to the opponent for each stack (Trigger Finale on max stacks)"
+  },
+  {
+    "Ability/Switch Skill": "Venom Explode",
+    "Skill": "Damage",
+    "Effect": "Venom",
+    "Description": "Remove all Venom buff from the opponent, for each stack deal 16% damage based on opponent's Str"
+  },
+  {
+    "Ability/Switch Skill": "Restrain Explode",
+    "Skill": "Damage",
+    "Effect": "Restrain",
+    "Description": "Remove all Restrain buff from the opponent, for each stack deal 16% damage based on opponent's Agi"
+  },
+  {
+    "Ability/Switch Skill": "Insane Explode",
+    "Skill": "Damage",
+    "Effect": "Insane",
+    "Description": "Remove all Insane buff from the opponent, for each stack deal 16% damage based on opponent's Int"
+  },
+  {
+    "Ability/Switch Skill": "Raw Heal",
+    "Skill": "Heal",
+    "Effect": "Null",
+    "Description": "Recover X HP"
+  },
+  {
+    "Ability/Switch Skill": "Strength Heal",
+    "Skill": "Heal",
+    "Effect": "Strength",
+    "Description": "Recover X% HP based on Str"
+  },
+  {
+    "Ability/Switch Skill": "Agility Heal",
+    "Skill": "Heal",
+    "Effect": "Agility",
+    "Description": "Recover X% HP based on Agi"
+  },
+  {
+    "Ability/Switch Skill": "Intelligence Heal",
+    "Skill": "Heal",
+    "Effect": "Intelligence",
+    "Description": "Recover X% HP based on Int"
+  },
+  {
+    "Ability/Switch Skill": "HP Heal",
+    "Skill": "Heal",
+    "Effect": "MaxHP",
+    "Description": "Recover X% HP based on MaxHP"
+  },
+  {
+    "Ability/Switch Skill": "Protect Heal",
+    "Skill": "Heal",
+    "Effect": "Protect",
+    "Description": "Recover X% HP based on Protect Value"
+  },
+  {
+    "Ability/Switch Skill": "Fire Heal",
+    "Skill": "Heal",
+    "Effect": "Fire",
+    "Description": "Consume all Fire elements, elemental heal X% based on the strongest stat for each stack (Apply Element Enchant on max stacks)"
+  },
+  {
+    "Ability/Switch Skill": "Water Heal",
+    "Skill": "Heal",
+    "Effect": "Water",
+    "Description": "Consume all Water elements, elemental heal X% based on the strongest stat for each stack (Apply Element Enchant on max stacks)"
+  },
+  {
+    "Ability/Switch Skill": "Thunder Heal",
+    "Skill": "Heal",
+    "Effect": "Thunder",
+    "Description": "Consume all Thunder elements, elemental heal X% based on the strongest stat for each stack (Apply Element Enchant on max stacks)"
+  },
+  {
+    "Ability/Switch Skill": "Earth Heal",
+    "Skill": "Heal",
+    "Effect": "Earth",
+    "Description": "Consume all Earth elements, elemental heal X% based on the strongest stat for each stack (Apply Element Enchant on max stacks)"
+  },
+  {
+    "Ability/Switch Skill": "Wind Heal",
+    "Skill": "Heal",
+    "Effect": "Wind",
+    "Description": "Consume all Wind elements, elemental heal X% based on the strongest stat for each stack (Apply Element Enchant on max stacks)"
+  },
+  {
+    "Ability/Switch Skill": "Light Heal",
+    "Skill": "Heal",
+    "Effect": "Light",
+    "Description": "Consume all Light elements, elemental heal X% based on the strongest stat for each stack (Apply Element Enchant on max stacks)"
+  },
+  {
+    "Ability/Switch Skill": "Dark Heal",
+    "Skill": "Heal",
+    "Effect": "Dark",
+    "Description": "Consume all Dark elements, elemental heal X% based on the strongest stat for each stack (Apply Element Enchant on max stacks)"
+  },
+  {
+    "Ability/Switch Skill": "Elemental Heal",
+    "Skill": "Heal",
+    "Effect": "Element",
+    "Description": "Consume all elements, elemental heal X% based on the strongest stat for each stack (Apply Element Enchant on max stacks)"
+  },
+  {
+    "Ability/Switch Skill": "Strength Action Buff",
+    "Skill": "InstantBoost",
+    "Effect": "Strength",
+    "Description": "Gain X Str Action Buff"
+  },
+  {
+    "Ability/Switch Skill": "Agility Action Buff",
+    "Skill": "InstantBoost",
+    "Effect": "Agility",
+    "Description": "Gain X Agi Action Buff"
+  },
+  {
+    "Ability/Switch Skill": "Intelligence Action Buff",
+    "Skill": "InstantBoost",
+    "Effect": "Intelligence",
+    "Description": "Gain X Int Action Buff"
+  },
+  {
+    "Ability/Switch Skill": "Max HP Action Buff",
+    "Skill": "InstantBoost",
+    "Effect": "MaxHP",
+    "Description": "Gain X MaxHP Action Buff"
+  },
+  {
+    "Ability/Switch Skill": "Protect Enhance",
+    "Skill": "InstantBoost",
+    "Effect": "Protect",
+    "Description": "Gain X Protect Boost"
+  },
+  {
+    "Ability/Switch Skill": "Gain AP",
+    "Skill": "InstantBoost",
+    "Effect": "Action",
+    "Description": "Gain X Action Points"
+  },
+  {
+    "Ability/Switch Skill": "Draw Ability",
+    "Skill": "InstantBoost",
+    "Effect": "Draw",
+    "Description": "Draw X abilities"
+  },
+  {
+    "Ability/Switch Skill": "Charge",
+    "Skill": "InstantBoost",
+    "Effect": "Charge",
+    "Description": "Apply a Charge buff on self"
+  },
+  {
+    "Ability/Switch Skill": "Guard",
+    "Skill": "InstantBoost",
+    "Effect": "Guard",
+    "Description": "Apply a Guard buff on self"
+  },
+  {
+    "Ability/Switch Skill": "Thunder Action Buff",
+    "Skill": "InstantBoost",
+    "Effect": "Thunder",
+    "Description": "Gain X Thunder Action Buff"
+  },
+  {
+    "Ability/Switch Skill": "Fire Action Buff",
+    "Skill": "InstantBoost",
+    "Effect": "Fire",
+    "Description": "Gain X Fire Action Buff"
+  },
+  {
+    "Ability/Switch Skill": "Water Action Buff",
+    "Skill": "InstantBoost",
+    "Effect": "Water",
+    "Description": "Gain X Water Action Buff"
+  },
+  {
+    "Ability/Switch Skill": "Wind Action Buff",
+    "Skill": "InstantBoost",
+    "Effect": "Wind",
+    "Description": "Gain X Wind Action Buff"
+  },
+  {
+    "Ability/Switch Skill": "Earth Action Buff",
+    "Skill": "InstantBoost",
+    "Effect": "Earth",
+    "Description": "Gain X Earth Action Buff"
+  },
+  {
+    "Ability/Switch Skill": "Light Action Buff",
+    "Skill": "InstantBoost",
+    "Effect": "Light",
+    "Description": "Gain X Light Action Buff"
+  },
+  {
+    "Ability/Switch Skill": "Dark Action Buff",
+    "Skill": "InstantBoost",
+    "Effect": "Dark",
+    "Description": "Gain X Dark Action Buff"
+  },
+  {
+    "Ability/Switch Skill": "Double Action Buff",
+    "Skill": "InstantBoost",
+    "Effect": "Multiply",
+    "Description": "Double self stat action buffs"
+  },
+  {
+    "Ability/Switch Skill": "Strength Buff",
+    "Skill": "Buff",
+    "Effect": "Strength",
+    "Description": "Gain X Str Buff"
+  },
+  {
+    "Ability/Switch Skill": "Agility Buff",
+    "Skill": "Buff",
+    "Effect": "Agility",
+    "Description": "Gain X Agi Buff"
+  },
+  {
+    "Ability/Switch Skill": "Intelligence Buff",
+    "Skill": "Buff",
+    "Effect": "Intelligence",
+    "Description": "Gain X Int Buff"
+  },
+  {
+    "Ability/Switch Skill": "Max HP Buff",
+    "Skill": "Buff",
+    "Effect": "MaxHP",
+    "Description": "Gain X MaxHP Buff"
+  },
+  {
+    "Ability/Switch Skill": "Gain AP Next",
+    "Skill": "Buff",
+    "Effect": "Action",
+    "Description": "Gain X Action Points at the start of next turn"
+  },
+  {
+    "Ability/Switch Skill": "Draw Ability Next",
+    "Skill": "Buff",
+    "Effect": "Draw",
+    "Description": "Draw X abilities at the start of next turn"
+  },
+  {
+    "Ability/Switch Skill": "Stack Charge",
+    "Skill": "Buff",
+    "Effect": "Charge",
+    "Description": "Apply a stack Charge buff on self"
+  },
+  {
+    "Ability/Switch Skill": "Stack Guard",
+    "Skill": "Buff",
+    "Effect": "Guard",
+    "Description": "Apply a stack Guard buff on self"
+  },
+  {
+    "Ability/Switch Skill": "Fire Element",
+    "Skill": "Buff",
+    "Effect": "Fire",
+    "Description": "Add X Fire element to self"
+  },
+  {
+    "Ability/Switch Skill": "Water Element",
+    "Skill": "Buff",
+    "Effect": "Water",
+    "Description": "Add X Water element to self"
+  },
+  {
+    "Ability/Switch Skill": "Thunder Element",
+    "Skill": "Buff",
+    "Effect": "Thunder",
+    "Description": "Add X Thunder element to self"
+  },
+  {
+    "Ability/Switch Skill": "Earth Element",
+    "Skill": "Buff",
+    "Effect": "Earth",
+    "Description": "Add X Earth element to self"
+  },
+  {
+    "Ability/Switch Skill": "Wind Element",
+    "Skill": "Buff",
+    "Effect": "Wind",
+    "Description": "Add X Wind element to self"
+  },
+  {
+    "Ability/Switch Skill": "Light Element",
+    "Skill": "Buff",
+    "Effect": "Light",
+    "Description": "Add X Light element to self"
+  },
+  {
+    "Ability/Switch Skill": "Dark Element",
+    "Skill": "Buff",
+    "Effect": "Dark",
+    "Description": "Add X Dark element to self"
+  },
+  {
+    "Ability/Switch Skill": "Pure Element",
+    "Skill": "Buff",
+    "Effect": "Element",
+    "Description": "Add X to exist element, if no element on self, add a random element."
+  },
+  {
+    "Ability/Switch Skill": "Double Buff",
+    "Skill": "Buff",
+    "Effect": "Multiply",
+    "Description": "Double self Stat buff"
+  },
+  {
+    "Ability/Switch Skill": "Strength Debuff",
+    "Skill": "Debuff",
+    "Effect": "Strength",
+    "Description": "Apply X Str Debuff on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Agility Debuff",
+    "Skill": "Debuff",
+    "Effect": "Agility",
+    "Description": "Apply X Agi Debuff on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Intelligence Debuff",
+    "Skill": "Debuff",
+    "Effect": "Intelligence",
+    "Description": "Apply X Int Debuff on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Max HP Debuff",
+    "Skill": "Debuff",
+    "Effect": "MaxHP",
+    "Description": "Apply X MaxhP Debuff on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Burn",
+    "Skill": "Debuff",
+    "Effect": "Fire",
+    "Description": "Inflict X Burn on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Chill",
+    "Skill": "Debuff",
+    "Effect": "Water",
+    "Description": "Inflict X Chill on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Paralysis",
+    "Skill": "Debuff",
+    "Effect": "Thunder",
+    "Description": "Inflict X Paralysis on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Seed",
+    "Skill": "Debuff",
+    "Effect": "Earth",
+    "Description": "Inflict X Seed on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Dizzy",
+    "Skill": "Debuff",
+    "Effect": "Wind",
+    "Description": "Inflict X Dizzy on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Blind",
+    "Skill": "Debuff",
+    "Effect": "Light",
+    "Description": "Inflict X Blind on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Depress",
+    "Skill": "Debuff",
+    "Effect": "Dark",
+    "Description": "Inflict X Depress on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Random status effects",
+    "Skill": "Debuff",
+    "Effect": "Element",
+    "Description": "Inflict X random elemental status effect on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Bleed",
+    "Skill": "Debuff",
+    "Effect": "Bleed",
+    "Description": "Inflict X Bleed on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Injury",
+    "Skill": "Debuff",
+    "Effect": "Injury",
+    "Description": "Inflict X Injury on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Venom",
+    "Skill": "Debuff",
+    "Effect": "Venom",
+    "Description": "Inflict X Venom on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Restrain",
+    "Skill": "Debuff",
+    "Effect": "Restrain",
+    "Description": "Inflict X Restrain on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Insane",
+    "Skill": "Debuff",
+    "Effect": "Insane",
+    "Description": "Inflict X Insane on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Double Debuffs",
+    "Skill": "Debuff",
+    "Effect": "Multiply",
+    "Description": "Double opponents stat debuff"
+  },
+  {
+    "Ability/Switch Skill": "Raw Protect",
+    "Skill": "Protect",
+    "Effect": "Null",
+    "Description": "Add a Protect that absord x damage"
+  },
+  {
+    "Ability/Switch Skill": "Strength Protect",
+    "Skill": "Protect",
+    "Effect": "Strength",
+    "Description": "Add X% Protect based on Str"
+  },
+  {
+    "Ability/Switch Skill": "Agility Protect",
+    "Skill": "Protect",
+    "Effect": "Agility",
+    "Description": "Add X% Protect based on Agi"
+  },
+  {
+    "Ability/Switch Skill": "Intelligence Protect",
+    "Skill": "Protect",
+    "Effect": "Intelligence",
+    "Description": "Add X% Protect based on Int"
+  },
+  {
+    "Ability/Switch Skill": "HP Protect",
+    "Skill": "Protect",
+    "Effect": "MaxHP",
+    "Description": "Add X% Protect based on MaxHp"
+  },
+  {
+    "Ability/Switch Skill": "Burn Remove",
+    "Skill": "Protect",
+    "Effect": "Fire",
+    "Description": "Remove Burn from self"
+  },
+  {
+    "Ability/Switch Skill": "Chill Remove",
+    "Skill": "Protect",
+    "Effect": "Water",
+    "Description": "Remove Chill from self"
+  },
+  {
+    "Ability/Switch Skill": "Paralysis Remove",
+    "Skill": "Protect",
+    "Effect": "Thunder",
+    "Description": "Remove Paralysis from self"
+  },
+  {
+    "Ability/Switch Skill": "Seed Remove",
+    "Skill": "Protect",
+    "Effect": "Earth",
+    "Description": "Remove Seed from self"
+  },
+  {
+    "Ability/Switch Skill": "Dizzy Remove",
+    "Skill": "Protect",
+    "Effect": "Wind",
+    "Description": "Remove Dizzy from self"
+  },
+  {
+    "Ability/Switch Skill": "Blind Remove",
+    "Skill": "Protect",
+    "Effect": "Light",
+    "Description": "Remove Blind from self"
+  },
+  {
+    "Ability/Switch Skill": "Depress Remove",
+    "Skill": "Protect",
+    "Effect": "Dark",
+    "Description": "Remove Depress from self"
+  },
+  {
+    "Ability/Switch Skill": "Bleed Remove",
+    "Skill": "Protect",
+    "Effect": "Bleed",
+    "Description": "Remove Bleed from self"
+  },
+  {
+    "Ability/Switch Skill": "Injury Remove",
+    "Skill": "Protect",
+    "Effect": "Injury",
+    "Description": "Remove Injury from self"
+  },
+  {
+    "Ability/Switch Skill": "Venom Remove",
+    "Skill": "Protect",
+    "Effect": "Venom",
+    "Description": "Remove Venom from self"
+  },
+  {
+    "Ability/Switch Skill": "Restrain Remove",
+    "Skill": "Protect",
+    "Effect": "Restrain",
+    "Description": "Remove Restrain from self"
+  },
+  {
+    "Ability/Switch Skill": "Insane Remove",
+    "Skill": "Protect",
+    "Effect": "Insane",
+    "Description": "Remove Insane from self"
+  },
+  {
+    "Ability/Switch Skill": "Elemental Status Effect Remove",
+    "Skill": "Protect",
+    "Effect": "Element",
+    "Description": "Remove elemental status effect from self: 0 = Common ES, 1 = Special ES, 2 = All ES"
+  },
+  {
+    "Ability/Switch Skill": "Debuff Remove",
+    "Skill": "Protect",
+    "Effect": "Debuff",
+    "Description": "Remove stat debuffs and vulnerables from self"
+  },
+  {
+    "Ability/Switch Skill": "Second Chance",
+    "Skill": "Protect",
+    "Effect": "Guard",
+    "Description": "Gain X Second Chance buff"
+  },
+  {
+    "Ability/Switch Skill": "Recover skill",
+    "Skill": "Protect",
+    "Effect": "Draw",
+    "Description": "Recover one skill from the discard pile"
+  },
+  {
+    "Ability/Switch Skill": "Strength Vulnerable",
+    "Skill": "Vulnerable",
+    "Effect": "Strength",
+    "Description": "Inflict Str Vulnerable on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Agility Vulnerable",
+    "Skill": "Vulnerable",
+    "Effect": "Agility",
+    "Description": "Inflict Agi Vulnerable on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Intelligence Vulnerable",
+    "Skill": "Vulnerable",
+    "Effect": "Intelligence",
+    "Description": "Inflict Int Vulnerable on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "HP Vulnerable",
+    "Skill": "Vulnerable",
+    "Effect": "MaxHP",
+    "Description": "Inflict MaxHp Vulnerable on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Protect Pierced",
+    "Skill": "Vulnerable",
+    "Effect": "Protect",
+    "Description": "Inflict Protect pierce on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Fire Vulnerable",
+    "Skill": "Vulnerable",
+    "Effect": "Fire",
+    "Description": "Inflict Fire Vulnerable on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Water Vulnerable",
+    "Skill": "Vulnerable",
+    "Effect": "Water",
+    "Description": "Inflict Water Vulnerable on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Thunder Vulnerable",
+    "Skill": "Vulnerable",
+    "Effect": "Thunder",
+    "Description": "Inflict Thunder Vulnerable on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Earth Vulnerable",
+    "Skill": "Vulnerable",
+    "Effect": "Earth",
+    "Description": "Inflict Earth Vulnerable on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Wind Vulnerable",
+    "Skill": "Vulnerable",
+    "Effect": "Wind",
+    "Description": "Inflict Wind Vulnerable on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Light Vulnerable",
+    "Skill": "Vulnerable",
+    "Effect": "Light",
+    "Description": "Apply Light Vulnerable on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Dark Vulnerable",
+    "Skill": "Vulnerable",
+    "Effect": "Dark",
+    "Description": "Apply Dark Vulnerable on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Bleed Vulnerable",
+    "Skill": "Vulnerable",
+    "Effect": "Bleed",
+    "Description": "Apply Bleed Vulnerable on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Injury Vulnerable",
+    "Skill": "Vulnerable",
+    "Effect": "Injury",
+    "Description": "Apply Injury Vulnerable on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Double Vulnerable",
+    "Skill": "Vulnerable",
+    "Effect": "Multiply",
+    "Description": "Double opponent's vulnerable debuffs"
+  },
+  {
+    "Ability/Switch Skill": "Sacrifice HP",
+    "Skill": "Sacrifice",
+    "Effect": "MaxHP",
+    "Description": "Lose 10X% of Max HP"
+  },
+  {
+    "Ability/Switch Skill": "Discard hand",
+    "Skill": "Sacrifice",
+    "Effect": "Draw",
+    "Description": "Discard 1 skill from hand"
+  },
+  {
+    "Ability/Switch Skill": "Fare Well",
+    "Skill": "Sacrifice",
+    "Effect": "Null",
+    "Description": "Deal 99999 damage to self"
+  },
+  {
+    "Ability/Switch Skill": "Paralyed On Self",
+    "Skill": "Sacrifice",
+    "Effect": "Thunder",
+    "Description": "Gain X Paralysis"
+  },
+  {
+    "Ability/Switch Skill": "Burned On Self",
+    "Skill": "Sacrifice",
+    "Effect": "Fire",
+    "Description": "Gain X Burn"
+  },
+  {
+    "Ability/Switch Skill": "Chill On Self",
+    "Skill": "Sacrifice",
+    "Effect": "Water",
+    "Description": "Gain X Chill"
+  },
+  {
+    "Ability/Switch Skill": "Dizzy On Self",
+    "Skill": "Sacrifice",
+    "Effect": "Wind",
+    "Description": "Gain X Dizzy"
+  },
+  {
+    "Ability/Switch Skill": "Seeded On Self",
+    "Skill": "Sacrifice",
+    "Effect": "Earth",
+    "Description": "Gain X Seed"
+  },
+  {
+    "Ability/Switch Skill": "Blinded On Self",
+    "Skill": "Sacrifice",
+    "Effect": "Light",
+    "Description": "Gain X Blind"
+  },
+  {
+    "Ability/Switch Skill": "Depress On Self",
+    "Skill": "Sacrifice",
+    "Effect": "Dark",
+    "Description": "Gain X Depress"
+  },
+  {
+    "Ability/Switch Skill": "Bleeding On Self",
+    "Skill": "Sacrifice",
+    "Effect": "Bleed",
+    "Description": "Gain X Bleed"
+  },
+  {
+    "Ability/Switch Skill": "Injured On Self",
+    "Skill": "Sacrifice",
+    "Effect": "Injury",
+    "Description": "Gain X Injury"
+  },
+  {
+    "Ability/Switch Skill": "Venom On Self",
+    "Skill": "Sacrifice",
+    "Effect": "Venom",
+    "Description": "Gain X Venom"
+  },
+  {
+    "Ability/Switch Skill": "Restrain On Self",
+    "Skill": "Sacrifice",
+    "Effect": "Restrain",
+    "Description": "Gain X Restrain"
+  },
+  {
+    "Ability/Switch Skill": "Insane On Self",
+    "Skill": "Sacrifice",
+    "Effect": "Insane",
+    "Description": "Gain X Insane"
+  },
+  {
+    "Ability/Switch Skill": "Cursed On Self",
+    "Skill": "Sacrifice",
+    "Effect": "Element",
+    "Description": "Gain X random elemental status effect"
+  },
+  {
+    "Ability/Switch Skill": "Debuff Strength On Self",
+    "Skill": "Sacrifice",
+    "Effect": "Strength",
+    "Description": "Gain X strength debuff"
+  },
+  {
+    "Ability/Switch Skill": "Debuff Agility On Self",
+    "Skill": "Sacrifice",
+    "Effect": "Agility",
+    "Description": "Gain X agiity debuff"
+  },
+  {
+    "Ability/Switch Skill": "Debuff Intelligence On Self",
+    "Skill": "Sacrifice",
+    "Effect": "Intelligence",
+    "Description": "Gain X intelligence debuff"
+  },
+  {
+    "Ability/Switch Skill": "Paralyed (Ability become Passive)",
+    "Skill": "Curse",
+    "Effect": "Thunder",
+    "Description": "Gain X Paralysis at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Burned (Ability become Passive)",
+    "Skill": "Curse",
+    "Effect": "Fire",
+    "Description": "Gain X Burn at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Chill (Ability become Passive)",
+    "Skill": "Curse",
+    "Effect": "Water",
+    "Description": "Gain X Chill at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Dizzy (Ability become Passive)",
+    "Skill": "Curse",
+    "Effect": "Wind",
+    "Description": "Gain X Dizzy at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Seeded (Ability become Passive)",
+    "Skill": "Curse",
+    "Effect": "Earth",
+    "Description": "Gain X Seed at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Blinded (Ability become Passive)",
+    "Skill": "Curse",
+    "Effect": "Light",
+    "Description": "Gain X Blind at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Depress (Ability become Passive)",
+    "Skill": "Curse",
+    "Effect": "Dark",
+    "Description": "Gain X Depress at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Bleeding (Ability become Passive)",
+    "Skill": "Curse",
+    "Effect": "Bleed",
+    "Description": "Gain X Bleed at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Injured (Ability become Passive)",
+    "Skill": "Curse",
+    "Effect": "Injury",
+    "Description": "Gain X Injury at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Venomed (Ability become Passive)",
+    "Skill": "Curse",
+    "Effect": "Venom",
+    "Description": "Gain X Venom at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Restrained (Ability become Passive)",
+    "Skill": "Curse",
+    "Effect": "Restrain",
+    "Description": "Gain X Restrain at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Insane (Ability become Passive)",
+    "Skill": "Curse",
+    "Effect": "Insane",
+    "Description": "Gain X Insane at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Cursed (Ability become Passive)",
+    "Skill": "Curse",
+    "Effect": "Element",
+    "Description": "Gain X random elemental status effect at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Weak Strength  (Ability become Passive)",
+    "Skill": "Curse",
+    "Effect": "Strength",
+    "Description": "Gain X Str debuff at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Weak Agility  (Ability become Passive)",
+    "Skill": "Curse",
+    "Effect": "Agility",
+    "Description": "Gain X Agi debuff at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Weak Intelligence  (Ability become Passive)",
+    "Skill": "Curse",
+    "Effect": "Intelligence",
+    "Description": "Gain X Int debuff at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Weak MaxHP  (Ability become Passive)",
+    "Skill": "Curse",
+    "Effect": "MaxHP",
+    "Description": "Gain X MaxHP debuff at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Do nothing",
+    "Skill": "Null",
+    "Effect": "Null",
+    "Description": "Do nothing"
+  },
+  {
+    "Ability/Switch Skill": "Invulnerable",
+    "Skill": "Protect",
+    "Effect": "Direct",
+    "Description": "Gain an Invulnerable buff"
+  },
+  {
+    "Ability/Switch Skill": "Pass Turn",
+    "Skill": "InstantBoost",
+    "Effect": "Direct",
+    "Description": "Skip X turn, trigger player and enemy turn start and end passives X times"
+  },
+  {
+    "Ability/Switch Skill": "Debuff Removal Attack",
+    "Skill": "Damage",
+    "Effect": "Debuff",
+    "Description": "Remove all debuffs from opponent, for each distinct debuff removed, deal X% damage to enemy of highest stat"
+  },
+  {
+    "Ability/Switch Skill": "Buff Removal Heal",
+    "Skill": "Heal",
+    "Effect": "Buff",
+    "Description": "Remove all buffs from self, for each distinct buff removed, heal X% HP of highest Stat"
+  },
+  {
+    "Ability/Switch Skill": "Swap Buffs",
+    "Skill": "Sacrifice",
+    "Effect": "Buff",
+    "Description": "Swap all your buffs with your opponent's buff (exclude protect and second chance)"
+  },
+  {
+    "Ability/Switch Skill": "Swap Debuffs",
+    "Skill": "Sacrifice",
+    "Effect": "Debuff",
+    "Description": "Swap all your debuffs with your opponent's debuff"
+  },
+  {
+    "Ability/Switch Skill": "Discard HP Attack",
+    "Skill": "Discard",
+    "Effect": "MaxHP",
+    "Description": "Player: For each HP abilities in the discard pile, deal Highest combined X damage. Enemy: For every single abilities in player's discard pile instead. (Max 20x)"
+  },
+  {
+    "Ability/Switch Skill": "Discard Str Attack",
+    "Skill": "Discard",
+    "Effect": "Strength",
+    "Description": "Player: For each Str abilities in the discard pile, deal Highest combined X damage. Enemy: For every single abilities in player's discard pile instead. (Max 20x)"
+  },
+  {
+    "Ability/Switch Skill": "Discard Agi Attack",
+    "Skill": "Discard",
+    "Effect": "Agility",
+    "Description": "Player: For each Agi abilities in the discard pile, deal Highest combined X damage. Enemy: For every single abilities in player's discard pile instead. (Max 20x)"
+  },
+  {
+    "Ability/Switch Skill": "Discard Int Attack",
+    "Skill": "Discard",
+    "Effect": "Intelligence",
+    "Description": "Player: For each Int abilities in the discard pile, deal Highest combined X damage. Enemy: For every single abilities in player's discard pile instead. (Max 20x)"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Confuse",
+    "Skill": "Debuff",
+    "Effect": "Confuse",
+    "Description": "Inflict X Confuse on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Slack",
+    "Skill": "Debuff",
+    "Effect": "Slack",
+    "Description": "Inflict X Slack on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Apply Certain",
+    "Skill": "InstantBoost",
+    "Effect": "Certain",
+    "Description": "Apply X Certain on self"
+  },
+  {
+    "Ability/Switch Skill": "Self Strength Action Debuff",
+    "Skill": "InstantNerf",
+    "Effect": "Strength",
+    "Description": "Gain X Str Action Debuff"
+  },
+  {
+    "Ability/Switch Skill": "Self Agility Action Debuff",
+    "Skill": "InstantNerf",
+    "Effect": "Agility",
+    "Description": "Gain X Agi Action Debuff"
+  },
+  {
+    "Ability/Switch Skill": "Self Intelligence Action Debuff",
+    "Skill": "InstantNerf",
+    "Effect": "Intelligence",
+    "Description": "Gain X Int Action Debuff"
+  },
+  {
+    "Ability/Switch Skill": "Self Max HP Action Debuff",
+    "Skill": "InstantNerf",
+    "Effect": "MaxHP",
+    "Description": "Gain X MaxHP Action Debuff"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Corruption",
+    "Skill": "Vulnerable",
+    "Effect": "Venom",
+    "Description": "Inflict X Corruption on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Seal",
+    "Skill": "Vulnerable",
+    "Effect": "Restrain",
+    "Description": "Inflict X Seal on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Madness",
+    "Skill": "Vulnerable",
+    "Effect": "Insane",
+    "Description": "Inflict X Madness on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Apply Afterimage",
+    "Skill": "Sacrifice",
+    "Effect": "Multiply",
+    "Description": "Apply an Afterimage buff on self"
+  },
+  {
+    "Ability/Switch Skill": "Debuff Confuse On Self",
+    "Skill": "Sacrifice",
+    "Effect": "Confuse",
+    "Description": "Gain X Confuse Debuff"
+  },
+  {
+    "Ability/Switch Skill": "Debuff Slack On Self",
+    "Skill": "Sacrifice",
+    "Effect": "Slack",
+    "Description": "Gain X Slack Debuff"
+  },
+  {
+    "Ability/Switch Skill": "Buff Removal",
+    "Skill": "Discard",
+    "Effect": "Buff",
+    "Description": "Remove X random buffs from the opponent (Not include Second Chance, Element and Protect)"
+  },
+  {
+    "Ability/Switch Skill": "Gain Gamble Token",
+    "Skill": "InstantBoost",
+    "Effect": "Dice",
+    "Description": "Gain X Gamble Token"
+  },
+  {
+    "Ability/Switch Skill": "Bleed Burst",
+    "Skill": "Damage",
+    "Effect": "Bleed",
+    "Description": "Remove all bleed and bleed vulnerable on the opponent, for each stack removed, enemy suffer 1% damage based on his/her MaxHP"
+  },
+  {
+    "Ability/Switch Skill": "Discard Curse Attack",
+    "Skill": "Discard",
+    "Effect": "Curse",
+    "Description": "Player: For each Curse abilities in the discard pile, deal Highest combined X damage. Enemy: For every single abilities in player's discard pile instead. (Max 20x)"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Str Sigil",
+    "Skill": "Mark",
+    "Effect": "Strength",
+    "Description": "Inflict X Str Sigil on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Agi Sigil",
+    "Skill": "Mark",
+    "Effect": "Agility",
+    "Description": "Inflict X Agi Sigil on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Int Sigil",
+    "Skill": "Mark",
+    "Effect": "Intelligence",
+    "Description": "Inflict X Int Sigil on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict MaxHP Sigil",
+    "Skill": "Mark",
+    "Effect": "MaxHP",
+    "Description": "Inflict X MaxHP Sigil on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Fire Sigil",
+    "Skill": "Mark",
+    "Effect": "Fire",
+    "Description": "Inflict X Fire Sigil on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Water Sigil",
+    "Skill": "Mark",
+    "Effect": "Water",
+    "Description": "Inflict X Water Sigil on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Thunder Sigil",
+    "Skill": "Mark",
+    "Effect": "Thunder",
+    "Description": "Inflict X Thunder Sigil on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Earth Sigil",
+    "Skill": "Mark",
+    "Effect": "Earth",
+    "Description": "Inflict X Earth Sigil on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Wind Sigil",
+    "Skill": "Mark",
+    "Effect": "Wind",
+    "Description": "Inflict X Wind Sigil on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Light Sigil",
+    "Skill": "Mark",
+    "Effect": "Light",
+    "Description": "Inflict X Light Sigil on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflct Dark Sigil",
+    "Skill": "Mark",
+    "Effect": "Dark",
+    "Description": "Inflct X Dark Sigil on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Immunocompromised",
+    "Skill": "Vulnerable",
+    "Effect": "Debuff",
+    "Description": "Inflict X Immunocompromised"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Reflux",
+    "Skill": "Debuff",
+    "Effect": "Reverse",
+    "Description": "Inflict X Reflux"
+  },
+  {
+    "Ability/Switch Skill": "Gain Vengeance",
+    "Skill": "Buff",
+    "Effect": "Reflect",
+    "Description": "Gain Vengeance Buff"
+  },
+  {
+    "Ability/Switch Skill": "Element Combo Sync",
+    "Skill": "Combo",
+    "Effect": "Element",
+    "Description": "(Player Only) Convert user's element to the element that based on the current element combo."
+  },
+  {
+    "Ability/Switch Skill": "Random Discard",
+    "Skill": "Discard",
+    "Effect": "Draw",
+    "Description": "Randomly discard x abilities on ur hand"
+  },
+  {
+    "Ability/Switch Skill": "Random Ability",
+    "Skill": "Null",
+    "Effect": "Dice",
+    "Description": "Use a random ability"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Taunt",
+    "Skill": "Debuff",
+    "Effect": "Aggro",
+    "Description": "Inflict X Taunt"
+  },
+  {
+    "Ability/Switch Skill": "Random Ability From Draw/Discard Pile",
+    "Skill": "Null",
+    "Effect": "Reverse",
+    "Description": "(Player Only) Use a random ability from ur draw or discard pile"
+  },
+  {
+    "Ability/Switch Skill": "Confused  (Ability become Passive)",
+    "Skill": "Curse",
+    "Effect": "Confuse",
+    "Description": "Gain X Confuse debuff at the start of combat"
+  },
+  {
+    "Ability/Switch Skill": "Lazy (Ability become Passive)",
+    "Skill": "Curse",
+    "Effect": "Slack",
+    "Description": "Gain X Slack debuff at the start of combat"
+  },
+  {
+    "Ability/Switch Skill": "Immunocompromised (Ability become Passive)",
+    "Skill": "Curse",
+    "Effect": "Debuff",
+    "Description": "Gain X Immunocompromised debuff at the start of combat"
+  },
+  {
+    "Ability/Switch Skill": "Refluxed (Ability become Passive)",
+    "Skill": "Curse",
+    "Effect": "Reverse",
+    "Description": "Gain X Reflux debuff at the start of combat"
+  },
+  {
+    "Ability/Switch Skill": "Taunted (Ability become Passive)",
+    "Skill": "Curse",
+    "Effect": "Aggro",
+    "Description": "Gain X Taunt debuff at the start of combat"
+  },
+  {
+    "Ability/Switch Skill": "Debuff Taunt On Self",
+    "Skill": "Sacrifice",
+    "Effect": "Aggro",
+    "Description": "Gain X Taunt Debuff"
+  },
+  {
+    "Ability/Switch Skill": "Substitute",
+    "Skill": "Protect",
+    "Effect": "Sacrifice",
+    "Description": "Gain a Substitute Buff"
+  },
+  {
+    "Ability/Switch Skill": "Discard Fire Attack",
+    "Skill": "Discard",
+    "Effect": "Fire",
+    "Description": "Player: For each Fire abilities in the discard pile, deal Highest combined X damage. Enemy: For every single abilities in player's discard pile instead. (Max 20x)"
+  },
+  {
+    "Ability/Switch Skill": "Discard Water Attack",
+    "Skill": "Discard",
+    "Effect": "Water",
+    "Description": "Player: For each Water abilities in the discard pile, deal Highest combined X damage. Enemy: For every single abilities in player's discard pile instead. (Max 20x)"
+  },
+  {
+    "Ability/Switch Skill": "Discard Thunder Attack",
+    "Skill": "Discard",
+    "Effect": "Thunder",
+    "Description": "Player: For each Thunder abilities in the discard pile, deal Highest combined X damage. Enemy: For every single abilities in player's discard pile instead. (Max 20x)"
+  },
+  {
+    "Ability/Switch Skill": "Discard Earth Attack",
+    "Skill": "Discard",
+    "Effect": "Earth",
+    "Description": "Player: For each Earth abilities in the discard pile, deal Highest combined X damage. Enemy: For every single abilities in player's discard pile instead. (Max 20x)"
+  },
+  {
+    "Ability/Switch Skill": "Discard Wind Attack",
+    "Skill": "Discard",
+    "Effect": "Wind",
+    "Description": "Player: For each Wind abilities in the discard pile, deal Highest combined X damage. Enemy: For every single abilities in player's discard pile instead. (Max 20x)"
+  },
+  {
+    "Ability/Switch Skill": "Discard Light Attack",
+    "Skill": "Discard",
+    "Effect": "Light",
+    "Description": "Player: For each Light abilities in the discard pile, deal Highest combined X damage. Enemy: For every single abilities in player's discard pile instead. (Max 20x)"
+  },
+  {
+    "Ability/Switch Skill": "Discard Dark Attack",
+    "Skill": "Discard",
+    "Effect": "Dark",
+    "Description": "Player: For each Dark abilities in the discard pile, deal Highest combined X damage. Enemy: For every single abilities in player's discard pile instead. (Max 20x)"
+  },
+  {
+    "Ability/Switch Skill": "Venom Removal Heal",
+    "Skill": "Heal",
+    "Effect": "Venom",
+    "Description": "Remove all Venom stacks from the opponent. For each stack removed, heal X% of HP based on self Strength"
+  },
+  {
+    "Ability/Switch Skill": "Restrain Removal Heal",
+    "Skill": "Heal",
+    "Effect": "Restrain",
+    "Description": "Remove all Restrain stacks from the opponent. For each stack removed, heal X% of HP based on self Agility"
+  },
+  {
+    "Ability/Switch Skill": "Insane Removal Heal",
+    "Skill": "Heal",
+    "Effect": "Insane",
+    "Description": "Remove all Insane stacks from the opponent. For each stack removed, heal X% of HP based on self Intelligence"
+  },
+  {
+    "Ability/Switch Skill": "Gain Random Buff",
+    "Skill": "Buff",
+    "Effect": "Dice",
+    "Description": "Gain X random buff"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Bad Mood",
+    "Skill": "Debuff",
+    "Effect": "Misfortune",
+    "Description": "Inflct X Bad Mood on the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Innate Bad Mood (Ability become Passive)",
+    "Skill": "Curse",
+    "Effect": "Misfortune",
+    "Description": "Gain X Bad Mood at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Bad Mood on self",
+    "Skill": "Sacrifice",
+    "Effect": "Misfortune",
+    "Description": "Inflct X Bad Mood on self"
+  },
+  {
+    "Ability/Switch Skill": "Unique HP Attack",
+    "Skill": "Unique",
+    "Effect": "MaxHP",
+    "Description": "Player: For each unique HP abilities in your deck, deal combined X damage. Enemy: For every single abilities in player's deck instead. (Max 20x)"
+  },
+  {
+    "Ability/Switch Skill": "Unique Str Attack",
+    "Skill": "Unique",
+    "Effect": "Strength",
+    "Description": "Player: For each unique Str abilities in the deck pile, deal combined X damage. Enemy: For every single abilities in player's deck instead. (Max 20x)"
+  },
+  {
+    "Ability/Switch Skill": "Unique Agi Attack",
+    "Skill": "Unique",
+    "Effect": "Agility",
+    "Description": "Player: For each unique Agi abilities in your deck, deal combined X damage. Enemy: For every single abilities in player's deck instead. (Max 20x)"
+  },
+  {
+    "Ability/Switch Skill": "Unique Int Attack",
+    "Skill": "Unique",
+    "Effect": "Intelligence",
+    "Description": "Player: For each unique Int abilities in your deck, deal combined X damage. Enemy: For every single abilities in player's deck instead. (Max 20x)"
+  },
+  {
+    "Ability/Switch Skill": "Unique Curse Attack",
+    "Skill": "Unique",
+    "Effect": "Curse",
+    "Description": "Player: For each unique Curse abilities in your deck, deal Highest combined X damage. Enemy: For every single abilities in player's deck instead. (Max 20x)"
+  },
+  {
+    "Ability/Switch Skill": "Unique Fire Attack",
+    "Skill": "Unique",
+    "Effect": "Fire",
+    "Description": "Player: For each unique Fire abilities in the deck, deal Highest combined X damage. Enemy: For every single abilities in player's deck instead. (Max 20x)"
+  },
+  {
+    "Ability/Switch Skill": "Unique Water Attack",
+    "Skill": "Unique",
+    "Effect": "Water",
+    "Description": "Player: For each unique Water abilities in the deck, deal Highest combined X damage. Enemy: For every single abilities in player's deck instead. (Max 20x)"
+  },
+  {
+    "Ability/Switch Skill": "Unique Thunder Attack",
+    "Skill": "Unique",
+    "Effect": "Thunder",
+    "Description": "Player: For each unique Thunder abilities in the deck, deal Highest combined X damage. Enemy: For every single abilities in player's deck instead. (Max 20x)"
+  },
+  {
+    "Ability/Switch Skill": "Unique Earth Attack",
+    "Skill": "Unique",
+    "Effect": "Earth",
+    "Description": "Player: For each unique Earth abilities in the deck, deal Highest combined X damage. Enemy: For every single abilities in player's deck instead. (Max 20x)"
+  },
+  {
+    "Ability/Switch Skill": "Unique Wind Attack",
+    "Skill": "Unique",
+    "Effect": "Wind",
+    "Description": "Player: For each unique Wind abilities in the deck, deal Highest combined X damage. Enemy: For every single abilities in player's deck instead. (Max 20x)"
+  },
+  {
+    "Ability/Switch Skill": "Unique Light Attack",
+    "Skill": "Unique",
+    "Effect": "Light",
+    "Description": "Player: For each unique Light abilities in the deck, deal Highest combined X damage. Enemy: For every single abilities in player's deck instead. (Max 20x)"
+  },
+  {
+    "Ability/Switch Skill": "Unique Dark Attack",
+    "Skill": "Unique",
+    "Effect": "Dark",
+    "Description": "Player: For each unique Dark abilities in the deck, deal Highest combined X damage. Enemy: For every single abilities in player's deck instead. (Max 20x)"
+  },
+  {
+    "Ability/Switch Skill": "Repair Tool",
+    "Skill": "Heal",
+    "Effect": "Tool",
+    "Description": "If the last ability used was a Tool ability, reset its AP cost to default."
+  },
+  {
+    "Ability/Switch Skill": "Apply Rage",
+    "Skill": "Sacrifice",
+    "Effect": "Charge",
+    "Description": "Apply X Rage on self"
+  },
+  {
+    "Ability/Switch Skill": "Apply Instinct",
+    "Skill": "Sacrifice",
+    "Effect": "Guard",
+    "Description": "Apply X Instinct on self"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Random VRI",
+    "Skill": "Debuff",
+    "Effect": "VRI",
+    "Description": "Apply X random VRI to the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Random VRI on Self",
+    "Skill": "Sacrifice",
+    "Effect": "VRI",
+    "Description": "Apply X random VRI on self"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Random Debuff",
+    "Skill": "Debuff",
+    "Effect": "Dice",
+    "Description": "Inflict X random debuff to the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Self Random Debuff",
+    "Skill": "Sacrifice",
+    "Effect": "Dice",
+    "Description": "Inflict X random debuff on self"
+  },
+  {
+    "Ability/Switch Skill": "Turn Start Corruption (Ability become Passive)",
+    "Skill": "SpecialCurse",
+    "Effect": "Venom",
+    "Description": "Gain X Corruption at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Turn Start Seal (Ability become Passive)",
+    "Skill": "SpecialCurse",
+    "Effect": "Restrain",
+    "Description": "Gain X Seal at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Turn Start Madness (Ability become Passive)",
+    "Skill": "SpecialCurse",
+    "Effect": "Insane",
+    "Description": "Gain X Madness at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Dehydration",
+    "Skill": "React",
+    "Effect": "Water",
+    "Description": "Inflict X Dehydration at the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Rupture",
+    "Skill": "React",
+    "Effect": "Earth",
+    "Description": "Inflict X Rupture at the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Strength Action Debuff",
+    "Skill": "ActionDebuff",
+    "Effect": "Strength",
+    "Description": "Inflict X Str Action Debuff to the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Agility Action Debuff",
+    "Skill": "ActionDebuff",
+    "Effect": "Agility",
+    "Description": "Inflict X Agi Action Debuff to the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Intelligence Action Debuff",
+    "Skill": "ActionDebuff",
+    "Effect": "Intelligence",
+    "Description": "Inflict X Int Action Debuff to the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Max HP Action Debuff",
+    "Skill": "ActionDebuff",
+    "Effect": "MaxHP",
+    "Description": "Inflict X MaxHP Action Debuff to the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Dread",
+    "Skill": "React",
+    "Effect": "Dark",
+    "Description": "Inflict X Dread at the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Innate Random Debuff (Ability become Passive)",
+    "Skill": "Curse",
+    "Effect": "Dice",
+    "Description": "Gain X random debuff at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Innate Random VRI (Ability become Passive)",
+    "Skill": "Curse",
+    "Effect": "VRI",
+    "Description": "Gain X random vri at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Polar Charge",
+    "Skill": "React",
+    "Effect": "Thunder",
+    "Description": "Inflict X Polar Charge at the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Kindling",
+    "Skill": "React",
+    "Effect": "Fire",
+    "Description": "Inflict X Kindling at the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Discard Elements",
+    "Skill": "Discard",
+    "Effect": "Element",
+    "Description": "Remove all elemental stacks from both parties. For every 2 stacks removed, apply a random elemental status effect to the target."
+  },
+  {
+    "Ability/Switch Skill": "Self Protect Pierced",
+    "Skill": "Sacrifice",
+    "Effect": "Protect",
+    "Description": "Inflict Protect Pierce on self"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Luminesce",
+    "Skill": "React",
+    "Effect": "Light",
+    "Description": "Inflict X Luminesce at the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Start Kindling",
+    "Skill": "SpecialCurse",
+    "Effect": "Fire",
+    "Description": "Gain X Kindling at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Start Dehydration",
+    "Skill": "SpecialCurse",
+    "Effect": "Water",
+    "Description": "Gain X Dehydration at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Start Polar Charge",
+    "Skill": "SpecialCurse",
+    "Effect": "Thunder",
+    "Description": "Gain X Polar Charge at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Start Rupture",
+    "Skill": "SpecialCurse",
+    "Effect": "Earth",
+    "Description": "Gain X Rupture at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Start Dust",
+    "Skill": "SpecialCurse",
+    "Effect": "Wind",
+    "Description": "Gain X Dust at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Start Luminesce",
+    "Skill": "SpecialCurse",
+    "Effect": "Light",
+    "Description": "Gain X Luminesce at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Start Dread",
+    "Skill": "SpecialCurse",
+    "Effect": "Dark",
+    "Description": "Gain X Dread at the start of turn"
+  },
+  {
+    "Ability/Switch Skill": "Inflict Trance",
+    "Skill": "Debuff",
+    "Effect": "Trance",
+    "Description": "Inflict X Trance at the opponent"
+  },
+  {
+    "Ability/Switch Skill": "Convert Gamble Token",
+    "Skill": "Discard",
+    "Effect": "Dice",
+    "Description": "Remove all positive buffs from yourself except Gamble Token. For each type of buff removed, gain 2 Gamble Token."
+  }
+]
