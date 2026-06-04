@@ -40,4 +40,323 @@
         
         /* Grid */
         .wiki-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 15px; }
-        .grid-item { background: var(--panel); padding: 15px 20px; border: 1px solid var(--
+        .grid-item { background: var(--panel); padding: 15px 20px; border: 1px solid var(--border); border-radius: 6px; cursor: pointer; transition: 0.2s; position: relative; overflow: hidden; }
+        .grid-item:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        .grid-item::before { content: ""; position: absolute; left: 0; top: 0; height: 100%; width: 4px; background: var(--accent); opacity: 0; transition: 0.2s; }
+        .grid-item:hover::before { opacity: 1; }
+        .grid-item-id { font-size: 12px; color: #777; margin-bottom: 5px; font-family: monospace; }
+        .grid-item-title { font-size: 18px; font-weight: bold; color: white; }
+        
+        .loading { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 60vh; color: #888; font-size: 20px; }
+        .spinner { border: 4px solid rgba(255,255,255,0.1); border-top: 4px solid var(--accent); border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin-bottom: 20px; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            body { position: relative; }
+            #sidebar { position: fixed; height: 100vh; transform: translateX(-100%); width: 280px; box-shadow: 5px 0 15px rgba(0,0,0,0.5); }
+            #sidebar.open { transform: translateX(0); }
+            #content { padding: 20px; }
+            #mobile-nav-toggle { display: block; }
+            .property-row { flex-direction: column; }
+            .property-key { width: 100%; margin-bottom: 5px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; }
+            .property-value { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <button id="mobile-nav-toggle" onclick="toggleNav()">☰</button>
+
+    <div id="sidebar">
+        <div class="sidebar-header">Jobmania DB</div>
+        <div class="nav-group" id="nav-menu" onclick="if(window.innerWidth <= 768) toggleNav()">
+            <div class="nav-item" onclick="renderHome()">🏠 Main Dashboard</div>
+            
+            <div class="nav-category-title">Game Databases</div>
+            <div class="nav-item" onclick="renderCategory('characters', 'Characters')">🧑‍🤝‍🧑 Characters</div>
+            <div class="nav-item" onclick="renderCategory('jobs', 'Job Classes')">🛡️ Job Classes</div>
+            <div class="nav-item" onclick="renderCategory('abilities', 'Abilities')">⚔️ Abilities</div>
+            <div class="nav-item" onclick="renderCategory('materials', 'Materials')">💎 Materials</div>
+            <div class="nav-item" onclick="renderCategory('passives', 'Passive Skills')">✨ Passive Skills</div>
+            
+            <div class="nav-category-title">Relics & Artifacts</div>
+            <div class="nav-item" onclick="renderCategory('relics', 'Relics')">🏺 Relics</div>
+            <div class="nav-item" onclick="renderCategory('relicPassives', 'Relic Passives')">🔮 Relic Passives</div>
+            
+            <div class="nav-category-title">Engine Mechanics (Skill Units)</div>
+            <div class="nav-item" onclick="renderCategory('suAbilities', 'Skill Unit: Abilities')">⚙️ SU Abilities</div>
+            <div class="nav-item" onclick="renderCategory('suBuffs', 'Skill Unit: Buffs')">⚙️ SU Buffs</div>
+            <div class="nav-item" onclick="renderCategory('suPassives', 'Skill Unit: Passives')">⚙️ SU Passives</div>
+        </div>
+    </div>
+
+    <div id="content">
+        <div id="page-container">
+            <div class="loading">
+                <div class="spinner"></div>
+                Initializing Jobmania API...
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /**
+         * JOBMANIA WIKI ENGINE
+         * Architect: Automated SPA Engine
+         */
+
+        // 1. CONFIGURATION - Update this if you host the API elsewhere
+        const API_BASE = "https://noagrp.github.io/jobmania-api/";
+        const CACHE_BUSTER = "?t=" + Date.now();
+
+        // 2. DATA STORES
+        const DB = {
+            characters: [], jobs: [], abilities: [], crafting: [], materials: [],
+            passives: [], relics: [], relicPassives: [],
+            suAbilities: [], suBuffs: [], suPassives: []
+        };
+        const Dictionary = {}; 
+
+        // 3. INITIALIZATION
+        async function initWiki() {
+            try {
+                await fetchAllData();
+                buildGlobalDictionary();
+                buildCraftingLinks();
+                renderHome();
+            } catch (error) {
+                setHTML(`<h1>Critical Error</h1><p>Failed to connect to the Jobmania API: ${error.message}</p>`);
+            }
+        }
+
+        async function fetchJSON(filename) {
+            try {
+                const response = await fetch(`${API_BASE}${filename}${CACHE_BUSTER}`);
+                if (!response.ok) return [];
+                return await response.json();
+            } catch (e) {
+                console.warn(`Could not load ${filename}`);
+                return [];
+            }
+        }
+
+        async function fetchAllData() {
+            // Fetch everything simultaneously for maximum speed
+            const [
+                chars, jobs, abilities, crafting, materials, 
+                passives, relics, relicPassives, 
+                suAbil, suBuff, suPass
+            ] = await Promise.all([
+                fetchJSON('jobmania_characters.json'), fetchJSON('jobmania_jobs.json'), fetchJSON('jobmania_abilities.json'), 
+                fetchJSON('jobmania_job_crafting.json'), fetchJSON('jobmania_materials.json'),
+                fetchJSON('jobmania_passive_skills.json'), fetchJSON('jobmania_relics.json'), fetchJSON('jobmania_relic_passives.json'),
+                fetchJSON('jobmania_skill_unit_abilities.json'), fetchJSON('jobmania_skill_unit_buffes.json'), fetchJSON('jobmania_skill_unit_passive_skills.json')
+            ]);
+
+            DB.characters = chars; DB.jobs = jobs; DB.abilities = abilities; 
+            DB.crafting = crafting; DB.materials = materials;
+            DB.passives = passives; DB.relics = relics; DB.relicPassives = relicPassives;
+            DB.suAbilities = suAbil; DB.suBuffs = suBuff; DB.suPassives = suPass;
+        }
+
+        // 4. SMART HELPERS
+        // Figures out what a row is actually called, regardless of the CSV header name
+        function extractName(item) {
+            if (!item) return "Unknown";
+            return item.Name || item['Ability Name'] || item.Job || item.Material || 
+                   item['Passive Skill'] || item.Passive || item.Relic || 
+                   item['Ability/Switch Skill'] || item.Buff || item.id || "Unknown";
+        }
+
+        function toggleNav() {
+            document.getElementById('sidebar').classList.toggle('open');
+        }
+
+        function setHTML(html) {
+            const container = document.getElementById('page-container');
+            container.innerHTML = html;
+            document.getElementById('content').scrollTop = 0;
+        }
+
+        // 5. INDEXING & DICTIONARY
+        function buildGlobalDictionary() {
+            const categoriesToMap = [
+                'characters', 'jobs', 'abilities', 'materials', 'passives', 
+                'relics', 'relicPassives', 'suAbilities', 'suBuffs', 'suPassives'
+            ];
+
+            categoriesToMap.forEach(category => {
+                DB[category].forEach((item, index) => {
+                    item.wikiNumber = index + 1; // Auto-number
+                    const name = extractName(item).toString().trim();
+                    if (name && name !== "Unknown") {
+                        // Store in dictionary in lowercase for case-insensitive lookup
+                        Dictionary[name.toLowerCase()] = { category: category, ref: item, originalName: name };
+                    }
+                });
+            });
+
+            // Special handling for Crafting (creates virtual relationships)
+            // If materials JSON is empty, populate it from crafting data automatically
+            if (DB.materials.length === 0 && DB.crafting.length > 0) {
+                const uniqueMats = new Set();
+                DB.crafting.forEach(c => { if(c.material_required) uniqueMats.add(c.material_required.trim()); });
+                let count = 1;
+                uniqueMats.forEach(mat => {
+                    const matObj = { "Name": mat, "Type": "Crafting Material" };
+                    DB.materials.push(matObj);
+                    Dictionary[mat.toLowerCase()] = { category: 'materials', ref: matObj, originalName: mat };
+                });
+            }
+        }
+
+        function buildCraftingLinks() {
+            // Attach 'Used to Craft' lists to Materials and 'Recipe' to Jobs
+            DB.crafting.forEach(recipe => {
+                const targetJob = recipe.target_class;
+                const reqMat = recipe.material_required;
+                const srcClass = recipe.source_class;
+
+                if (reqMat && Dictionary[reqMat.toLowerCase()]) {
+                    const matRef = Dictionary[reqMat.toLowerCase()].ref;
+                    if (!matRef.usedInRecipes) matRef.usedInRecipes = [];
+                    matRef.usedInRecipes.push(`Combines with <strong>${srcClass}</strong> to make <strong>${targetJob}</strong> (⭐${recipe.target_star_level || '?'})`);
+                }
+
+                if (targetJob && Dictionary[targetJob.toLowerCase()]) {
+                    const jobRef = Dictionary[targetJob.toLowerCase()].ref;
+                    jobRef.craftingRecipe = `Combine <strong>${srcClass}</strong> + <strong>${reqMat}</strong>`;
+                }
+            });
+        }
+
+        // 6. AUTO-LINKING ENGINE
+        function parseTextForLinks(text) {
+            if (!text || text === "") return '<span style="color:#555;">Null</span>';
+            let processedText = String(text);
+
+            // 1. Direct cell match (fastest and safest)
+            if (Dictionary[processedText.toLowerCase()]) {
+                const t = Dictionary[processedText.toLowerCase()];
+                return `<a class="wiki-link" onclick="renderPage('${t.category}', '${t.originalName}')">${processedText}</a>`;
+            }
+
+            // 2. Delimiter Split (Handles "Simple-Slimy Body" or "Fire|Water")
+            if (processedText.includes('-') || processedText.includes('|') || processedText.includes(',')) {
+                let chunks = processedText.split(/([-|,])/); // Split but keep the delimiters
+                let rebuilt = "";
+                chunks.forEach(chunk => {
+                    let cleanChunk = chunk.trim().toLowerCase();
+                    if (Dictionary[cleanChunk]) {
+                        const t = Dictionary[cleanChunk];
+                        rebuilt += `<a class="wiki-link" onclick="renderPage('${t.category}', '${t.originalName}')">${chunk}</a>`;
+                    } else {
+                        rebuilt += chunk;
+                    }
+                });
+                return rebuilt;
+            }
+
+            return processedText;
+        }
+
+        // 7. RENDER ENGINES
+        function renderHome() {
+            let statsHTML = '';
+            for (const [key, arr] of Object.entries(DB)) {
+                if(arr.length > 0) statsHTML += `<div class="list-chip">${key.toUpperCase()}: ${arr.length}</div>`;
+            }
+
+            setHTML(`
+                <h1>Welcome to the Jobmania Database</h1>
+                <div class="data-card">
+                    <p>Select a category from the sidebar to browse the live game data pulled directly from the GitHub API.</p>
+                    <h3>Live API Endpoints Connected:</h3>
+                    <div>${statsHTML}</div>
+                </div>
+            `);
+        }
+
+        function renderCategory(categoryKey, title) {
+            const dataArray = DB[categoryKey];
+            if (!dataArray || dataArray.length === 0) {
+                setHTML(`<h1>${title}</h1><p>No data found or file is empty.</p>`);
+                return;
+            }
+
+            let html = `<h1>${title}</h1><div class="wiki-grid">`;
+            dataArray.forEach(item => {
+                const name = extractName(item);
+                // Avoid rendering empty/garbage rows
+                if (name && name !== "Unknown") {
+                    html += `
+                        <div class="grid-item" onclick="renderPage('${categoryKey}', \`${name}\`)">
+                            <div class="grid-item-id">#${item.wikiNumber} | ID: ${item.id || item.No || 'N/A'}</div>
+                            <div class="grid-item-title">${name}</div>
+                        </div>
+                    `;
+                }
+            });
+            html += `</div>`;
+            setHTML(html);
+        }
+
+        function renderPage(categoryKey, itemName) {
+            const dictEntry = Dictionary[itemName.toLowerCase()];
+            if (!dictEntry) {
+                setHTML(`<h1>Error</h1><p>Could not find data for ${itemName}.</p>`);
+                return;
+            }
+
+            const entry = dictEntry.ref;
+            const name = extractName(entry);
+            
+            let html = `
+                <h1>#${entry.wikiNumber || '?'}: ${name}</h1>
+                <div class="data-card">
+            `;
+
+            // Standard Data Rows
+            for (const [key, value] of Object.entries(entry)) {
+                // Ignore system keys and completely blank values
+                if (key === 'wikiNumber' || key === 'usedInRecipes' || key === 'craftingRecipe') continue;
+                if (value === "" || value === null || value === undefined) continue;
+
+                html += `
+                    <div class="property-row">
+                        <div class="property-key">${key}</div>
+                        <div class="property-value">${parseTextForLinks(value)}</div>
+                    </div>
+                `;
+            }
+
+            // Virtual Data: Crafting Recipe (If this is a Job)
+            if (entry.craftingRecipe) {
+                html += `
+                    <h3>Crafting Recipe</h3>
+                    <div class="property-row">
+                        <div class="property-key">Required to Unlock</div>
+                        <div class="property-value">${parseTextForLinks(entry.craftingRecipe)}</div>
+                    </div>
+                `;
+            }
+
+            // Virtual Data: Used to Craft (If this is a Material)
+            if (entry.usedInRecipes && entry.usedInRecipes.length > 0) {
+                html += `<h3>Used to Craft</h3><ul>`;
+                entry.usedInRecipes.forEach(recipeStr => {
+                    html += `<li style="margin-bottom: 8px;">${parseTextForLinks(recipeStr)}</li>`;
+                });
+                html += `</ul>`;
+            }
+
+            html += `</div>`;
+            setHTML(html);
+        }
+
+        // Boot
+        window.onload = initWiki;
+    </script>
+</body>
+</html>
