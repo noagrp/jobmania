@@ -5,62 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jobmania Official Database</title>
     <style>
-        :root { --bg: #121217; --text: #e0e0e0; --accent: #007bff; --panel: #1e1e26; --border: #2d2d3a; --highlight: #3a3a4c; }
-        body { font-family: system-ui, -apple-system, sans-serif; margin: 0; background: var(--bg); color: var(--text); display: flex; height: 100vh; overflow: hidden; }
+        :root { 
+            /* Vibrant RPG Theme Colors */
+            --bg-gradient: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            --text: #e0e0e0; 
+            --accent: #ff0055; 
+            --accent-glow: 0 0 10px #ff0055, 0 0 20px #ff0055;
+            --panel: rgba(30, 26, 45, 0.85); 
+            --panel-hover: rgba(45, 35, 70, 0.95);
+            --border: #4d3a7d; 
+            --highlight: #00e5ff; 
+        }
+        
+        body { font-family: system-ui, -apple-system, sans-serif; margin: 0; background: var(--bg-gradient); background-attachment: fixed; color: var(--text); display: flex; height: 100vh; overflow: hidden; cursor: crosshair; }
         
         /* Layout */
-        #sidebar { width: 260px; background: var(--panel); border-right: 1px solid var(--border); display: flex; flex-direction: column; z-index: 10; transition: transform 0.3s ease; }
-        #content { flex-grow: 1; padding: 30px 40px; overflow-y: auto; scroll-behavior: smooth; }
+        #sidebar { width: 260px; background: rgba(15, 12, 41, 0.95); border-right: 1px solid var(--border); display: flex; flex-direction: column; z-index: 10; transition: transform 0.3s ease; box-shadow: 2px 0 15px rgba(0,0,0,0.5); }
+        #content { flex-grow: 1; padding: 30px 40px; overflow-y: auto; scroll-behavior: smooth; position: relative; z-index: 5; }
         
         /* Mobile Nav Toggle */
-        #mobile-nav-toggle { display: none; position: fixed; bottom: 20px; right: 20px; background: var(--accent); color: white; border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 100; cursor: pointer; }
+        #mobile-nav-toggle { display: none; position: fixed; bottom: 20px; right: 20px; background: var(--accent); color: white; border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; box-shadow: var(--accent-glow); z-index: 100; cursor: pointer; transition: 0.2s; }
+        #mobile-nav-toggle:active { transform: scale(0.9); }
         
         /* Sidebar Styling */
-        .sidebar-header { padding: 20px; font-size: 22px; font-weight: 800; border-bottom: 1px solid var(--border); text-align: center; color: white; background: #18181f; }
+        .sidebar-header { padding: 20px; font-size: 24px; font-weight: 900; border-bottom: 2px solid var(--accent); text-align: center; color: white; background: rgba(0,0,0,0.4); text-transform: uppercase; letter-spacing: 2px; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
         .nav-group { padding: 10px 0; overflow-y: auto; flex-grow: 1; }
-        .nav-category-title { font-size: 12px; text-transform: uppercase; color: #888; padding: 15px 20px 5px; font-weight: bold; letter-spacing: 1px; }
-        .nav-item { padding: 10px 20px; cursor: pointer; border-left: 4px solid transparent; transition: 0.2s; font-size: 15px; }
-        .nav-item:hover { background: rgba(0, 123, 255, 0.1); border-left-color: var(--accent); color: white; }
+        .nav-category-title { font-size: 13px; text-transform: uppercase; color: var(--highlight); padding: 15px 20px 5px; font-weight: 800; letter-spacing: 1.5px; opacity: 0.9; }
+        .nav-item { padding: 10px 20px; cursor: pointer; border-left: 4px solid transparent; transition: 0.2s; font-size: 15px; font-weight: 500; }
+        .nav-item:hover { background: linear-gradient(90deg, rgba(255, 0, 85, 0.2), transparent); border-left-color: var(--accent); color: white; text-shadow: 0 0 5px rgba(255,255,255,0.5); }
         
         /* Typography & Elements */
-        h1 { margin-top: 0; font-size: 32px; border-bottom: 2px solid var(--border); padding-bottom: 15px; color: white; }
-        h3 { color: #aaa; margin-top: 25px; border-bottom: 1px dashed var(--border); padding-bottom: 5px; }
+        h1 { margin-top: 0; font-size: 36px; border-bottom: 2px solid var(--border); padding-bottom: 15px; color: white; text-shadow: 0 2px 5px rgba(0,0,0,0.5); font-weight: 800; }
+        h3 { color: var(--highlight); margin-top: 25px; border-bottom: 1px dashed var(--border); padding-bottom: 5px; font-weight: 700; }
         
         /* Data Cards & Rows */
-        .data-card { background: var(--panel); padding: 25px; border-radius: 8px; border: 1px solid var(--border); margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.2); }
-        .property-row { display: flex; border-bottom: 1px solid var(--border); padding: 10px 0; align-items: flex-start; }
+        .data-card { background: var(--panel); padding: 25px; border-radius: 12px; border: 1px solid var(--border); margin-bottom: 20px; box-shadow: 0 8px 32px rgba(0,0,0,0.3); backdrop-filter: blur(10px); }
+        .property-row { display: flex; border-bottom: 1px solid rgba(255,255,255,0.05); padding: 12px 0; align-items: flex-start; }
         .property-row:last-child { border-bottom: none; }
-        .property-key { width: 220px; font-weight: 600; color: #8892b0; flex-shrink: 0; }
-        .property-value { flex-grow: 1; word-break: break-word; line-height: 1.5; }
+        .property-key { width: 220px; font-weight: 700; color: #a594fd; flex-shrink: 0; text-transform: uppercase; font-size: 13px; letter-spacing: 0.5px; }
+        .property-value { flex-grow: 1; word-break: break-word; line-height: 1.6; font-size: 15px; }
         
         /* Links & Interactive */
-        .wiki-link { color: #64ffda; text-decoration: none; font-weight: 500; cursor: pointer; padding: 2px 6px; border-radius: 4px; background: rgba(100, 255, 218, 0.1); display: inline-block; margin: 2px; transition: 0.2s; }
-        .wiki-link:hover { background: rgba(100, 255, 218, 0.2); transform: translateY(-1px); }
-        .list-chip { background: var(--highlight); padding: 4px 10px; border-radius: 20px; font-size: 13px; display: inline-block; margin: 3px; color: #ccc; }
+        .wiki-link { color: var(--highlight); text-decoration: none; font-weight: 700; cursor: pointer; padding: 2px 8px; border-radius: 4px; background: rgba(0, 229, 255, 0.15); display: inline-block; margin: 2px; transition: 0.2s; border: 1px solid rgba(0, 229, 255, 0.3); }
+        .wiki-link:hover { background: var(--highlight); color: #000; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0, 229, 255, 0.4); }
+        .list-chip { background: var(--accent); padding: 6px 14px; border-radius: 20px; font-size: 13px; display: inline-block; margin: 4px; color: white; font-weight: bold; box-shadow: 0 2px 5px rgba(0,0,0,0.3); }
         
         /* Grid */
         .wiki-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 15px; }
-        .grid-item { background: var(--panel); padding: 15px 20px; border: 1px solid var(--border); border-radius: 6px; cursor: pointer; transition: 0.2s; position: relative; overflow: hidden; }
-        .grid-item:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
-        .grid-item::before { content: ""; position: absolute; left: 0; top: 0; height: 100%; width: 4px; background: var(--accent); opacity: 0; transition: 0.2s; }
+        .grid-item { background: var(--panel); padding: 18px 20px; border: 1px solid var(--border); border-radius: 10px; cursor: pointer; transition: 0.3s; position: relative; overflow: hidden; }
+        .grid-item:hover { background: var(--panel-hover); border-color: var(--accent); transform: translateY(-3px); box-shadow: var(--accent-glow); }
+        .grid-item::before { content: ""; position: absolute; left: 0; top: 0; height: 100%; width: 5px; background: var(--accent); opacity: 0; transition: 0.2s; }
         .grid-item:hover::before { opacity: 1; }
-        .grid-item-id { font-size: 12px; color: #777; margin-bottom: 5px; font-family: monospace; }
-        .grid-item-title { font-size: 18px; font-weight: bold; color: white; }
+        .grid-item-id { font-size: 14px; color: var(--highlight); margin-bottom: 8px; font-weight: 800; font-family: monospace; letter-spacing: 1px; }
+        .grid-item-title { font-size: 20px; font-weight: 800; color: white; text-shadow: 0 1px 3px rgba(0,0,0,0.5); }
         
-        .loading { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 60vh; color: #888; font-size: 20px; }
-        .spinner { border: 4px solid rgba(255,255,255,0.1); border-top: 4px solid var(--accent); border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin-bottom: 20px; }
+        /* Stores & Buttons */
+        .store-btn { display: inline-flex; align-items: center; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: 800; transition: 0.2s; box-shadow: 0 4px 15px rgba(0,0,0,0.3); letter-spacing: 0.5px; }
+        .store-btn:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.4); }
+        .btn-play { background: #3ddc84; color: #000; border: 2px solid #3ddc84; }
+        .btn-play:hover { background: #2bb86a; }
+        .btn-apple { background: #ffffff; color: #000; border: 2px solid #ffffff; }
+        .btn-apple:hover { background: #e0e0e0; }
+
+        .loading { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 60vh; color: var(--highlight); font-size: 22px; font-weight: bold; letter-spacing: 1px; }
+        .spinner { border: 4px solid rgba(0, 229, 255, 0.1); border-top: 4px solid var(--highlight); border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite; margin-bottom: 20px; box-shadow: 0 0 15px rgba(0, 229, 255, 0.3); }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        /* Mouse Fire Effect CSS */
+        .fire-particle {
+            position: fixed;
+            pointer-events: none;
+            background: radial-gradient(circle, #ffffff 5%, #ffea00 20%, #ff6600 50%, #cc0000 80%, transparent 100%);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            mix-blend-mode: color-dodge;
+            z-index: 9999;
+            animation: burnOut 0.5s ease-out forwards;
+        }
+        @keyframes burnOut {
+            0% { width: 12px; height: 12px; opacity: 0.8; margin-top: 0; }
+            100% { width: 45px; height: 45px; opacity: 0; margin-top: -40px; }
+        }
 
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
             body { position: relative; }
-            #sidebar { position: fixed; height: 100vh; transform: translateX(-100%); width: 280px; box-shadow: 5px 0 15px rgba(0,0,0,0.5); }
+            #sidebar { position: fixed; height: 100vh; transform: translateX(-100%); width: 280px; }
             #sidebar.open { transform: translateX(0); }
             #content { padding: 20px; }
             #mobile-nav-toggle { display: block; }
             .property-row { flex-direction: column; }
-            .property-key { width: 100%; margin-bottom: 5px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; }
+            .property-key { width: 100%; margin-bottom: 5px; }
             .property-value { width: 100%; }
+            .store-btn { width: 100%; justify-content: center; margin-bottom: 10px; }
         }
     </style>
 </head>
@@ -71,7 +108,7 @@
     <div id="sidebar">
         <div class="sidebar-header">Jobmania DB</div>
         <div class="nav-group" id="nav-menu" onclick="if(window.innerWidth <= 768) toggleNav()">
-            <div class="nav-item" onclick="renderHome()">🏠 Main Dashboard</div>
+            <div class="nav-item" onclick="renderHome()" style="color: var(--highlight);">🏠 Main Dashboard</div>
             
             <div class="nav-category-title">Game Databases</div>
             <div class="nav-item" onclick="renderCategory('characters', 'Characters')">🧑‍🤝‍🧑 Characters</div>
@@ -84,7 +121,7 @@
             <div class="nav-item" onclick="renderCategory('relics', 'Relics')">🏺 Relics</div>
             <div class="nav-item" onclick="renderCategory('relicPassives', 'Relic Passives')">🔮 Relic Passives</div>
             
-            <div class="nav-category-title">Engine Mechanics (Skill Units)</div>
+            <div class="nav-category-title">Engine Mechanics</div>
             <div class="nav-item" onclick="renderCategory('suAbilities', 'Skill Unit: Abilities')">⚙️ SU Abilities</div>
             <div class="nav-item" onclick="renderCategory('suBuffs', 'Skill Unit: Buffs')">⚙️ SU Buffs</div>
             <div class="nav-item" onclick="renderCategory('suPassives', 'Skill Unit: Passives')">⚙️ SU Passives</div>
@@ -102,11 +139,42 @@
 
     <script>
         /**
+         * FIRE CURSOR EFFECT ENGINE
+         */
+        document.addEventListener('mousemove', (e) => {
+            createFire(e.clientX, e.clientY, false);
+        });
+        
+        document.addEventListener('mousedown', (e) => {
+            // Flare up on click
+            for(let i = 0; i < 8; i++) {
+                setTimeout(() => {
+                    createFire(e.clientX + (Math.random() * 30 - 15), e.clientY + (Math.random() * 30 - 15), true);
+                }, i * 40);
+            }
+        });
+
+        function createFire(x, y, isClick) {
+            const particle = document.createElement('div');
+            particle.className = 'fire-particle';
+            particle.style.left = x + 'px';
+            particle.style.top = y + 'px';
+            
+            if (isClick) {
+                particle.style.width = '20px';
+                particle.style.height = '20px';
+                particle.style.animationDuration = '0.8s';
+            }
+            
+            document.body.appendChild(particle);
+            setTimeout(() => particle.remove(), 800);
+        }
+
+        /**
          * JOBMANIA WIKI ENGINE
-         * Architect: Automated SPA Engine
          */
 
-        // 1. CONFIGURATION - Update this if you host the API elsewhere
+        // 1. CONFIGURATION
         const API_BASE = "https://noagrp.github.io/jobmania-api/";
         const CACHE_BUSTER = "?t=" + Date.now();
 
@@ -126,7 +194,7 @@
                 buildCraftingLinks();
                 renderHome();
             } catch (error) {
-                setHTML(`<h1>Critical Error</h1><p>Failed to connect to the Jobmania API: ${error.message}</p>`);
+                setHTML(`<h1>Critical Error</h1><div class="data-card"><p>Failed to connect to the Jobmania API: ${error.message}</p></div>`);
             }
         }
 
@@ -142,7 +210,6 @@
         }
 
         async function fetchAllData() {
-            // Fetch everything simultaneously for maximum speed
             const [
                 chars, jobs, abilities, crafting, materials, 
                 passives, relics, relicPassives, 
@@ -161,12 +228,21 @@
         }
 
         // 4. SMART HELPERS
-        // Figures out what a row is actually called, regardless of the CSV header name
         function extractName(item) {
             if (!item) return "Unknown";
-            return item.Name || item['Ability Name'] || item.Job || item.Material || 
-                   item['Passive Skill'] || item.Passive || item.Relic || 
-                   item['Ability/Switch Skill'] || item.Buff || item.id || "Unknown";
+            
+            let name = item.Name || item['Ability Name'] || item.Job || item.Material || 
+                   item['Passive Skill'] || item.Passive || item['Passive Name'] ||
+                   item.Relic || item['Relic Name'] || item['Relic Passive'] || 
+                   item['Ability/Switch Skill'] || item.Buff;
+
+            if (!name) {
+                const allKeys = Object.keys(item);
+                if (allKeys.length > 1) {
+                    name = item[allKeys[1]]; 
+                }
+            }
+            return name || item.id || "Unknown";
         }
 
         function toggleNav() {
@@ -188,23 +264,20 @@
 
             categoriesToMap.forEach(category => {
                 DB[category].forEach((item, index) => {
-                    item.wikiNumber = index + 1; // Auto-number
+                    item.wikiNumber = index + 1; 
                     const name = extractName(item).toString().trim();
                     if (name && name !== "Unknown") {
-                        // Store in dictionary in lowercase for case-insensitive lookup
                         Dictionary[name.toLowerCase()] = { category: category, ref: item, originalName: name };
                     }
                 });
             });
 
-            // Special handling for Crafting (creates virtual relationships)
-            // If materials JSON is empty, populate it from crafting data automatically
             if (DB.materials.length === 0 && DB.crafting.length > 0) {
                 const uniqueMats = new Set();
                 DB.crafting.forEach(c => { if(c.material_required) uniqueMats.add(c.material_required.trim()); });
                 let count = 1;
                 uniqueMats.forEach(mat => {
-                    const matObj = { "Name": mat, "Type": "Crafting Material" };
+                    const matObj = { "Name": mat, "Type": "Crafting Material", "wikiNumber": count++ };
                     DB.materials.push(matObj);
                     Dictionary[mat.toLowerCase()] = { category: 'materials', ref: matObj, originalName: mat };
                 });
@@ -212,7 +285,6 @@
         }
 
         function buildCraftingLinks() {
-            // Attach 'Used to Craft' lists to Materials and 'Recipe' to Jobs
             DB.crafting.forEach(recipe => {
                 const targetJob = recipe.target_class;
                 const reqMat = recipe.material_required;
@@ -221,7 +293,7 @@
                 if (reqMat && Dictionary[reqMat.toLowerCase()]) {
                     const matRef = Dictionary[reqMat.toLowerCase()].ref;
                     if (!matRef.usedInRecipes) matRef.usedInRecipes = [];
-                    matRef.usedInRecipes.push(`Combines with <strong>${srcClass}</strong> to make <strong>${targetJob}</strong> (⭐${recipe.target_star_level || '?'})`);
+                    matRef.usedInRecipes.push(`Combines with <strong>${srcClass}</strong> to make <strong>${targetJob}</strong>`);
                 }
 
                 if (targetJob && Dictionary[targetJob.toLowerCase()]) {
@@ -233,18 +305,16 @@
 
         // 6. AUTO-LINKING ENGINE
         function parseTextForLinks(text) {
-            if (!text || text === "") return '<span style="color:#555;">Null</span>';
+            if (!text || text === "") return '<span style="color:#666;">Null</span>';
             let processedText = String(text);
 
-            // 1. Direct cell match (fastest and safest)
             if (Dictionary[processedText.toLowerCase()]) {
                 const t = Dictionary[processedText.toLowerCase()];
                 return `<a class="wiki-link" onclick="renderPage('${t.category}', '${t.originalName}')">${processedText}</a>`;
             }
 
-            // 2. Delimiter Split (Handles "Simple-Slimy Body" or "Fire|Water")
             if (processedText.includes('-') || processedText.includes('|') || processedText.includes(',')) {
-                let chunks = processedText.split(/([-|,])/); // Split but keep the delimiters
+                let chunks = processedText.split(/([-|,])/); 
                 let rebuilt = "";
                 chunks.forEach(chunk => {
                     let cleanChunk = chunk.trim().toLowerCase();
@@ -269,11 +339,22 @@
             }
 
             setHTML(`
-                <h1>Welcome to the Jobmania Database</h1>
-                <div class="data-card">
-                    <p>Select a category from the sidebar to browse the live game data pulled directly from the GitHub API.</p>
-                    <h3>Live API Endpoints Connected:</h3>
-                    <div>${statsHTML}</div>
+                <h1>Jobmania - The Eternal Crusade</h1>
+                <div class="data-card" style="border-left: 5px solid var(--accent);">
+                    <p style="font-size: 18px; margin-top: 0;">
+                        Welcome to the official data repository for <strong>Jobmania</strong>. Choose from hundreds of heroes, craft powerful job classes, and combine strategic abilities to build the ultimate team and conquer the endless dungeon.
+                    </p>
+                    
+                    <div style="margin: 30px 0 10px; display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="https://play.google.com/store/apps/details?id=com.aubjective.jobmania" target="_blank" class="store-btn btn-play">📱 Get it on Google Play</a>
+                        <a href="https://apps.apple.com/app/jobmania-eternal-crusade/id1531238064" target="_blank" class="store-btn btn-apple">🍎 Download on App Store</a>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 40px;">Live API Database Status</h3>
+                <div class="data-card" style="background: rgba(0,0,0,0.4); border-color: transparent;">
+                    <p style="color: #aaa; margin-top:0;">These are the live JSON endpoints currently powering this wiki directly from GitHub:</p>
+                    <div style="margin-top: 15px;">${statsHTML}</div>
                 </div>
             `);
         }
@@ -281,18 +362,17 @@
         function renderCategory(categoryKey, title) {
             const dataArray = DB[categoryKey];
             if (!dataArray || dataArray.length === 0) {
-                setHTML(`<h1>${title}</h1><p>No data found or file is empty.</p>`);
+                setHTML(`<h1>${title}</h1><div class="data-card"><p>No data found or file is empty.</p></div>`);
                 return;
             }
 
             let html = `<h1>${title}</h1><div class="wiki-grid">`;
             dataArray.forEach(item => {
                 const name = extractName(item);
-                // Avoid rendering empty/garbage rows
                 if (name && name !== "Unknown") {
                     html += `
                         <div class="grid-item" onclick="renderPage('${categoryKey}', \`${name}\`)">
-                            <div class="grid-item-id">#${item.wikiNumber} | ID: ${item.id || item.No || 'N/A'}</div>
+                            <div class="grid-item-id">ID #${item.wikiNumber}</div>
                             <div class="grid-item-title">${name}</div>
                         </div>
                     `;
@@ -305,7 +385,7 @@
         function renderPage(categoryKey, itemName) {
             const dictEntry = Dictionary[itemName.toLowerCase()];
             if (!dictEntry) {
-                setHTML(`<h1>Error</h1><p>Could not find data for ${itemName}.</p>`);
+                setHTML(`<h1>Error</h1><div class="data-card"><p>Could not find data for ${itemName}.</p></div>`);
                 return;
             }
 
@@ -313,13 +393,11 @@
             const name = extractName(entry);
             
             let html = `
-                <h1>#${entry.wikiNumber || '?'}: ${name}</h1>
+                <h1>ID #${entry.wikiNumber || '?'}: ${name}</h1>
                 <div class="data-card">
             `;
 
-            // Standard Data Rows
             for (const [key, value] of Object.entries(entry)) {
-                // Ignore system keys and completely blank values
                 if (key === 'wikiNumber' || key === 'usedInRecipes' || key === 'craftingRecipe') continue;
                 if (value === "" || value === null || value === undefined) continue;
 
@@ -331,7 +409,6 @@
                 `;
             }
 
-            // Virtual Data: Crafting Recipe (If this is a Job)
             if (entry.craftingRecipe) {
                 html += `
                     <h3>Crafting Recipe</h3>
@@ -342,11 +419,10 @@
                 `;
             }
 
-            // Virtual Data: Used to Craft (If this is a Material)
             if (entry.usedInRecipes && entry.usedInRecipes.length > 0) {
                 html += `<h3>Used to Craft</h3><ul>`;
                 entry.usedInRecipes.forEach(recipeStr => {
-                    html += `<li style="margin-bottom: 8px;">${parseTextForLinks(recipeStr)}</li>`;
+                    html += `<li style="margin-bottom: 10px; font-size: 15px;">${parseTextForLinks(recipeStr)}</li>`;
                 });
                 html += `</ul>`;
             }
