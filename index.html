@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jobmania Official Database</title>
+    <title>Jobmania - Eternal Dungeon</title>
     <style>
         :root { 
             /* Vibrant RPG Theme Colors */
@@ -60,7 +60,7 @@
         .grid-item-title { font-size: 20px; font-weight: 800; color: white; text-shadow: 0 1px 3px rgba(0,0,0,0.5); }
         
         /* Stores & Buttons */
-        .store-btn { display: inline-flex; align-items: center; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: 800; transition: 0.2s; box-shadow: 0 4px 15px rgba(0,0,0,0.3); letter-spacing: 0.5px; }
+        .store-btn { display: inline-flex; align-items: center; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: 800; transition: 0.2s; box-shadow: 0 4px 15px rgba(0,0,0,0.3); letter-spacing: 0.5px; cursor: pointer; }
         .store-btn:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.4); }
         .btn-play { background: #3ddc84; color: #000; border: 2px solid #3ddc84; }
         .btn-play:hover { background: #2bb86a; }
@@ -98,6 +98,7 @@
             .property-key { width: 100%; margin-bottom: 5px; }
             .property-value { width: 100%; }
             .store-btn { width: 100%; justify-content: center; margin-bottom: 10px; }
+            .header-flex { flex-direction: column; align-items: flex-start !important; gap: 15px !important; }
         }
     </style>
 </head>
@@ -106,7 +107,7 @@
     <button id="mobile-nav-toggle" onclick="toggleNav()">☰</button>
 
     <div id="sidebar">
-        <div class="sidebar-header">Jobmania DB</div>
+        <div class="sidebar-header">Jobmania - Eternal Dungeon</div>
         <div class="nav-group" id="nav-menu" onclick="if(window.innerWidth <= 768) toggleNav()">
             <div class="nav-item" onclick="renderHome()" style="color: var(--highlight);">🏠 Main Dashboard</div>
             
@@ -192,7 +193,6 @@
                 buildGlobalDictionary();
                 buildCraftingLinks();
                 
-                // Initialize the browser history state so the first "Back" click works safely
                 history.replaceState({ view: 'home' }, '', '#home');
                 renderHome(false);
             } catch (error) {
@@ -333,15 +333,13 @@
             return processedText;
         }
 
-        // 7. BROWSER HISTORY ROUTING (NATIVE BACK BUTTON SUPPORT)
+        // 7. BROWSER HISTORY ROUTING
         window.addEventListener('popstate', (event) => {
             const state = event.state;
             if (!state) {
                 renderHome(false);
                 return;
             }
-            
-            // Re-render the correct view based on the saved history state
             if (state.view === 'home') {
                 renderHome(false);
             } else if (state.view === 'category') {
@@ -351,7 +349,7 @@
             }
         });
 
-        // 8. RENDER ENGINES (Updated with pushHistory flag)
+        // 8. RENDER ENGINES
         function renderHome(pushHistory = true) {
             if (pushHistory) {
                 history.pushState({ view: 'home' }, '', '#home');
@@ -363,21 +361,45 @@
             }
 
             setHTML(`
-                <h1>Jobmania - The Eternal Crusade</h1>
+                <div class="header-flex" style="display: flex; align-items: center; gap: 20px; border-bottom: 2px solid var(--border); padding-bottom: 20px; margin-bottom: 25px;">
+                    <img src="${API_BASE}jobmania_official_icon.png" alt="Jobmania Icon" style="width: 90px; height: 90px; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.6); object-fit: cover;">
+                    <div>
+                        <h1 style="border: none; padding: 0; margin: 0; font-size: 34px;">Jobmania - Eternal Dungeon</h1>
+                        <div style="color: var(--highlight); font-weight: 800; margin-top: 6px; font-size: 14px; letter-spacing: 1px;">AUBJECTIVE TECHNOLOGY LTD.</div>
+                        <div style="color: #aaa; font-size: 12px; margin-top: 4px; font-weight: 600;">Contains Ads • In-app purchases</div>
+                    </div>
+                </div>
+
                 <div class="data-card" style="border-left: 5px solid var(--accent);">
-                    <p style="font-size: 18px; margin-top: 0;">
-                        Welcome to the official data repository for <strong>Jobmania</strong>. Choose from hundreds of heroes, craft powerful job classes, and combine strategic abilities to build the ultimate team and conquer the endless dungeon.
+                    <p style="font-size: 16px; margin-top: 0; line-height: 1.6;">
+                        Pick a Hero and a job then embark on an eternal journey of dungeon descending. Acquire random abilities and jobs through the journey and build your own unique play style. How far can you go?
                     </p>
                     
+                    <h3 style="color: white; margin-top: 25px; border-bottom: 1px dashed var(--border); padding-bottom: 8px;">Features</h3>
+                    <ul style="line-height: 1.8; color: #ddd; padding-left: 20px; font-size: 15px;">
+                        <li><strong>Rogue lite</strong>, procedural enemies and events generation.</li>
+                        <li><strong>Dungeon crawler</strong>, descend into the dungeon as much as you can.</li>
+                        <li><strong>Strategic deck building</strong>, build your own unique deck by adding abilities into your deck via chests and defeating enemies.</li>
+                        <li><strong>RPG Turn-based combat system</strong>, complex but easy to play. Defeat tons of different enemies, challenging but addictive.</li>
+                        <li><strong>Equip 3 jobs at once</strong>, swap, and use their abilities strategically for powerful synergy.</li>
+                        <li><strong>Crafting:</strong> Combine jobs and materials to craft new unique jobs.</li>
+                        <li><strong>Gacha:</strong> Get new heroes from Gacha, enemies defeated from the last run will appear in a special Gacha pool!</li>
+                        <li><strong>Relics:</strong> Collect special relics to enhance your build further.</li>
+                        <li><strong>References:</strong> A lot of Memes, Anime and Movies references in the game!</li>
+                        <li><strong>Free</strong> with ads and in-app purchases, remove all ads with one purchase.</li>
+                        <li><strong>Portrait screen only</strong>, you can play this game with one hand.</li>
+                    </ul>
+                    
                     <div style="margin: 30px 0 10px; display: flex; gap: 15px; flex-wrap: wrap;">
-                        <a href="https://play.google.com/store/apps/details?id=com.aubjective.jobmania" target="_blank" class="store-btn btn-play">📱 Get it on Google Play</a>
-                        <a href="https://apps.apple.com/app/jobmania-eternal-crusade/id1531238064" target="_blank" class="store-btn btn-apple">🍎 Download on App Store</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.aubjective.jobmania" target="_blank" class="store-btn btn-play">📱 Google Play</a>
+                        <a href="https://apps.apple.com/app/jobmania-eternal-crusade/id1531238064" target="_blank" class="store-btn btn-apple">🍎 App Store</a>
+                        <a href="https://discord.gg/6U5FNFVrwb" target="_blank" class="store-btn" style="background: #5865F2; color: white; border: 2px solid #5865F2;">💬 Join Discord</a>
                     </div>
                 </div>
 
                 <h3 style="margin-top: 40px;">Live API Database Status</h3>
                 <div class="data-card" style="background: rgba(0,0,0,0.4); border-color: transparent;">
-                    <p style="color: #aaa; margin-top:0;">These are the live JSON endpoints currently powering this wiki directly from GitHub:</p>
+                    <p style="color: #aaa; margin-top:0; font-size: 14px;">These are the live JSON endpoints currently powering this wiki directly from GitHub:</p>
                     <div style="margin-top: 15px;">${statsHTML}</div>
                 </div>
             `);
@@ -443,7 +465,7 @@
 
             if (entry.craftingRecipe) {
                 html += `
-                    <h3>Crafting Recipe</h3>
+                    <h3 style="margin-top: 20px;">Crafting Recipe</h3>
                     <div class="property-row">
                         <div class="property-key">Required to Unlock</div>
                         <div class="property-value">${parseTextForLinks(entry.craftingRecipe)}</div>
@@ -452,7 +474,7 @@
             }
 
             if (entry.usedInRecipes && entry.usedInRecipes.length > 0) {
-                html += `<h3>Used to Craft</h3><ul>`;
+                html += `<h3 style="margin-top: 20px;">Used to Craft</h3><ul>`;
                 entry.usedInRecipes.forEach(recipeStr => {
                     html += `<li style="margin-bottom: 10px; font-size: 15px;">${parseTextForLinks(recipeStr)}</li>`;
                 });
