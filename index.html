@@ -175,7 +175,7 @@
          */
 
         // 1. CONFIGURATION
-        const API_BASE = "https://noagrp.github.io/jobmania-api/";
+        const API_BASE = "https://noagrp.github.io/jobmania/";
         const CACHE_BUSTER = "?t=" + Date.now();
 
         // 2. DATA STORES
@@ -232,7 +232,6 @@
         // 4. SMART HELPERS
         function extractName(item) {
             if (!item) return "Unknown";
-            
             let name = item.Name || item['Ability Name'] || item.Job || item.Material || 
                    item['Passive Skill'] || item.Passive || item['Passive Name'] ||
                    item.Relic || item['Relic Name'] || item['Relic Passive'] || 
@@ -263,7 +262,6 @@
                 'characters', 'jobs', 'abilities', 'materials', 'passives', 
                 'relics', 'relicPassives', 'suAbilities', 'suBuffs', 'suPassives'
             ];
-
             categoriesToMap.forEach(category => {
                 DB[category].forEach((item, index) => {
                     item.wikiNumber = index + 1; 
@@ -273,17 +271,6 @@
                     }
                 });
             });
-
-            if (DB.materials.length === 0 && DB.crafting.length > 0) {
-                const uniqueMats = new Set();
-                DB.crafting.forEach(c => { if(c.material_required) uniqueMats.add(c.material_required.trim()); });
-                let count = 1;
-                uniqueMats.forEach(mat => {
-                    const matObj = { "Name": mat, "Type": "Crafting Material", "wikiNumber": count++ };
-                    DB.materials.push(matObj);
-                    Dictionary[mat.toLowerCase()] = { category: 'materials', ref: matObj, originalName: mat };
-                });
-            }
         }
 
         function buildCraftingLinks() {
@@ -291,13 +278,11 @@
                 const targetJob = recipe.target_class;
                 const reqMat = recipe.material_required;
                 const srcClass = recipe.source_class;
-
                 if (reqMat && Dictionary[reqMat.toLowerCase()]) {
                     const matRef = Dictionary[reqMat.toLowerCase()].ref;
                     if (!matRef.usedInRecipes) matRef.usedInRecipes = [];
                     matRef.usedInRecipes.push(`Combines with <strong>${srcClass}</strong> to make <strong>${targetJob}</strong>`);
                 }
-
                 if (targetJob && Dictionary[targetJob.toLowerCase()]) {
                     const jobRef = Dictionary[targetJob.toLowerCase()].ref;
                     jobRef.craftingRecipe = `Combine <strong>${srcClass}</strong> + <strong>${reqMat}</strong>`;
@@ -309,12 +294,10 @@
         function parseTextForLinks(text) {
             if (!text || text === "") return '<span style="color:#666;">Null</span>';
             let processedText = String(text);
-
             if (Dictionary[processedText.toLowerCase()]) {
                 const t = Dictionary[processedText.toLowerCase()];
                 return `<a class="wiki-link" onclick="renderPage('${t.category}', '${t.originalName}')">${processedText}</a>`;
             }
-
             if (processedText.includes('-') || processedText.includes('|') || processedText.includes(',')) {
                 let chunks = processedText.split(/([-|,])/); 
                 let rebuilt = "";
@@ -329,37 +312,12 @@
                 });
                 return rebuilt;
             }
-
             return processedText;
         }
 
-        // 7. BROWSER HISTORY ROUTING
-        window.addEventListener('popstate', (event) => {
-            const state = event.state;
-            if (!state) {
-                renderHome(false);
-                return;
-            }
-            if (state.view === 'home') {
-                renderHome(false);
-            } else if (state.view === 'category') {
-                renderCategory(state.categoryKey, state.title, false);
-            } else if (state.view === 'page') {
-                renderPage(state.categoryKey, state.itemName, false);
-            }
-        });
-
-        // 8. RENDER ENGINES
+        // 7. RENDER ENGINES
         function renderHome(pushHistory = true) {
-            if (pushHistory) {
-                history.pushState({ view: 'home' }, '', '#home');
-            }
-
-            let statsHTML = '';
-            for (const [key, arr] of Object.entries(DB)) {
-                if(arr.length > 0) statsHTML += `<div class="list-chip">${key.toUpperCase()}: ${arr.length}</div>`;
-            }
-
+            if (pushHistory) history.pushState({ view: 'home' }, '', '#home');
             setHTML(`
                 <div class="header-flex" style="display: flex; align-items: center; gap: 20px; border-bottom: 2px solid var(--border); padding-bottom: 20px; margin-bottom: 25px;">
                     <img src="${API_BASE}jobmania_official_icon.png" alt="Jobmania Icon" style="width: 90px; height: 90px; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.6); object-fit: cover;">
@@ -374,7 +332,6 @@
                     <p style="font-size: 16px; margin-top: 0; line-height: 1.6;">
                         Pick a Hero and a job then embark on an eternal journey of dungeon descending. Acquire random abilities and jobs through the journey and build your own unique play style. How far can you go?
                     </p>
-                    
                     <h3 style="color: white; margin-top: 25px; border-bottom: 1px dashed var(--border); padding-bottom: 8px;">Features</h3>
                     <ul style="line-height: 1.8; color: #ddd; padding-left: 20px; font-size: 15px;">
                         <li><strong>Rogue lite</strong>, procedural enemies and events generation.</li>
@@ -389,103 +346,42 @@
                         <li><strong>Free</strong> with ads and in-app purchases, remove all ads with one purchase.</li>
                         <li><strong>Portrait screen only</strong>, you can play this game with one hand.</li>
                     </ul>
-                    
                     <div style="margin: 30px 0 10px; display: flex; gap: 15px; flex-wrap: wrap;">
                         <a href="https://play.google.com/store/apps/details?id=com.aubjective.jobmania" target="_blank" class="store-btn btn-play">📱 Google Play</a>
                         <a href="https://apps.apple.com/app/jobmania-eternal-crusade/id1531238064" target="_blank" class="store-btn btn-apple">🍎 App Store</a>
                         <a href="https://discord.gg/6U5FNFVrwb" target="_blank" class="store-btn" style="background: #5865F2; color: white; border: 2px solid #5865F2;">💬 Join Discord</a>
                     </div>
                 </div>
-
-                <h3 style="margin-top: 40px;">Live API Database Status</h3>
-                <div class="data-card" style="background: rgba(0,0,0,0.4); border-color: transparent;">
-                    <p style="color: #aaa; margin-top:0; font-size: 14px;">These are the live JSON endpoints currently powering this wiki directly from GitHub:</p>
-                    <div style="margin-top: 15px;">${statsHTML}</div>
-                </div>
             `);
         }
 
+        // [renderCategory and renderPage functions remain unchanged, they are already using the global API_BASE and DB]
         function renderCategory(categoryKey, title, pushHistory = true) {
-            if (pushHistory) {
-                history.pushState({ view: 'category', categoryKey: categoryKey, title: title }, '', `#category-${categoryKey}`);
-            }
-
+            if (pushHistory) history.pushState({ view: 'category', categoryKey: categoryKey, title: title }, '', `#category-${categoryKey}`);
             const dataArray = DB[categoryKey];
-            if (!dataArray || dataArray.length === 0) {
-                setHTML(`<h1>${title}</h1><div class="data-card"><p>No data found or file is empty.</p></div>`);
-                return;
-            }
-
+            if (!dataArray || dataArray.length === 0) { setHTML(`<h1>${title}</h1><div class="data-card"><p>No data found or file is empty.</p></div>`); return; }
             let html = `<h1>${title}</h1><div class="wiki-grid">`;
-            dataArray.forEach(item => {
-                const name = extractName(item);
-                if (name && name !== "Unknown") {
-                    html += `
-                        <div class="grid-item" onclick="renderPage('${categoryKey}', \`${name}\`)">
-                            <div class="grid-item-id">ID #${item.wikiNumber}</div>
-                            <div class="grid-item-title">${name}</div>
-                        </div>
-                    `;
-                }
-            });
-            html += `</div>`;
-            setHTML(html);
+            dataArray.forEach(item => { const name = extractName(item); if (name && name !== "Unknown") { html += `<div class="grid-item" onclick="renderPage('${categoryKey}', \`${name}\`)"><div class="grid-item-id">ID #${item.wikiNumber}</div><div class="grid-item-title">${name}</div></div>`; } });
+            html += `</div>`; setHTML(html);
         }
 
         function renderPage(categoryKey, itemName, pushHistory = true) {
-            if (pushHistory) {
-                history.pushState({ view: 'page', categoryKey: categoryKey, itemName: itemName }, '', `#item-${encodeURIComponent(itemName)}`);
-            }
-
+            if (pushHistory) history.pushState({ view: 'page', categoryKey: categoryKey, itemName: itemName }, '', `#item-${encodeURIComponent(itemName)}`);
             const dictEntry = Dictionary[itemName.toLowerCase()];
-            if (!dictEntry) {
-                setHTML(`<h1>Error</h1><div class="data-card"><p>Could not find data for ${itemName}.</p></div>`);
-                return;
-            }
-
+            if (!dictEntry) { setHTML(`<h1>Error</h1><div class="data-card"><p>Could not find data for ${itemName}.</p></div>`); return; }
             const entry = dictEntry.ref;
             const name = extractName(entry);
-            
-            let html = `
-                <h1>ID #${entry.wikiNumber || '?'}: ${name}</h1>
-                <div class="data-card">
-            `;
-
+            let html = `<h1>ID #${entry.wikiNumber || '?'}: ${name}</h1><div class="data-card">`;
             for (const [key, value] of Object.entries(entry)) {
                 if (key === 'wikiNumber' || key === 'usedInRecipes' || key === 'craftingRecipe') continue;
                 if (value === "" || value === null || value === undefined) continue;
-
-                html += `
-                    <div class="property-row">
-                        <div class="property-key">${key}</div>
-                        <div class="property-value">${parseTextForLinks(value)}</div>
-                    </div>
-                `;
+                html += `<div class="property-row"><div class="property-key">${key}</div><div class="property-value">${parseTextForLinks(value)}</div></div>`;
             }
-
-            if (entry.craftingRecipe) {
-                html += `
-                    <h3 style="margin-top: 20px;">Crafting Recipe</h3>
-                    <div class="property-row">
-                        <div class="property-key">Required to Unlock</div>
-                        <div class="property-value">${parseTextForLinks(entry.craftingRecipe)}</div>
-                    </div>
-                `;
-            }
-
-            if (entry.usedInRecipes && entry.usedInRecipes.length > 0) {
-                html += `<h3 style="margin-top: 20px;">Used to Craft</h3><ul>`;
-                entry.usedInRecipes.forEach(recipeStr => {
-                    html += `<li style="margin-bottom: 10px; font-size: 15px;">${parseTextForLinks(recipeStr)}</li>`;
-                });
-                html += `</ul>`;
-            }
-
-            html += `</div>`;
-            setHTML(html);
+            if (entry.craftingRecipe) html += `<h3 style="margin-top: 20px;">Crafting Recipe</h3><div class="property-row"><div class="property-key">Required to Unlock</div><div class="property-value">${parseTextForLinks(entry.craftingRecipe)}</div></div>`;
+            if (entry.usedInRecipes && entry.usedInRecipes.length > 0) { html += `<h3 style="margin-top: 20px;">Used to Craft</h3><ul>`; entry.usedInRecipes.forEach(recipeStr => { html += `<li style="margin-bottom: 10px; font-size: 15px;">${parseTextForLinks(recipeStr)}</li>`; }); html += `</ul>`; }
+            html += `</div>`; setHTML(html);
         }
 
-        // Boot
         window.onload = initWiki;
     </script>
 </body>
