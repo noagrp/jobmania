@@ -133,19 +133,27 @@ function buildReverseRelationships() {
     });
 }
 
-// STRICT LINKER: Only looks in the allowed category! No accidental cross-linking.
 function strictLinker(commaString, allowedCategory) {
     if (!commaString || commaString === "") return '<span style="color:#666;">Null</span>';
     
-    let items = String(commaString).split(',').map(s => s.trim()).filter(s => s !== "");
+    // 1. Split by comma (for lists), then by hyphen (for compound names)
+    // We flatten the list so we can process every individual skill/passive
+    let items = String(commaString).split(',').flatMap(s => s.split('-')).map(s => s.trim()).filter(s => s !== "");
+    
     let htmlResult = "";
 
     items.forEach(item => {
-        let target = Object.values(Dictionary).find(d => d.category === allowedCategory && (d.id === item || d.originalName === item));
+        // Look for the item in the specified category
+        let target = Object.values(Dictionary).find(d => 
+            d.category === allowedCategory && 
+            (d.id === item || d.originalName === item)
+        );
         
         if (target) {
+            // It found a match! Create a clickable link
             htmlResult += `<a class="wiki-link" onclick="renderPage('${target.category}', ${target.idx})">${target.originalName}</a> `;
         } else {
+            // No match found? Print the name as a chip
             htmlResult += `<span class="list-chip" style="background:#444;">${item}</span> `;
         }
     });
