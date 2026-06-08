@@ -72,8 +72,23 @@ function renderHome() {
     document.getElementById('page-container').innerHTML = `
         <h1>Jobmania - Eternal Dungeon</h1>
         <div class="data-card">
-            <p>Welcome to the Relational Archive. Select a category from the sidebar to explore interlinked data.</p>
-        </div>`;
+            <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
+                <img src="${API_BASE}jobmania_official_icon.png" alt="Jobmania Icon" style="width: 80px; height: 80px; border-radius: 15px;">
+                <p>Pick a Hero and a job then embark on an eternal journey of dungeon descending. Acquire random abilities and jobs through the journey and build your own unique play style.</p>
+            </div>
+            
+            <a href="https://play.google.com/store/apps/details?id=com.aubjective.jobmania" target="_blank" class="store-btn btn-play">📱 Download on Google Play</a>
+            
+            <h3 style="margin-top: 30px;">Features</h3>
+            <ul style="line-height: 1.6; color: #ddd;">
+                <li>Rogue lite, procedural enemies and events generation.</li>
+                <li>Strategic deck building with unique abilities.</li>
+                <li>RPG Turn-based combat system.</li>
+                <li>Equip 3 jobs at once for powerful synergy.</li>
+                <li>Crafting and Gacha systems.</li>
+            </ul>
+        </div>
+    `;
 }
 
 function renderCategory(cat, title) {
