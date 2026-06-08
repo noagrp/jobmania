@@ -19,6 +19,12 @@ const DB = {
 };
 const Dictionary = {}; 
 
+// 1. EXPOSE FUNCTIONS GLOBALLY SO HTML CAN SEE THEM
+window.renderHome = renderHome;
+window.renderCategory = renderCategory;
+window.renderPage = renderPage;
+window.toggleNav = toggleNav;
+
 async function initWiki() {
     await fetchAllData();
     buildGlobalDictionary();
@@ -38,7 +44,6 @@ async function fetchAllData() {
 }
 
 function extractName(item) {
-    // Matching your specific file headers
     return item.Name || item['Ability Name'] || item.Job || item.Material || 
            item['Passive Name'] || item.Relic || item['Ability/Switch Skill'] || item.Buff || item.Passive || "Unknown";
 }
@@ -53,8 +58,7 @@ function buildGlobalDictionary() {
 }
 
 function strictLinker(commaString, allowedCategory) {
-    if (!commaString || commaString === "") return '<span style="color:#666;">Null</span>';
-    // Split by comma or hyphen
+    if (!commaString || commaString === "" || commaString === "Null") return '<span style="color:#666;">Null</span>';
     return String(commaString).split(/[,-]/).map(s => s.trim()).filter(Boolean).map(item => {
         const key = `${allowedCategory}_${item.toLowerCase()}`;
         const found = Dictionary[key];
@@ -64,24 +68,24 @@ function strictLinker(commaString, allowedCategory) {
 
 function renderPage(cat, idx) {
     const entry = DB[cat][idx];
+    if(!entry) return;
     let html = `<h1>${extractName(entry)}</h1><div class="data-card">`;
-    
     for (const [k, v] of Object.entries(entry)) {
         if (k === 'wikiNumber' || k === 'usedBy') continue;
-        
         let val = v || '<span style="color:#666;">Null</span>';
-        
-        // Linker for Jobabilities/Passives
-        const abilityHeaders = ['Deck Abilities * 5', 'Deck Abilities * 3', 'Deck Abilities * 2', 'Deck Ability * 1', 'Switch Skill'];
+        const abilityHeaders = ['Deck Abilities * 5', 'Deck Abilities * 3', 'Deck Abilities * 2', 'Deck Ability * 1', 'Switch Skill', 'Player Ability 1', 'Player Ability 2'];
         const passiveHeaders = ['Passive Skill', 'Player Passive Skill 1', 'Player Passive Skill 2'];
-
         if (abilityHeaders.includes(k)) val = strictLinker(v, 'abilities');
         else if (passiveHeaders.includes(k)) val = strictLinker(v, 'passives');
-
         html += `<div class="property-row"><div class="property-key">${k}</div><div class="property-value">${val}</div></div>`;
     }
     document.getElementById('page-container').innerHTML = html + `</div>`;
 }
 
-// ... [Keep your existing renderHome, renderCategory, renderPage, and toggleNav] ...
+// Ensure toggleNav and renderHome are defined globally
+function toggleNav() { document.getElementById('sidebar').classList.toggle('open'); }
+function renderHome() { /* ... your dashboard HTML ... */ }
+function renderCategory(cat, title) { /* ... your grid logic ... */ }
+
+// Trigger Init
 window.onload = initWiki;
