@@ -164,8 +164,27 @@ function renderHome(push = true) {
                 <div style="color: #aaa; font-size: 12px; margin-top: 4px; font-weight: 600;">Contains Ads • In-app purchases</div>
             </div>
         </div>
+
         <div class="data-card" style="border-left: 5px solid var(--accent);">
-            <p style="font-size: 16px; margin-top: 0; line-height: 1.6;">Database Loaded. Select a category from the sidebar to begin.</p>
+            <p style="font-size: 16px; margin-top: 0; line-height: 1.6;">
+                Pick a Hero and a job then embark on an eternal journey of dungeon descending. Acquire random abilities and jobs through the journey and build your own unique play style. How far can you go?
+            </p>
+            <h3 style="color: white; margin-top: 25px; border-bottom: 1px dashed var(--border); padding-bottom: 8px;">Features</h3>
+            <ul style="line-height: 1.8; color: #ddd; padding-left: 20px; font-size: 15px;">
+                <li><strong>Rogue lite</strong>, procedural enemies and events generation.</li>
+                <li><strong>Dungeon crawler</strong>, descend into the dungeon as much as you can.</li>
+                <li><strong>Strategic deck building</strong>, build your own unique deck by adding abilities into your deck via chests and defeating enemies.</li>
+                <li><strong>RPG Turn-based combat system</strong>, complex but easy to play.</li>
+                <li><strong>Equip 3 jobs at once</strong>, swap, and use their abilities strategically for powerful synergy.</li>
+                <li><strong>Crafting:</strong> Combine jobs and materials to craft new unique jobs.</li>
+                <li><strong>Gacha:</strong> Get new heroes from Gacha!</li>
+                <li><strong>Relics:</strong> Collect special relics to enhance your build further.</li>
+            </ul>
+            <div style="margin: 30px 0 10px; display: flex; gap: 15px; flex-wrap: wrap;">
+                <a href="https://play.google.com/store/apps/details?id=com.aubjective.jobmania" target="_blank" class="store-btn btn-play">📱 Google Play</a>
+                <a href="https://apps.apple.com/app/jobmania-eternal-crusade/id1531238064" target="_blank" class="store-btn btn-apple">🍎 App Store</a>
+                <a href="https://discord.gg/6U5FNFVrwb" target="_blank" class="store-btn" style="background: #5865F2; color: white; border: 2px solid #5865F2;">💬 Join Discord</a>
+            </div>
         </div>
     `);
 }
