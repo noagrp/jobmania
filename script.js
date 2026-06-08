@@ -68,18 +68,25 @@ function renderPage(cat, idx) {
     for (const [k, v] of Object.entries(entry)) {
         if (['wikiNumber', 'usedBy', 'craftedBy'].includes(k)) continue;
         
-        let val = v;
-        // RELATIONAL LINKING LOGIC
-        if (['Deck Abilities * 5', 'Deck Abilities * 3', 'Deck Abilities * 2', 'Deck Ability * 1', 'Switch Skill'].includes(k)) {
+        let val = v || '<span style="color:#666;">Null</span>';
+        
+        // DYNAMIC LINKING LOGIC
+        // We check if the key matches our known Ability/Passive headers
+        const isAbilityKey = k.includes('Deck') || k.includes('Ability') || k.includes('Switch');
+        const isPassiveKey = k.includes('Passive');
+
+        if (isAbilityKey && v && v !== "Null") {
             val = strictLinker(v, 'abilities');
-        } else if (['Passive Skill', 'Player Passive Skill 1', 'Player Passive Skill 2'].includes(k)) {
+        } else if (isPassiveKey && v && v !== "Null") {
             val = strictLinker(v, 'passives');
         }
 
-        html += `<div class="property-row"><div class="property-key">${k}</div><div class="property-value">${val}</div></div>`;
+        html += `<div class="property-row">
+                    <div class="property-key">${k}</div>
+                    <div class="property-value">${val}</div>
+                 </div>`;
     }
     document.getElementById('page-container').innerHTML = html + `</div>`;
 }
-
 // ... [Keep your existing renderHome, renderCategory, and toggleNav functions] ...
 window.onload = initWiki;
