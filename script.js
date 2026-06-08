@@ -22,7 +22,6 @@ const Dictionary = {};
 async function initWiki() {
     await fetchAllData();
     buildGlobalDictionary();
-    buildReverseRelationships();
     renderHome(false);
 }
 
@@ -39,23 +38,26 @@ async function fetchAllData() {
 }
 
 function extractName(item) {
-    return item['Ability Name'] || item['Passive Name'] || item.Job || item.Name || "Unknown";
+    // Matching your specific file headers
+    return item.Name || item['Ability Name'] || item.Job || item.Material || 
+           item['Passive Name'] || item.Relic || item['Ability/Switch Skill'] || item.Buff || item.Passive || "Unknown";
 }
 
 function buildGlobalDictionary() {
     Object.keys(DB).forEach(cat => {
         DB[cat].forEach((item, index) => {
-            item.wikiNumber = index;
             const name = String(extractName(item)).trim();
-            Dictionary[`${cat}_${name}`] = { category: cat, idx: index, name: name };
+            Dictionary[`${cat}_${name.toLowerCase()}`] = { category: cat, idx: index, name: name };
         });
     });
 }
 
 function strictLinker(commaString, allowedCategory) {
-    if (!commaString) return '<span style="color:#666;">None</span>';
+    if (!commaString || commaString === "") return '<span style="color:#666;">Null</span>';
+    // Split by comma or hyphen
     return String(commaString).split(/[,-]/).map(s => s.trim()).filter(Boolean).map(item => {
-        const found = Object.values(Dictionary).find(d => d.category === allowedCategory && d.name.toLowerCase() === item.toLowerCase());
+        const key = `${allowedCategory}_${item.toLowerCase()}`;
+        const found = Dictionary[key];
         return found ? `<a class="wiki-link" onclick="renderPage('${found.category}', ${found.idx})">${item}</a>` : `<span class="list-chip">${item}</span>`;
     }).join(' ');
 }
@@ -65,27 +67,21 @@ function renderPage(cat, idx) {
     let html = `<h1>${extractName(entry)}</h1><div class="data-card">`;
     
     for (const [k, v] of Object.entries(entry)) {
-        if (['wikiNumber', 'usedBy', 'craftedBy'].includes(k)) continue;
+        if (k === 'wikiNumber' || k === 'usedBy') continue;
         
         let val = v || '<span style="color:#666;">Null</span>';
         
-        // DYNAMIC LINKING LOGIC
-        // We check if the key matches our known Ability/Passive headers
-        const isAbilityKey = k.includes('Deck') || k.includes('Ability') || k.includes('Switch');
-        const isPassiveKey = k.includes('Passive');
+        // Linker for Jobabilities/Passives
+        const abilityHeaders = ['Deck Abilities * 5', 'Deck Abilities * 3', 'Deck Abilities * 2', 'Deck Ability * 1', 'Switch Skill'];
+        const passiveHeaders = ['Passive Skill', 'Player Passive Skill 1', 'Player Passive Skill 2'];
 
-        if (isAbilityKey && v && v !== "Null") {
-            val = strictLinker(v, 'abilities');
-        } else if (isPassiveKey && v && v !== "Null") {
-            val = strictLinker(v, 'passives');
-        }
+        if (abilityHeaders.includes(k)) val = strictLinker(v, 'abilities');
+        else if (passiveHeaders.includes(k)) val = strictLinker(v, 'passives');
 
-        html += `<div class="property-row">
-                    <div class="property-key">${k}</div>
-                    <div class="property-value">${val}</div>
-                 </div>`;
+        html += `<div class="property-row"><div class="property-key">${k}</div><div class="property-value">${val}</div></div>`;
     }
     document.getElementById('page-container').innerHTML = html + `</div>`;
 }
-// ... [Keep your existing renderHome, renderCategory, and toggleNav functions] ...
+
+// ... [Keep your existing renderHome, renderCategory, renderPage, and toggleNav] ...
 window.onload = initWiki;
