@@ -19,7 +19,7 @@ const DB = {
 };
 const Dictionary = {}; 
 
-// Expose functions globally to prevent "Not Defined" errors
+// Expose functions globally
 window.renderHome = renderHome;
 window.renderCategory = renderCategory;
 window.renderPage = renderPage;
@@ -28,7 +28,7 @@ window.toggleNav = toggleNav;
 async function initWiki() {
     await fetchAllData();
     buildGlobalDictionary();
-    renderHome(false);
+    renderHome();
 }
 
 async function fetchAllData() {
@@ -66,26 +66,44 @@ function strictLinker(commaString, allowedCategory) {
     }).join(' ');
 }
 
+function toggleNav() { document.getElementById('sidebar').classList.toggle('open'); }
+
+function renderHome() {
+    document.getElementById('page-container').innerHTML = `
+        <h1>Jobmania - Eternal Dungeon</h1>
+        <div class="data-card">
+            <p>Welcome to the Relational Archive. Select a category from the sidebar to explore interlinked data.</p>
+        </div>`;
+}
+
+function renderCategory(cat, title) {
+    let html = `<h1>${title}</h1><div class="wiki-grid">`;
+    DB[cat].forEach((item, idx) => {
+        html += `<div class="grid-item" onclick="renderPage('${cat}', ${idx})">
+            <div class="grid-item-title">${extractName(item)}</div></div>`;
+    });
+    document.getElementById('page-container').innerHTML = html + `</div>`;
+}
+
 function renderPage(cat, idx) {
     const entry = DB[cat][idx];
     if(!entry) return;
     let html = `<h1>${extractName(entry)}</h1><div class="data-card">`;
+    
     for (const [k, v] of Object.entries(entry)) {
         if (k === 'wikiNumber' || k === 'usedBy') continue;
+        
         let val = v || '<span style="color:#666;">Null</span>';
+        
         const abilityHeaders = ['Deck Abilities * 5', 'Deck Abilities * 3', 'Deck Abilities * 2', 'Deck Ability * 1', 'Switch Skill', 'Player Ability 1', 'Player Ability 2'];
         const passiveHeaders = ['Passive Skill', 'Player Passive Skill 1', 'Player Passive Skill 2'];
+
         if (abilityHeaders.includes(k)) val = strictLinker(v, 'abilities');
         else if (passiveHeaders.includes(k)) val = strictLinker(v, 'passives');
+
         html += `<div class="property-row"><div class="property-key">${k}</div><div class="property-value">${val}</div></div>`;
     }
     document.getElementById('page-container').innerHTML = html + `</div>`;
 }
 
-// Ensure toggleNav and renderHome are defined globally
-function toggleNav() { document.getElementById('sidebar').classList.toggle('open'); }
-function renderHome() { /* ... your dashboard HTML ... */ }
-function renderCategory(cat, title) { /* ... your grid logic ... */ }
-
-// Trigger Init
 window.onload = initWiki;
