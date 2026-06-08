@@ -19,7 +19,7 @@ const DB = {
 };
 const Dictionary = {}; 
 
-// 1. EXPOSE FUNCTIONS GLOBALLY SO HTML CAN SEE THEM
+// Expose functions globally to prevent "Not Defined" errors
 window.renderHome = renderHome;
 window.renderCategory = renderCategory;
 window.renderPage = renderPage;
