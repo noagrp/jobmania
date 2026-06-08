@@ -116,3 +116,12 @@ h3 { color: var(--highlight); margin-top: 25px; border-bottom: 1px dashed var(--
     .property-key { width: 100%; margin-bottom: 5px; }
     .property-value { width: 100%; }
 }
+
+/* Added for Scrollbar aesthetics */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #1a1a2e; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+/* Ensure mobile nav toggle is always on top */
+#mobile-nav-toggle { z-index: 1000; }
