@@ -1,37 +1,16 @@
-/**
- * FIRE CURSOR EFFECT ENGINE
- */
-document.addEventListener('mousemove', (e) => {
-    createFire(e.clientX, e.clientY, false);
+// FIRE CURSOR
+document.addEventListener('mousemove', e => createFire(e.clientX, e.clientY, false));
+document.addEventListener('mousedown', e => {
+    for(let i=0; i<8; i++) setTimeout(() => createFire(e.clientX+(Math.random()*30-15), e.clientY+(Math.random()*30-15), true), i*40);
 });
-
-document.addEventListener('mousedown', (e) => {
-    for(let i = 0; i < 8; i++) {
-        setTimeout(() => {
-            createFire(e.clientX + (Math.random() * 30 - 15), e.clientY + (Math.random() * 30 - 15), true);
-        }, i * 40);
-    }
-});
-
 function createFire(x, y, isClick) {
-    const particle = document.createElement('div');
-    particle.className = 'fire-particle';
-    particle.style.left = x + 'px';
-    particle.style.top = y + 'px';
-    
-    if (isClick) {
-        particle.style.width = '20px';
-        particle.style.height = '20px';
-        particle.style.animationDuration = '0.8s';
-    }
-    
-    document.body.appendChild(particle);
-    setTimeout(() => particle.remove(), 800);
+    const p = document.createElement('div'); p.className = 'fire-particle';
+    p.style.left = x+'px'; p.style.top = y+'px';
+    if(isClick) { p.style.width='20px'; p.style.height='20px'; p.style.animationDuration='0.8s'; }
+    document.body.appendChild(p); setTimeout(() => p.remove(), 800);
 }
 
-/**
- * JOBMANIA WIKI ENGINE
- */
+// RELATIONAL DATABASE ENGINE
 const API_BASE = "https://noagrp.github.io/jobmania/";
 const CACHE_BUSTER = "?t=" + Date.now();
 
@@ -40,17 +19,18 @@ const DB = {
     passives: [], relics: [], relicPassives: [],
     suAbilities: [], suBuffs: [], suPassives: []
 };
+
 const Dictionary = {}; 
 
 async function initWiki() {
     try {
         await fetchAllData();
         buildGlobalDictionary();
-        buildCraftingLinks();
+        buildReverseRelationships(); // THE NEW ENGINE
         history.replaceState({ view: 'home' }, '', '#home');
         renderHome(false);
     } catch (error) {
-        setHTML(`<h1>Critical Error</h1><div class="data-card"><p>Failed to connect to the Jobmania API: ${error.message}</p></div>`);
+        setHTML(`<h1>Critical Error</h1><div class="data-card"><p>Failed to connect to the API: ${error.message}</p></div>`);
     }
 }
 
@@ -60,16 +40,13 @@ async function fetchJSON(filename) {
         if (!response.ok) return [];
         return await response.json();
     } catch (e) {
-        console.warn(`Could not load ${filename}`);
         return [];
     }
 }
 
 async function fetchAllData() {
     const [
-        chars, jobs, abilities, crafting, materials, 
-        passives, relics, relicPassives, 
-        suAbil, suBuff, suPass
+        chars, jobs, abilities, crafting, materials, passives, relics, relicPassives, suAbil, suBuff, suPass
     ] = await Promise.all([
         fetchJSON('jobmania_characters.json'), fetchJSON('jobmania_jobs.json'), fetchJSON('jobmania_abilities.json'), 
         fetchJSON('jobmania_job_crafting.json'), fetchJSON('jobmania_materials.json'),
@@ -77,58 +54,99 @@ async function fetchAllData() {
         fetchJSON('jobmania_skill_unit_abilities.json'), fetchJSON('jobmania_skill_unit_buffes.json'), fetchJSON('jobmania_skill_unit_passive_skills.json')
     ]);
 
-    DB.characters = chars; DB.jobs = jobs; DB.abilities = abilities; 
-    DB.crafting = crafting; DB.materials = materials;
+    DB.characters = chars; DB.jobs = jobs; DB.abilities = abilities; DB.crafting = crafting; DB.materials = materials;
     DB.passives = passives; DB.relics = relics; DB.relicPassives = relicPassives;
     DB.suAbilities = suAbil; DB.suBuffs = suBuff; DB.suPassives = suPass;
 }
 
 function extractName(item) {
-    // Specific priority for Relics (Title) and Relic Passives (Concatenate)
-    let name = item.Title || item.Concatenate || item.Name || item['Ability Name'] || item.Job || item.Material || 
-               item['Passive Skill'] || item.Passive || item['Passive Name'] ||
-               item.Relic || item['Relic Name'] || item['Relic Passive'] || 
-               item['Ability/Switch Skill'] || item.Buff || item.id;
-    return name || "Unknown";
+    return item.Title || item.Concatenate || item.Name || item['Ability Name'] || item.Job || item.Material || 
+           item['Passive Skill'] || item.Passive || item['Passive Name'] || item.Relic || item['Relic Name'] || 
+           item['Relic Passive'] || item['Ability/Switch Skill'] || item.Buff || item.ID || "Unknown";
 }
 
 function buildGlobalDictionary() {
     Object.keys(DB).forEach(cat => {
         DB[cat].forEach((item, index) => {
             item.wikiNumber = index + 1; 
-            const name = extractName(item).toString().trim();
-            Dictionary[`${cat}_${index}`] = { category: cat, ref: item, originalName: name };
+            const name = String(extractName(item)).trim();
+            const uniqueKey = item.ID ? String(item.ID).trim() : name; 
+            
+            // We store the exact category so we can do strict targeted linking
+            Dictionary[`${cat}_${uniqueKey}`] = { category: cat, idx: index, ref: item, originalName: name, id: uniqueKey };
         });
     });
 }
 
-function buildCraftingLinks() {
-    DB.crafting.forEach(recipe => {
-        const targetJob = recipe.target_class;
-        const reqMat = recipe.material_required;
-        const srcClass = recipe.source_class;
-        if (reqMat && Object.values(Dictionary).find(d => d.originalName === reqMat)) {
-            const matRef = Object.values(Dictionary).find(d => d.originalName === reqMat).ref;
-            if (!matRef.usedInRecipes) matRef.usedInRecipes = [];
-            matRef.usedInRecipes.push(`Combines with ${srcClass} for ${targetJob}`);
+function buildReverseRelationships() {
+    // Reset usedBy arrays just in case
+    Object.values(Dictionary).forEach(d => { d.ref.usedBy = []; d.ref.craftedBy = []; });
+
+    // Helper: Find an item STRICTLY within a specific category
+    function findTarget(identifier, targetCat) {
+        identifier = String(identifier).trim();
+        return Object.values(Dictionary).find(d => d.category === targetCat && (d.id === identifier || d.originalName === identifier));
+    }
+
+    // 1. Scan Jobs for what Abilities and Passives they use
+    DB.jobs.forEach(job => {
+        const jobName = extractName(job);
+        const jobIdx = job.wikiNumber - 1;
+
+        // Abilities used by this Job
+        ['5 Abilities', '3 Abilities', '2 Abilities', '1 Ability', 'Switch Skill'].forEach(col => {
+            if(job[col]) {
+                job[col].split(',').map(s=>s.trim()).forEach(ab => {
+                    let target = findTarget(ab, 'abilities');
+                    if(target) target.ref.usedBy.push({ name: jobName, cat: 'jobs', idx: jobIdx, type: 'Job' });
+                });
+            }
+        });
+
+        // Passives used by this Job
+        if(job['Passive Skill']) {
+            job['Passive Skill'].split(',').map(s=>s.trim()).forEach(pa => {
+                let target = findTarget(pa, 'passives');
+                if(target) target.ref.usedBy.push({ name: jobName, cat: 'jobs', idx: jobIdx, type: 'Job' });
+            });
         }
-        if (targetJob && Object.values(Dictionary).find(d => d.originalName === targetJob)) {
-            const jobRef = Object.values(Dictionary).find(d => d.originalName === targetJob).ref;
-            jobRef.craftingRecipe = `Combine ${srcClass} + ${reqMat}`;
+    });
+
+    // 2. Scan Crafting Recipes to cross-link Materials and Jobs
+    DB.crafting.forEach(recipe => {
+        const targetJobId = recipe.target_class_id || recipe.target_class;
+        const reqMatId = recipe.material_required_id || recipe.material_required;
+        const srcClassId = recipe.source_class_id || recipe.source_class;
+        
+        let targetJob = findTarget(targetJobId, 'jobs');
+        let reqMat = findTarget(reqMatId, 'materials');
+        let srcClass = findTarget(srcClassId, 'jobs');
+
+        if(targetJob && reqMat && srcClass) {
+            reqMat.ref.usedBy.push({ name: targetJob.originalName, cat: 'jobs', idx: targetJob.idx, type: 'Crafts Job' });
+            targetJob.ref.craftedBy.push(`Combine [ ${srcClass.originalName} ] + [ ${reqMat.originalName} ]`);
         }
     });
 }
 
-function parseTextForLinks(text) {
-    if (!text || text === "") return '<span style="color:#666;">Null</span>';
-    let processedText = String(text);
-    Object.values(Dictionary).forEach(d => {
-        if (processedText.includes(d.originalName) && d.originalName.length > 3) {
-            const idx = Object.keys(Dictionary).find(key => Dictionary[key] === d).split('_')[1];
-            processedText = processedText.replace(d.originalName, `<a class="wiki-link" onclick="renderPage('${d.category}', ${idx})">${d.originalName}</a>`);
+// STRICT LINKER: Only looks in the allowed category! No accidental cross-linking.
+function strictLinker(commaString, allowedCategory) {
+    if (!commaString || commaString === "") return '<span style="color:#666;">Null</span>';
+    
+    let items = String(commaString).split(',').map(s => s.trim()).filter(s => s !== "");
+    let htmlResult = "";
+
+    items.forEach(item => {
+        let target = Object.values(Dictionary).find(d => d.category === allowedCategory && (d.id === item || d.originalName === item));
+        
+        if (target) {
+            htmlResult += `<a class="wiki-link" onclick="renderPage('${target.category}', ${target.idx})">${target.originalName}</a> `;
+        } else {
+            htmlResult += `<span class="list-chip" style="background:#444;">${item}</span> `;
         }
     });
-    return processedText;
+
+    return htmlResult;
 }
 
 function renderHome(push = true) {
@@ -142,30 +160,8 @@ function renderHome(push = true) {
                 <div style="color: #aaa; font-size: 12px; margin-top: 4px; font-weight: 600;">Contains Ads • In-app purchases</div>
             </div>
         </div>
-
         <div class="data-card" style="border-left: 5px solid var(--accent);">
-            <p style="font-size: 16px; margin-top: 0; line-height: 1.6;">
-                Pick a Hero and a job then embark on an eternal journey of dungeon descending. Acquire random abilities and jobs through the journey and build your own unique play style. How far can you go?
-            </p>
-            <h3 style="color: white; margin-top: 25px; border-bottom: 1px dashed var(--border); padding-bottom: 8px;">Features</h3>
-            <ul style="line-height: 1.8; color: #ddd; padding-left: 20px; font-size: 15px;">
-                <li><strong>Rogue lite</strong>, procedural enemies and events generation.</li>
-                <li><strong>Dungeon crawler</strong>, descend into the dungeon as much as you can.</li>
-                <li><strong>Strategic deck building</strong>, build your own unique deck by adding abilities into your deck via chests and defeating enemies.</li>
-                <li><strong>RPG Turn-based combat system</strong>, complex but easy to play. Defeat tons of different enemies, challenging but addictive.</li>
-                <li><strong>Equip 3 jobs at once</strong>, swap, and use their abilities strategically for powerful synergy.</li>
-                <li><strong>Crafting:</strong> Combine jobs and materials to craft new unique jobs.</li>
-                <li><strong>Gacha:</strong> Get new heroes from Gacha, enemies defeated from the last run will appear in a special Gacha pool!</li>
-                <li><strong>Relics:</strong> Collect special relics to enhance your build further.</li>
-                <li><strong>References:</strong> A lot of Memes, Anime and Movies references in the game!</li>
-                <li><strong>Free</strong> with ads and in-app purchases, remove all ads with one purchase.</li>
-                <li><strong>Portrait screen only</strong>, you can play this game with one hand.</li>
-            </ul>
-            <div style="margin: 30px 0 10px; display: flex; gap: 15px; flex-wrap: wrap;">
-                <a href="https://play.google.com/store/apps/details?id=com.aubjective.jobmania" target="_blank" class="store-btn btn-play">📱 Google Play</a>
-                <a href="https://apps.apple.com/app/jobmania-eternal-crusade/id1531238064" target="_blank" class="store-btn btn-apple">🍎 App Store</a>
-                <a href="https://discord.gg/6U5FNFVrwb" target="_blank" class="store-btn" style="background: #5865F2; color: white; border: 2px solid #5865F2;">💬 Join Discord</a>
-            </div>
+            <p style="font-size: 16px; margin-top: 0; line-height: 1.6;">Database Loaded. Select a category from the sidebar to begin.</p>
         </div>
     `);
 }
@@ -175,7 +171,7 @@ function renderCategory(cat, title, push = true) {
     let html = `<h1>${title}</h1><div class="wiki-grid">`;
     DB[cat].forEach((item, idx) => {
         html += `<div class="grid-item" onclick="renderPage('${cat}', ${idx})">
-            <div class="grid-item-id">ID #${item.wikiNumber}</div>
+            <div class="grid-item-id">ID: ${item.ID || item.wikiNumber}</div>
             <div class="grid-item-title">${extractName(item)}</div></div>`;
     });
     setHTML(html + `</div>`);
@@ -184,34 +180,50 @@ function renderCategory(cat, title, push = true) {
 function renderPage(cat, idx, push = true) {
     const entry = DB[cat][idx];
     if (push) history.pushState({ view: 'page', cat, idx }, '', `#${cat}-${idx}`);
-    let html = `<h1>ID #${entry.wikiNumber}: ${extractName(entry)}</h1><div class="data-card">`;
+    let html = `<h1>ID ${entry.ID || '#' + entry.wikiNumber}: ${extractName(entry)}</h1><div class="data-card">`;
     
-    // Mechanics categories isolation check
+    // We isolate the mechanics so they just print plain text
     const isEngineMechanic = ['suAbilities', 'suBuffs', 'suPassives'].includes(cat);
 
+    // Render the Properties
     for (const [k, v] of Object.entries(entry)) {
-        if (k === 'wikiNumber' || k === 'usedInRecipes' || k === 'craftingRecipe') continue;
+        if (k === 'wikiNumber' || k === 'usedBy' || k === 'craftedBy' || k === 'ID') continue;
         
-        // Display raw value if it is an Engine Mechanic, otherwise apply link parsing
-        const displayValue = isEngineMechanic ? (v || '<span style="color:#666;">Null</span>') : parseTextForLinks(v);
+        let displayValue = v || '<span style="color:#666;">Null</span>';
         
+        // APPLY THE STRICT LINKING LOGIC BASED ON THE COLUMN HEADER
+        if (!isEngineMechanic) {
+            if (['5 Abilities', '3 Abilities', '2 Abilities', '1 Ability', 'Switch Skill'].includes(k)) {
+                displayValue = strictLinker(v, 'abilities'); // STRICTLY link to abilities
+            } 
+            else if (['Passive Skill', 'InnatePassiveId'].includes(k)) {
+                displayValue = strictLinker(v, 'passives'); // STRICTLY link to passives
+            }
+            // For general descriptions, we leave them as plain text! No accidental linking!
+        }
+
         html += `<div class="property-row"><div class="property-key">${k}</div><div class="property-value">${displayValue}</div></div>`;
     }
     
-    if (entry.craftingRecipe && !isEngineMechanic) html += `<h3>Crafting Recipe</h3><div class="property-row"><div class="property-key">Recipe</div><div class="property-value">${parseTextForLinks(entry.craftingRecipe)}</div></div>`;
-    if (entry.usedInRecipes && !isEngineMechanic) html += `<h3>Used to Craft</h3><ul>${entry.usedInRecipes.map(r => `<li>${parseTextForLinks(r)}</li>`).join('')}</ul>`;
+    // Render Reverse Relationships (Used By / Crafted By)
+    if (entry.craftedBy && entry.craftedBy.length > 0) {
+        html += `<h3>Crafting Requirements</h3><ul>${entry.craftedBy.map(r => `<li>${r}</li>`).join('')}</ul>`;
+    }
+    
+    // This dynamically prints out what Jobs/Characters use this exact Ability/Passive!
+    if (entry.usedBy && entry.usedBy.length > 0) {
+        html += `<h3>Used By</h3><div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:10px;">`;
+        entry.usedBy.forEach(u => {
+            html += `<a class="wiki-link" onclick="renderPage('${u.cat}', ${u.idx})">${u.name} (${u.type})</a>`;
+        });
+        html += `</div>`;
+    }
     
     setHTML(html + `</div>`);
 }
 
-function setHTML(h) { 
-    document.getElementById('page-container').innerHTML = h; 
-    document.getElementById('content').scrollTop = 0; 
-}
-
-function toggleNav() { 
-    document.getElementById('sidebar').classList.toggle('open'); 
-}
+function setHTML(h) { document.getElementById('page-container').innerHTML = h; document.getElementById('content').scrollTop = 0; }
+function toggleNav() { document.getElementById('sidebar').classList.toggle('open'); }
 
 window.addEventListener('popstate', e => e.state?.view === 'home' ? renderHome(false) : (e.state?.view === 'cat' ? renderCategory(e.state.cat, e.state.title, false) : (e.state?.view === 'page' ? renderPage(e.state.cat, e.state.idx, false) : null)));
 window.onload = initWiki;
