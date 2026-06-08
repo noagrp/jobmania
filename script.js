@@ -24,13 +24,17 @@ const Dictionary = {};
 
 async function initWiki() {
     try {
+        // 1. Fetch only the core databases needed for the Dashboard first
         await fetchAllData();
         buildGlobalDictionary();
-        buildReverseRelationships(); // THE NEW ENGINE
+        buildReverseRelationships();
+        
+        // 2. Render the Dashboard IMMEDIATELY
         history.replaceState({ view: 'home' }, '', '#home');
-        renderHome(false);
+        renderHome(false); 
+        
     } catch (error) {
-        setHTML(`<h1>Critical Error</h1><div class="data-card"><p>Failed to connect to the API: ${error.message}</p></div>`);
+        setHTML(`<h1>Connection Failed</h1><div class="data-card"><p>Could not initialize the Wiki: ${error.message}</p></div>`);
     }
 }
 
