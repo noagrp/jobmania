@@ -39,8 +39,7 @@ async function fetchAllData() {
 }
 
 function extractName(item) {
-    return item.Name || item['Ability Name'] || item.Job || item.Material || 
-           item['Passive Name'] || item.Relic || item['Ability/Switch Skill'] || item.Buff || item.Passive || "Unknown";
+    return item['Ability Name'] || item['Passive Name'] || item.Job || item.Name || "Unknown";
 }
 
 function buildGlobalDictionary() {
