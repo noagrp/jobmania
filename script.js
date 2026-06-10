@@ -19,7 +19,6 @@ const DB = {
 };
 const Dictionary = {}; 
 
-// Expose functions globally
 window.renderHome = renderHome;
 window.renderCategory = renderCategory;
 window.renderPage = renderPage;
@@ -28,6 +27,8 @@ window.toggleNav = toggleNav;
 async function initWiki() {
     await fetchAllData();
     buildGlobalDictionary();
+    // Initialize the combined Skill Universe
+    MasterSkillUniverse.init(DB.suAbilities, DB.suPassives, DB.suBuffs);
     renderHome();
 }
 
@@ -42,6 +43,29 @@ async function fetchAllData() {
     const results = await Promise.all(keys.map(k => fetch(`${API_BASE}${map[k]}.json?t=${Date.now()}`).then(r => r.json()).catch(() => [])));
     keys.forEach((k, i) => DB[k] = results[i]);
 }
+
+/** * UNIVERSAL SKILL ENGINE 
+ */
+const MasterSkillUniverse = {
+    map: {},
+    init(abilities, passives, buffs) {
+        [...abilities, ...passives, ...buffs].forEach(u => {
+            const name = u['Ability/Switch Skill'] || u['Passive'] || u['Buff'];
+            if (name) this.map[name.trim()] = u;
+        });
+    },
+    get(name) { return this.map[name.trim()]; },
+    calculate(unit) {
+        if (!unit || !unit.Skill) return "";
+        const x = parseFloat(unit['MaxStack X'] || unit['Multiplier'] || 1);
+        const effect = unit.Effect || "";
+        // Formula Logic
+        if (unit.Skill === "Damage") return ` (${unit.Multiplier || 'X'}% ${effect} Damage)`;
+        if (unit.Skill === "InstantBoost" || unit.Skill === "Buff") return ` (${effect} +${5 * x}%)`;
+        if (unit.Skill === "Debuff") return ` (${effect} Debuff)`;
+        return ` (${unit.Skill})`;
+    }
+};
 
 function extractName(item) {
     return item.Name || item['Ability Name'] || item.Job || item.Material || 
@@ -62,7 +86,11 @@ function strictLinker(commaString, allowedCategory) {
     return String(commaString).split(/[,-]/).map(s => s.trim()).filter(Boolean).map(item => {
         const key = `${allowedCategory}_${item.toLowerCase()}`;
         const found = Dictionary[key];
-        return found ? `<a class="wiki-link" onclick="renderPage('${found.category}', ${found.idx})">${item}</a>` : `<span class="list-chip">${item}</span>`;
+        // Integrate the Skill Engine math
+        const unit = MasterSkillUniverse.get(item);
+        const calc = unit ? MasterSkillUniverse.calculate(unit) : "";
+        
+        return found ? `<a class="wiki-link" onclick="renderPage('${found.category}', ${found.idx})">${item}</a>${calc}` : `<span class="list-chip">${item}</span>`;
     }).join(' ');
 }
 
@@ -76,17 +104,7 @@ function renderHome() {
                 <img src="${API_BASE}jobmania_official_icon.png" alt="Jobmania Icon" style="width: 80px; height: 80px; border-radius: 15px;">
                 <p>Pick a Hero and a job then embark on an eternal journey of dungeon descending. Acquire random abilities and jobs through the journey and build your own unique play style.</p>
             </div>
-            
             <a href="https://play.google.com/store/apps/details?id=com.aubjective.jobmania" target="_blank" class="store-btn btn-play">📱 Download on Google Play</a>
-            
-            <h3 style="margin-top: 30px;">Features</h3>
-            <ul style="line-height: 1.6; color: #ddd;">
-                <li>Rogue lite, procedural enemies and events generation.</li>
-                <li>Strategic deck building with unique abilities.</li>
-                <li>RPG Turn-based combat system.</li>
-                <li>Equip 3 jobs at once for powerful synergy.</li>
-                <li>Crafting and Gacha systems.</li>
-            </ul>
         </div>
     `;
 }
@@ -110,8 +128,8 @@ function renderPage(cat, idx) {
         
         let val = v || '<span style="color:#666;">Null</span>';
         
-        const abilityHeaders = ['Deck Abilities * 5', 'Deck Abilities * 3', 'Deck Abilities * 2', 'Deck Ability * 1', 'Switch Skill', 'Player Ability 1', 'Player Ability 2'];
-        const passiveHeaders = ['Passive Skill', 'Player Passive Skill 1', 'Player Passive Skill 2'];
+        const abilityHeaders = ['Deck Abilities * 5', 'Deck Abilities * 3', 'Deck Abilities * 2', 'Deck Ability * 1', 'Switch Skill', 'Player Ability 1', 'Player Ability 2', '5 Abilities', '3 Abilities', '2 Abilities', '1 Ability', 'Random Abilities'];
+        const passiveHeaders = ['Passive Skill', 'Player Passive Skill 1', 'Player Passive Skill 2', 'Passives'];
 
         if (abilityHeaders.includes(k)) val = strictLinker(v, 'abilities');
         else if (passiveHeaders.includes(k)) val = strictLinker(v, 'passives');
