@@ -171,25 +171,41 @@ function renderPage(cat, idx) {
         let val = v || '<span style="color:#666;">Null</span>';
         
         // Define ALL your linkable header groups
-        const abilityHeaders = ['Deck Abilities * 5', 'Deck Abilities * 3', 'Deck Abilities * 2', 'Deck Ability * 1', 'Switch Skill', 'Player Ability 1', 'Player Ability 2', '5 Abilities', '3 Abilities', '2 Abilities', '1 Ability', 'Random Abilities'];
-        const passiveHeaders = ['Passive Skill', 'Player Passive Skill 1', 'Player Passive Skill 2', 'Passives'];
-        const jobTreeHeaders = ['Column_0', 'One Star', 'TwoStar', 'Three Star', 'Four Star', 'Five Star'];
-        const materialHeaders = ['Material', 'Material_2', 'Material_3', 'Material_4'];
+        const linkableHeaders = [
+            'Deck Abilities * 5', 'Deck Abilities * 3', 'Deck Abilities * 2', 'Deck Ability * 1', 
+            'Switch Skill', 'Player Ability 1', 'Player Ability 2', '5 Abilities', '3 Abilities', 
+            '2 Abilities', '1 Ability', 'Random Abilities', 'Passive Skill', 'Player Passive Skill 1', 
+            'Player Passive Skill 2', 'Passives', 'Column_0', 'One Star', 'TwoStar', 'Three Star', 
+            'Four Star', 'Five Star', 'Material', 'Material_2', 'Material_3', 'Material_4'
+        ];
 
-        // Consolidated logic: Link correctly based on header
-        if (abilityHeaders.includes(k)) {
-            val = strictLinker(v, 'abilities');
-        } else if (passiveHeaders.includes(k)) {
-            val = strictLinker(v, 'passives');
-        } else if (jobTreeHeaders.includes(k)) {
-            val = strictLinker(v, 'jobs');
-        } else if (materialHeaders.includes(k)) {
-            val = strictLinker(v, 'materials');
+        // If the header is one of ours, try to link it
+        if (linkableHeaders.includes(k)) {
+            val = autoSmartLink(v); 
         }
 
         html += `<div class="property-row"><div class="property-key">${k}</div><div class="property-value">${val}</div></div>`;
     }
     document.getElementById('page-container').innerHTML = html + `</div>`;
+}
+
+// Add this helper function to your script.js
+function autoSmartLink(commaString) {
+    if (!commaString || commaString === "Null") return '<span style="color:#666;">Null</span>';
+    return String(commaString).split(/[,-]/).map(s => s.trim()).filter(Boolean).map(item => {
+        // Search EVERY category in DB to find a match for this name
+        let found = null;
+        for (const cat in DB) {
+            if (Dictionary[`${cat}_${item.toLowerCase()}`]) {
+                found = Dictionary[`${cat}_${item.toLowerCase()}`];
+                break;
+            }
+        }
+        
+        const unit = MasterSkillUniverse.get(item);
+        const calc = unit ? MasterSkillUniverse.calculate(unit) : "";
+        return found ? `<a class="wiki-link" onclick="renderPage('${found.category}', ${found.idx})">${item}</a>${calc}` : `<span class="list-chip">${item}</span>`;
+    }).join(' ');
 }
 
 window.onload = initWiki;
