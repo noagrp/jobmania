@@ -81,16 +81,28 @@ function buildGlobalDictionary() {
     });
 }
 
-function strictLinker(commaString, allowedCategory) {
+function strictLinker(commaString) {
     if (!commaString || commaString === "" || commaString === "Null") return '<span style="color:#666;">Null</span>';
+    
     return String(commaString).split(/[,-]/).map(s => s.trim()).filter(Boolean).map(item => {
-        const key = `${allowedCategory}_${item.toLowerCase()}`;
-        const found = Dictionary[key];
-        // Integrate the Skill Engine math
+        // 1. Universal Search: Scan all categories in DB
+        let found = null;
+        for (const cat in DB) {
+            const key = `${cat}_${item.toLowerCase()}`;
+            if (Dictionary[key]) {
+                found = Dictionary[key];
+                break; // Found it, stop searching
+            }
+        }
+
+        // 2. Skill Engine Math
         const unit = MasterSkillUniverse.get(item);
         const calc = unit ? MasterSkillUniverse.calculate(unit) : "";
         
-        return found ? `<a class="wiki-link" onclick="renderPage('${found.category}', ${found.idx})">${item}</a>${calc}` : `<span class="list-chip">${item}</span>`;
+        // 3. Return Link or Chip
+        return found ? 
+            `<a class="wiki-link" onclick="renderPage('${found.category}', ${found.idx})">${item}</a>${calc}` : 
+            `<span class="list-chip">${item}</span>`;
     }).join(' ');
 }
 
