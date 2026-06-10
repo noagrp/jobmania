@@ -189,23 +189,33 @@ function renderPage(cat, idx) {
     document.getElementById('page-container').innerHTML = html + `</div>`;
 }
 
-// Add this helper function to your script.js
 function autoSmartLink(commaString) {
     if (!commaString || commaString === "Null") return '<span style="color:#666;">Null</span>';
-    return String(commaString).split(/[,-]/).map(s => s.trim()).filter(Boolean).map(item => {
-        // Search EVERY category in DB to find a match for this name
-        let found = null;
-        for (const cat in DB) {
-            if (Dictionary[`${cat}_${item.toLowerCase()}`]) {
-                found = Dictionary[`${cat}_${item.toLowerCase()}`];
-                break;
+    
+    // Split by pipes '|' (for crafting lists) or commas (for lists)
+    return String(commaString).split(/[|,]/).map(segment => {
+        // Now handle the hyphen '-' inside segments (e.g., Warrior-Knight)
+        return segment.trim().split('-').map(item => {
+            const trimmedItem = item.trim();
+            if (!trimmedItem) return "";
+
+            // Search EVERY category in DB
+            let found = null;
+            for (const cat in DB) {
+                if (Dictionary[`${cat}_${trimmedItem.toLowerCase()}`]) {
+                    found = Dictionary[`${cat}_${trimmedItem.toLowerCase()}`];
+                    break;
+                }
             }
-        }
-        
-        const unit = MasterSkillUniverse.get(item);
-        const calc = unit ? MasterSkillUniverse.calculate(unit) : "";
-        return found ? `<a class="wiki-link" onclick="renderPage('${found.category}', ${found.idx})">${item}</a>${calc}` : `<span class="list-chip">${item}</span>`;
-    }).join(' ');
+            
+            const unit = MasterSkillUniverse.get(trimmedItem);
+            const calc = unit ? MasterSkillUniverse.calculate(unit) : "";
+            
+            return found ? 
+                `<a class="wiki-link" onclick="renderPage('${found.category}', ${found.idx})">${trimmedItem}</a>${calc}` : 
+                `<span class="list-chip">${trimmedItem}</span>`;
+        }).join('<span style="color:#666;">-</span>'); // Join back with a hyphen
+    }).join(' | '); // Join pairs with a pipe
 }
 
 window.onload = initWiki;
