@@ -70,7 +70,8 @@ const MasterSkillUniverse = {
 function extractName(item) {
     return item.Name || item['Ability Name'] || item.Job || item.Material || 
            item['Passive Name'] || item.Relic || item['Ability/Switch Skill'] || 
-           item.Buff || item.Passive || item.Column_0 || "Unknown";
+           item.Buff || item.Passive || item.Column_0 || item.Title || 
+           item.Concatenate || item['Skill Unit 1'] || "Unknown";
 }
 
 function buildGlobalDictionary() {
