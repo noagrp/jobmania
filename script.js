@@ -160,9 +160,13 @@ function renderPage(cat, idx) {
         
         const abilityHeaders = ['Deck Abilities * 5', 'Deck Abilities * 3', 'Deck Abilities * 2', 'Deck Ability * 1', 'Switch Skill', 'Player Ability 1', 'Player Ability 2', '5 Abilities', '3 Abilities', '2 Abilities', '1 Ability', 'Random Abilities'];
         const passiveHeaders = ['Passive Skill', 'Player Passive Skill 1', 'Player Passive Skill 2', 'Passives'];
+        const jobHeaders = ['Column_0', 'One Star', 'TwoStar', 'Three Star', 'Four Star', 'Five Star'];
+        const materialHeaders = ['Material', 'Material_2', 'Material_3', 'Material_4'];
 
         if (abilityHeaders.includes(k)) val = strictLinker(v, 'abilities');
         else if (passiveHeaders.includes(k)) val = strictLinker(v, 'passives');
+        else if (jobHeaders.includes(k)) val = strictLinker(v, 'jobs');
+        else if (materialHeaders.includes(k)) val = strictLinker(v, 'materials');
 
         html += `<div class="property-row"><div class="property-key">${k}</div><div class="property-value">${val}</div></div>`;
     }
