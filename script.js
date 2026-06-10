@@ -98,13 +98,43 @@ function toggleNav() { document.getElementById('sidebar').classList.toggle('open
 
 function renderHome() {
     document.getElementById('page-container').innerHTML = `
-        <h1>Jobmania - Eternal Dungeon</h1>
+        <div class="header-flex" style="border-bottom: 2px solid var(--border); padding-bottom: 20px; margin-bottom: 25px;">
+            <img src="${API_BASE}jobmania_official_icon.png" alt="Jobmania Icon" style="width: 90px; height: 90px; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.6); margin-bottom: 10px;">
+            <h1 style="margin: 0; font-size: 32px;">Jobmania - Eternal Dungeon</h1>
+            <div style="color: var(--highlight); font-weight: 800; font-size: 14px; letter-spacing: 1px;">AUBJECTIVE TECHNOLOGY LTD.</div>
+            <div style="color: #aaa; font-size: 12px; margin-top: 4px; font-weight: 600;">Contains ads • In-app purchases</div>
+        </div>
+
         <div class="data-card">
-            <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
-                <img src="${API_BASE}jobmania_official_icon.png" alt="Jobmania Icon" style="width: 80px; height: 80px; border-radius: 15px;">
-                <p>Pick a Hero and a job then embark on an eternal journey of dungeon descending. Acquire random abilities and jobs through the journey and build your own unique play style.</p>
+            <p style="font-size: 16px; line-height: 1.6;">
+                Pick a Hero and a job then embark on an eternal journey of dungeon descending.<br>
+                Acquire random abilities and jobs through the journey and build your own unique play style.<br>
+                <strong>How far can you go?</strong>
+            </p>
+            
+            <h3 style="color: white; margin-top: 25px; border-bottom: 1px dashed var(--border); padding-bottom: 8px;">FEATURES</h3>
+            <ol style="line-height: 1.8; color: #ddd; padding-left: 20px; font-size: 15px;">
+                <li>Rogue lite, procedural enemies and events generation.</li>
+                <li>Dungeon crawler, descend into the dungeon as much as you can.</li>
+                <li>Strategic deck building, build your own unique deck by adding abilities into your deck via chests and defeating enemies.</li>
+                <li>RPG Turn-based combat system, complex but easy to play. Defeat tons of different enemies, challenging but addictive.</li>
+                <li>Equip 3 jobs at once, swap, and use their abilities strategically for powerful synergy.</li>
+                <li>Combine jobs and materials to craft new unique jobs.</li>
+                <li>Get new heroes from Gacha, enemies defeated from the last run will appear in a special Gacha pool!</li>
+                <li>Collect special relics to enhance your build further.</li>
+                <li>A lot of Memes, Anime and Movies references in the game!</li>
+                <li>Free with ads and in-app purchases, remove all ads with one purchase.</li>
+                <li>Portrait screen only, you can play this game with one hand.</li>
+            </ol>
+
+            <div style="margin-top: 30px; padding: 15px; background: #222; border-radius: 10px; text-align: center;">
+                <p>Join our discord discussion at <br>
+                <a href="https://discord.gg/6U5FNFVrwb" target="_blank" style="color: var(--highlight); font-weight: bold;">https://discord.gg/6U5FNFVrwb</a></p>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.aubjective.jobmania" target="_blank" class="store-btn btn-play">📱 Download on Google Play</a>
+
+            <div style="margin-top: 30px;">
+                <a href="https://play.google.com/store/apps/details?id=com.aubjective.jobmania" target="_blank" class="store-btn btn-play" style="display: inline-block; padding: 12px 20px; background: #073042; color: #fff; text-decoration: none; border-radius: 8px;">📱 Download on Google Play</a>
+            </div>
         </div>
     `;
 }
