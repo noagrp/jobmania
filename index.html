@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <button id="mobile-nav-toggle" onclick="toggleNav()">☰</button>
-
     <div id="sidebar">
         <div class="sidebar-header">Jobmania - Eternal Dungeon</div>
         <div class="nav-group" id="nav-menu" onclick="if(window.innerWidth <= 768) toggleNav()">
@@ -21,7 +19,6 @@
             <div class="nav-item" onclick="renderCategory('abilities', 'Abilities')">⚔️ Abilities</div>
             <div class="nav-item" onclick="renderCategory('passives', 'Passive Skills')">✨ Passive Skills</div>
             <div class="nav-item" onclick="renderCategory('materials', 'Materials')">💎 Materials</div>
-
             
             <div class="nav-category-title">Relics & Artifacts</div>
             <div class="nav-item" onclick="renderCategory('relics', 'Relics')">🏺 Relics</div>
@@ -35,12 +32,7 @@
     </div>
 
     <div id="content">
-        <div id="page-container">
-            <div class="loading">
-                <div class="spinner"></div>
-                Initializing Jobmania Relational API...
-            </div>
-        </div>
+        <div id="page-container"></div>
     </div>
 
     <script src="script.js"></script>
