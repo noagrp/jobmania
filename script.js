@@ -90,7 +90,6 @@ const MasterSkillUniverse = {
     calculate(ability) {
         if (!ability) return "No data";
         let desc = "";
-
         for (let i = 1; i <= 4; i++) {
             const skillKey = i === 1 ? "Skill Unit 1" : `SkillUnit ${i}`;
             const effectKey = i === 1 ? "Column_5" : `Column_${(i*3)+2}`;
@@ -127,11 +126,8 @@ const MasterSkillUniverse = {
             }
             if (line) desc += `<div style="margin:6px 0; padding-left:10px; border-left:3px solid #ff9800;">• ${line}</div>`;
         }
-
-        const applies = [ability.Apply1, ability.Apply2, ability.Apply3, ability.Apply4]
-            .filter(Boolean).join(", ");
+        const applies = [ability.Apply1, ability.Apply2, ability.Apply3, ability.Apply4].filter(Boolean).join(", ");
         if (applies) desc += `<div style="margin-top:12px; color:#aaa; font-size:0.9em;">Tags: ${applies}</div>`;
-
         return desc || `<small style="color:#888;">Basic ability — check Skill Unit for full details</small>`;
     }
 };
@@ -166,10 +162,8 @@ function autoSmartLink(commaString) {
                     break;
                 }
             }
-
             const unit = MasterSkillUniverse.get(trimmed);
             const calc = unit ? MasterSkillUniverse.calculate(unit) : "";
-
             return found ? 
                 `<a class="wiki-link" onclick="renderPage('${found.category}', ${found.idx})">${trimmed}</a>${calc}` : 
                 `<span class="list-chip">${trimmed}</span>`;
@@ -177,7 +171,62 @@ function autoSmartLink(commaString) {
     }).join(' | ');
 }
 
-// Enhanced renderPage for Jobs & Crafting
+function renderHome() {
+    document.getElementById('page-container').innerHTML = `
+        <div class="header-flex" style="border-bottom: 2px solid var(--border); padding-bottom: 20px; margin-bottom: 25px; text-align:center;">
+            <img src="${API_BASE}jobmania_official_icon.png" alt="Jobmania Icon" style="width: 90px; height: 90px; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.6); margin-bottom: 10px;">
+            <h1 style="margin: 0; font-size: 32px;">Jobmania - Eternal Dungeon</h1>
+            <div style="color: var(--highlight); font-weight: 800; font-size: 14px; letter-spacing: 1px;">AUBJECTIVE TECHNOLOGY LTD.</div>
+            <div style="color: #aaa; font-size: 12px; margin-top: 4px; font-weight: 600;">Contains ads • In-app purchases</div>
+        </div>
+
+        <div class="data-card">
+            <p style="font-size: 16px; line-height: 1.6;">
+                Pick a Hero and a job then embark on an eternal journey of dungeon descending.<br>
+                Acquire random abilities and jobs through the journey and build your own unique play style.<br>
+                <strong>How far can you go?</strong>
+            </p>
+            
+            <h3 style="color: white; margin-top: 25px; border-bottom: 1px dashed var(--border); padding-bottom: 8px;">FEATURES</h3>
+            <ol style="line-height: 1.8; color: #ddd; padding-left: 20px; font-size: 15px;">
+                <li><strong>Rogue-lite Dungeon Crawler</strong> — Procedurally generated enemies and events.</li>
+                <li><strong>Strategic Deck Building</strong> — Collect and combine hundreds of abilities.</li>
+                <li><strong>Complex but accessible RPG Combat</strong> — Turn-based with deep mechanics.</li>
+                <li><strong>Job System</strong> — Equip 3 jobs at once and swap during battle.</li>
+                <li><strong>Crafting System</strong> — Combine jobs + materials to create powerful new jobs.</li>
+                <li><strong>Gacha & Relics</strong> — Collect heroes and powerful relics.</li>
+                <li><strong>Skill Universe Engine</strong> — Extremely deep ability and passive interactions.</li>
+            </ol>
+
+            <div style="margin-top: 30px; padding: 15px; background: #222; border-radius: 10px; text-align: center;">
+                <p>Join our discord discussion at <br>
+                <a href="https://discord.gg/6U5FNFVrwb" target="_blank" style="color: var(--highlight); font-weight: bold;">https://discord.gg/6U5FNFVrwb</a></p>
+            </div>
+
+            <div style="margin-top: 30px; text-align: center;">
+                <a href="https://play.google.com/store/apps/details?id=com.aubjective.jobmania" 
+                   target="_blank" 
+                   style="display: inline-block; padding: 12px 24px; background: #073042; color: #fff; text-decoration: none; border-radius: 8px; font-weight: bold;">
+                    📱 Download on Google Play
+                </a>
+            </div>
+        </div>
+    `;
+}
+
+function renderCategory(cat, title) {
+    let html = `<h1>${title}</h1><div class="wiki-grid">`;
+    if (DB[cat] && DB[cat].length > 0) {
+        DB[cat].forEach((item, idx) => {
+            html += `<div class="grid-item" onclick="renderPage('${cat}', ${idx})">
+                <div class="grid-item-title">${extractName(item)}</div></div>`;
+        });
+    } else {
+        html += `<p style="color:#aaa; text-align:center;">No data available for this category yet.</p>`;
+    }
+    document.getElementById('page-container').innerHTML = html + `</div>`;
+}
+
 function renderPage(cat, idx) {
     const entry = DB[cat]?.[idx];
     if (!entry) return;
@@ -186,29 +235,21 @@ function renderPage(cat, idx) {
 
     for (const [k, v] of Object.entries(entry)) {
         if (['wikiNumber', 'usedBy'].includes(k)) continue;
-
         let val = v ?? '<span style="color:#666;">Null</span>';
-
         const linkable = ['Deck Abilities * 5','Deck Abilities * 3','Deck Abilities * 2','Deck Ability * 1',
                           'Switch Skill','Player Ability 1','Player Ability 2','5 Abilities','3 Abilities',
                           '2 Abilities','1 Ability','Random Abilities','Passive Skill','Player Passive Skill 1',
                           'Player Passive Skill 2','Passives','Column_0','Material','Material_2','Material_3','Material_4'];
-
         if (linkable.includes(k)) val = autoSmartLink(v);
-
         html += `<div class="property-row"><div class="property-key">${k}</div><div class="property-value">${val}</div></div>`;
     }
     html += `</div>`;
 
-    // Special handling for Jobs - show crafting path
     if (cat === 'jobs') {
         html += `<div class="effect-summary" style="margin-top:25px; padding:20px; background:#1a1a1a; border-radius:10px;">
             <strong style="color:#ff9800;">Crafting Path</strong><br><br>`;
-        
-        // Find crafting recipe
         const jobName = extractName(entry);
         const recipe = DB.crafting.find(c => c['Five Star'] === jobName || c['Four Star'] === jobName);
-        
         if (recipe) {
             html += `<strong>From:</strong> ${recipe['Column_0'] || 'Unknown'} → `;
             html += autoSmartLink(recipe['One Star'] || '') + " → ";
@@ -222,7 +263,6 @@ function renderPage(cat, idx) {
         html += `</div>`;
     }
 
-    // Effect Breakdown
     if (['abilities', 'suAbilities', 'passives'].includes(cat)) {
         html += `
         <div class="effect-summary" style="margin-top:25px; padding:20px; background:#1a1a1a; border-radius:10px; border:1px solid #444;">
@@ -234,8 +274,8 @@ function renderPage(cat, idx) {
     document.getElementById('page-container').innerHTML = html;
 }
 
-function renderHome() { /* ... your existing renderHome ... */ }
-function renderCategory(cat, title) { /* ... your existing code ... */ }
-function toggleNav() { document.getElementById('sidebar').classList.toggle('open'); }
+function toggleNav() { 
+    document.getElementById('sidebar').classList.toggle('open'); 
+}
 
 window.onload = initWiki;
