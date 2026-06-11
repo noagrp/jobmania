@@ -1,17 +1,25 @@
-<script>
-// --- FIRE CURSOR LOGIC ---
+// === FIRE CURSOR LOGIC ===
 document.addEventListener('mousemove', e => createFire(e.clientX, e.clientY, false));
 document.addEventListener('mousedown', e => {
-    for(let i=0; i<8; i++) setTimeout(() => createFire(e.clientX+(Math.random()*30-15), e.clientY+(Math.random()*30-15), true), i*40);
+    for(let i = 0; i < 8; i++) {
+        setTimeout(() => createFire(e.clientX + (Math.random()*30-15), e.clientY + (Math.random()*30-15), true), i*40);
+    }
 });
 function createFire(x, y, isClick) {
-    const p = document.createElement('div'); p.className = 'fire-particle';
-    p.style.left = x+'px'; p.style.top = y+'px';
-    if(isClick) { p.style.width='20px'; p.style.height='20px'; p.style.animationDuration='0.8s'; }
-    document.body.appendChild(p); setTimeout(() => p.remove(), 800);
+    const p = document.createElement('div');
+    p.className = 'fire-particle';
+    p.style.left = x + 'px';
+    p.style.top = y + 'px';
+    if(isClick) {
+        p.style.width = '20px';
+        p.style.height = '20px';
+        p.style.animationDuration = '0.8s';
+    }
+    document.body.appendChild(p);
+    setTimeout(() => p.remove(), 800);
 }
 
-// --- RELATIONAL ENGINE ---
+// === RELATIONAL ENGINE ===
 const API_BASE = "https://noagrp.github.io/jobmania/";
 const DB = {
     characters: [], jobs: [], abilities: [], crafting: [], materials: [],
@@ -26,33 +34,42 @@ window.renderPage = renderPage;
 window.toggleNav = toggleNav;
 
 async function initWiki() {
-    await fetchAllData();
-    buildGlobalDictionary();
-    MasterSkillUniverse.init(DB.suAbilities, DB.suPassives, DB.suBuffs);
-    renderHome();
+    const container = document.getElementById('page-container');
+    container.innerHTML = `<div class="loading"><div class="spinner"></div>Initializing Jobmania Relational API...</div>`;
+
+    try {
+        await fetchAllData();
+        buildGlobalDictionary();
+        MasterSkillUniverse.init(DB.suAbilities, DB.suPassives, DB.suBuffs);
+        console.log("✅ Jobmania Wiki Loaded Successfully");
+        renderHome();
+    } catch (err) {
+        console.error("❌ Failed to load:", err);
+        container.innerHTML = `<h2 style="color:red; text-align:center;">Failed to load data</h2><p style="text-align:center;">${err.message}</p>`;
+    }
 }
 
 async function fetchAllData() {
     const map = {
-        characters: 'jobmania_characters', 
-        jobs: 'jobmania_jobs', 
+        characters: 'jobmania_characters',
         abilities: 'jobmania_abilities',
-        crafting: 'jobmania_job_crafting', 
-        materials: 'jobmania_materials',
-        passives: 'jobmania_passive_skills', 
-        relics: 'jobmania_relics', 
-        relicPassives: 'jobmania_relic_passives',
-        suAbilities: 'jobmania_skill_unit_abilities', 
-        suBuffs: 'jobmania_skill_unit_buffes', 
+        passives: 'jobmania_passive_skills',
+        suAbilities: 'jobmania_skill_unit_abilities',
+        suBuffs: 'jobmania_skill_unit_buffes',
         suPassives: 'jobmania_skill_unit_passive_skills'
     };
-    const keys = Object.keys(map);
-    const results = await Promise.all(keys.map(k => 
-        fetch(`${API_BASE}${map[k]}.json?t=${Date.now()}`)
-            .then(r => r.json())
-            .catch(() => [])
-    ));
-    keys.forEach((k, i) => DB[k] = results[i]);
+
+    for (const [key, file] of Object.entries(map)) {
+        try {
+            const res = await fetch(`${API_BASE}${file}.json?t=${Date.now()}`);
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            DB[key] = await res.json();
+            console.log(`Loaded ${key}: ${DB[key].length} items`);
+        } catch (e) {
+            console.warn(`Failed to load ${file}:`, e);
+            DB[key] = [];
+        }
+    }
 }
 
 /** UNIVERSAL SKILL ENGINE */
@@ -86,24 +103,33 @@ const MasterSkillUniverse = {
             let line = "";
 
             switch (skill) {
-                case "Damage": line = `Deal <strong>${(mult*100).toFixed(0)}%</strong> ${effect || 'Raw'} damage`; break;
-                case "Heal":   line = `Recover <strong>${(mult*100).toFixed(0)}%</strong> ${effect || 'Raw'} HP`; break;
-                case "Protect":line = `Gain <strong>${(mult*100).toFixed(0)}%</strong> ${effect} Protect`; break;
+                case "Damage":
+                    line = `Deal <strong>${(mult*100).toFixed(0)}%</strong> ${effect || 'Raw'} damage`;
+                    break;
+                case "Heal":
+                    line = `Recover <strong>${(mult*100).toFixed(0)}%</strong> ${effect || 'Raw'} HP`;
+                    break;
+                case "Protect":
+                    line = `Gain <strong>${(mult*100).toFixed(0)}%</strong> ${effect} Protect`;
+                    break;
                 case "Buff":
                 case "InstantBoost":
-                    line = `+<strong>${(mult*5).toFixed(0)}%</strong> ${effect} Buff`; break;
+                    line = `+<strong>${(mult*5).toFixed(0)}%</strong> ${effect} Buff`;
+                    break;
                 case "Debuff":
-                    line = `Apply <strong>${mult}</strong> stack(s) of ${effect} Debuff`; break;
-                case "Vulnerable":
-                case "Mark":
-                    line = `Inflict ${effect} ${skill}`; break;
+                    line = `Apply <strong>${mult}</strong> stack(s) of ${effect} Debuff`;
+                    break;
                 case "Sacrifice":
-                    line = `Self Sacrifice (${(mult*100).toFixed(0)}% HP)`; break;
+                    line = `Self Sacrifice (${(mult*100).toFixed(0)}% HP)`;
+                    break;
                 case "Reflect":
-                    line = `Reflect <strong>${(mult*100).toFixed(0)}%</strong> ${effect} damage`; break;
+                    line = `Reflect <strong>${(mult*100).toFixed(0)}%</strong> ${effect} damage`;
+                    break;
                 default:
-                    if (unit?.Description) {
-                        line = unit.Description.replace(/X%/g, `${(mult*100).toFixed(0)}%`).replace(/X/g, mult);
+                    if (unit && unit.Description) {
+                        line = unit.Description
+                            .replace(/X%/g, `${(mult*100).toFixed(0)}%`)
+                            .replace(/X/g, mult);
                     } else {
                         line = `${skill} ${effect} ×${mult}`;
                     }
@@ -129,7 +155,7 @@ function buildGlobalDictionary() {
     Object.keys(DB).forEach(cat => {
         DB[cat].forEach((item, index) => {
             const name = String(extractName(item)).trim();
-            if (name) Dictionary[`${cat}_${name.toLowerCase()}`] = { category: cat, idx: index, name };
+            if (name) Dictionary[`${cat}_${name.toLowerCase()}`] = { category: cat, idx: index, name: name };
         });
     });
 }
@@ -181,8 +207,12 @@ function renderHome() {
             <ol style="line-height: 1.8; color: #ddd; padding-left: 20px; font-size: 15px;">
                 <li>Rogue lite, procedural enemies and events generation.</li>
                 <li>Dungeon crawler, descend into the dungeon as much as you can.</li>
-                <li>Strategic deck building...</li>
-                <!-- (keep your full list) -->
+                <li>Strategic deck building, build your own unique deck.</li>
+                <li>RPG Turn-based combat system.</li>
+                <li>Equip 3 jobs at once with powerful synergy.</li>
+                <li>Combine jobs and materials to craft new jobs.</li>
+                <li>Gacha system with defeated enemies.</li>
+                <li>Collect special relics.</li>
             </ol>
 
             <div style="margin-top: 30px; padding: 15px; background: #222; border-radius: 10px; text-align: center;">
@@ -228,7 +258,6 @@ function renderPage(cat, idx) {
     }
     html += `</div>`;
 
-    // Effect Breakdown
     if (['abilities', 'suAbilities', 'passives'].includes(cat)) {
         html += `
         <div class="effect-summary" style="margin-top:25px; padding:20px; background:#1a1a1a; border-radius:10px; border:1px solid #444;">
@@ -245,4 +274,3 @@ function toggleNav() {
 }
 
 window.onload = initWiki;
-</script>
