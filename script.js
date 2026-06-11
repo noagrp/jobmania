@@ -27,7 +27,6 @@ const DB = {
     suAbilities: [], suBuffs: [], suPassives: []
 };
 const Dictionary = {};
-
 window.renderHome = renderHome;
 window.renderCategory = renderCategory;
 window.renderPage = renderPage;
@@ -36,7 +35,6 @@ window.toggleNav = toggleNav;
 async function initWiki() {
     const container = document.getElementById('page-container');
     container.innerHTML = `<div class="loading"><div class="spinner"></div>Initializing Jobmania Relational API...</div>`;
-
     try {
         await fetchAllData();
         buildGlobalDictionary();
@@ -63,7 +61,6 @@ async function fetchAllData() {
         suBuffs: 'jobmania_skill_unit_buffes',
         suPassives: 'jobmania_skill_unit_passive_skills'
     };
-
     for (const [key, file] of Object.entries(map)) {
         try {
             const res = await fetch(`${API_BASE}${file}.json?t=${Date.now()}`);
@@ -77,13 +74,14 @@ async function fetchAllData() {
     }
 }
 
-/** UNIVERSAL SKILL ENGINE */
+/** UNIVERSAL SKILL ENGINE - IMPROVED */
 const MasterSkillUniverse = {
     map: {},
     init(abilities, passives, buffs) {
         [...abilities, ...passives, ...buffs].forEach(u => {
-            const name = u['Ability/Switch Skill'] || u['Passive'] || u['Buff'] || u['Ability Name'];
-            if (name) this.map[name.trim()] = u;
+            // BETTER NAME EXTRACTION FOR SKILL UNITS
+            const name = u['Ability/Switch Skill'] || u['Passive'] || u['Buff'] || u['Ability Name'] || extractName(u);
+            if (name && name !== "Unknown") this.map[name.trim()] = u;
         });
     },
     get(name) { return this.map[name?.trim()] || null; },
@@ -94,19 +92,15 @@ const MasterSkillUniverse = {
             const skillKey = i === 1 ? "Skill Unit 1" : `SkillUnit ${i}`;
             const effectKey = i === 1 ? "Column_5" : `Column_${(i*3)+2}`;
             const multKey = i === 1 ? "Multiplier" : `Multiplier_${i}`;
-
             const skill = ability[skillKey];
             if (!skill || skill === "" || skill === "Null") continue;
-
             const effect = ability[effectKey] || "";
             let mult = parseFloat(ability[multKey]) || 1;
-
             const unit = this.get(skill);
             let line = "";
-
             switch (skill) {
                 case "Damage": line = `Deal <strong>${(mult*100).toFixed(0)}%</strong> ${effect || 'Raw'} damage`; break;
-                case "Heal":   line = `Recover <strong>${(mult*100).toFixed(0)}%</strong> ${effect || 'Raw'} HP`; break;
+                case "Heal": line = `Recover <strong>${(mult*100).toFixed(0)}%</strong> ${effect || 'Raw'} HP`; break;
                 case "Protect":line = `Gain <strong>${(mult*100).toFixed(0)}%</strong> ${effect} Protect`; break;
                 case "Buff":
                 case "InstantBoost":
@@ -132,16 +126,21 @@ const MasterSkillUniverse = {
     }
 };
 
+// IMPROVED extractName
 function extractName(item) {
-    return item.Name || 
-           item.Job || 
-           item['Ability Name'] || 
-           item['Passive Name'] || 
-           item.Relic || 
-           item.Title || 
-           item.Concatenate ||           // ← Added for Relic Passives
-           item['Skill Unit 1'] ||       // Fallback
-           item.Column_0 || 
+    if (!item) return "Unknown";
+    return item.Name ||
+           item.Job ||
+           item['Ability/Switch Skill'] ||   // ← Added for skill units
+           item['Passive'] ||                // ← Added
+           item['Buff'] ||                   // ← Added
+           item['Ability Name'] ||
+           item['Passive Name'] ||
+           item.Relic ||
+           item.Title ||
+           item.Concatenate ||
+           item['Skill Unit 1'] ||
+           item.Column_0 ||
            "Unknown";
 }
 
@@ -149,20 +148,18 @@ function buildGlobalDictionary() {
     Object.keys(DB).forEach(cat => {
         DB[cat].forEach((item, index) => {
             const name = String(extractName(item)).trim();
-            if (name) Dictionary[`${cat}_${name.toLowerCase()}`] = { category: cat, idx: index, name: name };
+            if (name && name !== "Unknown") Dictionary[`${cat}_${name.toLowerCase()}`] = { category: cat, idx: index, name: name };
         });
     });
 }
 
 function autoSmartLink(commaString) {
-    if (!commaString || commaString === "Null" || commaString === "") 
+    if (!commaString || commaString === "Null" || commaString === "")
         return '<span style="color:#666;">Null</span>';
-
     return String(commaString).split(/[|,]/).map(segment => {
         return segment.trim().split('-').map(item => {
             const trimmed = item.trim();
             if (!trimmed) return "";
-
             let found = null;
             for (const cat in DB) {
                 if (Dictionary[`${cat}_${trimmed.toLowerCase()}`]) {
@@ -172,14 +169,15 @@ function autoSmartLink(commaString) {
             }
             const unit = MasterSkillUniverse.get(trimmed);
             const calc = unit ? MasterSkillUniverse.calculate(unit) : "";
-            return found ? 
-                `<a class="wiki-link" onclick="renderPage('${found.category}', ${found.idx})">${trimmed}</a>${calc}` : 
+            return found ?
+                `<a class="wiki-link" onclick="renderPage('${found.category}', ${found.idx})">${trimmed}</a>${calc}` :
                 `<span class="list-chip">${trimmed}</span>`;
         }).join('<span style="color:#666;">-</span>');
     }).join(' | ');
 }
 
 function renderHome() {
+    // YOUR ORIGINAL FULL HOME PAGE - UNCHANGED
     document.getElementById('page-container').innerHTML = `
         <div class="header-flex" style="border-bottom: 2px solid var(--border); padding-bottom: 20px; margin-bottom: 25px; text-align:center;">
             <img src="${API_BASE}jobmania_official_icon.png" alt="Jobmania Icon" style="width: 90px; height: 90px; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.6); margin-bottom: 10px;">
@@ -187,14 +185,13 @@ function renderHome() {
             <div style="color: var(--highlight); font-weight: 800; font-size: 14px; letter-spacing: 1px;">AUBJECTIVE TECHNOLOGY LTD.</div>
             <div style="color: #aaa; font-size: 12px; margin-top: 4px; font-weight: 600;">Contains ads • In-app purchases</div>
         </div>
-
         <div class="data-card">
             <p style="font-size: 16px; line-height: 1.6;">
                 Pick a Hero and a job then embark on an eternal journey of dungeon descending.<br>
                 Acquire random abilities and jobs through the journey and build your own unique play style.<br>
                 <strong>How far can you go?</strong>
             </p>
-            
+           
             <h3 style="color: white; margin-top: 25px; border-bottom: 1px dashed var(--border); padding-bottom: 8px;">FEATURES</h3>
             <ol style="line-height: 1.8; color: #ddd; padding-left: 20px; font-size: 15px;">
                 <li><strong>Rogue-lite Dungeon Crawler</strong> — Procedurally generated enemies and events.</li>
@@ -205,15 +202,13 @@ function renderHome() {
                 <li><strong>Gacha & Relics</strong> — Collect heroes and powerful relics.</li>
                 <li><strong>Skill Universe Engine</strong> — Extremely deep ability and passive interactions.</li>
             </ol>
-
             <div style="margin-top: 30px; padding: 15px; background: #222; border-radius: 10px; text-align: center;">
                 <p>Join our discord discussion at <br>
                 <a href="https://discord.gg/6U5FNFVrwb" target="_blank" style="color: var(--highlight); font-weight: bold;">https://discord.gg/6U5FNFVrwb</a></p>
             </div>
-
             <div style="margin-top: 30px; text-align: center;">
-                <a href="https://play.google.com/store/apps/details?id=com.aubjective.jobmania" 
-                   target="_blank" 
+                <a href="https://play.google.com/store/apps/details?id=com.aubjective.jobmania"
+                   target="_blank"
                    style="display: inline-block; padding: 12px 24px; background: #073042; color: #fff; text-decoration: none; border-radius: 8px; font-weight: bold;">
                     📱 Download on Google Play
                 </a>
@@ -235,12 +230,11 @@ function renderCategory(cat, title) {
     document.getElementById('page-container').innerHTML = html + `</div>`;
 }
 
+// IMPROVED renderPage with FULL crafting tree
 function renderPage(cat, idx) {
     const entry = DB[cat]?.[idx];
     if (!entry) return;
-
     let html = `<h1>${extractName(entry)}</h1><div class="data-card">`;
-
     for (const [k, v] of Object.entries(entry)) {
         if (['wikiNumber', 'usedBy'].includes(k)) continue;
         let val = v ?? '<span style="color:#666;">Null</span>';
@@ -253,18 +247,24 @@ function renderPage(cat, idx) {
     }
     html += `</div>`;
 
+    // FULL CRAFTING TREE FOR JOBS
     if (cat === 'jobs') {
         html += `<div class="effect-summary" style="margin-top:25px; padding:20px; background:#1a1a1a; border-radius:10px;">
             <strong style="color:#ff9800;">Crafting Path</strong><br><br>`;
         const jobName = extractName(entry);
-        const recipe = DB.crafting.find(c => c['Five Star'] === jobName || c['Four Star'] === jobName);
-        if (recipe) {
-            html += `<strong>From:</strong> ${recipe['Column_0'] || 'Unknown'} → `;
-            html += autoSmartLink(recipe['One Star'] || '') + " → ";
-            html += autoSmartLink(recipe['TwoStar'] || '') + " → ";
-            html += autoSmartLink(recipe['Three Star'] || '') + " → ";
-            html += autoSmartLink(recipe['Four Star'] || '') + " → ";
-            html += `<strong>${jobName}</strong>`;
+        const recipes = DB.crafting.filter(c => 
+            c['Five Star'] === jobName || c['Four Star'] === jobName || c['Three Star'] === jobName
+        );
+        
+        if (recipes.length) {
+            recipes.forEach(recipe => {
+                html += `<strong>Weapon:</strong> ${recipe['Column_0'] || 'Unknown'} → `;
+                html += autoSmartLink(recipe['One Star'] || '') + " + " + (recipe['Material'] || '') + " → ";
+                html += autoSmartLink(recipe['TwoStar'] || '') + " + " + (recipe['Material_2'] || '') + " → ";
+                html += autoSmartLink(recipe['Three Star'] || '') + " + " + (recipe['Material_3'] || '') + " → ";
+                html += autoSmartLink(recipe['Four Star'] || '') + " + " + (recipe['Material_4'] || '') + " → ";
+                html += `<strong style="color:#4caf50;">${jobName}</strong><br><br>`;
+            });
         } else {
             html += "No crafting recipe found.";
         }
@@ -278,7 +278,7 @@ function renderPage(cat, idx) {
             ${MasterSkillUniverse.calculate(entry)}
         </div>`;
     }
-    // Special handling for Relic Passives
+
     if (cat === 'relicPassives') {
         html += `
         <div class="effect-summary" style="margin-top:20px; padding:18px; background:#1a1a1a; border-radius:10px;">
@@ -286,12 +286,11 @@ function renderPage(cat, idx) {
             ${MasterSkillUniverse.calculate(entry)}
         </div>`;
     }
-
     document.getElementById('page-container').innerHTML = html;
 }
 
-function toggleNav() { 
-    document.getElementById('sidebar').classList.toggle('open'); 
+function toggleNav() {
+    document.getElementById('sidebar').classList.toggle('open');
 }
 
 window.onload = initWiki;
