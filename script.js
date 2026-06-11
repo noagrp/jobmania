@@ -74,14 +74,18 @@ async function fetchAllData() {
     }
 }
 
-/** UNIVERSAL SKILL ENGINE - IMPROVED */
+/** UNIVERSAL SKILL ENGINE */
 const MasterSkillUniverse = {
     map: {},
     init(abilities, passives, buffs) {
         [...abilities, ...passives, ...buffs].forEach(u => {
-            // BETTER NAME EXTRACTION FOR SKILL UNITS
-            const name = u['Ability/Switch Skill'] || u['Passive'] || u['Buff'] || u['Ability Name'] || extractName(u);
-            if (name && name !== "Unknown") this.map[name.trim()] = u;
+            // FIXED: Proper title extraction for all skill unit types
+            let name = u['Ability/Switch Skill'] || 
+                       u['Buff'] || 
+                       u['Passive'] || 
+                       u['Ability Name'] ||
+                       extractName(u);
+            if (name) this.map[name.trim()] = u;
         });
     },
     get(name) { return this.map[name?.trim()] || null; },
@@ -126,14 +130,14 @@ const MasterSkillUniverse = {
     }
 };
 
-// IMPROVED extractName
 function extractName(item) {
     if (!item) return "Unknown";
-    return item.Name ||
+    // FIXED: Priority for skill unit titles
+    return item['Ability/Switch Skill'] || 
+           item['Buff'] || 
+           item['Passive'] ||
+           item.Name ||
            item.Job ||
-           item['Ability/Switch Skill'] ||   // ← Added for skill units
-           item['Passive'] ||                // ← Added
-           item['Buff'] ||                   // ← Added
            item['Ability Name'] ||
            item['Passive Name'] ||
            item.Relic ||
@@ -148,7 +152,9 @@ function buildGlobalDictionary() {
     Object.keys(DB).forEach(cat => {
         DB[cat].forEach((item, index) => {
             const name = String(extractName(item)).trim();
-            if (name && name !== "Unknown") Dictionary[`${cat}_${name.toLowerCase()}`] = { category: cat, idx: index, name: name };
+            if (name && name !== "Unknown") {
+                Dictionary[`${cat}_${name.toLowerCase()}`] = { category: cat, idx: index, name: name };
+            }
         });
     });
 }
@@ -177,7 +183,6 @@ function autoSmartLink(commaString) {
 }
 
 function renderHome() {
-    // YOUR ORIGINAL FULL HOME PAGE - UNCHANGED
     document.getElementById('page-container').innerHTML = `
         <div class="header-flex" style="border-bottom: 2px solid var(--border); padding-bottom: 20px; margin-bottom: 25px; text-align:center;">
             <img src="${API_BASE}jobmania_official_icon.png" alt="Jobmania Icon" style="width: 90px; height: 90px; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.6); margin-bottom: 10px;">
@@ -230,7 +235,6 @@ function renderCategory(cat, title) {
     document.getElementById('page-container').innerHTML = html + `</div>`;
 }
 
-// IMPROVED renderPage with FULL crafting tree
 function renderPage(cat, idx) {
     const entry = DB[cat]?.[idx];
     if (!entry) return;
@@ -246,31 +250,23 @@ function renderPage(cat, idx) {
         html += `<div class="property-row"><div class="property-key">${k}</div><div class="property-value">${val}</div></div>`;
     }
     html += `</div>`;
-
-    // FULL CRAFTING TREE FOR JOBS
     if (cat === 'jobs') {
         html += `<div class="effect-summary" style="margin-top:25px; padding:20px; background:#1a1a1a; border-radius:10px;">
             <strong style="color:#ff9800;">Crafting Path</strong><br><br>`;
         const jobName = extractName(entry);
-        const recipes = DB.crafting.filter(c => 
-            c['Five Star'] === jobName || c['Four Star'] === jobName || c['Three Star'] === jobName
-        );
-        
-        if (recipes.length) {
-            recipes.forEach(recipe => {
-                html += `<strong>Weapon:</strong> ${recipe['Column_0'] || 'Unknown'} → `;
-                html += autoSmartLink(recipe['One Star'] || '') + " + " + (recipe['Material'] || '') + " → ";
-                html += autoSmartLink(recipe['TwoStar'] || '') + " + " + (recipe['Material_2'] || '') + " → ";
-                html += autoSmartLink(recipe['Three Star'] || '') + " + " + (recipe['Material_3'] || '') + " → ";
-                html += autoSmartLink(recipe['Four Star'] || '') + " + " + (recipe['Material_4'] || '') + " → ";
-                html += `<strong style="color:#4caf50;">${jobName}</strong><br><br>`;
-            });
+        const recipe = DB.crafting.find(c => c['Five Star'] === jobName || c['Four Star'] === jobName);
+        if (recipe) {
+            html += `<strong>From:</strong> ${recipe['Column_0'] || 'Unknown'} → `;
+            html += autoSmartLink(recipe['One Star'] || '') + " → ";
+            html += autoSmartLink(recipe['TwoStar'] || '') + " → ";
+            html += autoSmartLink(recipe['Three Star'] || '') + " → ";
+            html += autoSmartLink(recipe['Four Star'] || '') + " → ";
+            html += `<strong>${jobName}</strong>`;
         } else {
             html += "No crafting recipe found.";
         }
         html += `</div>`;
     }
-
     if (['abilities', 'suAbilities', 'passives'].includes(cat)) {
         html += `
         <div class="effect-summary" style="margin-top:25px; padding:20px; background:#1a1a1a; border-radius:10px; border:1px solid #444;">
@@ -278,7 +274,6 @@ function renderPage(cat, idx) {
             ${MasterSkillUniverse.calculate(entry)}
         </div>`;
     }
-
     if (cat === 'relicPassives') {
         html += `
         <div class="effect-summary" style="margin-top:20px; padding:18px; background:#1a1a1a; border-radius:10px;">
