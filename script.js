@@ -133,8 +133,16 @@ const MasterSkillUniverse = {
 };
 
 function extractName(item) {
-    return item.Name || item.Job || item['Ability Name'] || item['Passive Name'] || 
-           item.Relic || item.Title || item.Column_0 || "Unknown";
+    return item.Name || 
+           item.Job || 
+           item['Ability Name'] || 
+           item['Passive Name'] || 
+           item.Relic || 
+           item.Title || 
+           item.Concatenate ||           // ← Added for Relic Passives
+           item['Skill Unit 1'] ||       // Fallback
+           item.Column_0 || 
+           "Unknown";
 }
 
 function buildGlobalDictionary() {
@@ -267,6 +275,14 @@ function renderPage(cat, idx) {
         html += `
         <div class="effect-summary" style="margin-top:25px; padding:20px; background:#1a1a1a; border-radius:10px; border:1px solid #444;">
             <strong style="color:#ff9800;">Effect Breakdown:</strong><br><br>
+            ${MasterSkillUniverse.calculate(entry)}
+        </div>`;
+    }
+    // Special handling for Relic Passives
+    if (cat === 'relicPassives') {
+        html += `
+        <div class="effect-summary" style="margin-top:20px; padding:18px; background:#1a1a1a; border-radius:10px;">
+            <strong style="color:#ff9800;">Skill Unit Effect:</strong><br><br>
             ${MasterSkillUniverse.calculate(entry)}
         </div>`;
     }
