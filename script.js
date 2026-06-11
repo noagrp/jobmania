@@ -51,19 +51,22 @@ async function initWiki() {
 
 async function fetchAllData() {
     const map = {
-        characters: 'jobmania_characters',
-        abilities: 'jobmania_abilities',
-        passives: 'jobmania_passive_skills',
-        suAbilities: 'jobmania_skill_unit_abilities',
-        suBuffs: 'jobmania_skill_unit_buffes',
-        suPassives: 'jobmania_skill_unit_passive_skills'
+        characters: 'jobmania_characters', jobs: 'jobmania_jobs', abilities: 'jobmania_abilities',
+        crafting: 'jobmania_job_crafting', materials: 'jobmania_materials',
+        passives: 'jobmania_passive_skills', relics: 'jobmania_relics', relicPassives: 'jobmania_relic_passives',
+        suAbilities: 'jobmania_skill_unit_abilities', suBuffs: 'jobmania_skill_unit_buffes', suPassives: 'jobmania_skill_unit_passive_skills'
     };
 
     for (const [key, file] of Object.entries(map)) {
         try {
             const res = await fetch(`${API_BASE}${file}.json?t=${Date.now()}`);
             if (!res.ok) throw new Error(`HTTP ${res.status}`);
-            DB[key] = await res.json();
+            const rawData = await res.json();
+            // Data Sanitization: Filter out items without a valid ID immediately
+            DB[key] = rawData.filter(item => {
+                const id = extractName(item);
+                return id && id !== "Unknown" && id.trim() !== "";
+            });
             console.log(`Loaded ${key}: ${DB[key].length} items`);
         } catch (e) {
             console.warn(`Failed to load ${file}:`, e);
@@ -81,9 +84,7 @@ const MasterSkillUniverse = {
             if (name) this.map[name.trim()] = u;
         });
     },
-    get(name) {
-        return this.map[name?.trim()] || null;
-    },
+    get(name) { return this.map[name?.trim()] || null; },
     calculate(ability) {
         if (!ability) return "No data";
         let desc = "";
@@ -103,44 +104,23 @@ const MasterSkillUniverse = {
             let line = "";
 
             switch (skill) {
-                case "Damage":
-                    line = `Deal <strong>${(mult*100).toFixed(0)}%</strong> ${effect || 'Raw'} damage`;
-                    break;
-                case "Heal":
-                    line = `Recover <strong>${(mult*100).toFixed(0)}%</strong> ${effect || 'Raw'} HP`;
-                    break;
-                case "Protect":
-                    line = `Gain <strong>${(mult*100).toFixed(0)}%</strong> ${effect} Protect`;
-                    break;
+                case "Damage": line = `Deal <strong>${(mult*100).toFixed(0)}%</strong> ${effect || 'Raw'} damage`; break;
+                case "Heal": line = `Recover <strong>${(mult*100).toFixed(0)}%</strong> ${effect || 'Raw'} HP`; break;
+                case "Protect": line = `Gain <strong>${(mult*100).toFixed(0)}%</strong> ${effect} Protect`; break;
                 case "Buff":
-                case "InstantBoost":
-                    line = `+<strong>${(mult*5).toFixed(0)}%</strong> ${effect} Buff`;
-                    break;
-                case "Debuff":
-                    line = `Apply <strong>${mult}</strong> stack(s) of ${effect} Debuff`;
-                    break;
-                case "Sacrifice":
-                    line = `Self Sacrifice (${(mult*100).toFixed(0)}% HP)`;
-                    break;
-                case "Reflect":
-                    line = `Reflect <strong>${(mult*100).toFixed(0)}%</strong> ${effect} damage`;
-                    break;
+                case "InstantBoost": line = `+<strong>${(mult*5).toFixed(0)}%</strong> ${effect} Buff`; break;
+                case "Debuff": line = `Apply <strong>${mult}</strong> stack(s) of ${effect} Debuff`; break;
+                case "Sacrifice": line = `Self Sacrifice (${(mult*100).toFixed(0)}% HP)`; break;
+                case "Reflect": line = `Reflect <strong>${(mult*100).toFixed(0)}%</strong> ${effect} damage`; break;
                 default:
-                    if (unit && unit.Description) {
-                        line = unit.Description
-                            .replace(/X%/g, `${(mult*100).toFixed(0)}%`)
-                            .replace(/X/g, mult);
-                    } else {
-                        line = `${skill} ${effect} ×${mult}`;
-                    }
+                    if (unit?.Description) line = unit.Description.replace(/X%/g, `${(mult*100).toFixed(0)}%`).replace(/X/g, mult);
+                    else line = `${skill} ${effect} ×${mult}`;
             }
             if (line) desc += `<div style="margin:6px 0; padding-left:10px; border-left:3px solid #ff9800;">• ${line}</div>`;
         }
 
-        const applies = [ability.Apply1, ability.Apply2, ability.Apply3, ability.Apply4]
-            .filter(Boolean).join(", ");
+        const applies = [ability.Apply1, ability.Apply2, ability.Apply3, ability.Apply4].filter(Boolean).join(", ");
         if (applies) desc += `<div style="margin-top:12px; color:#aaa; font-size:0.9em;">Tags: ${applies}</div>`;
-
         return desc || `<small style="color:#888;">Basic ability — check Skill Unit for full details</small>`;
     }
 };
@@ -148,27 +128,24 @@ const MasterSkillUniverse = {
 function extractName(item) {
     return item.Name || item['Ability Name'] || item.Job || item.Material ||
            item['Passive Name'] || item.Relic || item['Ability/Switch Skill'] ||
-           item.Buff || item.Passive || item.Column_0 || "Unknown";
+           item.Buff || item.Passive || item.Column_0 || item.Concatenate || "Unknown";
 }
 
 function buildGlobalDictionary() {
     Object.keys(DB).forEach(cat => {
         DB[cat].forEach((item, index) => {
             const name = String(extractName(item)).trim();
-            if (name) Dictionary[`${cat}_${name.toLowerCase()}`] = { category: cat, idx: index, name: name };
+            if (name && name !== "Unknown") Dictionary[`${cat}_${name.toLowerCase()}`] = { category: cat, idx: index, name: name };
         });
     });
 }
 
 function autoSmartLink(commaString) {
-    if (!commaString || commaString === "Null" || commaString === "") 
-        return '<span style="color:#666;">Null</span>';
-
+    if (!commaString || commaString === "Null" || commaString === "") return '<span style="color:#666;">Null</span>';
     return String(commaString).split(/[|,]/).map(segment => {
         return segment.trim().split('-').map(item => {
             const trimmed = item.trim();
             if (!trimmed) return "";
-
             let found = null;
             for (const cat in DB) {
                 if (Dictionary[`${cat}_${trimmed.toLowerCase()}`]) {
@@ -176,13 +153,9 @@ function autoSmartLink(commaString) {
                     break;
                 }
             }
-
             const unit = MasterSkillUniverse.get(trimmed);
             const calc = unit ? MasterSkillUniverse.calculate(unit) : "";
-
-            return found ? 
-                `<a class="wiki-link" onclick="renderPage('${found.category}', ${found.idx})">${trimmed}</a>${calc}` : 
-                `<span class="list-chip">${trimmed}</span>`;
+            return found ? `<a class="wiki-link" onclick="renderPage('${found.category}', ${found.idx})">${trimmed}</a>${calc}` : `<span class="list-chip">${trimmed}</span>`;
         }).join('<span style="color:#666;">-</span>');
     }).join(' | ');
 }
